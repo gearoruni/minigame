@@ -35,7 +35,21 @@ public class ObjectPool : MonoBehaviour
         obj.SetActive(true);
         return obj;
     }
+    public GameObject GetObjectFromPool()
+    {
+        // 如果对象池为空，则创建新对象并返回
+        if (objectPool.Count == 0)
+        {
+            GameObject newObj = Instantiate(prefab);
+            return newObj;
+        }
 
+        // 从对象池中取出一个对象并返回
+        GameObject obj = objectPool.Dequeue();
+        
+        obj.SetActive(true);
+        return obj;
+    }
     public void ReturnObjectToPool(GameObject obj)
     {
         // 将对象重新放入对象池中

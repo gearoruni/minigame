@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class GameStart : MonoBehaviour
 {
+    public void Awake()
+    {
+        ObjectPoolManager.Instance.Init();
+    }
+
     // Start is called before the first frame update
     async void Start()
     {
@@ -11,5 +16,6 @@ public class GameStart : MonoBehaviour
         DontDestroyOnLoad(go);
         var core = go.AddComponent<GameCore>();
         await core.Active();
+
     }
 }
