@@ -7,6 +7,7 @@ public class GameCore : MonoBehaviour
 {
     private List<BaseModel> modelList = new List<BaseModel>();
     private List<BaseManager> managerList = new List<BaseManager>();
+    private bool isReady = false;
     #region 注册
     /// <summary>
     /// 注册一开始用到的model与manager
@@ -29,8 +30,11 @@ public class GameCore : MonoBehaviour
     #region 启动
     public async UniTask<bool> Active()
     {
+        Register();
         Init();
-        return await InitAysnc();
+        await InitAysnc();
+        isReady = true;
+        return true;
     }
     private void Init()
     {
@@ -59,6 +63,7 @@ public class GameCore : MonoBehaviour
 
     #region 生命函数
     private void Start() {
+        if(!isReady) return;
         foreach(var model in modelList)
         {
             model.OnStart();
@@ -66,6 +71,7 @@ public class GameCore : MonoBehaviour
     }
     
     private void Update() {
+        if(!isReady) return;
         foreach(var model in modelList)
         {
             model.OnUpdate();
@@ -73,6 +79,7 @@ public class GameCore : MonoBehaviour
     }
 
     private void FixedUpdate() {
+        if(!isReady) return;
         foreach(var model in modelList)
         {
             model.OnFixUpdate();
@@ -80,6 +87,7 @@ public class GameCore : MonoBehaviour
     }
 
     private void LateUpdate() {
+        if(!isReady) return;
         foreach(var model in modelList)
         {
             model.OnLateUpdate();
