@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "E:\\minigame1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|e:\\minigame1\\assets\\script\\ctrl\\player\\playerinputctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ctrl\\player\\playerinputctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|E:\\minigame1\\assets\\script\\system\\moveaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\system\\moveaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|E:\\minigame1\\assets\\script\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|E:\\minigame1\\assets\\easyframework\\gamecore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\easyframework\\gamecore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerInputCtrl.cs",
+              "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\Ctrl\\Player\\PlayerInputCtrl.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Ctrl\\Player\\PlayerInputCtrl.cs",
+              "ToolTip": "E:\\minigame1\\Assets\\Script\\Ctrl\\Player\\PlayerInputCtrl.cs",
+              "RelativeToolTip": "Assets\\Script\\Ctrl\\Player\\PlayerInputCtrl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T01:41:13.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MoveAction.cs",
+              "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\System\\MoveAction.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\System\\MoveAction.cs",
+              "ToolTip": "E:\\minigame1\\Assets\\Script\\System\\MoveAction.cs",
+              "RelativeToolTip": "Assets\\Script\\System\\MoveAction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T01:13:45.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameCore.cs",
+              "DocumentMoniker": "E:\\minigame1\\Assets\\EasyFrameWork\\GameCore.cs",
+              "RelativeDocumentMoniker": "Assets\\EasyFrameWork\\GameCore.cs",
+              "ToolTip": "E:\\minigame1\\Assets\\EasyFrameWork\\GameCore.cs",
+              "RelativeToolTip": "Assets\\EasyFrameWork\\GameCore.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T01:02:21.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameStart.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\GameStart.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\GameStart.cs",
               "ToolTip": "E:\\minigame1\\Assets\\Script\\GameStart.cs",
               "RelativeToolTip": "Assets\\Script\\GameStart.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T12:52:01.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T12:52:01.428Z"
             }
           ]
         }

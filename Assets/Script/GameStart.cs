@@ -16,6 +16,14 @@ public class GameStart : MonoBehaviour
         DontDestroyOnLoad(go);
         var core = go.AddComponent<GameCore>();
         await core.Active();
+        //--------------------Ctrl---------------------------------------------
+        PlayerInputCtrl playerInputCtrl = new PlayerInputCtrl();
+        core.RegisterModel(playerInputCtrl);
+
+        PlayerMoveCtrl playerMoveCtrl = new PlayerMoveCtrl();
+        core.RegisterModel(playerMoveCtrl);
+
+        //--------------------Manager------------------------------------------
 
     }
 }
