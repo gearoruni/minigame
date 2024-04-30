@@ -11,5 +11,6 @@ public class GameStart : MonoBehaviour
         DontDestroyOnLoad(go);
         var core = go.AddComponent<GameCore>();
         await core.Active();
+        Preloader.Instance.Init();
     }
 }
