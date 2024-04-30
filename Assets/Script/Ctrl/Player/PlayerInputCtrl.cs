@@ -2,26 +2,30 @@ using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 
 public class PlayerInputCtrl : BaseModel
 {
     private PlayerInputAction inputActions;
 
     public Vector2 keyboardMoveAxes => inputActions.keyBoard.MoveCtrl.ReadValue<Vector2>();
-    public bool isFire => inputActions.keyBoard.Fire.ReadValue<bool>();
-    public bool isC1 => inputActions.keyBoard.Char1Changed.ReadValue<bool>();
-    public bool isC2 => inputActions.keyBoard.Char2Changed.ReadValue<bool>();
-    public bool isC3 => inputActions.keyBoard.Char3Changed.ReadValue<bool>();
+    public bool isFire => inputActions.keyBoard.Fire.WasPressedThisFrame();
+    public bool isC1 => inputActions.keyBoard.Char1Changed.WasPressedThisFrame();
+    public bool isC2 => inputActions.keyBoard.Char2Changed.WasPressedThisFrame();
+    public bool isC3 => inputActions.keyBoard.Char3Changed.WasPressedThisFrame();
+    public bool isReload => inputActions.keyBoard.Reload.WasPressedThisFrame();
 
+    public bool isHold = false;
 
     bool BaseModel.Init()
     {
-        throw new System.NotImplementedException();
+        return true;
     }
 
     UniTask<bool> BaseModel.InitAysnc()
     {
-        throw new System.NotImplementedException();
+        return UniTask.FromResult(true);
     }
 
     void BaseModel.OnFixUpdate()
@@ -38,13 +42,46 @@ public class PlayerInputCtrl : BaseModel
     {
         inputActions = new PlayerInputAction();
         inputActions.keyBoard.Enable();
+
+        inputActions.keyBoard.Fire.performed += ctx =>
+        {
+            if (ctx.interaction is HoldInteraction)
+            {
+                isHold = true;
+            }
+        };
+        inputActions.keyBoard.Fire.canceled += ctx =>
+        {
+            if (ctx.interaction is HoldInteraction)
+            {
+                isHold = false;
+            }
+        };
     }
 
     void BaseModel.OnUpdate()
     {
-        if (keyboardMoveAxes != Vector2.zero)
+        //WASD移动
+        GameCore.Instance.GetModel<PlayerMoveCtrl>().PlayerMove(keyboardMoveAxes);
+
+        //Weapon面向鼠标
+        //并将鼠标屏幕位置转换为世界空间位置
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition.z = -Camera.main.transform.position.z;
+        Vector3 targetPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        GameCore.Instance.GetModel<WeaponDirCtrl>().SetDir(targetPosition);
+
+        //射击
+        if (isFire||isHold)
         {
-            
+            GameCore.Instance.GetModel<WeaponFireCtrl>().Fire();
+        }
+
+        //换弹
+        if (isReload)
+        {
+            GameCore.Instance.GetModel<WeaponFireCtrl>().WeaponRelaod();
         }
     }
 

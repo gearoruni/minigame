@@ -12,10 +12,11 @@ public class GameStart : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
-        var go = new GameObject("gameCore");
-        DontDestroyOnLoad(go);
-        var core = go.AddComponent<GameCore>();
-        await core.Active();
+        var core =  GameCore.Instance.Init();
+        //--------------------Manager------------------------------------------
+        PlayerManager playerManager = new PlayerManager();
+        core.RegisterManager(playerManager);
+
         //--------------------Ctrl---------------------------------------------
         PlayerInputCtrl playerInputCtrl = new PlayerInputCtrl();
         core.RegisterModel(playerInputCtrl);
@@ -23,7 +24,15 @@ public class GameStart : MonoBehaviour
         PlayerMoveCtrl playerMoveCtrl = new PlayerMoveCtrl();
         core.RegisterModel(playerMoveCtrl);
 
-        //--------------------Manager------------------------------------------
+        WeaponDirCtrl weaponDirCtl = new WeaponDirCtrl();
+        core.RegisterModel(weaponDirCtl);
 
+        WeaponFireCtrl weaponFireCtl = new WeaponFireCtrl();
+        core.RegisterModel(weaponFireCtl);
+
+        TimerCtrl timerCtrl = new TimerCtrl();
+        core.RegisterModel(timerCtrl);
+        //---------------------------------------------------------------------
+        await core.Active();
     }
 }

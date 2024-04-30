@@ -7,6 +7,7 @@ public class MoveAction
 {
     /// <summary>
     /// transform移动
+    /// 所有使用deltatime移动的使用这个
     /// </summary>
     /// <param name="go"></param>
     /// <param name="speed"></param>
@@ -18,6 +19,7 @@ public class MoveAction
 
     /// <summary>
     /// 刚体移动
+    /// 不使用deltatime
     /// </summary>
     /// <param name="rb"></param>
     /// <param name="speed"></param>

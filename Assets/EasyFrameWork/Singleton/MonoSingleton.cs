@@ -29,13 +29,14 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
         }
     }
 
-    public virtual void Init(bool needDestroy = false)
+    public virtual T Init(bool needDestroy = false)
     {
         destroyOnLoad = needDestroy;
         if (needDestroy)
         {
             AddSceneChangedEvent();
         }
+        return Instance;
     }
 
     public void AddSceneChangedEvent()
