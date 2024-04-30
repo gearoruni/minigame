@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
@@ -5,8 +6,8 @@ using UnityEngine;
 
 public class GameCore : MonoBehaviour
 {
-    private List<BaseModel> modelList = new List<BaseModel>();
-    private List<BaseManager> managerList = new List<BaseManager>();
+    private Dictionary<Type, BaseModel> modelList = new Dictionary<Type, BaseModel>();
+    private Dictionary<Type, BaseManager> managerList = new Dictionary<Type, BaseManager>();
     private bool isReady = false;
     #region 注册
     /// <summary>
@@ -18,12 +19,12 @@ public class GameCore : MonoBehaviour
     }
     public void RegisterModel(BaseModel model)
     {
-        modelList.Add(model);
+        modelList.Add(model.GetType(), model);
     }
 
     public void RegisterManager(BaseManager manager)
     {
-        managerList.Add(manager);
+        managerList.Add(manager.GetType(), manager);
     }
     #endregion
     
@@ -92,6 +93,25 @@ public class GameCore : MonoBehaviour
         {
             model.OnLateUpdate();
         }
+    }
+    #endregion
+
+    #region 获取
+    public T GetModel<T>() where T : BaseModel
+    {
+        if(modelList.TryGetValue(typeof(T), out var target))
+        {
+            return (T)target;
+        }
+        return default;
+    }
+    public T GetManager<T>() where T : BaseModel
+    {
+        if(managerList.TryGetValue(typeof(T), out var target))
+        {
+            return (T)target;
+        }
+        return default;
     }
     #endregion
 }
