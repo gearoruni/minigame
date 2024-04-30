@@ -39,22 +39,22 @@ public class GameCore : MonoBehaviour
     }
     private void Init()
     {
-        foreach(var model in modelList)
+        foreach(var model in modelList.Values)
         {
             model.Init();
         }
-        foreach(var manager in managerList)
+        foreach(var manager in managerList.Values)
         {
             manager.Init();
         }
     }
     private async UniTask<bool> InitAysnc()
     {
-        foreach(var model in modelList)
+        foreach(var model in modelList.Values)
         {
             await model.InitAysnc();
         }
-        foreach(var manager in managerList)
+        foreach(var manager in managerList.Values)
         {
             await manager.InitAysnc();
         }
@@ -65,7 +65,7 @@ public class GameCore : MonoBehaviour
     #region 生命函数
     private void Start() {
         if(!isReady) return;
-        foreach(var model in modelList)
+        foreach(var model in modelList.Values)
         {
             model.OnStart();
         }
@@ -73,7 +73,7 @@ public class GameCore : MonoBehaviour
     
     private void Update() {
         if(!isReady) return;
-        foreach(var model in modelList)
+        foreach(var model in modelList.Values)
         {
             model.OnUpdate();
         }
@@ -81,7 +81,7 @@ public class GameCore : MonoBehaviour
 
     private void FixedUpdate() {
         if(!isReady) return;
-        foreach(var model in modelList)
+        foreach(var model in modelList.Values)
         {
             model.OnFixUpdate();
         }
@@ -89,7 +89,7 @@ public class GameCore : MonoBehaviour
 
     private void LateUpdate() {
         if(!isReady) return;
-        foreach(var model in modelList)
+        foreach(var model in modelList.Values)
         {
             model.OnLateUpdate();
         }
