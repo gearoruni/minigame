@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-public class GameCore : MonoBehaviour
+public class GameCore : MonoSingleton<GameCore>
 {
     private Dictionary<Type, BaseModel> modelList = new Dictionary<Type, BaseModel>();
     private Dictionary<Type, BaseManager> managerList = new Dictionary<Type, BaseManager>();
@@ -105,7 +105,7 @@ public class GameCore : MonoBehaviour
         }
         return default;
     }
-    public T GetManager<T>() where T : BaseModel
+    public T GetManager<T>() where T : BaseManager
     {
         if(managerList.TryGetValue(typeof(T), out var target))
         {
