@@ -5,16 +5,7 @@ using UnityEngine;
 
 public enum EventName
 {
-    UIAwake = 0,
-    UIStart = 1,
-    UIUpdate = 2,
-
-
-    BrickBounce = 11,
-    BrickDestroy = 12,
-
-    AreaInSide = 21,
-    AreaOutSide = 22,
+    
 }
 
 public delegate void MyAction();

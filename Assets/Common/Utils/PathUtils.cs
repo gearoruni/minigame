@@ -14,6 +14,10 @@ public static class PathUtils
     // Lua脚本路径
     public static readonly string LuaPath = "Assets/Scripts/LuaScripts/";
 
+
+    //prefab路径
+    public static readonly string prefabPath = "Assets/Prefabs/";
+
     //子弹配置路径
     public static readonly string bulletConfigPath = "Assets/Configs/BulletConfigs/";
 
@@ -52,6 +56,11 @@ public static class PathUtils
         return path.Replace(".lua", "");
     }
 
+    /// <summary>
+    /// 通过id获取对应id的BulletConfig
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     public static string GetBulletConfigsFromId(int id)
     {
         string path = bulletConfigPath + id.ToString() + "Config.asset";
@@ -59,16 +68,36 @@ public static class PathUtils
         return path;
     }
 
-    public static string GetBulletPrefabFromId(int id)
+    /// <summary>
+    /// 通过id获取对应id的角色Prefab
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    public static string GetCharacterPrefabFromID(int id)
     {
-        string path = bulletConfigPath + id.ToString() + "Config.asset";
-
+        string path = prefabPath + "Characters/" + id.ToString() + ".prefab";
         return path;
     }
-    public static string GetBulletPrefabFromName(string name)
-    {
-        string path = "";
 
+    /// <summary>
+    /// 通过id获取对应id的武器Prefab
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    public static string GetWeaponPrefabFromID(int id)
+    {
+        string path = prefabPath + "Weapons/" + id.ToString() + ".prefab";
+        return path;
+    }
+
+    /// <summary>
+    /// 通过id获取对应id的子弹Prefab
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    public static string GetBulletPrefabFromID(int id)
+    {
+        string path = prefabPath + "Bullets/" + id.ToString() + ".prefab";
         return path;
     }
 }

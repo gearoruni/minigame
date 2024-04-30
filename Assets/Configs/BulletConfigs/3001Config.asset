@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3001
   prefabName: 
-  speed: 100
+  speed: 10
   livingTime: 1
   demage: 100
   prefab: {fileID: 0}
