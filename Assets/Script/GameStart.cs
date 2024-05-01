@@ -34,5 +34,6 @@ public class GameStart : MonoBehaviour
         core.RegisterModel(timerCtrl);
         //---------------------------------------------------------------------
         await core.Active();
+        Preloader.Instance.Init();
     }
 }
