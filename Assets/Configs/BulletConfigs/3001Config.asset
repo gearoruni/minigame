@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b4d16268b4772f4796cd34171146185, type: 3}
+  m_Script: {fileID: 11500000, guid: 1575c211b91927846a6f12556e87ca97, type: 3}
   m_Name: 3001Config
   m_EditorClassIdentifier: 
   id: 3001
   prefabName: 
   speed: 10
   livingTime: 1
-  demage: 100
+  demage: 10
   prefab: {fileID: 0}

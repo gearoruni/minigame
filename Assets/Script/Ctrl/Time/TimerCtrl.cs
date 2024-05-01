@@ -10,11 +10,13 @@ public class TimerCtrl : BaseModel
     public List<Timer> updatetimers = new List<Timer>();
 
 
-    public void RegisterTimer(float totalTime, int invokeTime, Action callback,bool firstInvoke = false)
+    public Timer RegisterTimer(float totalTime, int invokeTime, Action callback,bool firstInvoke = false)
     {
         Timer timer = new Timer(totalTime, invokeTime, callback, firstInvoke);   
         timers.Add(timer);
+        return timer;
     }
+
     public bool Init()
     {
         return true;
@@ -42,6 +44,8 @@ public class TimerCtrl : BaseModel
 
     public void OnUpdate()
     {
+        updatetimers.Clear();
+
         for (int i = 0; i < timers.Count; i++)
         {
             Timer timer = timers[i];
@@ -54,11 +58,12 @@ public class TimerCtrl : BaseModel
                 updatetimers.Add(timer);
             }
         }
-        for (int i = 0;i < updatetimers.Count; i++)
+
+        for (int i = 0; i < updatetimers.Count; i++)
         {
+            updatetimers[i].Release();
             timers.Remove(updatetimers[i]);
         }
-
     }
 
     public void Release()
