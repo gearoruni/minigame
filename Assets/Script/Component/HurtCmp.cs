@@ -14,5 +14,18 @@ public class HurtCmp : MonoBehaviour
         this.ComponentId = ComponentId;
         this.dmg = dmg;
         this.tag = gameObject.tag;
+        this.callback = null;
+    }
+    public void AddCallback(Action callback)
+    {
+        this.callback += callback;
+    }
+
+    public void InvokeCallback()
+    {
+        if (callback != null)
+        {
+            callback();
+        }
     }
 }

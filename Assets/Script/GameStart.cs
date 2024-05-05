@@ -7,6 +7,7 @@ public class GameStart : MonoBehaviour
     public void Awake()
     {
         ObjectPoolManager.Instance.Init();
+        Preloader.Instance.Init();
     }
 
     // Start is called before the first frame update
@@ -34,6 +35,5 @@ public class GameStart : MonoBehaviour
         core.RegisterModel(timerCtrl);
         //---------------------------------------------------------------------
         await core.Active();
-        Preloader.Instance.Init();
     }
 }

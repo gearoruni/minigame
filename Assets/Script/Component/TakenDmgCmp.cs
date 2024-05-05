@@ -27,12 +27,17 @@ public class TakenDmgCmp : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         HurtCmp atker = collision.gameObject.GetComponent<HurtCmp>();
-        int dmg = atker.dmg;
-        string atkerTag = atker.tag;
-        if (atker != null && atkerTag != cmpTag)
+
+        if (atker != null)
         {
-            hp = HurtAction.TakenDmg(dmg, hp);
-            Debug.Log(string.Format("造成 {0} 伤害，剩余血量 ：{1}", dmg, hp));
+            int dmg = atker.dmg;
+            string atkerTag = atker.tag;
+            if (atkerTag != cmpTag)
+            {
+                hp = HurtAction.TakenDmg(dmg, hp);
+                Debug.Log(string.Format("造成 {0} 伤害，剩余血量 ：{1}", dmg, hp));
+                atker.InvokeCallback();
+            }
         }
     }
 

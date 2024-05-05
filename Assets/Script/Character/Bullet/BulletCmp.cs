@@ -3,32 +3,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletCmp : MonoBehaviour
+public class BulletCmp: MonoBehaviour
 {
     public BulletData data;
-    public BulletAction bulletAction;
+
+    public DestroyCmp destroyCmp;
     public HurtCmp hurtCmp;
+    public bool hasInit = false;
     public void Init(BulletData data)
     {
         this.data = data;
-
-        bulletAction = this.gameObject.AddComponent<BulletAction>();
-
-        hurtCmp = this.gameObject.AddComponent<HurtCmp>();
+        if (hasInit ==false ) {
+            
+            destroyCmp = this.gameObject.AddComponent<DestroyCmp>();
+            hurtCmp = this.gameObject.AddComponent<HurtCmp>();
+        }
+        hasInit = true;
     }
 
-    public void SetBulletAction()
+    public void SetDestroyCmp(bool cache)
     {
-        bulletAction.Init(data, this.gameObject);
+        destroyCmp.Init(cache,data.id,data.livingTime);
+        destroyCmp.CreateDelayDestroyTimer();
     }
 
     public void SetHurtCmp(string ComponentId)
     {
         hurtCmp.Init(ComponentId, data.demage);
+        hurtCmp.AddCallback(destroyCmp.DestroySelf);
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
+    
 }

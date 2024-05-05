@@ -20,7 +20,7 @@ public class ObjectPoolManager : MonoSingleton<ObjectPoolManager>
     /// /// <param name="id">id</param>
     /// <param name="prefab">����prefab</param>
     /// <param name="cnt">��ʼ���Ӵ�С</param>
-    public GameObject GetPrefabInstance(int id,GameObject prefab = null,int cnt = 0)
+    public GameObject GetPrefabInstance(int id,GameObject prefab = null)
     {
         ObjectPool objectPool;
         if(!objectPoolDir.TryGetValue(id, out objectPool))
@@ -30,13 +30,11 @@ public class ObjectPoolManager : MonoSingleton<ObjectPoolManager>
             
             objectPool = basePool.AddComponent<ObjectPool>();
             objectPool.prefab = prefab;
-            // objectPool.Init(cnt == 0?minPoolSize:cnt);
-            objectPool.Init();
 
             objectPoolDir.Add(id, objectPool);
         }
 
-        return objectPool.GetObjectFromPool();
+        return objectPool.GetObjectFromPool(id.ToString());
     }
 
     /// <summary>
@@ -49,7 +47,7 @@ public class ObjectPoolManager : MonoSingleton<ObjectPoolManager>
         ObjectPool objectPool;
         if (objectPoolDir.TryGetValue(id, out objectPool))
         {
-            objectPoolDir[id].ReturnObjectToPool(obj);
+            objectPoolDir[id].ReturnObjectToPool(id.ToString(),obj);
         }
         else
         {
