@@ -43,6 +43,30 @@ public class ObjectPool : MonoSingleton<ObjectPool>
         obj.SetActive(true);
         return obj;
     }
+    public GameObject GetObjectFromPool(string name)
+    {
+        if (!pools.TryGetValue(name, out var queue))
+        {
+            queue = new Queue<GameObject>();
+            pools.Add(name, queue);
+        }
+        if (queue.Count == 0)
+        {
+            var go = Preloader.Instance.GetGameObject(name);
+            if (go != null)
+            {
+                GameObject instance = GameObject.Instantiate(go);
+                instance.transform.SetParent(transform);
+                return instance;
+            }
+            else
+                return null;
+        }
+
+        GameObject obj = queue.Dequeue();
+        obj.SetActive(true);
+        return obj;
+    }
     public GameObject GetObjectFromPool()
     {
         if (objectPool.Count == 0)
@@ -52,11 +76,11 @@ public class ObjectPool : MonoSingleton<ObjectPool>
         }
 
         GameObject obj = objectPool.Dequeue();
-        
+        obj.transform.SetParent(this.transform);
         obj.SetActive(true);
         return obj;
     }
-    public void ReturnObjectToPool(GameObject obj)
+    public void ReturnObjectToPool(string name, GameObject obj)
     {
         obj.SetActive(false);
         if(!pools.TryGetValue(name, out var queue))

@@ -46,10 +46,16 @@ public class FireAction
     {
         //创建子弹
         GameObject bullet = ObjectPoolManager.Instance.GetPrefabInstance(fireDefine.bulletId, fireDefine.prefab);
+
         bullet.transform.position = transmitter.transform.position;
+        bullet.tag = transmitter.tag;
         //添加组件
-        BulletAction bulletAction = new BulletAction(fireDefine.bulletData, bullet);
-        bulletAction.Init();
+        BulletCmp bulletCmp = bullet.GetComponent<BulletCmp>();
+        bulletCmp.Init(fireDefine.bulletData);
+        //子弹消失
+        bulletCmp.SetDestroyCmp(true);
+        //子弹伤害
+        bulletCmp.SetHurtCmp("bullet");
 
         //发射
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();

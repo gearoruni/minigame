@@ -2,29 +2,29 @@
   {
     "id": 3001,
     "name": "b1",
-    "speed": 100,
+    "speed": 10,
     "LivingTime": 1,
-    "demage": 100
+    "demage": 10
   },
   {
     "id": 3002,
     "name": "b2",
-    "speed": 50,
+    "speed": 5,
     "LivingTime": 2,
-    "demage": 200
+    "demage": 20
   },
   {
     "id": 3003,
     "name": "b3",
-    "speed": 100,
+    "speed": 10,
     "LivingTime": 1,
-    "demage": 100
+    "demage": 10
   },
   {
     "id": 3004,
     "name": "b4",
-    "speed": 200,
+    "speed": 20,
     "LivingTime": 0.5,
-    "demage": 50
+    "demage": 5
   }
 ]

@@ -31,11 +31,11 @@ public class PlayerManager : BaseManager
     public void SetPrefabInstance()
     {
         GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PathUtils.GetCharacterPrefabFromID(currentSelectedId));
-        GameObject go = ObjectPoolManager.Instance.GetPrefabInstance(currentSelectedId, prefab, 1);
+        GameObject go = ObjectPoolManager.Instance.GetPrefabInstance(currentSelectedId, prefab);
         go.transform.SetParent(playerRoot.transform, false);
 
         prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PathUtils.GetWeaponPrefabFromID(weaponData.id));
-        go = ObjectPoolManager.Instance.GetPrefabInstance(weaponData.id, prefab, 1);
+        go = ObjectPoolManager.Instance.GetPrefabInstance(weaponData.id, prefab);
         go.transform.SetParent(weaponRoot.transform, false);
     }
     bool BaseManager.Init()
