@@ -48,20 +48,15 @@ public class FireAction
         GameObject bullet = ObjectPoolManager.Instance.GetPrefabInstance(fireDefine.bulletId, fireDefine.prefab);
 
         bullet.transform.position = transmitter.transform.position;
-<<<<<<< Updated upstream
+
         bullet.tag = transmitter.tag;
-        //ÃÌº”◊Èº˛
+        //ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ
         BulletCmp bulletCmp = bullet.GetComponent<BulletCmp>();
         bulletCmp.Init(fireDefine.bulletData);
-        //◊”µØœ˚ ß
+        //ÔøΩ”µÔøΩÔøΩÔøΩ ß
         bulletCmp.SetDestroyCmp(true);
-        //◊”µØ…À∫¶
+        //ÔøΩ”µÔøΩÔøΩÀ∫ÔøΩ
         bulletCmp.SetHurtCmp("bullet");
-=======
-        //Ê∑ªÂä†ÁªÑ‰ª∂
-        BulletAction bulletAction = new BulletAction(fireDefine.bulletData, bullet);
-        bulletAction.Init();
->>>>>>> Stashed changes
 
         //ÂèëÂ∞Ñ
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();

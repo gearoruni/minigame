@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "E:\\minigame1\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|e:\\minigame1\\assets\\script\\component\\hurtcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\component\\hurtcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|e:\\minigame1\\assets\\script\\ctrl\\player\\playerinputctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ctrl\\player\\playerinputctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|E:\\minigame1\\assets\\script\\system\\fireaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|E:\\minigame1\\assets\\script\\ctrl\\time\\timerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ctrl\\time\\timerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|E:\\minigame1\\assets\\script\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|e:\\minigame1\\assets\\script\\system\\fireaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\system\\fireaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|e:\\minigame1\\assets\\script\\component\\hurtcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\component\\hurtcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|E:\\minigame1\\assets\\script\\ctrl\\time\\timerctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|E:\\minigame1\\assets\\script\\character\\weapon\\firedefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\character\\weapon\\firedefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|E:\\minigame1\\assets\\script\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,7 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< Updated upstream
+              "Title": "PlayerInputCtrl.cs",
+              "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\Ctrl\\Player\\PlayerInputCtrl.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Ctrl\\Player\\PlayerInputCtrl.cs",
+              "ToolTip": "E:\\minigame1\\Assets\\Script\\Ctrl\\Player\\PlayerInputCtrl.cs",
+              "RelativeToolTip": "Assets\\Script\\Ctrl\\Player\\PlayerInputCtrl.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAjwEUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T01:33:35.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HurtCmp.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\Component\\HurtCmp.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Component\\HurtCmp.cs",
@@ -66,31 +74,26 @@
               "RelativeDocumentMoniker": "Assets\\Script\\System\\FireAction.cs",
               "ToolTip": "E:\\minigame1\\Assets\\Script\\System\\FireAction.cs",
               "RelativeToolTip": "Assets\\Script\\System\\FireAction.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAcwDUAAAAIAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAcwDkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T00:47:07.504Z"
+              "WhenOpened": "2024-05-06T00:47:07.504Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-=======
->>>>>>> Stashed changes
+              "DocumentIndex": 3,
               "Title": "TimerCtrl.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\Ctrl\\Time\\TimerCtrl.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Ctrl\\Time\\TimerCtrl.cs",
               "ToolTip": "E:\\minigame1\\Assets\\Script\\Ctrl\\Time\\TimerCtrl.cs",
               "RelativeToolTip": "Assets\\Script\\Ctrl\\Time\\TimerCtrl.cs",
-<<<<<<< Updated upstream
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-=======
-              "ViewState": "AQIAACMAAAAAAAAAAAAtwDkAAAAJAAAA",
->>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T09:28:29.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FireDefine.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\Character\\Weapon\\FireDefine.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Character\\Weapon\\FireDefine.cs",
@@ -102,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "WeaponFireCtrl.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\Ctrl\\Weapon\\WeaponFireCtrl.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Ctrl\\Weapon\\WeaponFireCtrl.cs",
@@ -114,24 +117,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 5,
-=======
-              "DocumentIndex": 2,
-              "Title": "FireAction.cs",
-              "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\System\\FireAction.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\System\\FireAction.cs",
-              "ToolTip": "E:\\minigame1\\Assets\\Script\\System\\FireAction.cs",
-              "RelativeToolTip": "Assets\\Script\\System\\FireAction.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAkwBwAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T03:05:08.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
->>>>>>> Stashed changes
+              "DocumentIndex": 6,
               "Title": "GameStart.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\Script\\GameStart.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\GameStart.cs",
