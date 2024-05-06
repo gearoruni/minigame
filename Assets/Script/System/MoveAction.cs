@@ -24,9 +24,10 @@ public class MoveAction
     /// <param name="rb"></param>
     /// <param name="speed"></param>
     /// <param name="direction"></param>
-    public static void MoveRb(Rigidbody2D rb, float speed, Vector2 direction)
+    public static Vector2 MoveRb(Rigidbody2D rb, float speed, Vector2 direction)
     {
         rb.velocity  = direction.normalized * speed;
+        return rb.transform.position;
     }
 
 }

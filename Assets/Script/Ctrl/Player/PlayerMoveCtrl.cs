@@ -13,8 +13,7 @@ public class PlayerMoveCtrl: BaseModel
 
     public void PlayerMove(Vector2 direction)
     {
-        MoveAction.MoveGo(player, speed, direction);
-        
+        MoveAction.MoveRb(player.GetComponent<Rigidbody2D>(), speed,direction);
     }
 
     #region ≥ı ºªØ
@@ -50,7 +49,7 @@ public class PlayerMoveCtrl: BaseModel
 
     public void OnUpdate()
     {
-        
+        GameCore.Instance.GetManager<PlayerManager>().playerGo.transform.position = player.transform.position;
     }
 
     public void Release()
@@ -58,5 +57,5 @@ public class PlayerMoveCtrl: BaseModel
 
     }
     #endregion
-
+    
 }

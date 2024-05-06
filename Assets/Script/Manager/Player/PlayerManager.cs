@@ -9,11 +9,13 @@ public class PlayerManager : BaseManager
 
     // 基础角色数据
     public GameObject playerRoot;
+    public GameObject playerGo;
     public Character character;
     public CharacterData characterData;
 
     //基础武器数据
     public GameObject weaponRoot;
+    public GameObject weaponGo;
     public Weapon weapon;
     public WeaponData weaponData;
 
@@ -33,10 +35,12 @@ public class PlayerManager : BaseManager
         GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PathUtils.GetCharacterPrefabFromID(currentSelectedId));
         GameObject go = ObjectPoolManager.Instance.GetPrefabInstance(currentSelectedId, prefab);
         go.transform.SetParent(playerRoot.transform, false);
+        playerGo = go;
 
         prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PathUtils.GetWeaponPrefabFromID(weaponData.id));
         go = ObjectPoolManager.Instance.GetPrefabInstance(weaponData.id, prefab);
         go.transform.SetParent(weaponRoot.transform, false);
+        weaponGo = go;
     }
     bool BaseManager.Init()
     {
