@@ -71,6 +71,15 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Reload"",
+                    ""type"": ""Button"",
+                    ""id"": ""e01a5c73-6bbc-4416-aee1-b739377528df"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -133,7 +142,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""882d2021-097b-43a6-98ec-ed91dc593d8a"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Fire"",
@@ -172,6 +181,17 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""action"": ""Char3Changed"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""47af331d-676a-49e3-814e-3986f5f5caf7"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reload"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -185,6 +205,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         m_keyBoard_Char1Changed = m_keyBoard.FindAction("Char1Changed", throwIfNotFound: true);
         m_keyBoard_Char2Changed = m_keyBoard.FindAction("Char2Changed", throwIfNotFound: true);
         m_keyBoard_Char3Changed = m_keyBoard.FindAction("Char3Changed", throwIfNotFound: true);
+        m_keyBoard_Reload = m_keyBoard.FindAction("Reload", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -251,6 +272,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private readonly InputAction m_keyBoard_Char1Changed;
     private readonly InputAction m_keyBoard_Char2Changed;
     private readonly InputAction m_keyBoard_Char3Changed;
+    private readonly InputAction m_keyBoard_Reload;
     public struct KeyBoardActions
     {
         private @PlayerInputAction m_Wrapper;
@@ -260,6 +282,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         public InputAction @Char1Changed => m_Wrapper.m_keyBoard_Char1Changed;
         public InputAction @Char2Changed => m_Wrapper.m_keyBoard_Char2Changed;
         public InputAction @Char3Changed => m_Wrapper.m_keyBoard_Char3Changed;
+        public InputAction @Reload => m_Wrapper.m_keyBoard_Reload;
         public InputActionMap Get() { return m_Wrapper.m_keyBoard; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -284,6 +307,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Char3Changed.started += instance.OnChar3Changed;
             @Char3Changed.performed += instance.OnChar3Changed;
             @Char3Changed.canceled += instance.OnChar3Changed;
+            @Reload.started += instance.OnReload;
+            @Reload.performed += instance.OnReload;
+            @Reload.canceled += instance.OnReload;
         }
 
         private void UnregisterCallbacks(IKeyBoardActions instance)
@@ -303,6 +329,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Char3Changed.started -= instance.OnChar3Changed;
             @Char3Changed.performed -= instance.OnChar3Changed;
             @Char3Changed.canceled -= instance.OnChar3Changed;
+            @Reload.started -= instance.OnReload;
+            @Reload.performed -= instance.OnReload;
+            @Reload.canceled -= instance.OnReload;
         }
 
         public void RemoveCallbacks(IKeyBoardActions instance)
@@ -327,5 +356,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         void OnChar1Changed(InputAction.CallbackContext context);
         void OnChar2Changed(InputAction.CallbackContext context);
         void OnChar3Changed(InputAction.CallbackContext context);
+        void OnReload(InputAction.CallbackContext context);
     }
 }

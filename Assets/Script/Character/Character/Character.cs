@@ -6,22 +6,13 @@ public class Character : MonoBehaviour
 {
     public CharacterData characterData;
 
-    public GameObject weapon;
-
-    public int nowLevel = 1;
-
-    // Start is called before the first frame update
-    void Start()
+    public CharacterData Init(int charId)
     {
         characterData = GetComponent<CharacterData>();
-        characterData.Init(1001);
+        characterData.Init(charId);
 
-        weapon.GetComponent<Weapon>().Init(characterData.weaponDir[nowLevel]);
+        return characterData;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

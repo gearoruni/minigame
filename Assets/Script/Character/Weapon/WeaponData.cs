@@ -1,4 +1,5 @@
 using cfg;
+
 using cfg.Character;
 using Sirenix.OdinInspector;
 using System.Collections;
@@ -9,6 +10,7 @@ public class WeaponData : MonoBehaviour
 {
     public int id;
     public string prefabName;
+    public int bulletsInClip;
     public float reloadTime;
 
     public float fireRate;
@@ -23,13 +25,18 @@ public class WeaponData : MonoBehaviour
 
         id = configs.Id;
         prefabName = configs.Name;
-
+        bulletsInClip = configs.BulletsInClip;
         reloadTime = configs.ReloadTime;
         fireRate = configs.FireRate;
 
         for (int i = 0;i<configs.BulletId.Count;i++)
         {
-            FireDefine fireDefine = new FireDefine(configs.BulletId[i], configs.UpLimit[i], configs.DownLimit[i], configs.BulletCnt[i]);
+            FireDefine fireDefine = new FireDefine( configs.BulletId[i], 
+                                                    configs.UpLimit[i], 
+                                                    configs.DownLimit[i], 
+                                                    configs.VolleyCount[i],
+                                                    configs.BulletsPerVolley[i],
+                                                    configs.TimeBetweenBullets[i]);
             fireDefines.Add(fireDefine);
         }
     }

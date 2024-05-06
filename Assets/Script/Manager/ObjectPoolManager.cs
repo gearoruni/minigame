@@ -15,12 +15,12 @@ public class ObjectPoolManager : MonoSingleton<ObjectPoolManager>
     public int minPoolSize = 5;
 
     /// <summary>
-    /// »ñÈ¡prefabÊµÀý
+    /// ï¿½ï¿½È¡prefabÊµï¿½ï¿½
     /// </summary>    
     /// /// <param name="id">id</param>
-    /// <param name="prefab">»ù´¡prefab</param>
-    /// <param name="cnt">³õÊ¼³Ø×Ó´óÐ¡</param>
-    public GameObject GetPrefabInstance(int id,GameObject prefab = null,int cnt = 0)
+    /// <param name="prefab">ï¿½ï¿½ï¿½ï¿½prefab</param>
+    /// <param name="cnt">ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ó´ï¿½Ð¡</param>
+    public GameObject GetPrefabInstance(int id,GameObject prefab = null)
     {
         ObjectPool objectPool;
         if(!objectPoolDir.TryGetValue(id, out objectPool))
@@ -30,16 +30,15 @@ public class ObjectPoolManager : MonoSingleton<ObjectPoolManager>
             
             objectPool = basePool.AddComponent<ObjectPool>();
             objectPool.prefab = prefab;
-            objectPool.Init(cnt == 0?minPoolSize:cnt);
 
             objectPoolDir.Add(id, objectPool);
         }
 
-        return objectPool.GetObjectFromPool();
+        return objectPool.GetObjectFromPool(id.ToString());
     }
 
     /// <summary>
-    /// »ØÊÕÖÁ³Ø×Ó
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     /// <param name="id"></param>
     /// <param name="obj"></param>
@@ -48,12 +47,12 @@ public class ObjectPoolManager : MonoSingleton<ObjectPoolManager>
         ObjectPool objectPool;
         if (objectPoolDir.TryGetValue(id, out objectPool))
         {
-            objectPoolDir[id].ReturnObjectToPool(obj);
+            objectPoolDir[id].ReturnObjectToPool(id.ToString(),obj);
         }
         else
         {
             Destroy(obj);
-            Debug.LogError("·Ç·¨Prefab»ØÊÕ,½øÐÐGameObjectÏú»Ù£¡");
+            Debug.LogError("ï¿½Ç·ï¿½Prefabï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½GameObjectï¿½ï¿½ï¿½Ù£ï¿½");
         }
     }
 

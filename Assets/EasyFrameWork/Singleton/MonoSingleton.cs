@@ -17,7 +17,7 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
             {
                 instance = FindObjectOfType<T>();
 
-                // 如果场景中不存在实例，则创建一个新的游戏对象并将该组件附加到它上面
+                // 濡傛灉鍦烘櫙涓笉瀛樺湪瀹炰緥锛屽垯鍒涘缓涓�涓柊鐨勬父鎴忓璞″苟灏嗚缁勪欢闄勫姞鍒板畠涓婇潰
                 if (instance == null)
                 {
                     monoSingleton = new GameObject(typeof(T).Name);
@@ -29,13 +29,14 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
         }
     }
 
-    public virtual void Init(bool needDestroy = false)
+    public virtual T Init(bool needDestroy = false)
     {
         destroyOnLoad = needDestroy;
         if (needDestroy)
         {
             AddSceneChangedEvent();
         }
+        return Instance;
     }
 
     public void AddSceneChangedEvent()

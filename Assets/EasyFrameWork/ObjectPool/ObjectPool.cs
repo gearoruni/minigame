@@ -1,59 +1,93 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPool : MonoBehaviour
+public class ObjectPool : MonoSingleton<ObjectPool>
 {
     public GameObject prefab;
     public int poolSize = 10;
 
+    private Dictionary<string, Queue<GameObject>> pools = new Dictionary<string,Queue<GameObject>>();
     private Queue<GameObject> objectPool = new Queue<GameObject>();
 
-    public void Init(int count)
-    {
-        // ¥¥Ω®∂‘œÛ≥ÿ÷–µƒ∂‘œÛ
-        for (int i = 0; i < count; i++)
-        {
-            GameObject obj = Instantiate(prefab, transform);
-            obj.SetActive(false);
-            objectPool.Enqueue(obj);
-        }
-    }
+    //Â∫üÂºÉ
+    // public void Init(int count)
+    // {
+    //     // ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ–µƒ∂ÔøΩÔøΩÔøΩ
+    //     for (int i = 0; i < count; i++)
+    //     {
+    //         GameObject obj = Instantiate(prefab, transform);
+    //         obj.SetActive(false);
+    //         objectPool.Enqueue(obj);
+    //     }
+    // }
 
-    public GameObject GetObjectFromPool(Vector3 transform,Quaternion rotation)
+    public GameObject GetObjectFromPool(string name, Vector3 transform,Quaternion rotation)
     {
-        // »Áπ˚∂‘œÛ≥ÿŒ™ø’£¨‘Ú¥¥Ω®–¬∂‘œÛ≤¢∑µªÿ
-        if (objectPool.Count == 0)
+        if(!pools.TryGetValue(name, out var queue))
         {
-            GameObject newObj = Instantiate(prefab, transform, rotation);
-            return newObj;
+            queue = new Queue<GameObject>();
+            pools.Add(name, queue);
+        }
+        if (queue.Count == 0)
+        {
+            var go = Preloader.Instance.GetGameObject(name);
+            if(go != null)
+                return GameObject.Instantiate(go);
+            else
+                return null;
         }
 
-        // ¥”∂‘œÛ≥ÿ÷–»°≥ˆ“ª∏ˆ∂‘œÛ≤¢∑µªÿ
-        GameObject obj = objectPool.Dequeue();
+        GameObject obj = queue.Dequeue();
         obj.transform.position = transform;
         obj.transform.rotation = rotation;
         obj.SetActive(true);
         return obj;
     }
+    public GameObject GetObjectFromPool(string name)
+    {
+        if (!pools.TryGetValue(name, out var queue))
+        {
+            queue = new Queue<GameObject>();
+            pools.Add(name, queue);
+        }
+        if (queue.Count == 0)
+        {
+            var go = Preloader.Instance.GetGameObject(name);
+            if (go != null)
+            {
+                GameObject instance = GameObject.Instantiate(go);
+                instance.transform.SetParent(transform);
+                return instance;
+            }
+            else
+                return null;
+        }
+
+        GameObject obj = queue.Dequeue();
+        obj.SetActive(true);
+        return obj;
+    }
     public GameObject GetObjectFromPool()
     {
-        // »Áπ˚∂‘œÛ≥ÿŒ™ø’£¨‘Ú¥¥Ω®–¬∂‘œÛ≤¢∑µªÿ
         if (objectPool.Count == 0)
         {
             GameObject newObj = Instantiate(prefab);
             return newObj;
         }
 
-        // ¥”∂‘œÛ≥ÿ÷–»°≥ˆ“ª∏ˆ∂‘œÛ≤¢∑µªÿ
         GameObject obj = objectPool.Dequeue();
-        
+        obj.transform.SetParent(this.transform);
         obj.SetActive(true);
         return obj;
     }
-    public void ReturnObjectToPool(GameObject obj)
+    public void ReturnObjectToPool(string name, GameObject obj)
     {
-        // Ω´∂‘œÛ÷ÿ–¬∑≈»Î∂‘œÛ≥ÿ÷–
         obj.SetActive(false);
-        objectPool.Enqueue(obj);
+        if(!pools.TryGetValue(name, out var queue))
+        {
+            queue = new Queue<GameObject>();
+            pools.Add(name, queue);
+        }
+        queue.Enqueue(obj);
     }
 }

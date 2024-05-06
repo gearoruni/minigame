@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\minigame\\",
+  "WorkspaceRootPath": "D:\\minigame\\minigame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|e:\\minigame\\assets\\easyframework\\base\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\easyframework\\base\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\script\\character\\bullet\\bulletcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\character\\bullet\\bulletcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\script\\system\\moveaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\system\\moveaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\script\\component\\takendmgcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\component\\takendmgcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\script\\component\\hurtcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\component\\hurtcmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\script\\system\\fireaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\system\\fireaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\script\\component\\destroycmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\component\\destroycmp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +34,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaseData.cs",
-              "DocumentMoniker": "E:\\minigame\\Assets\\EasyFrameWork\\Base\\BaseData.cs",
-              "RelativeDocumentMoniker": "Assets\\EasyFrameWork\\Base\\BaseData.cs",
-              "ToolTip": "E:\\minigame\\Assets\\EasyFrameWork\\Base\\BaseData.cs",
-              "RelativeToolTip": "Assets\\EasyFrameWork\\Base\\BaseData.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAARAAAA",
+              "DocumentIndex": 1,
+              "Title": "MoveAction.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\Script\\System\\MoveAction.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\System\\MoveAction.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\Script\\System\\MoveAction.cs",
+              "RelativeToolTip": "Assets\\Script\\System\\MoveAction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T09:16:05.388Z",
+              "WhenOpened": "2024-05-02T07:36:40.317Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TakenDmgCmp.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\Script\\Component\\TakenDmgCmp.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Component\\TakenDmgCmp.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\Script\\Component\\TakenDmgCmp.cs",
+              "RelativeToolTip": "Assets\\Script\\Component\\TakenDmgCmp.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwCcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T00:28:48.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FireAction.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\Script\\System\\FireAction.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\System\\FireAction.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\Script\\System\\FireAction.cs",
+              "RelativeToolTip": "Assets\\Script\\System\\FireAction.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAQwDkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T00:21:14.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DestroyCmp.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\Script\\Component\\DestroyCmp.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Component\\DestroyCmp.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\Script\\Component\\DestroyCmp.cs",
+              "RelativeToolTip": "Assets\\Script\\Component\\DestroyCmp.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAUwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T00:19:42.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BulletCmp.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\Script\\Character\\Bullet\\BulletCmp.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Character\\Bullet\\BulletCmp.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\Script\\Character\\Bullet\\BulletCmp.cs",
+              "RelativeToolTip": "Assets\\Script\\Character\\Bullet\\BulletCmp.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA8wBQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T00:19:04.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HurtCmp.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\Script\\Component\\HurtCmp.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Component\\HurtCmp.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\Script\\Component\\HurtCmp.cs",
+              "RelativeToolTip": "Assets\\Script\\Component\\HurtCmp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T00:17:46.812Z"
             }
           ]
         }
