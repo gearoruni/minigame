@@ -1,0 +1,104 @@
+
+commander_spine.png
+size: 315,137
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+commander_L_arm01
+  rotate: false
+  xy: 247, 9
+  size: 23, 30
+  orig: 23, 30
+  offset: 0, 0
+  index: -1
+commander_L_arm02
+  rotate: false
+  xy: 191, 69
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
+  index: -1
+commander_L_hand
+  rotate: false
+  xy: 276, 52
+  size: 26, 25
+  orig: 26, 25
+  offset: 0, 0
+  index: -1
+commander_L_leg
+  rotate: false
+  xy: 191, 99
+  size: 27, 36
+  orig: 27, 36
+  offset: 0, 0
+  index: -1
+commander_R_arm01
+  rotate: false
+  xy: 221, 8
+  size: 24, 31
+  orig: 24, 31
+  offset: 0, 0
+  index: -1
+commander_R_arm02
+  rotate: false
+  xy: 249, 48
+  size: 25, 29
+  orig: 25, 29
+  offset: 0, 0
+  index: -1
+commander_R_finger
+  rotate: false
+  xy: 272, 10
+  size: 24, 17
+  orig: 24, 17
+  offset: 0, 0
+  index: -1
+commander_R_hand
+  rotate: false
+  xy: 276, 29
+  size: 26, 21
+  orig: 26, 21
+  offset: 0, 0
+  index: -1
+commander_R_leg
+  rotate: false
+  xy: 221, 41
+  size: 26, 36
+  orig: 26, 36
+  offset: 0, 0
+  index: -1
+commander_body
+  rotate: false
+  xy: 131, 69
+  size: 58, 66
+  orig: 58, 66
+  offset: 0, 0
+  index: -1
+commander_face_happy
+  rotate: false
+  xy: 131, 8
+  size: 88, 59
+  orig: 88, 59
+  offset: 0, 0
+  index: -1
+commander_face_normal
+  rotate: false
+  xy: 221, 79
+  size: 88, 56
+  orig: 88, 56
+  offset: 0, 0
+  index: -1
+commander_head_helmet
+  rotate: false
+  xy: 2, 2
+  size: 127, 133
+  orig: 127, 133
+  offset: 0, 0
+  index: -1
+commander_tail
+  rotate: false
+  xy: 298, 12
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1

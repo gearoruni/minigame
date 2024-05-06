@@ -1,11 +1,11 @@
-using System;
+ï»¿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TakenDmgCmp : MonoBehaviour
 {
-    //½»¸ø¸¸ÀàĞÅÏ¢¹ÜÀí hp£¬´´½¨GOÊ±´«Èë
+    //äº¤ç»™çˆ¶ç±»ä¿¡æ¯ç®¡ç† hpï¼Œåˆ›å»ºGOæ—¶ä¼ å…¥
     [SerializeField]
     private int hp = 100;
 
@@ -35,7 +35,7 @@ public class TakenDmgCmp : MonoBehaviour
             if (atkerTag != cmpTag)
             {
                 hp = HurtAction.TakenDmg(dmg, hp);
-                Debug.Log(string.Format("Ôì³É {0} ÉËº¦£¬Ê£ÓàÑªÁ¿ £º{1}", dmg, hp));
+                Debug.Log(string.Format("é€ æˆ {0} ä¼¤å®³ï¼Œå‰©ä½™è¡€é‡ ï¼š{1}", dmg, hp));
                 atker.InvokeCallback();
             }
         }
