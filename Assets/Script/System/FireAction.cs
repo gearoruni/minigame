@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -7,13 +7,13 @@ using UnityEngine.U2D;
 public class FireAction 
 {
     /// <summary>
-    /// ·¢ÉäÎïÌå
-    ///     ´´½¨×Óµ¯
-    ///     ¸½¼ÓĞ§¹û
-    ///     »÷³ö
+    /// å‘å°„ç‰©ä½“
+    ///     åˆ›å»ºå­å¼¹
+    ///     é™„åŠ æ•ˆæœ
+    ///     å‡»å‡º
     /// </summary>
-    /// <param name="fireDefines">·¢ÉäÎïÌåµÄ»ù´¡ĞÅÏ¢</param>
-    /// <param name="transmitter">·¢ÉäÆ÷</param>
+    /// <param name="fireDefines">å‘å°„ç‰©ä½“çš„åŸºç¡€ä¿¡æ¯</param>
+    /// <param name="transmitter">å‘å°„å™¨</param>
     public static void Fire(List<FireDefine> fireDefines,GameObject transmitter)
     {
         foreach(FireDefine fireDefine in fireDefines)
@@ -25,10 +25,10 @@ public class FireAction
             for (int i = 0; i < fireDefine.volleyCount; i++)
             {
                 Vector3 baseDir = transmitter.transform.up;
-                // Ëæ»úÉú³ÉÒ»¸ö½Ç¶È
+                // éšæœºç”Ÿæˆä¸€ä¸ªè§’åº¦
                 float randomAngle = Random.Range(fireDefine.downLimit, fireDefine.upLimit);
 
-                // ¼ÆËãµ¯µÀµÄ·½Ïò
+                // è®¡ç®—å¼¹é“çš„æ–¹å‘
                 Vector2 direction = Quaternion.Euler(0f, 0f, randomAngle) * transmitter.transform.up;
 
                 GameCore.Instance.GetModel<TimerCtrl>().RegisterTimer(fireDefine.timeBetweenBullets, fireDefine.bulletsPerVolley, delegate()
@@ -40,14 +40,15 @@ public class FireAction
     }
 
     /// <summary>
-    /// ËùÓĞµ¥·¢Éä»÷µ÷ÓÃ
+    /// æ‰€æœ‰å•å‘å°„å‡»è°ƒç”¨
     /// </summary>
     private static void BaseFire(FireDefine fireDefine, GameObject transmitter, Vector2 direction)
     {
-        //´´½¨×Óµ¯
+        //åˆ›å»ºå­å¼¹
         GameObject bullet = ObjectPoolManager.Instance.GetPrefabInstance(fireDefine.bulletId, fireDefine.prefab);
 
         bullet.transform.position = transmitter.transform.position;
+<<<<<<< Updated upstream
         bullet.tag = transmitter.tag;
         //Ìí¼Ó×é¼ş
         BulletCmp bulletCmp = bullet.GetComponent<BulletCmp>();
@@ -56,8 +57,13 @@ public class FireAction
         bulletCmp.SetDestroyCmp(true);
         //×Óµ¯ÉËº¦
         bulletCmp.SetHurtCmp("bullet");
+=======
+        //æ·»åŠ ç»„ä»¶
+        BulletAction bulletAction = new BulletAction(fireDefine.bulletData, bullet);
+        bulletAction.Init();
+>>>>>>> Stashed changes
 
-        //·¢Éä
+        //å‘å°„
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         MoveAction.MoveRb(rb, (int)fireDefine.bulletData.speed, direction);
     }
