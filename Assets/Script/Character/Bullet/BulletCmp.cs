@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class BulletCmp: MonoBehaviour
@@ -30,7 +31,13 @@ public class BulletCmp: MonoBehaviour
     public void SetHurtCmp(string ComponentId)
     {
         hurtCmp.Init(ComponentId, data.demage);
-        hurtCmp.AddCallback(destroyCmp.DestroySelf);
+        //hurtCmp.AddCallback(destroyCmp.DestroySelf);
     }
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag != destroyCmp.tag && collision.tag!="Grid")
+        {
+            destroyCmp.DestroySelf();
+        }
+    }
 }

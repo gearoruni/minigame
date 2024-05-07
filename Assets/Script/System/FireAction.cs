@@ -50,12 +50,12 @@ public class FireAction
         bullet.transform.position = transmitter.transform.position;
 
         bullet.tag = transmitter.tag;
-        //������
+
         BulletCmp bulletCmp = bullet.GetComponent<BulletCmp>();
         bulletCmp.Init(fireDefine.bulletData);
-        //�ӵ���ʧ
+
         bulletCmp.SetDestroyCmp(true);
-        //�ӵ��˺�
+
         bulletCmp.SetHurtCmp("bullet");
 
         //发射
