@@ -12,11 +12,12 @@ public class Preloader : MonoSingleton<Preloader>
 
     public void Init()
     {
-        string[] filedir = Directory.GetFiles(ASSET_PATH);
+        string[] filedir = Directory.GetFiles(ASSET_PATH, "*", SearchOption.AllDirectories);
         string name;
         for (int i = 0; i < filedir.Length; i++)
         {
-            name = Regex.Match(filedir[i], @"Preload\\(.*)\.prefab$").Groups[1].Value;
+            name = Regex.Match(filedir[i], @"([^\\]*)\.prefab$").Groups[1].Value;
+            Debug.Log(name);
             if(name == "")continue;
             var go = AssetDatabase.LoadAssetAtPath<GameObject>(filedir[i]);
             // prefab = GameObject.Instantiate(go);
