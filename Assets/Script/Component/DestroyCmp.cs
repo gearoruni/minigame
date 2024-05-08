@@ -23,7 +23,7 @@ public class DestroyCmp : MonoBehaviour
     public void CreateDelayDestroyTimer()
     {
         timer = null;
-        timer = GameCore.Instance.GetModel<TimerCtrl>().RegisterTimer(livingTime, 1, DestroySelf);
+        //timer = GameCore.Instance.GetModel<TimerCtrl>().RegisterTimer(livingTime, 1, DestroySelf);
     }
 
     public void DestroySelf()

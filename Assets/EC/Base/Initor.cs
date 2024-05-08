@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Initor : MonoBehaviour
+{
+    private void Awake()
+    {
+        //系统相关管理器
+        EventManager.Instance.Init();
+        ObjectPoolManager.Instance.Init();
+        TableDataManager.Instance.Init();
+        CachePool.Instance.Init();
+        SpawnManager.Instance.Init();
+
+        //基础生命周期统一
+        BehaviourCtrl.Instance.Init();
+
+        //依赖生命周期函数的Manager在BehaviourCtrl后注册
+        EntityManager.Instance.Init();
+        TimerManager.Instance.Init();
+    }
+}

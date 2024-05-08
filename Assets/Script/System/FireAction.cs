@@ -31,10 +31,10 @@ public class FireAction
                 // 计算弹道的方向
                 Vector2 direction = Quaternion.Euler(0f, 0f, randomAngle) * transmitter.transform.up;
 
-                GameCore.Instance.GetModel<TimerCtrl>().RegisterTimer(fireDefine.timeBetweenBullets, fireDefine.bulletsPerVolley, delegate()
-                {
-                    BaseFire(fireDefine, transmitter, direction);
-                }, true);
+                //GameCore.Instance.GetModel<TimerCtrl>().RegisterTimer(fireDefine.timeBetweenBullets, fireDefine.bulletsPerVolley, delegate()
+                //{
+                //    BaseFire(fireDefine, transmitter, direction);
+                //}, true);
             }
         }
     }

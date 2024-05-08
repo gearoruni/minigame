@@ -12,23 +12,20 @@ public class Preloader : MonoSingleton<Preloader>
 
     public void Init()
     {
-        string[] filedir = Directory.GetFiles(ASSET_PATH);
+        string[] filedir = Directory.GetFiles(ASSET_PATH, "*", SearchOption.AllDirectories);
         string name;
         for (int i = 0; i < filedir.Length; i++)
         {
-            name = Regex.Match(filedir[i], @"Preload\\(.*)\.prefab$").Groups[1].Value;
-            if(name == "")continue;
+            name = Regex.Match(filedir[i], @"([^\\]*)\.prefab$").Groups[1].Value;
+            if (name == "") continue;
             var go = AssetDatabase.LoadAssetAtPath<GameObject>(filedir[i]);
-            // prefab = GameObject.Instantiate(go);
-            // prefab.transform.SetParent(monoSingleton.transform);
-            // prefab.SetActive(false);
             preloadItem.Add(name, go);
         }
     }
 
     public GameObject GetGameObject(string name)
     {
-        if(preloadItem.TryGetValue(name, out  var gameObject))
+        if (preloadItem.TryGetValue(name, out var gameObject))
         {
             return gameObject;
         }

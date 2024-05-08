@@ -18,6 +18,9 @@ public partial class Tables
     public Character.CharacterDefine CharacterDefine {get; }
     public Character.WeaponDefine WeaponDefine {get; }
     public Bullet.BulletDefine BulletDefine {get; }
+    public Entity.BaseDefine BaseDefine {get; }
+    public Entity.SpawnDefine SpawnDefine {get; }
+    public Entity.MoveDefine MoveDefine {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
@@ -25,6 +28,9 @@ public partial class Tables
         CharacterDefine = new Character.CharacterDefine(loader("character_characterdefine"));
         WeaponDefine = new Character.WeaponDefine(loader("character_weapondefine"));
         BulletDefine = new Bullet.BulletDefine(loader("bullet_bulletdefine"));
+        BaseDefine = new Entity.BaseDefine(loader("entity_basedefine"));
+        SpawnDefine = new Entity.SpawnDefine(loader("entity_spawndefine"));
+        MoveDefine = new Entity.MoveDefine(loader("entity_movedefine"));
         ResolveRef();
     }
     
@@ -34,6 +40,9 @@ public partial class Tables
         CharacterDefine.ResolveRef(this);
         WeaponDefine.ResolveRef(this);
         BulletDefine.ResolveRef(this);
+        BaseDefine.ResolveRef(this);
+        SpawnDefine.ResolveRef(this);
+        MoveDefine.ResolveRef(this);
     }
 }
 
