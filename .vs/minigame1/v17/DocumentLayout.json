@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\minigame1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|e:\\minigame1\\assets\\ec\\base\\utils\\physicsray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\base\\utils\\physicsray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|e:\\minigame1\\assets\\ec\\components\\entitycomponents\\movecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36F8D463-2EDD-5298-632C-71E183E5ED17}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\movecomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Initor.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\EC\\Base\\Initor.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Base\\Initor.cs",
@@ -55,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Assembler.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\EC\\Base\\Utils\\Assembler.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Base\\Utils\\Assembler.cs",
@@ -68,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EntityManager.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\EC\\Manager\\EntityManager.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Manager\\EntityManager.cs",
@@ -81,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Entity.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\EC\\Entitys\\Entity.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Entitys\\Entity.cs",
@@ -94,7 +98,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "PhysicsRay.cs",
+              "DocumentMoniker": "E:\\minigame1\\Assets\\EC\\Base\\Utils\\PhysicsRay.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Base\\Utils\\PhysicsRay.cs",
+              "ToolTip": "E:\\minigame1\\Assets\\EC\\Base\\Utils\\PhysicsRay.cs",
+              "RelativeToolTip": "Assets\\EC\\Base\\Utils\\PhysicsRay.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAcwDcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:38:49.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "StateComponent.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\EC\\Components\\EntityComponents\\StateComponent.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\StateComponent.cs",
@@ -102,12 +119,11 @@
               "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\StateComponent.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAkwBkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T09:33:24.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T09:33:24.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "InputComponent.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\EC\\Components\\EntityComponents\\InputComponent.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\InputComponent.cs",
@@ -115,12 +131,11 @@
               "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\InputComponent.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T08:56:32.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T08:56:32.434Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MoveComponent.cs",
               "DocumentMoniker": "E:\\minigame1\\Assets\\EC\\Components\\EntityComponents\\MoveComponent.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\MoveComponent.cs",
