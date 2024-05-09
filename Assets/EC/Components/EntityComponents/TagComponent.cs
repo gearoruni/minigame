@@ -8,11 +8,13 @@ public enum Tag
     Enemy = 1,
     Skill =2,
     Terrain = 3,
+    Weapon = 4,
 }
 
 public class TagComponent : Component
 {
     public Tag tag;
+    public Tag parent;
 
     public override void Init()
     {
@@ -22,8 +24,12 @@ public class TagComponent : Component
     {
 
     }
+    public void SetParent(Tag tag)
+    {
+        parent = tag;
+    }
     public override void OnCache()
     {
-        CachePool.Instance.Cache<MoveComponent>(this);
+        CachePool.Instance.Cache<TagComponent>(this);
     }
 }

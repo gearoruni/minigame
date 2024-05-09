@@ -11,12 +11,11 @@ public class Tester : MonoBehaviour
 
     public void Start()
     {
-        entity1 = EntityManager.Instance.CreateEntity(1001);
+       
     }
     public void Create()
     {
-        TransformComponent transformComponent = (TransformComponent)entity1.GetComponent("TransformComponent");
-        transformComponent.position.x += 1;
+
     }
 
 }

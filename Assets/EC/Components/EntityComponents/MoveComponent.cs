@@ -1,7 +1,9 @@
 using cfg;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public enum MoveType
 {
@@ -23,33 +25,42 @@ public class MoveComponent : Component
     public Vector2 input;
     public Vector2 moveTo;
     public bool forceMoveOffset = false;
-
+    public bool needRaycaster = true;
     public override void Init()
     {
         transformComponent = (TransformComponent)entity.GetComponent("TransformComponent");
         collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
+        moveType = MoveType.WALK;
+        if (dataDefind == 0) return;
+
         moveData = TableDataManager.Instance.tables.MoveDefine.Get(dataDefind);
         for (int i = 0; i < moveData.MoveType.Count; i++)
         {
             speedDir.Add((MoveType)moveData.MoveType[i], moveData.Speed[i]);
         }
-        moveType = MoveType.WALK;
+
+    }
+
+    public void SetSpeed(float speed)
+    {
+        this.speedDir[moveType] = speed;
     }
     public override void Update()
     {
         input = input.normalized;
         DoMove(input.x, input.y);
-        Vector2 needTo;
-        if (moveType!= MoveType.DASH)
+        Vector2 needTo = (Vector2)transformComponent.position + new Vector2(moveTo.x, moveTo.y).normalized * moveTo.magnitude;
+        if(needRaycaster)
         {
-            needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, collisionComponent.radis);
+            if (moveType != MoveType.DASH)
+            {
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, collisionComponent.radis);
+            }
+            else
+            {
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, collisionComponent.radis, LayerMask.GetMask("Enemy"));
+            }
         }
-        else
-        {
-            needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, collisionComponent.radis,LayerMask.GetMask("Enemy"));
-        }
-
-
         transformComponent.SetPostion(needTo.x,needTo.y);
     }
 

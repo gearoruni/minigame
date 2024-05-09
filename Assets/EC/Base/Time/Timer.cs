@@ -9,11 +9,12 @@ public class Timer:PoolBaseClass
     public float nowTime;
     public int invokeTime;
     public Action callback;
-
+    public bool isVaild;
     public Timer() { }
 
     public void Init(float totalTime, int invokeTime, Action callback, bool firstInvoke = false)
     {
+        this.isVaild = true;
         this.totalTime = totalTime;
         this.nowTime = firstInvoke ? totalTime : 0;
         this.invokeTime = invokeTime;
@@ -45,6 +46,7 @@ public class Timer:PoolBaseClass
         nowTime=0;
         invokeTime = 0;
         this.callback = null;
+        this.isVaild = false;
         CachePool.Instance.Cache<Timer>(this);
     }
 }

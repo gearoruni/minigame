@@ -33,11 +33,18 @@ public class Assembler
         AddComponen<CollisionComponent>(entity, "CollisionComponent");
         AddComponen<SpawnComponent>(entity, "SpawnComponent");
 
-        AddComponen<GoComponent>(entity, "GoComponent");
 
         AddComponen<InputComponent>(entity, "InputComponent");
         AddComponen<MoveComponent>(entity, "MoveComponent");
         AddComponen<TransformComponent>(entity, "TransformComponent");
+        AddComponen<GoComponent>(entity, "GoComponent");
+
+        AddComponen<CharacterComponent>(entity, "CharacterComponent");
+        AddComponen<WeaponComponent>(entity, "WeaponComponent");
+
+        AddComponen<SkillComponent>(entity, "SkillComponent");
+        AddComponen<EffectComponent>(entity, "EffectComponent");
+        AddComponen<DestroyComponent>(entity, "DestroyComponent");
     }
 
     private Component AddComponen<T>(Entity entity,string componentName) where T : Component, new()

@@ -80,6 +80,42 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RightSkill"",
+                    ""type"": ""Button"",
+                    ""id"": ""e2a53439-8334-480a-9d35-bc5659f53401"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""QSkill"",
+                    ""type"": ""Button"",
+                    ""id"": ""9489f258-872a-4b07-9b09-bea47ad497b9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ESkill"",
+                    ""type"": ""Button"",
+                    ""id"": ""96bc2f41-5178-4538-82b2-cdfe4d20e194"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TSkill"",
+                    ""type"": ""Button"",
+                    ""id"": ""3cdb3aa4-00b1-4f5e-9155-efe0bc389681"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -192,6 +228,50 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""action"": ""Reload"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""74b3943d-0162-4019-9b74-aa66770f1667"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RightSkill"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""edd5150c-16c0-4a82-96bc-8a5fc4926652"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""QSkill"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""36d487a4-e822-4376-be05-312b8ca544f4"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ESkill"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8097feb8-d16e-45d7-97fa-82b045abf339"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TSkill"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -206,6 +286,10 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         m_keyBoard_Char2Changed = m_keyBoard.FindAction("Char2Changed", throwIfNotFound: true);
         m_keyBoard_Char3Changed = m_keyBoard.FindAction("Char3Changed", throwIfNotFound: true);
         m_keyBoard_Reload = m_keyBoard.FindAction("Reload", throwIfNotFound: true);
+        m_keyBoard_RightSkill = m_keyBoard.FindAction("RightSkill", throwIfNotFound: true);
+        m_keyBoard_QSkill = m_keyBoard.FindAction("QSkill", throwIfNotFound: true);
+        m_keyBoard_ESkill = m_keyBoard.FindAction("ESkill", throwIfNotFound: true);
+        m_keyBoard_TSkill = m_keyBoard.FindAction("TSkill", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -273,6 +357,10 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private readonly InputAction m_keyBoard_Char2Changed;
     private readonly InputAction m_keyBoard_Char3Changed;
     private readonly InputAction m_keyBoard_Reload;
+    private readonly InputAction m_keyBoard_RightSkill;
+    private readonly InputAction m_keyBoard_QSkill;
+    private readonly InputAction m_keyBoard_ESkill;
+    private readonly InputAction m_keyBoard_TSkill;
     public struct KeyBoardActions
     {
         private @PlayerInputAction m_Wrapper;
@@ -283,6 +371,10 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         public InputAction @Char2Changed => m_Wrapper.m_keyBoard_Char2Changed;
         public InputAction @Char3Changed => m_Wrapper.m_keyBoard_Char3Changed;
         public InputAction @Reload => m_Wrapper.m_keyBoard_Reload;
+        public InputAction @RightSkill => m_Wrapper.m_keyBoard_RightSkill;
+        public InputAction @QSkill => m_Wrapper.m_keyBoard_QSkill;
+        public InputAction @ESkill => m_Wrapper.m_keyBoard_ESkill;
+        public InputAction @TSkill => m_Wrapper.m_keyBoard_TSkill;
         public InputActionMap Get() { return m_Wrapper.m_keyBoard; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -310,6 +402,18 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Reload.started += instance.OnReload;
             @Reload.performed += instance.OnReload;
             @Reload.canceled += instance.OnReload;
+            @RightSkill.started += instance.OnRightSkill;
+            @RightSkill.performed += instance.OnRightSkill;
+            @RightSkill.canceled += instance.OnRightSkill;
+            @QSkill.started += instance.OnQSkill;
+            @QSkill.performed += instance.OnQSkill;
+            @QSkill.canceled += instance.OnQSkill;
+            @ESkill.started += instance.OnESkill;
+            @ESkill.performed += instance.OnESkill;
+            @ESkill.canceled += instance.OnESkill;
+            @TSkill.started += instance.OnTSkill;
+            @TSkill.performed += instance.OnTSkill;
+            @TSkill.canceled += instance.OnTSkill;
         }
 
         private void UnregisterCallbacks(IKeyBoardActions instance)
@@ -332,6 +436,18 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Reload.started -= instance.OnReload;
             @Reload.performed -= instance.OnReload;
             @Reload.canceled -= instance.OnReload;
+            @RightSkill.started -= instance.OnRightSkill;
+            @RightSkill.performed -= instance.OnRightSkill;
+            @RightSkill.canceled -= instance.OnRightSkill;
+            @QSkill.started -= instance.OnQSkill;
+            @QSkill.performed -= instance.OnQSkill;
+            @QSkill.canceled -= instance.OnQSkill;
+            @ESkill.started -= instance.OnESkill;
+            @ESkill.performed -= instance.OnESkill;
+            @ESkill.canceled -= instance.OnESkill;
+            @TSkill.started -= instance.OnTSkill;
+            @TSkill.performed -= instance.OnTSkill;
+            @TSkill.canceled -= instance.OnTSkill;
         }
 
         public void RemoveCallbacks(IKeyBoardActions instance)
@@ -357,5 +473,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         void OnChar2Changed(InputAction.CallbackContext context);
         void OnChar3Changed(InputAction.CallbackContext context);
         void OnReload(InputAction.CallbackContext context);
+        void OnRightSkill(InputAction.CallbackContext context);
+        void OnQSkill(InputAction.CallbackContext context);
+        void OnESkill(InputAction.CallbackContext context);
+        void OnTSkill(InputAction.CallbackContext context);
     }
 }

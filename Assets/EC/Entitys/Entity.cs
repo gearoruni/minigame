@@ -10,6 +10,7 @@ public class Entity : PoolBaseClass
     public int entityId;
     public int instanceId;
     public int parentId;
+    //instance id
     public List<int> childIds;
 
     public EntityManager selfManager;
@@ -27,6 +28,7 @@ public class Entity : PoolBaseClass
         this.entityId = entityId;
         this.instanceId = instanceId;
 
+        this.childIds = new List<int>();
         this.selfManager = EntityManager.Instance;
         this.components = new List<Component>();
         this.componentNameToIdx = new Dictionary<string, int>();
@@ -86,6 +88,8 @@ public class Entity : PoolBaseClass
         {
             components[i].OnCache();
         }
+
+        components.Clear();
     }
 
     internal Component GetComponent(string v)

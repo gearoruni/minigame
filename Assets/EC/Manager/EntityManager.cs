@@ -21,8 +21,7 @@ public class EntityManager : Singleton<EntityManager>
     public Entity CreateEntity(int entityId)
     {
 
-        Entity entity = assembler.CreateEntity(instanceId, entityId);
-        instanceId++;
+        Entity entity = assembler.CreateEntity(instanceId++, entityId);
 
         this.entities.Add(entity.instanceId, entity);
         addQueue.Enqueue(entity.instanceId);
@@ -70,6 +69,14 @@ public class EntityManager : Singleton<EntityManager>
             if (entity != null)
             {
                 entityInstances.Add(instanceId);
+
+                //确定完全创建完成后进行子节点与父节点的绑定
+                if(entity.parentId != 0)
+                {
+                    Entity parent = GetEntityFromEntityId(entity.parentId);
+                    parent.childIds.Add(instanceId);
+                }
+
                 entity.UpdateComponents();
             }
         }
@@ -80,5 +87,18 @@ public class EntityManager : Singleton<EntityManager>
             entityInstances.Remove(instanceId);
         }
 
+    }
+
+    public Entity GetEntityFromEntityId(int entityId)
+    {
+        foreach(Entity entityInstance in entities.Values)
+        {
+            if(entityInstance.entityId == entityId) { return entityInstance; }
+        }
+        return null;
+    }
+    public Entity GetEntityFromInstanceId(int entityInstanceId)
+    {
+        return entities[entityInstanceId];
     }
 }

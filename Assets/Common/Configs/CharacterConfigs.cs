@@ -20,7 +20,9 @@ public sealed partial class CharacterConfigs : Luban.BeanBase
         { if(!_buf["id"].IsNumber) { throw new SerializationException(); }  Id = _buf["id"]; }
         { if(!_buf["name"].IsString) { throw new SerializationException(); }  Name = _buf["name"]; }
         { var __json0 = _buf["level"]; if(!__json0.IsArray) { throw new SerializationException(); } Level = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Level.Add(__v0); }   }
+        { if(!_buf["hp"].IsNumber) { throw new SerializationException(); }  Hp = _buf["hp"]; }
         { var __json0 = _buf["WeaponId"]; if(!__json0.IsArray) { throw new SerializationException(); } WeaponId = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  WeaponId.Add(__v0); }   }
+        { if(!_buf["skillID"].IsNumber) { throw new SerializationException(); }  SkillID = _buf["skillID"]; }
     }
 
     public static CharacterConfigs DeserializeCharacterConfigs(JSONNode _buf)
@@ -40,16 +42,23 @@ public sealed partial class CharacterConfigs : Luban.BeanBase
     /// 等级
     /// </summary>
     public readonly System.Collections.Generic.List<int> Level;
+    public readonly int Hp;
     /// <summary>
     /// 枪械ID
     /// </summary>
     public readonly System.Collections.Generic.List<int> WeaponId;
+    /// <summary>
+    /// 技能ID
+    /// </summary>
+    public readonly int SkillID;
    
     public const int __ID__ = -487991768;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
+        
+        
         
         
         
@@ -62,7 +71,9 @@ public sealed partial class CharacterConfigs : Luban.BeanBase
         + "id:" + Id + ","
         + "name:" + Name + ","
         + "level:" + Luban.StringUtil.CollectionToString(Level) + ","
+        + "hp:" + Hp + ","
         + "WeaponId:" + Luban.StringUtil.CollectionToString(WeaponId) + ","
+        + "skillID:" + SkillID + ","
         + "}";
     }
 }

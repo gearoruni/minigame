@@ -19,6 +19,7 @@ public sealed partial class WeaponConfigs : Luban.BeanBase
     {
         { if(!_buf["id"].IsNumber) { throw new SerializationException(); }  Id = _buf["id"]; }
         { if(!_buf["name"].IsString) { throw new SerializationException(); }  Name = _buf["name"]; }
+        { if(!_buf["radis"].IsNumber) { throw new SerializationException(); }  Radis = _buf["radis"]; }
         { if(!_buf["bulletsInClip"].IsNumber) { throw new SerializationException(); }  BulletsInClip = _buf["bulletsInClip"]; }
         { if(!_buf["reloadTime"].IsNumber) { throw new SerializationException(); }  ReloadTime = _buf["reloadTime"]; }
         { if(!_buf["fireRate"].IsNumber) { throw new SerializationException(); }  FireRate = _buf["fireRate"]; }
@@ -43,6 +44,7 @@ public sealed partial class WeaponConfigs : Luban.BeanBase
     /// name
     /// </summary>
     public readonly string Name;
+    public readonly float Radis;
     /// <summary>
     /// 弹夹内子弹总数
     /// </summary>
@@ -96,6 +98,7 @@ public sealed partial class WeaponConfigs : Luban.BeanBase
         
         
         
+        
     }
 
     public override string ToString()
@@ -103,6 +106,7 @@ public sealed partial class WeaponConfigs : Luban.BeanBase
         return "{ "
         + "id:" + Id + ","
         + "name:" + Name + ","
+        + "radis:" + Radis + ","
         + "bulletsInClip:" + BulletsInClip + ","
         + "reloadTime:" + ReloadTime + ","
         + "fireRate:" + FireRate + ","

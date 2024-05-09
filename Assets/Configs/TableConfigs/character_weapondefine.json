@@ -2,6 +2,7 @@
   {
     "id": 2001,
     "name": "gun1",
+    "radis": 1,
     "bulletsInClip": 30,
     "reloadTime": 0.2,
     "fireRate": 0.7,
@@ -33,6 +34,7 @@
   {
     "id": 2002,
     "name": "gun2",
+    "radis": 1,
     "bulletsInClip": 50,
     "reloadTime": 0.3,
     "fireRate": 0.1,
@@ -64,6 +66,7 @@
   {
     "id": 2003,
     "name": "gun2",
+    "radis": 1,
     "bulletsInClip": 10,
     "reloadTime": 0.5,
     "fireRate": 0.1,

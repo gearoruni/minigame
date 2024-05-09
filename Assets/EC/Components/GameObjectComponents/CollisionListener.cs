@@ -14,6 +14,8 @@ public class CollisionListener : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        collisionComponent.OnBaseCollisionEnter2D?.Invoke();
+
         Entity collisionEntity;
         if(CheckCollisionEntity(collision, out collisionEntity))
         {
@@ -22,6 +24,8 @@ public class CollisionListener : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
+        collisionComponent.OnBaseCollisionExit2D?.Invoke();
+
         Entity collisionEntity;
         if (CheckCollisionEntity(collision, out collisionEntity))
         {
@@ -30,6 +34,8 @@ public class CollisionListener : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        collisionComponent.OnBaseTriggerEnter2D?.Invoke();
+
         Entity collisionEntity;
         if (CheckCollisionEntity(collision, out collisionEntity))
         {
@@ -38,6 +44,8 @@ public class CollisionListener : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        collisionComponent.OnBaseTriggerExit2D?.Invoke();
+
         Entity collisionEntity;
         if (CheckCollisionEntity(collision, out collisionEntity))
         {

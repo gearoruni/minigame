@@ -13,7 +13,15 @@ public class TimerManager:Singleton<TimerManager>
     {
         BehaviourCtrl.Instance.OnUpdate += OnUpdate;
     }
-
+    /// <summary>
+    /// 注册计时器
+    /// 切记：只有不需要处理计时后续操作的action可以使用这个Timer
+    /// </summary>
+    /// <param name="totalTime">间隔时间</param>
+    /// <param name="invokeTime">调用次数</param>
+    /// <param name="callback">回调</param>
+    /// <param name="firstInvoke">最开始的时候是否触发</param>
+    /// <returns></returns>
     public Timer RegisterTimer(float totalTime, int invokeTime, Action callback,bool firstInvoke = false)
     {
         Timer timer = CachePool.Instance.Get<Timer>();
@@ -21,9 +29,21 @@ public class TimerManager:Singleton<TimerManager>
         timers.Add(timer);
         return timer;
     }
-
+    public void RemoveTimer(Timer timer)
+    {
+        if(timer.isVaild)
+        {
+            updatetimers.Add(timer);
+        }
+    }
     public void OnUpdate()
     {
+        for (int i = 0; i < updatetimers.Count; i++)
+        {
+            updatetimers[i].Release();
+            timers.Remove(updatetimers[i]);
+        }
+
         updatetimers.Clear();
 
         for (int i = 0; i < timers.Count; i++)
@@ -39,10 +59,5 @@ public class TimerManager:Singleton<TimerManager>
             }
         }
 
-        for (int i = 0; i < updatetimers.Count; i++)
-        {
-            updatetimers[i].Release();
-            timers.Remove(updatetimers[i]);
-        }
     }
 }

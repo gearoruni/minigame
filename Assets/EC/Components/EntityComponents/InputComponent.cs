@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem.Interactions;
 
@@ -12,14 +13,21 @@ public class InputComponent : Component
     public bool isC2 => inputActions.keyBoard.Char2Changed.WasPressedThisFrame();
     public bool isC3 => inputActions.keyBoard.Char3Changed.WasPressedThisFrame();
     public bool isReload => inputActions.keyBoard.Reload.WasPressedThisFrame();
+    public bool isRightSkill => inputActions.keyBoard.RightSkill.WasPressedThisFrame();
+    public bool isQSkill => inputActions.keyBoard.QSkill.WasPressedThisFrame();
+    public bool isESkill => inputActions.keyBoard.ESkill.WasPressedThisFrame();
+    public bool isTSkill => inputActions.keyBoard.TSkill.WasPressedThisFrame();
 
     public bool isHold = false;
 
     MoveComponent moveComponent;
-
+    WeaponComponent weapon;
+    SkillComponent skill;
     public override void Init()
     {
         moveComponent = (MoveComponent)entity.GetComponent("MoveComponent");
+        weapon = (WeaponComponent)entity.GetComponent("WeaponComponent");
+        skill = (SkillComponent)entity.GetComponent("SkillComponent");
 
         inputActions = new PlayerInputAction();
         inputActions.keyBoard.Enable();
@@ -41,8 +49,51 @@ public class InputComponent : Component
     }
     public override void Update()
     {
+        //移动
         moveComponent.input = keyboardMoveAxes;
+
+        //发射方向
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition.z = -Camera.main.transform.position.z;
+        Vector3 targetPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        weapon.SetWeaponTransform(targetPosition);
+
+        if(!CheckSkill() && (isHold ||isFire))
+        {
+            skill.UseSkill(SkillType.NORMAL);
+        }
+        if (isReload)
+        {
+            weapon.Reload();
+        }
     }
+
+    public bool CheckSkill()
+    {
+        if(isRightSkill)
+        {
+            skill.UseSkill(SkillType.RIGHTATK);
+            return true;
+        }
+        if (isQSkill)
+        {
+            skill.UseSkill(SkillType.QSKILL);
+            return true;
+        }
+        if (isESkill)
+        {
+            skill.UseSkill(SkillType.ESKILL);
+            return true;
+        }
+        if (isTSkill)
+        {
+            skill.UseSkill(SkillType.TSKILL);
+            return true;
+        }
+        return false;
+    }
+
     public override void OnCache()
     {
         CachePool.Instance.Cache<InputComponent>(this);

@@ -10,6 +10,7 @@ public class Initor : MonoBehaviour
         EventManager.Instance.Init();
         ObjectPoolManager.Instance.Init();
         TableDataManager.Instance.Init();
+        ObjectPool.Instance.Init();
         CachePool.Instance.Init();
         SpawnManager.Instance.Init();
 
@@ -19,5 +20,8 @@ public class Initor : MonoBehaviour
         //依赖生命周期函数的Manager在BehaviourCtrl后注册
         EntityManager.Instance.Init();
         TimerManager.Instance.Init();
+
+        //玩家数据最后更新
+        PlayerBaseData.Instance.Init();
     }
 }

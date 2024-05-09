@@ -21,6 +21,7 @@ public partial class Tables
     public Entity.BaseDefine BaseDefine {get; }
     public Entity.SpawnDefine SpawnDefine {get; }
     public Entity.MoveDefine MoveDefine {get; }
+    public Entity.SkillDefine SkillDefine {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
@@ -31,6 +32,7 @@ public partial class Tables
         BaseDefine = new Entity.BaseDefine(loader("entity_basedefine"));
         SpawnDefine = new Entity.SpawnDefine(loader("entity_spawndefine"));
         MoveDefine = new Entity.MoveDefine(loader("entity_movedefine"));
+        SkillDefine = new Entity.SkillDefine(loader("entity_skilldefine"));
         ResolveRef();
     }
     
@@ -43,6 +45,7 @@ public partial class Tables
         BaseDefine.ResolveRef(this);
         SpawnDefine.ResolveRef(this);
         MoveDefine.ResolveRef(this);
+        SkillDefine.ResolveRef(this);
     }
 }
 
