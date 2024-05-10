@@ -17,7 +17,8 @@ public static class PathUtils
 
     //prefab路径
     public static readonly string prefabPath = "Assets/Prefabs/";
-
+    //prefab路径
+    public static readonly string animePath = "Assets/Anime/";
     //子弹配置路径
     public static readonly string bulletConfigPath = "Assets/Configs/BulletConfigs/";
 
@@ -98,6 +99,12 @@ public static class PathUtils
     public static string GetBulletPrefabFromID(int id)
     {
         string path = prefabPath + "Bullets/" + id.ToString() + ".prefab";
+        return path;
+    }
+
+    public static string GetAnimationController(string name)
+    {
+        string path = animePath + name + ".controller";
         return path;
     }
 }

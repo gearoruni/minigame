@@ -23,30 +23,49 @@ public class Assembler
         return entity;
     }
 
+    public void LateCreate(Entity entity)
+    {
+        LateCreateComponents(entity);
+        entity.LateInitComponents();
+    }
     private void CreateComponents(Entity entity)
     {
         //注意组件添加顺序
         //组件添加顺序影响组件更新顺序
         AddComponen<StateComponent>(entity, "StateComponent");
         AddComponen<TagComponent>(entity, "TagComponent");
-
+        AddComponen<ParentComponent>(entity, "ParentComponent");
         AddComponen<CollisionComponent>(entity, "CollisionComponent");
         AddComponen<SpawnComponent>(entity, "SpawnComponent");
 
-
-        AddComponen<InputComponent>(entity, "InputComponent");
         AddComponen<MoveComponent>(entity, "MoveComponent");
         AddComponen<TransformComponent>(entity, "TransformComponent");
         AddComponen<GoComponent>(entity, "GoComponent");
-
         AddComponen<CharacterComponent>(entity, "CharacterComponent");
-        AddComponen<WeaponComponent>(entity, "WeaponComponent");
 
-        AddComponen<SkillComponent>(entity, "SkillComponent");
         AddComponen<EffectComponent>(entity, "EffectComponent");
         AddComponen<DestroyComponent>(entity, "DestroyComponent");
+        AddComponen<HitComponent>(entity, "HitComponent");
+        AddComponen<AnimatorComponent>(entity, "AnimatorComponent");
+
     }
 
+    private void LateCreateComponents(Entity entity)
+    {
+        LateAddComponen<WeaponComponent>(entity, "WeaponComponent");
+        LateAddComponen<SkillComponent>(entity, "SkillComponent");
+        LateAddComponen<InputComponent>(entity, "InputComponent");
+        LateAddComponen<AnimatorComponent>(entity, "AnimatorComponent");
+    }
+    private void LateAddComponen<T>(Entity entity, string componentName) where T : Component, new()
+    {
+        int dataDefine;
+        if (entity.GetComponentConfig(componentName, out dataDefine))
+        {
+            entity.lastComponents.Add(AddComponen<T>(entity, componentName));
+        }
+        
+    }
     private Component AddComponen<T>(Entity entity,string componentName) where T : Component, new()
     {
         int dataDefine;

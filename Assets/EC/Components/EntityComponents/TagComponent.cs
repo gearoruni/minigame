@@ -19,6 +19,7 @@ public class TagComponent : Component
     public override void Init()
     {
         tag = (Tag)dataDefind;
+        parent = (Tag)dataDefind;
     }
     public override void Update()
     {

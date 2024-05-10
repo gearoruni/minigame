@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class CollisionComponent : Component
 {
-    //被动触发回调
-    public Action<Entity> OnCollisionEnter2D;
-    public Action<Entity> OnCollisionExit2D;
-    public Action<Entity> OnTriggerEnter2D;
-    public Action<Entity> OnTriggerExit2D;
+    public CollisionListener listener;
+
+    ////碰撞相应
+    ////传入Entity为对自身Enity的影响
+    //public Action<Entity> OnCollisionEnter2D;
+    //public Action<Entity> OnCollisionExit2D;
+    //public Action<Entity> OnTriggerEnter2D;
+    //public Action<Entity> OnTriggerExit2D;
 
     //主动回调
     public Action OnBaseCollisionEnter2D;
@@ -17,17 +20,23 @@ public class CollisionComponent : Component
     public Action OnBaseTriggerEnter2D;
     public Action OnBaseTriggerExit2D;
 
-    public float radis;
+    public bool needListen = true;
     public override void Init()
     {
-        radis = dataDefind / 2f;
+        needListen = dataDefind == 1? true: false;
     }
-    public void SetRadis(float radis)
+    public void SetListener(CollisionListener listener)
     {
-        this.radis = radis;
+        this.listener = listener;
     }
+
     public override void OnCache()
     {
+        OnBaseCollisionEnter2D = null;
+        OnBaseCollisionExit2D = null;
+        OnBaseTriggerEnter2D = null;
+        OnBaseTriggerExit2D = null;
+        listener.entity = null;
         CachePool.Instance.Cache<CollisionComponent>(this);
     }
 }

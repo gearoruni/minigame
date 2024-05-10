@@ -8,13 +8,15 @@
       "TagComponent",
       "MoveComponent",
       "GoComponent",
-      "CollisionComponent",
       "SpawnComponent",
       "InputComponent",
       "CharacterComponent",
       "WeaponComponent",
       "SkillComponent",
-      "HitComponent"
+      "HitComponent",
+      "CollisionComponent",
+      "DestroyComponent",
+      "AnimatorComponent"
     ],
     "componentDefine": [
       0,
@@ -23,12 +25,14 @@
       1,
       0,
       1,
-      1,
       0,
       0,
       0,
       0,
-      0
+      0,
+      0,
+      0,
+      1
     ],
     "parentEntityId": 0
   },
@@ -38,12 +42,14 @@
     "componentName": [
       "TransformComponent",
       "GoComponent",
-      "TagComponent"
+      "TagComponent",
+      "ParentComponent"
     ],
     "componentDefine": [
       0,
       0,
-      4
+      4,
+      0
     ],
     "parentEntityId": 1
   },
@@ -64,7 +70,7 @@
       0,
       2,
       0,
-      0,
+      1,
       0,
       0
     ],
@@ -79,12 +85,13 @@
       "TagComponent",
       "MoveComponent",
       "GoComponent",
-      "CollisionComponent",
       "SpawnComponent",
       "CharacterComponent",
       "WeaponComponent",
       "SkillComponent",
-      "HitComponent"
+      "HitComponent",
+      "CollisionComponent",
+      "DestroyComponent"
     ],
     "componentDefine": [
       0,
@@ -92,9 +99,10 @@
       1,
       1,
       0,
-      1,
       2,
       1002,
+      0,
+      0,
       0,
       0,
       0

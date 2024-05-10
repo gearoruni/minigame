@@ -15,6 +15,7 @@ public class Entity : PoolBaseClass
 
     public EntityManager selfManager;
     public List<Component> components;
+    public List<Component> lastComponents;
     public Dictionary<string,int> componentNameToIdx;
 
     public EntityConfigs entityConfig;
@@ -31,6 +32,7 @@ public class Entity : PoolBaseClass
         this.childIds = new List<int>();
         this.selfManager = EntityManager.Instance;
         this.components = new List<Component>();
+        this.lastComponents = new List<Component>();
         this.componentNameToIdx = new Dictionary<string, int>();
 
         entityConfig = TableDataManager.Instance.tables.BaseDefine.Get(entityId);
@@ -49,7 +51,14 @@ public class Entity : PoolBaseClass
             components[i].Init();
         }
     }
-
+    public void LateInitComponents()
+    {
+        for (int i = 0; i < lastComponents.Count; i++)
+        {
+            lastComponents[i].Init();
+        }
+        lastComponents.Clear();
+    }
     public void UpdateComponents()
     {
         for (int i = 0; i < components.Count; i++)
@@ -83,13 +92,24 @@ public class Entity : PoolBaseClass
 
     public void OnCache()
     {
-        CachePool.Instance.Cache<Entity>(this);
+        for(int i = 0; i < childIds.Count; i++)
+        {
+            Entity entity = EntityManager.Instance.GetEntityFromInstanceId(childIds[i]);
+            EntityManager.Instance.RemoveEntity(entity.instanceId);
+        }
+        childIds.Clear();
+
+        GoComponent go = (GoComponent)GetComponent("GoComponent");
+        if (go != null) go.DestroyGameObject();
+
         for (int i = 0; i < components.Count; i++)
         {
             components[i].OnCache();
         }
-
         components.Clear();
+        componentNameToIdx.Clear();
+
+        CachePool.Instance.Cache<Entity>(this);
     }
 
     internal Component GetComponent(string v)

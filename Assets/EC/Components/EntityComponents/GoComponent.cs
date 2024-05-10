@@ -38,6 +38,11 @@ public class GoComponent : Component
         {
             transform.position = spawnComponent.spawnPointPos;
         }
+        else
+        {
+            go.transform.position = transform.position;
+            go.transform.rotation = transform.rotation;
+        }
     }
 
     public void DestroyGameObject()

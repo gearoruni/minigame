@@ -11,6 +11,7 @@ public class CharacterComponent : Component
     public int level = 1;
 
     public GoComponent goComponent;
+    public StateComponent stateComponent;
     public Dictionary<int, int> weaponDir = new Dictionary<int, int>();
     public override void Init()
     {
@@ -25,6 +26,9 @@ public class CharacterComponent : Component
 
         goComponent = (GoComponent)entity.GetComponent("GoComponent");
         goComponent.CreateGameObject(configs.Id.ToString());
+
+        stateComponent = (StateComponent)entity.GetComponent("StateComponent");
+        stateComponent.SetHealth(configs.Hp);
 
         for (int i = 0; i < configs.Level.Count; i++)
         {

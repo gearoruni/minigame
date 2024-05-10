@@ -42,7 +42,9 @@ public class WeaponComponent : Component
         weaponTransform.position = characterTransform.position;
         WeaponGo = (GoComponent)weapon.GetComponent("GoComponent");
         WeaponGo.CreateGameObject(weaponId.ToString());
-
+        weapon.parentId = entity.instanceId;
+        ParentComponent parent = (ParentComponent)weapon.GetComponent("ParentComponent");
+        parent.SetParent(entity);
     }
 
     public void SetWeapon()
@@ -152,7 +154,11 @@ public class WeaponComponent : Component
         DestroyComponent destroyComponent = (DestroyComponent)bulletEntity.GetComponent("DestroyComponent");
         destroyComponent.SetDestroyTimer(bullet.LivingTime);
         destroyComponent.SetNeedColliderDestroy();
-
+        //设置子弹效果
+        EffectComponent effectComponent = (EffectComponent)bulletEntity.GetComponent("EffectComponent");
+        HealthChangeEffect healthChangeEffect = new HealthChangeEffect();
+        healthChangeEffect.SetEffectData(bullet.Demage);
+        effectComponent.SetEffect(healthChangeEffect, "HealthChangeEffect", true);
     }
 
     public void Reload()

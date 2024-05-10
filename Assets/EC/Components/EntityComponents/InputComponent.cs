@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem.Interactions;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class InputComponent : Component
 {
@@ -21,11 +22,13 @@ public class InputComponent : Component
     public bool isHold = false;
 
     MoveComponent moveComponent;
+    TransformComponent transform;
     WeaponComponent weapon;
     SkillComponent skill;
     public override void Init()
     {
         moveComponent = (MoveComponent)entity.GetComponent("MoveComponent");
+        transform = (TransformComponent)entity.GetComponent("TransformComponent");
         weapon = (WeaponComponent)entity.GetComponent("WeaponComponent");
         skill = (SkillComponent)entity.GetComponent("SkillComponent");
 
@@ -52,10 +55,16 @@ public class InputComponent : Component
         //移动
         moveComponent.input = keyboardMoveAxes;
 
+
         //发射方向
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = -Camera.main.transform.position.z;
         Vector3 targetPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+
+        //动画面向
+        int x = transform.GetPosDir(targetPosition);
+        Debug.Log(x);
 
         weapon.SetWeaponTransform(targetPosition);
 

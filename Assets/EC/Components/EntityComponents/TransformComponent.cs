@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -61,6 +62,19 @@ public class TransformComponent : Component
         // 应用旋转到对象
         rotation = lookRotation;
 
+    }
+
+    public int GetPosDir(Vector3 position)
+    {
+        Vector3 dir = this.position - position;
+        dir.Normalize();
+        float checkLeft = Vector3.Dot(dir,Vector3.left);
+        float checkUp = Vector3.Dot(dir,Vector3.up);
+        if (checkLeft >= 0 && checkUp >= 0) return 2;
+        else if(checkLeft < 0 && checkUp >= 0) return 3;
+        else if (checkLeft < 0 && checkUp < 0) return 4;
+        else if(checkLeft >= 0 && checkUp < 0) return 1;
+        return 0;
     }
 
     public override void OnCache()

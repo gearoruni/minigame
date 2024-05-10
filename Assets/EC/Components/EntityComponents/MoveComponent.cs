@@ -15,7 +15,6 @@ public class MoveComponent : Component
 {
 
     public TransformComponent transformComponent;
-    public CollisionComponent collisionComponent;
 
     public MoveData moveData;
 
@@ -29,7 +28,7 @@ public class MoveComponent : Component
     public override void Init()
     {
         transformComponent = (TransformComponent)entity.GetComponent("TransformComponent");
-        collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
+
         moveType = MoveType.WALK;
         if (dataDefind == 0) return;
 
@@ -54,11 +53,11 @@ public class MoveComponent : Component
         {
             if (moveType != MoveType.DASH)
             {
-                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, collisionComponent.radis);
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, moveData.Radis[(int)moveType - 1]);
             }
             else
             {
-                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, collisionComponent.radis, LayerMask.GetMask("Enemy"));
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, moveData.Radis[(int)moveType - 1], LayerMask.GetMask("Enemy"));
             }
         }
         transformComponent.SetPostion(needTo.x,needTo.y);
