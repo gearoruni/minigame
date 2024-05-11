@@ -31,6 +31,19 @@ public class EntityManager : Singleton<EntityManager>
 
         return entity;
     }
+    public Entity CreateEntity(int entityId,int cmpId)
+    {
+
+        Entity entity = assembler.CreateEntity(instanceId++, entityId,cmpId);
+
+        this.entities.Add(entity.instanceId, entity);
+
+        assembler.LateCreate(entity);
+
+        addQueue.Enqueue(entity.instanceId);
+
+        return entity;
+    }
     public void RemoveEntity(int instanceId,bool needCache = true)
     {
         Entity entity = entities[instanceId];

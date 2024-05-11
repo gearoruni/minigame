@@ -7,7 +7,12 @@ public class SpawnComponent : Component
     public Vector3 spawnPointPos;
     public override void Init()
     {
-        spawnPointPos = SpawnManager.Instance.GetSpawnPoint(dataDefind);
+        int dataDefine;
+        if (entity.componentDatas.TryGetValue("SpawnComponent",out dataDefine))
+        {
+            spawnPointPos = SpawnManager.Instance.GetSpawnPoint(dataDefine);
+        }
+
     }
 
     public override void OnCache()

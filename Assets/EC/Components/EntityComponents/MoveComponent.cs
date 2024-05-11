@@ -1,4 +1,5 @@
 using cfg;
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -13,8 +14,9 @@ public enum MoveType
 }
 public class MoveComponent : Component
 {
-
     public TransformComponent transformComponent;
+    public StateComponent state;
+    public ControllerComponent controller;
 
     public MoveData moveData;
 
@@ -28,16 +30,20 @@ public class MoveComponent : Component
     public override void Init()
     {
         transformComponent = (TransformComponent)entity.GetComponent("TransformComponent");
+        state = (StateComponent)entity.GetComponent("StateComponent");
+        controller = (ControllerComponent)entity.GetComponent("ControllerComponent");
 
         moveType = MoveType.WALK;
-        if (dataDefind == 0) return;
-
-        moveData = TableDataManager.Instance.tables.MoveDefine.Get(dataDefind);
-        for (int i = 0; i < moveData.MoveType.Count; i++)
+        int datadefine;
+        if(entity.componentDatas.TryGetValue("MoveComponent",out datadefine)&&datadefine != 0)
         {
-            speedDir.Add((MoveType)moveData.MoveType[i], moveData.Speed[i]);
-        }
+            moveData = TableDataManager.Instance.tables.MoveDefine.Get(entity.componentDatas["MoveComponent"]);
+            for (int i = 0; i < moveData.MoveType.Count; i++)
+            {
+                speedDir.Add((MoveType)moveData.MoveType[i], moveData.Speed[i]);
+            }
 
+        }
     }
 
     public void SetSpeed(float speed)
@@ -46,6 +52,21 @@ public class MoveComponent : Component
     }
     public override void Update()
     {
+        if(controller != null) input = controller.movepos;
+
+        bool needMove = input != Vector2.zero;
+
+        if ( state != null)
+        {
+            if (!needMove)
+            {
+                state.state = State.IDLE;
+                return;
+            }
+
+            state.state = State.MOVE;
+        }
+        if ( !needMove ) { return; }
         input = input.normalized;
         DoMove(input.x, input.y);
         Vector2 needTo = (Vector2)transformComponent.position + new Vector2(moveTo.x, moveTo.y).normalized * moveTo.magnitude;

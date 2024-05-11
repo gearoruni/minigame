@@ -7,13 +7,6 @@ public class CollisionComponent : Component
 {
     public CollisionListener listener;
 
-    ////碰撞相应
-    ////传入Entity为对自身Enity的影响
-    //public Action<Entity> OnCollisionEnter2D;
-    //public Action<Entity> OnCollisionExit2D;
-    //public Action<Entity> OnTriggerEnter2D;
-    //public Action<Entity> OnTriggerExit2D;
-
     //主动回调
     public Action OnBaseCollisionEnter2D;
     public Action OnBaseCollisionExit2D;
@@ -23,7 +16,11 @@ public class CollisionComponent : Component
     public bool needListen = true;
     public override void Init()
     {
-        needListen = dataDefind == 1? true: false;
+        
+    }
+    public override void DataInit()
+    {
+        needListen = entity.componentDatas["CollisionComponent"] == 1 ? true : false;
     }
     public void SetListener(CollisionListener listener)
     {

@@ -21,16 +21,21 @@ public class InputComponent : Component
 
     public bool isHold = false;
 
-    MoveComponent moveComponent;
-    TransformComponent transform;
-    WeaponComponent weapon;
-    SkillComponent skill;
+    public Vector2 movepos = new Vector2();
+    public Vector2 facepos = new Vector2();
+
+
+    //MoveComponent moveComponent;
+    //TransformComponent transform;
+    
+    //WeaponComponent weapon;
+    //SkillComponent skill;
     public override void Init()
     {
-        moveComponent = (MoveComponent)entity.GetComponent("MoveComponent");
-        transform = (TransformComponent)entity.GetComponent("TransformComponent");
-        weapon = (WeaponComponent)entity.GetComponent("WeaponComponent");
-        skill = (SkillComponent)entity.GetComponent("SkillComponent");
+        //moveComponent = (MoveComponent)entity.GetComponent("MoveComponent");
+        //transform = (TransformComponent)entity.GetComponent("TransformComponent");
+        //weapon = (WeaponComponent)entity.GetComponent("WeaponComponent");
+        //skill = (SkillComponent)entity.GetComponent("SkillComponent");
 
         inputActions = new PlayerInputAction();
         inputActions.keyBoard.Enable();
@@ -52,55 +57,13 @@ public class InputComponent : Component
     }
     public override void Update()
     {
-        //移动
-        moveComponent.input = keyboardMoveAxes;
-
+        //移动方向
+        movepos = keyboardMoveAxes;
 
         //发射方向
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = -Camera.main.transform.position.z;
-        Vector3 targetPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-
-        //动画面向
-        int x = transform.GetPosDir(targetPosition);
-        Debug.Log(x);
-
-        weapon.SetWeaponTransform(targetPosition);
-
-        if(!CheckSkill() && (isHold ||isFire))
-        {
-            skill.UseSkill(SkillType.NORMAL);
-        }
-        if (isReload)
-        {
-            weapon.Reload();
-        }
-    }
-
-    public bool CheckSkill()
-    {
-        if(isRightSkill)
-        {
-            skill.UseSkill(SkillType.RIGHTATK);
-            return true;
-        }
-        if (isQSkill)
-        {
-            skill.UseSkill(SkillType.QSKILL);
-            return true;
-        }
-        if (isESkill)
-        {
-            skill.UseSkill(SkillType.ESKILL);
-            return true;
-        }
-        if (isTSkill)
-        {
-            skill.UseSkill(SkillType.TSKILL);
-            return true;
-        }
-        return false;
+        facepos = Camera.main.ScreenToWorldPoint(mousePosition);
     }
 
     public override void OnCache()

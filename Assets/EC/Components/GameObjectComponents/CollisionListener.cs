@@ -15,28 +15,6 @@ public class CollisionListener : MonoBehaviour
         collisionComponent.SetListener(this);
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-
-    //    collisionComponent.OnBaseCollisionEnter2D?.Invoke();
-
-    //    Entity collisionEntity;
-    //    if(CheckCollisionEntity(collision, out collisionEntity))
-    //    {
-    //        collisionComponent.OnCollisionEnter2D?.Invoke(collisionEntity);
-    //    }
-    //}
-    //private void OnCollisionExit2D(Collision2D collision)
-    //{
-    //    collisionComponent.OnBaseCollisionExit2D?.Invoke();
-
-    //    Entity collisionEntity;
-    //    if (CheckCollisionEntity(collision, out collisionEntity))
-    //    {
-    //        collisionComponent.OnCollisionExit2D?.Invoke(collisionEntity);
-    //    }
-    //}
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collisionComponent.needListen) return;

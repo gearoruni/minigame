@@ -10,15 +10,15 @@ public class Entity : PoolBaseClass
     public int entityId;
     public int instanceId;
     public int parentId;
-    //instance id
+
     public List<int> childIds;
 
-    public EntityManager selfManager;
     public List<Component> components;
     public List<Component> lastComponents;
     public Dictionary<string,int> componentNameToIdx;
 
     public EntityConfigs entityConfig;
+    public Dictionary<string, int> componentDatas;
 
     public GameObject go;
     public Entity() {}
@@ -30,10 +30,12 @@ public class Entity : PoolBaseClass
         this.instanceId = instanceId;
 
         this.childIds = new List<int>();
-        this.selfManager = EntityManager.Instance;
+
         this.components = new List<Component>();
         this.lastComponents = new List<Component>();
+
         this.componentNameToIdx = new Dictionary<string, int>();
+        componentDatas = new Dictionary<string, int>();
 
         entityConfig = TableDataManager.Instance.tables.BaseDefine.Get(entityId);
         parentId = entityConfig.ParentEntityId;
@@ -50,12 +52,20 @@ public class Entity : PoolBaseClass
         {
             components[i].Init();
         }
+        for (int i = 0; i < components.Count; i++)
+        {
+            components[i].DataInit();
+        }
     }
     public void LateInitComponents()
     {
         for (int i = 0; i < lastComponents.Count; i++)
         {
             lastComponents[i].Init();
+        }
+        for (int i = 0; i < lastComponents.Count; i++)
+        {
+            lastComponents[i].DataInit();
         }
         lastComponents.Clear();
     }
@@ -112,10 +122,19 @@ public class Entity : PoolBaseClass
         CachePool.Instance.Cache<Entity>(this);
     }
 
-    internal Component GetComponent(string v)
+    public Component GetComponent(string v)
     {
         if (components.Count == 0) return null;
         if (!componentNameToIdx.ContainsKey(v))return null;
         return components[componentNameToIdx[v]];
+    }
+
+    public void DataSet(int cmpId)
+    {
+        ComponentData componentData = TableDataManager.Instance.tables.ComponentDefine[cmpId];
+        for(int i = 0;i<componentData.ComponentName.Count;i++)
+        {
+            componentDatas.Add(componentData.ComponentName[i], componentData.Componentdataid[i]);
+        }
     }
 }

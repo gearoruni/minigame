@@ -17,7 +17,7 @@ public class StateComponent : Component
 {
     public bool isVaild = false;
 
-    public int health = 0;
+    //public int health = 0;
     public bool isDead = false;
     public State state;
 
@@ -26,42 +26,43 @@ public class StateComponent : Component
         state = State.IDLE;
         isVaild = false;    
     }
-    public void SetHealth(int health)
-    {
-        this.health = health;
-        if (health <= 0)
-        {
-            isDead = true;
-        }
-    }
-    public void SetHealthOffset(int offset)
-    {
-        this.health -= offset;
-        if (health <= 0)
-        {
-            isDead = true;
-        }
-    }
+    ////public void SetHealth(int health)
+    ////{
+    ////    this.health = health;
+    ////    if (health <= 0)
+    ////    {
+    ////        isDead = true;
+    ////    }
+    ////}
+    ////public void SetHealthOffset(int offset)
+    ////{
+    ////    this.health -= offset;
+    ////    if (health <= 0)
+    ////    {
+    ////        isDead = true;
+    ////    }
+    ////}
     /// <summary>
     /// 默认传入为伤害
     /// 治疗为对应负数
     /// </summary>
     /// <param name="effectData"></param>
-    public void ChangeHealth(int effectData)
-    {
-        if (isDead)
-        {
-            Debug.Log(entity.entityId + " [ 已死亡 ]");
-            return;
-        }
-        SetHealthOffset(effectData);
-        Debug.Log("造成伤害：" + entity.entityId + " [ " + effectData + " ]");
-    }
+    //public void ChangeHealth(int effectData)
+    //{
+    //    if (isDead)
+    //    {
+    //        Debug.Log(entity.entityId + " [ 已死亡 ]");
+    //        return;
+    //    }
+    //    SetHealthOffset(effectData);
+    //    Debug.Log("造成伤害：" + entity.entityId + " [ " + effectData + " ]");
+    //}
     public override void Update()
     {
         if (isDead)
         {
             state = State.DEATH;
+            //test
             DestroyComponent destroy = (DestroyComponent)entity.GetComponent("DestroyComponent");
             destroy.Destroy();
         }

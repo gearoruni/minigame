@@ -4,25 +4,83 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
+
+enum AnimType
+{
+    Idle,
+    Move,
+    Hurt,
+    Death,
+}
+
 public class AnimatorComponent : Component
 {
     public AnimationData animationData;
 
     public AnimatorListener listener;
+
+    public TransformComponent transform;
+    public StateComponent state;
+
+    public string lastAnime;
+
     public override void Init()
     {
-        animationData = TableDataManager.Instance.tables.AnimationDefine.Get(dataDefind);
+        transform = (TransformComponent)entity.GetComponent("TransformComponent");
+        state = (StateComponent)entity.GetComponent("StateComponent");
+    }
 
-        GoComponent goComponent = (GoComponent)entity.GetComponent("GoComponent");
-        //添加动画
-        if (entity.componentNameToIdx.ContainsKey("AnimatorComponent") && goComponent.go.GetComponent<AnimatorListener>() == null)
+    public override void DataInit()
+    {
+        int dataDefine;
+        if(entity.componentDatas.TryGetValue("AnimatorComponent",out dataDefine))
         {
-            goComponent.go.AddComponent<AnimatorListener>();
+            animationData = TableDataManager.Instance.tables.AnimationDefine.Get(dataDefine);
         }
-        AnimatorListener listener = goComponent.go.GetComponent<AnimatorListener>();
- 
+
+        if (entity.go == null) return;
+
+        //添加动画
+        if (entity.componentNameToIdx.ContainsKey("AnimatorComponent") && entity.go.GetComponent<AnimatorListener>() == null)
+        {
+            entity.go.AddComponent<AnimatorListener>();
+        }
+        AnimatorListener listener = entity.go.GetComponent<AnimatorListener>();
+
         BindAnimator(listener);
         listener.Init(animationData.AnimationName, entity);
+
+        lastAnime = "Idle";
+    }
+
+    public override void Update()
+    {
+        if (animationData == null) return;
+
+        if(state != null)
+        {
+            switch(state.state)
+            {
+                case State.IDLE:
+                    PlayerAnime("Idle");
+                    lastAnime = "Idle";
+                    break;
+                case State.MOVE:
+                    PlayerAnime("Move");
+                    lastAnime = "Move";
+                    break;
+                case State.DEATH:
+                    break;
+                default:
+                    PlayerAnime(lastAnime);
+                    break;
+            }
+        }
+
+        if (transform != null)
+        {
+            listener.SetParam(transform.faceDir.x, transform.faceDir.y);
+        }
     }
 
     public void BindAnimator(AnimatorListener listener)
@@ -30,9 +88,9 @@ public class AnimatorComponent : Component
         this.listener = listener;
     }
 
-    public void PlayerAnime(string animeName,float playTime)
+    public void PlayerAnime(string animeName)
     {
-
+        listener.SetStateAnime(animeName);
     }
 
     public override void OnCache()

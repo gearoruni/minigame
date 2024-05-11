@@ -7,7 +7,7 @@ public class Component : PoolBaseClass
 {
     public string name;
     public Entity entity;
-    public int dataDefind;
+    //public int dataDefind;
 
     /*-------- Component Data --------*/
 
@@ -18,6 +18,7 @@ public class Component : PoolBaseClass
     public Component() { }
 
     public virtual void Init() { }
+    public virtual void DataInit() { }
 
     public virtual void Update() { }
 

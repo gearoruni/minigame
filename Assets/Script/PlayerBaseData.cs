@@ -16,14 +16,9 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         characterLevelDir[1001] = 1;
         characterLevelDir[1002] = 1;
 
-        entity = EntityManager.Instance.CreateEntity(1);
+        entity = EntityManager.Instance.CreateEntity(1,1);
         CameraManager.Instance.RegisterFollow(entity);
 
-        EntityManager.Instance.CreateEntity(4);
-    }
-
-    public void CreatePlayer()
-    {
-        EntityManager.Instance.CreateEntity(1);
+        EntityManager.Instance.CreateEntity(4,4);
     }
 }

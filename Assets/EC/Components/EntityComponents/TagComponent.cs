@@ -18,8 +18,13 @@ public class TagComponent : Component
 
     public override void Init()
     {
-        tag = (Tag)dataDefind;
-        parent = (Tag)dataDefind;
+        int dataDefine;
+        if(entity.componentDatas.TryGetValue("TagComponent",out dataDefine))
+        {
+            tag = (Tag)dataDefine;
+            parent = (Tag)dataDefine;
+        }
+
     }
     public override void Update()
     {

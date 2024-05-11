@@ -7,6 +7,9 @@ using UnityEngine;
 
 public class AnimatorListener : MonoBehaviour
 {
+    public float x;
+    public float y;
+
     Animator animator;
     
     AnimatorController controller;
@@ -23,8 +26,14 @@ public class AnimatorListener : MonoBehaviour
         animator.runtimeAnimatorController = controller;
     }
 
-    public void SetStateAnime(string animationName, float playTime)
+    public void SetParam(float x, float y)
     {
+        animator.SetFloat("x", x);
+        animator.SetFloat("y", y);
+    }
 
+    public void SetStateAnime(string animationName)
+    {
+        animator.Play(animationName);
     }
 }

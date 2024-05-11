@@ -2,12 +2,15 @@ using cfg;
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.Windows;
 
 public class SkillComponent : Component
 {
     public CharacterComponent character;
     public WeaponComponent weapon;
+    public ControllerComponent controller;
 
     public int skillId;
     public Dictionary<SkillType, SkillBaseData> data;
@@ -17,10 +20,14 @@ public class SkillComponent : Component
     {
         character = (CharacterComponent)entity.GetComponent("CharacterComponent");
         weapon = (WeaponComponent)entity.GetComponent("WeaponComponent");
+        controller = (ControllerComponent)entity.GetComponent("ControllerComponent");
+    }
 
+    public override void DataInit()
+    {
         skillId = character.configs.SkillID;
 
-        SkillData config =  TableDataManager.Instance.tables.SkillDefine.Get(skillId);
+        SkillData config = TableDataManager.Instance.tables.SkillDefine.Get(skillId);
         if (config != null)
         {
             int cnt = config.SkillType.Count;
@@ -31,7 +38,7 @@ public class SkillComponent : Component
             SkillBaseData baseData;
             for (int i = 0; i < cnt; i++)
             {
-                baseData = new SkillBaseData(   i,
+                baseData = new SkillBaseData(i,
                                                 config.SkillType[i],
                                                 config.TransmiterId[i],
                                                 config.Demage[i],
@@ -41,7 +48,7 @@ public class SkillComponent : Component
                                                 config.FieldHeight[i],
                                                 config.VaildTime[i],
                                                 config.CdTime[i]);
-                if(baseData.Type == SkillType.NORMAL)
+                if (baseData.Type == SkillType.NORMAL)
                 {
                     baseData.CDTime = weapon.fireRate;
                 }
@@ -83,7 +90,9 @@ public class SkillComponent : Component
 
     public override void Update()
     {
-        for(int i = 0;i < nowCdtime.Count; i++)
+        if (controller != null) CheckSkill();
+
+        for (int i = 0;i < nowCdtime.Count; i++)
         {
             nowCdtime[i] += Time.deltaTime;
         }
@@ -100,6 +109,34 @@ public class SkillComponent : Component
         SkillBaseData skillBaseData = data[skillType];
         nowCdtime[skillBaseData.idx] = 0;
     }
+    public void CheckSkill()
+    {
+        if (controller.isRightSkill)
+        {
+            UseSkill(SkillType.RIGHTATK);
+            return;
+        }
+        if (controller.isQSkill)
+        {
+            UseSkill(SkillType.QSKILL);
+            return;
+        }
+        if (controller.isESkill)
+        {
+            UseSkill(SkillType.ESKILL);
+            return;
+        }
+        if (controller.isTSkill)
+        {
+            UseSkill(SkillType.TSKILL);
+            return;
+        }
+        if (controller.isHold || controller.isFire)
+        {
+            UseSkill(SkillType.NORMAL);
+        }
+    }
+
     public override void OnCache()
     {
         CachePool.Instance.Cache<SkillComponent>(this);

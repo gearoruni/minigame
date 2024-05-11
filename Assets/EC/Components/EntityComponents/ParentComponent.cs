@@ -5,11 +5,10 @@ using UnityEngine;
 public class ParentComponent : Component
 {
     public Entity parent;
-    public StateComponent state;
+
     public void SetParent(Entity parent)
     {
         this.parent = parent;
-        state = (StateComponent)parent.GetComponent("StateComponent");
         
         parent.childIds.Add(entity.instanceId);
     }

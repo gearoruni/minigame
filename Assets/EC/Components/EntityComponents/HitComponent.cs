@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class HitComponent : Component
 {
-    public StateComponent stateComponent;
+    CharacterDataComponent characterData;
     public override void Init()
     {
-        stateComponent = (StateComponent)entity.GetComponent("StateComponent");
+        characterData = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
     }
     public void Invoke(Entity entity)
     {
@@ -21,7 +21,7 @@ public class HitComponent : Component
         HealthChangeEffect healthChangeEffect = (HealthChangeEffect)effectComponent.GetEffect("HealthChangeEffect");
         if(healthChangeEffect == null) return;
 
-        stateComponent.ChangeHealth(healthChangeEffect.effectData);
+        characterData.ChangeHp(healthChangeEffect.effectData);
     }
     public override void OnCache()
     {

@@ -15,6 +15,10 @@ public class WeaponComponent : Component
 
     TransformComponent weaponTransform;
     GoComponent WeaponGo;
+
+    ControllerComponent controller;
+    StateComponent state;
+
     //默认武器信息
     public float radis;
     public string prefabName;
@@ -32,11 +36,18 @@ public class WeaponComponent : Component
         //基础数据
         character = (CharacterComponent)entity.GetComponent("CharacterComponent");
         characterTransform = (TransformComponent)entity.GetComponent("TransformComponent");
+        controller = (ControllerComponent)entity.GetComponent("ControllerComponent");
+        state = (StateComponent)entity.GetComponent("StateComponent");
+
+    }
+
+    public override void DataInit()
+    {
         weaponId = character.weaponDir[character.level];
         SetWeapon();
-        
+
         //创建weapon entity
-        weapon = EntityManager.Instance.CreateEntity(2);
+        weapon = EntityManager.Instance.CreateEntity(2,2);
 
         weaponTransform = (TransformComponent)weapon.GetComponent("TransformComponent");
         weaponTransform.position = characterTransform.position;
@@ -73,6 +84,7 @@ public class WeaponComponent : Component
 
     public void SetWeaponTransform(Vector3 pos)
     {
+        if (weaponTransform == null) return;
         weaponTransform.SetRotationLookAt(pos, characterTransform.position);
 
         Vector2 dir = pos - characterTransform.position;
@@ -84,6 +96,17 @@ public class WeaponComponent : Component
 
     public override void Update()
     {
+        if (controller != null)
+        {
+            SetWeaponTransform(controller.facepos);
+            if (controller.isReload)
+            {
+                Reload();
+                //状态变更
+                state.state = State.RELOAD;
+            }
+        }
+
         if (isReloading)
         {
             reloadTs += Time.deltaTime;
@@ -134,7 +157,7 @@ public class WeaponComponent : Component
     {
         BulletConfigs bullet = TableDataManager.Instance.tables.BulletDefine.Get(fireDefine.bulletId);
 
-        Entity bulletEntity = EntityManager.Instance.CreateEntity(3);
+        Entity bulletEntity = EntityManager.Instance.CreateEntity(3,3);
         //设定Transform
         TransformComponent transform = (TransformComponent)bulletEntity.GetComponent("TransformComponent");
         transform.position = position;

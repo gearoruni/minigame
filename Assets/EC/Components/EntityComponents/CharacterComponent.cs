@@ -6,34 +6,45 @@ using UnityEngine;
 
 public class CharacterComponent : Component
 {
-    public int CharacterId;
+    //public int CharacterId;
     public CharacterConfigs configs;
     public int level = 1;
 
     public GoComponent goComponent;
     public StateComponent stateComponent;
+    CharacterDataComponent characterDataComponent;
     public Dictionary<int, int> weaponDir = new Dictionary<int, int>();
     public override void Init()
     {
-        CharacterId = dataDefind;
-        if(CharacterId == 0)
-        {
-            CharacterId = PlayerBaseData.Instance.nowSelectedCharacter;
-            level = PlayerBaseData.Instance.characterLevelDir[CharacterId];
-        }
+        //CharacterId = dataDefind;
+        //if(CharacterId == 0)
+        //{
+        //    CharacterId = PlayerBaseData.Instance.nowSelectedCharacter;
+        //    level = PlayerBaseData.Instance.characterLevelDir[CharacterId];
+        //}
 
-        configs = TableDataManager.Instance.tables.CharacterDefine.DataMap[CharacterId];
+        //configs = TableDataManager.Instance.tables.CharacterDefine.DataMap[CharacterId];
 
         goComponent = (GoComponent)entity.GetComponent("GoComponent");
-        goComponent.CreateGameObject(configs.Id.ToString());
 
         stateComponent = (StateComponent)entity.GetComponent("StateComponent");
-        stateComponent.SetHealth(configs.Hp);
+        characterDataComponent = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
+
+    }
+    public override void DataInit()
+    {
+        int dataDefine;
+        if (entity.componentDatas.TryGetValue("CharacterComponent", out dataDefine))
+        {
+            configs = TableDataManager.Instance.tables.CharacterDefine.DataMap[dataDefine == 0 ? PlayerBaseData.Instance.nowSelectedCharacter:dataDefine];
+        }
 
         for (int i = 0; i < configs.Level.Count; i++)
         {
             weaponDir.Add(configs.Level[i], configs.WeaponId[i]);
         }
+        characterDataComponent.SetHealth(configs.Hp); 
+        goComponent.CreateGameObject(configs.Id.ToString());
     }
 
     public override void OnCache()
