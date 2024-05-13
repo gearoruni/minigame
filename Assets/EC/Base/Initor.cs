@@ -13,6 +13,7 @@ public class Initor : MonoBehaviour
         ObjectPool.Instance.Init();
         CachePool.Instance.Init();
         SpawnManager.Instance.Init();
+        EffectManager.Instance.Init();
 
         //基础生命周期统一
         BehaviourCtrl.Instance.Init();

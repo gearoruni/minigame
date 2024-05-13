@@ -1,0 +1,28 @@
+[
+  {
+    "id": 2001,
+    "effectname": [
+      "MoveEffect",
+      "HealthChangeEffect"
+    ],
+    "effectdefine": [
+      1,
+      70
+    ]
+  },
+  {
+    "id": 2002,
+    "effectname": [
+      "MoveEffect",
+      "HealthChangeEffect",
+      "TrackEffect",
+      "SpeedChangeEffect"
+    ],
+    "effectdefine": [
+      2,
+      30,
+      30,
+      1
+    ]
+  }
+]

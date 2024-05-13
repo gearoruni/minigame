@@ -19,14 +19,12 @@ public sealed partial class SkillData : Luban.BeanBase
     {
         { if(!_buf["id"].IsNumber) { throw new SerializationException(); }  Id = _buf["id"]; }
         { var __json0 = _buf["skill_type"]; if(!__json0.IsArray) { throw new SerializationException(); } SkillType = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  SkillType.Add(__v0); }   }
-        { var __json0 = _buf["transmiterId"]; if(!__json0.IsArray) { throw new SerializationException(); } TransmiterId = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  TransmiterId.Add(__v0); }   }
-        { var __json0 = _buf["demage"]; if(!__json0.IsArray) { throw new SerializationException(); } Demage = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Demage.Add(__v0); }   }
-        { var __json0 = _buf["heal"]; if(!__json0.IsArray) { throw new SerializationException(); } Heal = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Heal.Add(__v0); }   }
-        { var __json0 = _buf["field_type"]; if(!__json0.IsArray) { throw new SerializationException(); } FieldType = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  FieldType.Add(__v0); }   }
-        { var __json0 = _buf["field_width"]; if(!__json0.IsArray) { throw new SerializationException(); } FieldWidth = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  FieldWidth.Add(__v0); }   }
-        { var __json0 = _buf["field_height"]; if(!__json0.IsArray) { throw new SerializationException(); } FieldHeight = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  FieldHeight.Add(__v0); }   }
-        { var __json0 = _buf["vaild_time"]; if(!__json0.IsArray) { throw new SerializationException(); } VaildTime = new System.Collections.Generic.List<float>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { float __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  VaildTime.Add(__v0); }   }
         { var __json0 = _buf["cd_time"]; if(!__json0.IsArray) { throw new SerializationException(); } CdTime = new System.Collections.Generic.List<float>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { float __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  CdTime.Add(__v0); }   }
+        { var __json0 = _buf["effect_type"]; if(!__json0.IsArray) { throw new SerializationException(); } EffectType = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  EffectType.Add(__v0); }   }
+        { var __json0 = _buf["typeDefine"]; if(!__json0.IsArray) { throw new SerializationException(); } TypeDefine = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  TypeDefine.Add(__v0); }   }
+        { var __json0 = _buf["prefab_id"]; if(!__json0.IsArray) { throw new SerializationException(); } PrefabId = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  PrefabId.Add(__v0); }   }
+        { var __json0 = _buf["effect_id"]; if(!__json0.IsArray) { throw new SerializationException(); } EffectId = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  EffectId.Add(__v0); }   }
+        { var __json0 = _buf["animation_id"]; if(!__json0.IsArray) { throw new SerializationException(); } AnimationId = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  AnimationId.Add(__v0); }   }
     }
 
     public static SkillData DeserializeSkillData(JSONNode _buf)
@@ -42,46 +40,27 @@ public sealed partial class SkillData : Luban.BeanBase
     /// 技能类型
     /// </summary>
     public readonly System.Collections.Generic.List<int> SkillType;
-    /// <summary>
-    /// 特殊发射器ID
-    /// </summary>
-    public readonly System.Collections.Generic.List<int> TransmiterId;
-    /// <summary>
-    /// 伤害
-    /// </summary>
-    public readonly System.Collections.Generic.List<int> Demage;
-    /// <summary>
-    /// 治疗
-    /// </summary>
-    public readonly System.Collections.Generic.List<int> Heal;
-    /// <summary>
-    /// 范围类型
-    /// </summary>
-    public readonly System.Collections.Generic.List<int> FieldType;
-    /// <summary>
-    /// 长/半径
-    /// </summary>
-    public readonly System.Collections.Generic.List<int> FieldWidth;
-    /// <summary>
-    /// 宽/角度
-    /// </summary>
-    public readonly System.Collections.Generic.List<int> FieldHeight;
-    /// <summary>
-    /// 效果时间
-    /// </summary>
-    public readonly System.Collections.Generic.List<float> VaildTime;
-    /// <summary>
-    /// CD时间
-    /// </summary>
     public readonly System.Collections.Generic.List<float> CdTime;
+    /// <summary>
+    /// 1 = 发射系<br/>2 = 范围系
+    /// </summary>
+    public readonly System.Collections.Generic.List<int> EffectType;
+    /// <summary>
+    /// 对应的配置
+    /// </summary>
+    public readonly System.Collections.Generic.List<int> TypeDefine;
+    /// <summary>
+    /// 发射物的id
+    /// </summary>
+    public readonly System.Collections.Generic.List<int> PrefabId;
+    public readonly System.Collections.Generic.List<int> EffectId;
+    public readonly System.Collections.Generic.List<int> AnimationId;
    
     public const int __ID__ = -300302981;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
-        
-        
         
         
         
@@ -97,14 +76,12 @@ public sealed partial class SkillData : Luban.BeanBase
         return "{ "
         + "id:" + Id + ","
         + "skillType:" + Luban.StringUtil.CollectionToString(SkillType) + ","
-        + "transmiterId:" + Luban.StringUtil.CollectionToString(TransmiterId) + ","
-        + "demage:" + Luban.StringUtil.CollectionToString(Demage) + ","
-        + "heal:" + Luban.StringUtil.CollectionToString(Heal) + ","
-        + "fieldType:" + Luban.StringUtil.CollectionToString(FieldType) + ","
-        + "fieldWidth:" + Luban.StringUtil.CollectionToString(FieldWidth) + ","
-        + "fieldHeight:" + Luban.StringUtil.CollectionToString(FieldHeight) + ","
-        + "vaildTime:" + Luban.StringUtil.CollectionToString(VaildTime) + ","
         + "cdTime:" + Luban.StringUtil.CollectionToString(CdTime) + ","
+        + "effectType:" + Luban.StringUtil.CollectionToString(EffectType) + ","
+        + "typeDefine:" + Luban.StringUtil.CollectionToString(TypeDefine) + ","
+        + "prefabId:" + Luban.StringUtil.CollectionToString(PrefabId) + ","
+        + "effectId:" + Luban.StringUtil.CollectionToString(EffectId) + ","
+        + "animationId:" + Luban.StringUtil.CollectionToString(AnimationId) + ","
         + "}";
     }
 }

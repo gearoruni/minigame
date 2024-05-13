@@ -85,6 +85,12 @@ public class TransformComponent : Component
         return dir;
     }
 
+    public float GetDistance(Vector3 position)
+    {
+        Vector2 dir = position - this.position;
+        return dir.magnitude;
+    }
+
     public override void OnCache()
     {
         CachePool.Instance.Cache<TransformComponent>(this);

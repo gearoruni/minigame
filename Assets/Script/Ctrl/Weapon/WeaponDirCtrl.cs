@@ -57,9 +57,9 @@ public class WeaponDirCtrl : BaseModel
 
     public void OnStart()
     {
-        weaponTransform = GameCore.Instance.GetManager<PlayerManager>().weaponRoot.transform;
-        playerTransform = GameCore.Instance.GetManager<PlayerManager>().playerRoot.transform;
-        this.weaponTransform.position = new Vector3(radius, radius, 0);
+        //weaponTransform = GameCore.Instance.GetManager<PlayerManager>().weaponRoot.transform;
+        //playerTransform = GameCore.Instance.GetManager<PlayerManager>().playerRoot.transform;
+        //this.weaponTransform.position = new Vector3(radius, radius, 0);
     }
 
     public void OnUpdate()

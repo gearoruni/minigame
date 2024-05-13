@@ -11,28 +11,36 @@ public class CollisionListener : MonoBehaviour
     {
         this.entity = entity;
         selfTag = (TagComponent)entity.GetComponent("TagComponent");
+        this.gameObject.tag = entity.go.tag;
+        this.gameObject.layer = entity.go.layer;
         collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
         collisionComponent.SetListener(this);
     }
 
+    /// <summary>
+    /// ·Ç×Óµ¯Åö×²
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collisionComponent.needListen) return;
 
         Entity collisionEntity;
         bool hasEntity = CheckCollisionEntity(collision, out collisionEntity);
-
+        bool isListener = CheckListner(collision);
+        if(isListener) { return; }
         if (!hasEntity)
         {
-            collisionComponent.OnBaseTriggerEnter2D?.Invoke();
+
+            collisionComponent.OnBaseTriggerEnter2D?.Invoke(); 
+
             return;
         }
 
+        BulletComponent bulletComponent = (BulletComponent)collisionEntity.GetComponent("BulletComponent");
         TagComponent collisionTag = (TagComponent)collisionEntity.GetComponent("TagComponent");
-        if(collisionTag.tag != selfTag.tag &&  collisionTag.tag != selfTag.parent && collisionTag.parent != selfTag.parent)
+        if(collisionTag.tag != selfTag.tag)
         {
-            
-
             HitComponent hit = (HitComponent)collisionEntity.GetComponent("HitComponent");
             if(hit != null)
             {
@@ -40,6 +48,7 @@ public class CollisionListener : MonoBehaviour
             }
 
             collisionComponent.OnBaseTriggerEnter2D?.Invoke();
+
         }
     }
     //private void OnTriggerExit2D(Collider2D collision)
@@ -59,6 +68,20 @@ public class CollisionListener : MonoBehaviour
         if (temp)
         {
             entity = temp.entity;
+            return true;
+        }
+        return false;
+    }
+    private bool CheckListner(Collider2D collision)
+    {
+        TrackListener temp = collision.gameObject.GetComponent<TrackListener>();
+        if(temp == null)
+        {
+            temp = collision.gameObject.GetComponentInChildren<TrackListener>();
+        }
+
+        if (temp)
+        {
             return true;
         }
         return false;

@@ -13,16 +13,25 @@ public enum Tag
 
 public class TagComponent : Component
 {
+    CharacterComponent characterComponent;
     public Tag tag;
-    public Tag parent;
 
     public override void Init()
     {
-        int dataDefine;
-        if(entity.componentDatas.TryGetValue("TagComponent",out dataDefine))
+        //int dataDefine;
+        //if(entity.componentDatas.TryGetValue("TagComponent",out dataDefine))
+        //{
+        //    tag = (Tag)dataDefine;
+        //    parent = (Tag)dataDefine;
+        //}
+        characterComponent = (CharacterComponent)entity.GetComponent("CharacterComponent");
+    }
+    public override void DataInit()
+    {
+        if (characterComponent != null)
         {
-            tag = (Tag)dataDefine;
-            parent = (Tag)dataDefine;
+            tag = (Tag)(characterComponent.configs.Id / 1100);
+            entity.Tag = tag;
         }
 
     }
@@ -30,10 +39,7 @@ public class TagComponent : Component
     {
 
     }
-    public void SetParent(Tag tag)
-    {
-        parent = tag;
-    }
+
     public override void OnCache()
     {
         CachePool.Instance.Cache<TagComponent>(this);

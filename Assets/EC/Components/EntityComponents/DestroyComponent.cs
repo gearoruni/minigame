@@ -17,7 +17,7 @@ public class DestroyComponent : Component
     {
         needColliderDestroy = true;
         collision = (CollisionComponent)entity.GetComponent("CollisionComponent");
-        collision.OnBaseTriggerEnter2D += Destroy;
+        collision.OnBaseTriggerEnter2D += ChangeState;
     }
 
     public void SetDestroyTimer(float time)
@@ -29,10 +29,15 @@ public class DestroyComponent : Component
     {
        if (needColliderDestroy)
         {
-            collision.OnBaseTriggerEnter2D -= Destroy;
+            collision.OnBaseTriggerEnter2D -= ChangeState;
         }
 
         EntityManager.Instance.RemoveEntity(entity.instanceId);
+    }
+    public void ChangeState()
+    {
+        StateComponent state = (StateComponent)entity.GetComponent("StateComponent");
+        state.state = State.DESTROY;
     }
     
     public override void Update()

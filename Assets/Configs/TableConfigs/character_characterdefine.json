@@ -1,28 +1,47 @@
 [
   {
     "id": 1001,
-    "name": "SOLDIER:76",
+    "name": "艾莉亚",
+    "hp": 225,
+    "speed": 7,
     "level": [
       1,
       2
     ],
-    "hp": 300,
     "WeaponId": [
-      2001,
-      2002
+      20011,
+      20012
     ],
     "skillID": 1001
   },
   {
     "id": 1002,
-    "name": "Genji",
-    "level": [
-      1
-    ],
+    "name": "理智小姐",
     "hp": 200,
+    "speed": 8,
+    "level": [
+      1,
+      2
+    ],
     "WeaponId": [
-      2003
+      20021,
+      20022
     ],
     "skillID": 1002
+  },
+  {
+    "id": 1102,
+    "name": "艾莉亚",
+    "hp": 225,
+    "speed": 7,
+    "level": [
+      1,
+      2
+    ],
+    "WeaponId": [
+      20011,
+      20012
+    ],
+    "skillID": 1001
   }
 ]

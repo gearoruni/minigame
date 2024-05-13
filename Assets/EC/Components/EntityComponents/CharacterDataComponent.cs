@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D.Animation;
 using UnityEngine;
 
 public class CharacterDataComponent : Component
@@ -12,12 +13,15 @@ public class CharacterDataComponent : Component
 
     public CharacterComponent character;
     public StateComponent state;
-   
+    public HitComponent hit;
+
     public override void Init()
     {
         character = (CharacterComponent)entity.GetComponent("CharacterComponent");
 
         state = (StateComponent)entity.GetComponent("StateComponent");
+
+        hit = (HitComponent)entity.GetComponent("HitComponent");
     }
 
     public override void DataInit()
@@ -27,7 +31,13 @@ public class CharacterDataComponent : Component
         nowHp = maxHp;
 
     }
-
+    public override void Update()
+    {
+        if (hit.healthChangeEffect != null){
+            ChangeHp(hit.healthChangeEffect.effectData);
+            hit.healthChangeEffect = null;
+        }
+    }
     public override void OnCache()
     {
         CachePool.Instance.Cache<CharacterDataComponent>(this);

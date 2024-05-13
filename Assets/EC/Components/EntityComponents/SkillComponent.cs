@@ -13,7 +13,7 @@ public class SkillComponent : Component
     public ControllerComponent controller;
 
     public int skillId;
-    public Dictionary<SkillType, SkillBaseData> data;
+    public Dictionary<SkillType, Skill> data;
 
     public List<float> nowCdtime = new List<float>();
     public override void Init()
@@ -32,30 +32,23 @@ public class SkillComponent : Component
         {
             int cnt = config.SkillType.Count;
 
-            data = new Dictionary<SkillType, SkillBaseData>(cnt);
+            data = new Dictionary<SkillType, Skill>(cnt);
 
-
-            SkillBaseData baseData;
+            Skill baseData;
             for (int i = 0; i < cnt; i++)
             {
-                baseData = new SkillBaseData(i,
+                baseData = new Skill(i,
                                                 config.SkillType[i],
-                                                config.TransmiterId[i],
-                                                config.Demage[i],
-                                                config.Heal[i],
-                                                config.FieldType[i],
-                                                config.FieldWidth[i],
-                                                config.FieldHeight[i],
-                                                config.VaildTime[i],
-                                                config.CdTime[i]);
-                if (baseData.Type == SkillType.NORMAL)
-                {
-                    baseData.CDTime = weapon.fireRate;
-                }
+                                                config.CdTime[i],
+                                                config.EffectType[i],
+                                                config.TypeDefine[i],
+                                                config.PrefabId[i],
+                                                config.EffectId[i],
+                                                config.AnimationId[i]);
 
                 data[baseData.Type] = baseData;
 
-                nowCdtime.Add(baseData.CDTime);
+                nowCdtime.Add(baseData.cd);
             }
 
         }
@@ -63,28 +56,14 @@ public class SkillComponent : Component
 
     public void UseSkill(SkillType skillType)
     {
-        SkillBaseData baseData = data[skillType];
+        Skill baseData = data[skillType];
 
         if (baseData == null) { return; }
 
         if(!CheckCanUseSkill(skillType))return;
-        //普攻默认从weapon打出
-        if (skillType == SkillType.NORMAL)
-        {
-            weapon.Fire();
-        }
-        //其他需要由发射机打出的技能
-        else if(baseData.transmiterId!=0)
-        {
-            WeaponConfigs transmiter = TableDataManager.Instance.tables.WeaponDefine.Get(baseData.transmiterId);
-            //创建发射器Entity
-            //通知发射器Entity进行发射
-        }
-        //其他剩余技能 大多数是AOE
-        else
-        {
-            //创建技能Entity
-        }
+
+        baseData.UseSkill(entity);
+
         SetSkillCD(skillType);
     }
 
@@ -100,13 +79,13 @@ public class SkillComponent : Component
 
     public bool CheckCanUseSkill(SkillType skillType)
     {
-        SkillBaseData skillBaseData = data[skillType];
-        if (skillBaseData.CDTime <= nowCdtime[skillBaseData.idx]) return true;
+        Skill skillBaseData = data[skillType];
+        if (skillBaseData.cd <= nowCdtime[skillBaseData.idx]) return true;
         return false;
     }
     public void SetSkillCD(SkillType skillType)
     {
-        SkillBaseData skillBaseData = data[skillType];
+        Skill skillBaseData = data[skillType];
         nowCdtime[skillBaseData.idx] = 0;
     }
     public void CheckSkill()

@@ -46,14 +46,12 @@
     "componentName": [
       "TransformComponent",
       "GoComponent",
-      "TagComponent",
-      "ParentComponent"
+      "TagComponent"
     ],
     "componentDefine": [
       0,
       0,
-      4,
-      0
+      4
     ],
     "parentEntityId": 1
   },
@@ -67,7 +65,9 @@
       "MoveComponent",
       "CollisionComponent",
       "EffectComponent",
-      "DestroyComponent"
+      "BulletComponent",
+      "DestroyComponent",
+      "StateComponent"
     ],
     "componentDefine": [
       0,
@@ -75,6 +75,8 @@
       2,
       0,
       1,
+      0,
+      0,
       0,
       0
     ],

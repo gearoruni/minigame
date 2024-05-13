@@ -33,7 +33,7 @@ public class CollisionComponent : Component
         OnBaseCollisionExit2D = null;
         OnBaseTriggerEnter2D = null;
         OnBaseTriggerExit2D = null;
-        listener.entity = null;
+        listener = null;
         CachePool.Instance.Cache<CollisionComponent>(this);
     }
 }

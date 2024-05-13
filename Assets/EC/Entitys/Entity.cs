@@ -21,6 +21,8 @@ public class Entity : PoolBaseClass
     public Dictionary<string, int> componentDatas;
 
     public GameObject go;
+    internal Tag Tag;
+
     public Entity() {}
 
     public void Init(int instanceId,int entityId)

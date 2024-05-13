@@ -5,57 +5,45 @@
       "AnimatorComponent",
       "CharacterComponent",
       "CollisionComponent",
-      "MoveComponent",
-      "SpawnComponent",
-      "TagComponent"
+      "SpawnComponent"
     ],
     "componentdataid": [
       1,
       0,
-      1,
-      1,
-      1,
-      0
-    ]
-  },
-  {
-    "id": 2,
-    "componentName": [
-      "TagComponent"
-    ],
-    "componentdataid": [
-      4
-    ]
-  },
-  {
-    "id": 3,
-    "componentName": [
-      "TagComponent",
-      "MoveComponent",
-      "CollisionComponent"
-    ],
-    "componentdataid": [
-      2,
       0,
       1
     ]
   },
   {
-    "id": 4,
+    "id": 3,
     "componentName": [
-      "TagComponent",
-      "MoveComponent",
-      "SpawnComponent",
+      "CollisionComponent"
+    ],
+    "componentdataid": [
+      1
+    ]
+  },
+  {
+    "id": 2,
+    "componentName": [
+      "AnimatorComponent",
       "CharacterComponent",
       "CollisionComponent",
-      "AnimatorComponent"
+      "SpawnComponent"
     ],
     "componentdataid": [
       1,
-      1,
-      2,
-      1002,
+      1102,
       0,
+      2
+    ]
+  },
+  {
+    "id": 4,
+    "componentName": [
+      "CollisionComponent"
+    ],
+    "componentdataid": [
       1
     ]
   }

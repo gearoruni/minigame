@@ -24,6 +24,9 @@ public partial class Tables
     public Entity.SkillDefine SkillDefine {get; }
     public Entity.AnimationDefine AnimationDefine {get; }
     public Entity.ComponentDefine ComponentDefine {get; }
+    public Entity.EffectDefine EffectDefine {get; }
+    public Effect.MoveEffectDefine MoveEffectDefine {get; }
+    public Effect.SpeedEffectDefine SpeedEffectDefine {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
@@ -37,6 +40,9 @@ public partial class Tables
         SkillDefine = new Entity.SkillDefine(loader("entity_skilldefine"));
         AnimationDefine = new Entity.AnimationDefine(loader("entity_animationdefine"));
         ComponentDefine = new Entity.ComponentDefine(loader("entity_componentdefine"));
+        EffectDefine = new Entity.EffectDefine(loader("entity_effectdefine"));
+        MoveEffectDefine = new Effect.MoveEffectDefine(loader("effect_moveeffectdefine"));
+        SpeedEffectDefine = new Effect.SpeedEffectDefine(loader("effect_speedeffectdefine"));
         ResolveRef();
     }
     
@@ -52,6 +58,9 @@ public partial class Tables
         SkillDefine.ResolveRef(this);
         AnimationDefine.ResolveRef(this);
         ComponentDefine.ResolveRef(this);
+        EffectDefine.ResolveRef(this);
+        MoveEffectDefine.ResolveRef(this);
+        SpeedEffectDefine.ResolveRef(this);
     }
 }
 

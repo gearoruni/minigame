@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UIElements.Experimental;
 
@@ -18,7 +19,13 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
 
         entity = EntityManager.Instance.CreateEntity(1,1);
         CameraManager.Instance.RegisterFollow(entity);
+        TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
+        Debug.Log(tagComponent1.tag);
 
-        EntityManager.Instance.CreateEntity(4,4);
+
+        Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
+        TagComponent tagComponent = (TagComponent)eentity.GetComponent("TagComponent");
+
+        Debug.Log(tagComponent.tag);
     }
 }

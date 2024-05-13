@@ -5,19 +5,11 @@ using UnityEngine;
 public class HealthChangeEffect : EffectBase
 {
     public int effectData;
-    public override void Init()
+    public override void Init(int define)
     {
-
-    }
-    public void SetEffectData(int effectData)
-    {
-        this.effectData = effectData;
+        this.effectData = define;
     }
 
-    public override void Invoke()
-    {
-
-    }
     public override void OnCache()
     {
 

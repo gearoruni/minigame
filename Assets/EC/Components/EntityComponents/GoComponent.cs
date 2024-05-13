@@ -1,3 +1,4 @@
+using cfg;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
@@ -8,6 +9,7 @@ using UnityEngine.Rendering.VirtualTexturing;
 public class GoComponent : Component
 {
     TransformComponent transform;
+    CharacterComponent character;
     public GameObject go;
     public string goName;
     public Entity parentEntity;
@@ -16,8 +18,24 @@ public class GoComponent : Component
     {
 
         transform = (TransformComponent)entity.GetComponent("TransformComponent");
+        character = (CharacterComponent)entity.GetComponent("CharacterComponent");
     }
 
+    public override void DataInit()
+    {
+        if(character != null) {
+            CreateGameObject(character.configs.Id.ToString());
+            if (EntityManager.Instance.GEList.ContainsKey(go))
+            {
+                EntityManager.Instance.GEList[go] = entity;
+            }
+            else
+            {
+                EntityManager.Instance.GEList.Add(go, entity);
+            }
+            EntityManager.Instance.CharacterList.Add(entity);
+        }
+    }
     public void CreateGameObject(string name)
     {
 
@@ -28,12 +46,20 @@ public class GoComponent : Component
 
         entity.go = go;
 
-        //添加碰撞
-        if (entity.componentNameToIdx.ContainsKey("CollisionComponent") && go.GetComponent<CollisionListener>() == null)
+        ////添加碰撞
+        if (entity.componentNameToIdx.ContainsKey("CollisionComponent"))
         {
-            go.AddComponent<CollisionListener>();
+            CollisionListener collisionListener = go.GetComponentInChildren<CollisionListener>();
+            if (collisionListener == null)
+            {
+                Debug.Log("给预制体 [" + name + "] 添加CollisionListener!");
+            }
+            else
+            {
+                collisionListener.Init(entity);
+            }
         }
-        go.GetComponent<CollisionListener>()?.Init(entity);
+
 
         //指定生成位置的情况
         SpawnComponent spawnComponent = (SpawnComponent)entity.GetComponent("SpawnComponent");

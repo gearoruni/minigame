@@ -39,7 +39,6 @@ public class Assembler
     {
         //注意组件添加顺序
         //组件添加顺序影响组件更新顺序
-
         AddComponen<CharacterComponent>(entity, "CharacterComponent");
         AddComponen<CharacterDataComponent>(entity, "CharacterDataComponent");
 
@@ -53,7 +52,7 @@ public class Assembler
         AddComponen<MoveComponent>(entity, "MoveComponent");
         AddComponen<TransformComponent>(entity, "TransformComponent");
         AddComponen<GoComponent>(entity, "GoComponent");
-
+        AddComponen<BulletComponent>(entity, "BulletComponent");
 
         AddComponen<EffectComponent>(entity, "EffectComponent");
         AddComponen<DestroyComponent>(entity, "DestroyComponent");

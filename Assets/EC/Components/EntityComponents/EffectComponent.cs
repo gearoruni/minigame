@@ -1,3 +1,4 @@
+using cfg;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,13 +9,29 @@ public class EffectComponent : Component
     public List<EffectBase> collisionEffects = new List<EffectBase>();  
     public Dictionary<string,int> collisionEffectDir = new Dictionary<string,int>();    
     public CollisionComponent collisionComponent;
+    EffectData effectData;
+    Dictionary<string,int> effectNames;
     public override void Init()
     {
         collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
+        effectNames = new Dictionary<string,int>(); 
+    }
+    public void DataInit(int data)
+    {
+        effectData = TableDataManager.Instance.tables.EffectDefine.Get(data);
+        for (int i = 0; i < effectData.Effectname.Count; i++)
+        {
+            effectNames.Add(effectData.Effectname[i],i);
+        }
+        SetEffect(new HealthChangeEffect(), "HealthChangeEffect",true);
+        SetEffect(new MoveEffect(), "MoveEffect");
+        SetEffect(new TrackEffect(), "TrackEffect");
+        SetEffect(new SpeedChangeEffect(), "SpeedChangeEffect", true);
+
     }
     public void SetEffect(EffectBase effectBase,string effectName = "",bool isCollision = false)
     {
-        
+        if (!effectNames.ContainsKey(effectName)) return; 
         if (isCollision )
         {
             collisionEffectDir.Add(effectName, collisionEffects.Count);
@@ -24,6 +41,7 @@ public class EffectComponent : Component
         {
             baseEffects.Add(effectBase);
         }
+        effectBase.Init(effectData.Effectdefine[effectNames[effectName]]);
     }
     public EffectBase GetEffect(string effectName)
     {
@@ -37,7 +55,7 @@ public class EffectComponent : Component
     {
         for (int i = 0; i < baseEffects.Count; i++)
         {
-            baseEffects[i].Invoke();
+            baseEffects[i].Invoke(entity);
         }
     }
 
@@ -45,10 +63,13 @@ public class EffectComponent : Component
     {
         for(int i = 0; i < collisionEffects.Count; i++)
         {
-            collisionEffects[i].Invoke();
+            collisionEffects[i].Invoke(entity);
         }
     }
-
+    public override void Update()
+    {
+        BaseInvoke();
+    }
     public override void OnCache()
     {
         baseEffects.Clear();

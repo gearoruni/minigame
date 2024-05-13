@@ -13,6 +13,9 @@ public class AnimatorListener : MonoBehaviour
     Animator animator;
     
     AnimatorController controller;
+
+    public bool isEnd;
+    public string nowPlayAnim;
     public void Init(string animationName,Entity entity)
     {
         
@@ -35,5 +38,19 @@ public class AnimatorListener : MonoBehaviour
     public void SetStateAnime(string animationName)
     {
         animator.Play(animationName);
+        nowPlayAnim = animationName;
+    }
+    public bool CheckDestroyAnime()
+    {
+        // 检测当前动画状态信息
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
+        // 如果当前动画播放时间超过了动画长度，说明动画已经播放完毕
+        if (stateInfo.normalizedTime >= 1.0f && stateInfo.IsName("Destroy"))
+        {
+            Debug.Log("销毁");
+            return true;
+        }
+        return false;
     }
 }
