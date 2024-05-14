@@ -72,10 +72,9 @@ public class EntityManager : Singleton<EntityManager>
 
         TagComponent ptag = (TagComponent)parent.GetComponent("TagComponent");
         ((TagComponent)entity.GetComponent("TagComponent")).tag = ptag.tag;
-
+        entity.parentId = parent.instanceId;
         if (needUpdateFollow)
         {
-            entity.parentId = parent.instanceId;
             parent.childIds.Add(entity.instanceId);
         }
         return entity;

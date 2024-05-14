@@ -30,6 +30,16 @@ public class MoveComponent : Component
     public Vector2 moveTo;
     public bool forceMoveOffset = false;
     public bool needRaycaster = true;
+
+    //速度变化效果计算
+    SpeedChange speedChange;
+    List<float> timeCount;
+    int idx = 0;
+
+    float forceMoveTime;
+    float forceMoveSpeed;
+    Vector2 forceMoveDir = new Vector2();
+
     public override void Init()
     {
         transformComponent = (TransformComponent)entity.GetComponent("TransformComponent");
@@ -65,6 +75,7 @@ public class MoveComponent : Component
     {
         this.speed = basespeed * ratio;
     }
+
     public override void Update()
     {
         if(controller != null) input = controller.movepos;
@@ -80,14 +91,24 @@ public class MoveComponent : Component
                 hit.speedChangeEffect = null;
                 SetSpeed();
             }
+            if(hit.dirChangeEffect != null)
+            {
+                SetForceMove(hit.dirChangeEffect.targetTime,hit.dirChangeEffect.targetSpeeds, hit.dirChangeEffect.dir);
+                hit.dirChangeEffect = null;
+            }
+        }
+        if(forceMoveTime>0)
+        {
+            forceMoveTime = forceMoveTime - Time.deltaTime;
+            ForceMove(forceMoveDir, forceMoveSpeed, forceMoveTime);
+            UpdateSpeed();
+            return;
         }
 
         UpdateSpeed();
         UpdateMove(needMove);
     }
-    SpeedChange speedChange;
-    List<float> timeCount;
-    int idx = 0; 
+
     public void SetSpeed()
     {
         timeCount = new List<float>();
@@ -105,13 +126,12 @@ public class MoveComponent : Component
             timeCount = null;
             SetSpeedRatio(1);
             speedChange = null;
-            Debug.Log("当前速度比率 正常" );
-
+            //Debug.Log("当前速度比率 正常" );
             return;
         }
         timeCount[idx] -= Time.deltaTime;
         SetSpeedRatio(speedChange.Speed[idx]);
-        Debug.Log("当前速度比率 ： " + speedChange.Speed[idx] + " 剩余时间：[ " + timeCount[idx] +" ]");
+        //Debug.Log("当前速度比率 ： " + speedChange.Speed[idx] + " 剩余时间：[ " + timeCount[idx] +" ]");
         if (timeCount[idx] <= 0)
         {
             idx ++;
@@ -155,6 +175,44 @@ public class MoveComponent : Component
             }
         }
         transformComponent.SetPostion(needTo.x, needTo.y);
+    }
+
+    public void SetForceMove(float targetTime, float targetSpeeds, Vector2 dir)
+    {
+        moveType = MoveType.DASH;
+        forceMoveTime = targetTime;
+        forceMoveSpeed = targetSpeeds;
+        forceMoveDir = new Vector2( dir.x,dir.y);
+    }
+
+    public void ForceMove(Vector2 dir,float speed,float time)
+    {
+        DoForceMove(dir.x, dir.y, speed);
+        Vector2 needTo = (Vector2)transformComponent.position + new Vector2(moveTo.x, moveTo.y).normalized * moveTo.magnitude;
+        if (needRaycaster)
+        {
+            if (moveType != MoveType.DASH)
+            {
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius, LayerMask.GetMask("Enemy"));
+            }
+            else
+            {
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius);
+            }
+        }
+        transformComponent.SetPostion(needTo.x, needTo.y);
+
+        if(time <0)
+        {
+            time = 0;
+            forceMoveDir = Vector2.zero;
+            moveType = MoveType.WALK;
+        }
+    }
+    public void DoForceMove(float x, float y,float speed)
+    {
+        moveTo.x = x * speed * Time.deltaTime;
+        moveTo.y = y * speed * Time.deltaTime;
     }
     public void DoMove(float x, float y)
     {

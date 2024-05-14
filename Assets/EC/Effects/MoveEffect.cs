@@ -10,7 +10,7 @@ public class MoveEffect : EffectBase
     public float speed;
     public float livingTime;
     public float timesp;
-    public override void Init(int define)
+    public override void Init(int define, Entity entity)
     {
         Move move = TableDataManager.Instance.tables.MoveEffectDefine.Get(define);
         speed = move.Speed;

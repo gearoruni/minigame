@@ -6,14 +6,9 @@ using UnityEngine;
 public class SpeedChangeEffect : EffectBase
 {
     public SpeedChange speedChange;
-    public override void Init(int define)
+    public override void Init(int define,Entity entity)
     {
         speedChange = TableDataManager.Instance.tables.SpeedEffectDefine.Get(define);
-    }
-
-    public override void Invoke(Entity entity)
-    {
-
     }
     public override void OnCache()
     {

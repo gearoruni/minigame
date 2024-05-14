@@ -9,21 +9,34 @@ public class HitComponent : Component
 
     MoveComponent moveComponent;
     public SpeedChangeEffect speedChangeEffect;
+
+    CollisionComponent collision;
+    public AOEEffect AOEEffect;
+
+    public DirChangeEffect dirChangeEffect;
+
     public override void Init()
     {
         characterData = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
+        collision = (CollisionComponent)entity.GetComponent("CollisionComponent");
     }
+
+    public override void DataInit()
+    {
+        collision.OnBaseTriggerEnter2D += Invoke;
+    }
+
     public void Invoke(Entity entity)
     {
         if(entity == null) {
-            Debug.Log("¶ªÊ§entity");
+            return;
         }
         EffectComponent effectComponent = (EffectComponent)entity.GetComponent("EffectComponent");
         if (effectComponent == null) return;
 
         healthChangeEffect = (HealthChangeEffect)effectComponent.GetEffect("HealthChangeEffect");
         speedChangeEffect = (SpeedChangeEffect)effectComponent.GetEffect("SpeedChangeEffect");
-        
+        dirChangeEffect = (DirChangeEffect)effectComponent.GetEffect("DirChangeEffect");
     }
     public override void OnCache()
     {

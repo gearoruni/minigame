@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class EffectBase :PoolBaseClass
 {
-    public virtual void Init(int define)
+    public Entity entity;
+    public virtual void Init(int define, Entity entity)
     {
 
     }

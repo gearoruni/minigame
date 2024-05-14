@@ -20,12 +20,10 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         entity = EntityManager.Instance.CreateEntity(1,1);
         CameraManager.Instance.RegisterFollow(entity);
         TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
-        Debug.Log(tagComponent1.tag);
-
 
         Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
-        TagComponent tagComponent = (TagComponent)eentity.GetComponent("TagComponent");
 
-        Debug.Log(tagComponent.tag);
+        eentity = EntityManager.Instance.CreateEntity(4, 6);
+        eentity = EntityManager.Instance.CreateEntity(4, 7);
     }
 }

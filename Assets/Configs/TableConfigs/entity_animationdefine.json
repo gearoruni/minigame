@@ -10,5 +10,9 @@
   {
     "id": 3,
     "animationName": "Bullet2Anim"
+  },
+  {
+    "id": 4,
+    "animationName": "Bullet3Anim"
   }
 ]

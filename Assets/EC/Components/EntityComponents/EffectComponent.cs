@@ -14,7 +14,9 @@ public class EffectComponent : Component
     public override void Init()
     {
         collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
-        effectNames = new Dictionary<string,int>(); 
+        effectNames = new Dictionary<string,int>();
+        if(collisionComponent != null )
+            collisionComponent.OnBaseTriggerEnter2D += CollisionInvoke;
     }
     public void DataInit(int data)
     {
@@ -27,6 +29,11 @@ public class EffectComponent : Component
         SetEffect(new MoveEffect(), "MoveEffect");
         SetEffect(new TrackEffect(), "TrackEffect");
         SetEffect(new SpeedChangeEffect(), "SpeedChangeEffect", true);
+        SetEffect(new AOEEffect(), "AOEEffect");
+        SetEffect(new CreateAoeAreaEffect(), "CreateAoeAreaEffect",true);
+        SetEffect(new DestroyEffect(), "DestroyEffect",true);
+        SetEffect(new DirChangeEffect(), "DirChangeEffect", true);
+        SetEffect(new DirChangeEffect(), "DirChangeEffect");
 
     }
     public void SetEffect(EffectBase effectBase,string effectName = "",bool isCollision = false)
@@ -41,7 +48,7 @@ public class EffectComponent : Component
         {
             baseEffects.Add(effectBase);
         }
-        effectBase.Init(effectData.Effectdefine[effectNames[effectName]]);
+        effectBase.Init(effectData.Effectdefine[effectNames[effectName]],entity);
     }
     public EffectBase GetEffect(string effectName)
     {

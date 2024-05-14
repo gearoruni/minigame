@@ -18,12 +18,6 @@ public class TagComponent : Component
 
     public override void Init()
     {
-        //int dataDefine;
-        //if(entity.componentDatas.TryGetValue("TagComponent",out dataDefine))
-        //{
-        //    tag = (Tag)dataDefine;
-        //    parent = (Tag)dataDefine;
-        //}
         characterComponent = (CharacterComponent)entity.GetComponent("CharacterComponent");
     }
     public override void DataInit()

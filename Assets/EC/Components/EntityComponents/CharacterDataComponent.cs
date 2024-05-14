@@ -67,6 +67,6 @@ public class CharacterDataComponent : Component
             return;
         }
         SetHealthOffset(effectData);
-        Debug.Log("造成伤害：" + entity.entityId + " [ " + effectData + " ]");
+        Debug.Log("造成伤害：" + entity.go.name + " [ " + effectData + " ]");
     }
 }

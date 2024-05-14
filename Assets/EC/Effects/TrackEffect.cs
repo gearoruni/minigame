@@ -15,7 +15,7 @@ public class TrackEffect : EffectBase
 
     public TransformComponent target;
     public TrackListener listener;
-    public override void Init(int define)
+    public override void Init(int define, Entity entity)
     {
         radius = define/10f;
         time = 0;

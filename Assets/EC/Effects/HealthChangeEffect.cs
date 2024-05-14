@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthChangeEffect : EffectBase
 {
     public int effectData;
-    public override void Init(int define)
+    public override void Init(int define, Entity entity)
     {
         this.effectData = define;
     }

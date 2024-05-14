@@ -20,6 +20,7 @@ public sealed partial class SpeedChange : Luban.BeanBase
         { if(!_buf["id"].IsNumber) { throw new SerializationException(); }  Id = _buf["id"]; }
         { var __json0 = _buf["speed"]; if(!__json0.IsArray) { throw new SerializationException(); } Speed = new System.Collections.Generic.List<float>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { float __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Speed.Add(__v0); }   }
         { var __json0 = _buf["time"]; if(!__json0.IsArray) { throw new SerializationException(); } Time = new System.Collections.Generic.List<float>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { float __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Time.Add(__v0); }   }
+        { var __json0 = _buf["target"]; if(!__json0.IsArray) { throw new SerializationException(); } Target = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Target.Add(__v0); }   }
     }
 
     public static SpeedChange DeserializeSpeedChange(JSONNode _buf)
@@ -36,12 +37,17 @@ public sealed partial class SpeedChange : Luban.BeanBase
     /// </summary>
     public readonly System.Collections.Generic.List<float> Speed;
     public readonly System.Collections.Generic.List<float> Time;
+    /// <summary>
+    /// 1 = 自身<br/>2 = 对方
+    /// </summary>
+    public readonly System.Collections.Generic.List<int> Target;
    
     public const int __ID__ = -1018620233;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
+        
         
         
         
@@ -53,6 +59,7 @@ public sealed partial class SpeedChange : Luban.BeanBase
         + "id:" + Id + ","
         + "speed:" + Luban.StringUtil.CollectionToString(Speed) + ","
         + "time:" + Luban.StringUtil.CollectionToString(Time) + ","
+        + "target:" + Luban.StringUtil.CollectionToString(Target) + ","
         + "}";
     }
 }

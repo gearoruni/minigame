@@ -36,5 +36,24 @@
     "timeBetweenBullets": [
       0
     ]
+  },
+  {
+    "id": 20012,
+    "name": "aoeBase",
+    "upLimit": [
+      0
+    ],
+    "downLimit": [
+      0
+    ],
+    "volleyCount": [
+      1
+    ],
+    "bulletsPerVolley": [
+      1
+    ],
+    "timeBetweenBullets": [
+      0
+    ]
   }
 ]

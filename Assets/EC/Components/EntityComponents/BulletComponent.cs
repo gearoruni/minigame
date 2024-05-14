@@ -9,9 +9,9 @@ public class BulletComponent : Component
 {
 
     public AnimationData animationData;
-
     public AnimatorListener listener;
     public StateComponent state;
+
     public override void Init()
     {
         state = (StateComponent)entity.GetComponent("StateComponent");
@@ -34,8 +34,10 @@ public class BulletComponent : Component
     {
         this.listener = listener;
     }
+
     public override void Update()
     {
+
         if(state.state == State.DESTROY)
         {
             listener.SetStateAnime("Destroy");

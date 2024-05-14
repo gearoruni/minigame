@@ -23,44 +23,25 @@ public class CollisionListener : MonoBehaviour
     /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collisionComponent.needListen) return;
 
         Entity collisionEntity;
         bool hasEntity = CheckCollisionEntity(collision, out collisionEntity);
         bool isListener = CheckListner(collision);
         if(isListener) { return; }
+        //如果碰到建筑物了
         if (!hasEntity)
         {
-
-            collisionComponent.OnBaseTriggerEnter2D?.Invoke(); 
-
+            collisionComponent.OnBaseTriggerEnter2D?.Invoke(null); 
             return;
         }
-
-        BulletComponent bulletComponent = (BulletComponent)collisionEntity.GetComponent("BulletComponent");
+        //否则自监听
         TagComponent collisionTag = (TagComponent)collisionEntity.GetComponent("TagComponent");
         if(collisionTag.tag != selfTag.tag)
         {
-            HitComponent hit = (HitComponent)collisionEntity.GetComponent("HitComponent");
-            if(hit != null)
-            {
-                hit.Invoke(entity);
-            }
-
-            collisionComponent.OnBaseTriggerEnter2D?.Invoke();
-
+            collisionComponent.OnBaseTriggerEnter2D?.Invoke(collisionEntity);
         }
     }
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    collisionComponent.OnBaseTriggerExit2D?.Invoke();
-
-    //    Entity collisionEntity;
-    //    if (CheckCollisionEntity(collision, out collisionEntity))
-    //    {
-    //        collisionComponent.OnTriggerExit2D?.Invoke(collisionEntity);
-    //    }
-    //}
+    
     private bool CheckCollisionEntity(Collider2D collision, out Entity entity)
     {
         entity = null;

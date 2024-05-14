@@ -13,12 +13,12 @@ public class DestroyComponent : Component
     {
         
     }
-    public void SetNeedColliderDestroy()
-    {
-        needColliderDestroy = true;
-        collision = (CollisionComponent)entity.GetComponent("CollisionComponent");
-        collision.OnBaseTriggerEnter2D += ChangeState;
-    }
+    //public void SetNeedColliderDestroy()
+    //{
+    //    needColliderDestroy = true;
+    //    collision = (CollisionComponent)entity.GetComponent("CollisionComponent");
+    //    collision.OnBaseTriggerEnter2D += ChangeState;
+    //}
 
     public void SetDestroyTimer(float time)
     {
@@ -27,11 +27,6 @@ public class DestroyComponent : Component
     }
     public void Destroy()
     {
-       if (needColliderDestroy)
-        {
-            collision.OnBaseTriggerEnter2D -= ChangeState;
-        }
-
         EntityManager.Instance.RemoveEntity(entity.instanceId);
     }
     public void ChangeState()
