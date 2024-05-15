@@ -12,7 +12,9 @@
       20011,
       20012
     ],
-    "skillID": 1001
+    "skillID": 1001,
+    "range": 5,
+    "canForceMove": true
   },
   {
     "id": 1002,
@@ -27,7 +29,9 @@
       20021,
       20022
     ],
-    "skillID": 1002
+    "skillID": 1002,
+    "range": 5,
+    "canForceMove": true
   },
   {
     "id": 1102,
@@ -42,6 +46,8 @@
       20011,
       20012
     ],
-    "skillID": 1001
+    "skillID": 1001,
+    "range": 5,
+    "canForceMove": false
   }
 ]

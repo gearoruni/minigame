@@ -14,6 +14,7 @@ public class CharacterComponent : Component
     public StateComponent stateComponent;
     CharacterDataComponent characterDataComponent;
     public Dictionary<int, int> weaponDir = new Dictionary<int, int>();
+    public float range;
     public override void Init()
     {
 
@@ -35,7 +36,7 @@ public class CharacterComponent : Component
         {
             weaponDir.Add(configs.Level[i], configs.WeaponId[i]);
         }
-
+        range = configs.Range;
         //characterDataComponent.SetHealth(configs.Hp); 
         //goComponent.CreateGameObject(configs.Id.ToString());
     }

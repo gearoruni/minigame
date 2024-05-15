@@ -21,7 +21,8 @@ public static class PathUtils
     public static readonly string animePath = "Assets/Anime/";
     //子弹配置路径
     public static readonly string bulletConfigPath = "Assets/Configs/BulletConfigs/";
-
+    //AI配置路径
+    public static readonly string aiConfigPath = "Assets/Res/Preload/AI/";
     /// <summary>
     /// 原本文件夹路径获得Unity标准文件路径
     /// </summary>
@@ -105,6 +106,12 @@ public static class PathUtils
     public static string GetAnimationController(string name)
     {
         string path = animePath + name + ".controller";
+        return path;
+    }
+
+    public static string GetAIController(string name)
+    {
+        string path = aiConfigPath + name + ".asset";
         return path;
     }
 }

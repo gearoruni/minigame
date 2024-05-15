@@ -100,6 +100,7 @@
       "DestroyComponent",
       "AnimatorComponent",
       "ControllerComponent",
+      "FSMComponent",
       "CharacterDataComponent"
     ],
     "componentDefine": [
@@ -110,6 +111,7 @@
       0,
       2,
       1002,
+      0,
       0,
       0,
       0,

@@ -24,6 +24,8 @@ public sealed partial class CharacterConfigs : Luban.BeanBase
         { var __json0 = _buf["level"]; if(!__json0.IsArray) { throw new SerializationException(); } Level = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Level.Add(__v0); }   }
         { var __json0 = _buf["WeaponId"]; if(!__json0.IsArray) { throw new SerializationException(); } WeaponId = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  WeaponId.Add(__v0); }   }
         { if(!_buf["skillID"].IsNumber) { throw new SerializationException(); }  SkillID = _buf["skillID"]; }
+        { if(!_buf["range"].IsNumber) { throw new SerializationException(); }  Range = _buf["range"]; }
+        { if(!_buf["canForceMove"].IsBoolean) { throw new SerializationException(); }  CanForceMove = _buf["canForceMove"]; }
     }
 
     public static CharacterConfigs DeserializeCharacterConfigs(JSONNode _buf)
@@ -53,12 +55,19 @@ public sealed partial class CharacterConfigs : Luban.BeanBase
     /// 技能ID
     /// </summary>
     public readonly int SkillID;
+    /// <summary>
+    /// 射程/ai用
+    /// </summary>
+    public readonly float Range;
+    public readonly bool CanForceMove;
    
     public const int __ID__ = -487991768;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
+        
+        
         
         
         
@@ -78,6 +87,8 @@ public sealed partial class CharacterConfigs : Luban.BeanBase
         + "level:" + Luban.StringUtil.CollectionToString(Level) + ","
         + "WeaponId:" + Luban.StringUtil.CollectionToString(WeaponId) + ","
         + "skillID:" + SkillID + ","
+        + "range:" + Range + ","
+        + "canForceMove:" + CanForceMove + ","
         + "}";
     }
 }

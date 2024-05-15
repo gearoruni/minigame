@@ -58,6 +58,7 @@ public class Assembler
         AddComponen<DestroyComponent>(entity, "DestroyComponent");
         AddComponen<HitComponent>(entity, "HitComponent");
         AddComponen<AnimatorComponent>(entity, "AnimatorComponent");
+        AddComponen<FSMComponent>(entity, "FSMComponent");
     }
 
     private void LateCreateComponents(Entity entity)

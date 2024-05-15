@@ -24,6 +24,7 @@ public class MoveComponent : Component
     public float speed;
     //策划没给数据，写死移动碰撞检测范围
     public float radius = 0.5f;
+    public bool canForceMove;
 
     public MoveType moveType;
     public Vector2 input;
@@ -31,15 +32,16 @@ public class MoveComponent : Component
     public bool forceMoveOffset = false;
     public bool needRaycaster = true;
 
+
     //速度变化效果计算
     SpeedChange speedChange;
     List<float> timeCount;
     int idx = 0;
 
-    float forceMoveTime;
-    float forceMoveSpeed;
+    public float forceMoveTime = 0;
+    public float forceMoveSpeed;
     Vector2 forceMoveDir = new Vector2();
-
+    LayerMask mask;
     public override void Init()
     {
         transformComponent = (TransformComponent)entity.GetComponent("TransformComponent");
@@ -56,7 +58,10 @@ public class MoveComponent : Component
         if(character != null)
         {
             basespeed = character.configs.Speed;
+            canForceMove = character.configs.CanForceMove;
         }
+        mask = this.entity.Tag == Tag.Player ? LayerMask.GetMask("Enemy") : LayerMask.GetMask("Player")| LayerMask.GetMask("Enemy");
+
     }
 
     /// <summary>
@@ -93,7 +98,10 @@ public class MoveComponent : Component
             }
             if(hit.dirChangeEffect != null)
             {
-                SetForceMove(hit.dirChangeEffect.targetTime,hit.dirChangeEffect.targetSpeeds, hit.dirChangeEffect.dir);
+                if (forceMoveTime <= 0 || canForceMove)
+                {
+                    SetForceMove(hit.dirChangeEffect.targetTime, hit.dirChangeEffect.targetSpeeds, hit.dirChangeEffect.dir);
+                }
                 hit.dirChangeEffect = null;
             }
         }
@@ -112,6 +120,7 @@ public class MoveComponent : Component
     public void SetSpeed()
     {
         timeCount = new List<float>();
+        if(speedChange == null)return;
         for(int i = 0;i<speedChange.Time.Count;i++)
         {
             timeCount.Add(speedChange.Time[i]);
@@ -126,12 +135,12 @@ public class MoveComponent : Component
             timeCount = null;
             SetSpeedRatio(1);
             speedChange = null;
-            //Debug.Log("当前速度比率 正常" );
+
             return;
         }
         timeCount[idx] -= Time.deltaTime;
         SetSpeedRatio(speedChange.Speed[idx]);
-        //Debug.Log("当前速度比率 ： " + speedChange.Speed[idx] + " 剩余时间：[ " + timeCount[idx] +" ]");
+        
         if (timeCount[idx] <= 0)
         {
             idx ++;
@@ -159,6 +168,7 @@ public class MoveComponent : Component
     }
     public void UpdateMove(bool needMove)
     {
+        
         if (!needMove) { return; }
         input = input.normalized;
         DoMove(input.x, input.y);
@@ -167,11 +177,11 @@ public class MoveComponent : Component
         {
             if (moveType != MoveType.DASH)
             {
-                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius, LayerMask.GetMask("Enemy"));
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius, entity,mask);
             }
             else
             {
-                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius);
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius, entity);
             }
         }
         transformComponent.SetPostion(needTo.x, needTo.y);
@@ -193,11 +203,11 @@ public class MoveComponent : Component
         {
             if (moveType != MoveType.DASH)
             {
-                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius, LayerMask.GetMask("Enemy"));
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius, entity, mask);
             }
             else
             {
-                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius);
+                needTo = PhysicsRay.CheckCollision(transformComponent.position, moveTo.x, moveTo.y, radius, entity);
             }
         }
         transformComponent.SetPostion(needTo.x, needTo.y);

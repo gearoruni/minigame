@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class ControllerComponent : Component{
     public InputComponent Input;
-
+    public FSMComponent FSM;
     public Vector2 movepos = new Vector2();
     public Vector2 facepos = new Vector2();
 
@@ -21,10 +21,12 @@ public class ControllerComponent : Component{
     public override void Init()
     {
         Input = (InputComponent)entity.GetComponent("InputComponent");
+        FSM = (FSMComponent)entity.GetComponent("FSMComponent");
     }
     public override void Update()
     {
         if (CheckInput()) return;
+        if (CheckFSM()) return;
     }
 
     public bool CheckInput()
@@ -42,7 +44,20 @@ public class ControllerComponent : Component{
 
         return true;
     }
+    public bool CheckFSM()
+    {
+        if (FSM == null) return false;
+        movepos = FSM.movepos;
+        facepos = FSM.facepos;
+        isFire = FSM.isFire;
+        isReload = FSM.isReload;
+        isRightSkill = FSM.isRightSkill;
+        isQSkill = FSM.isQSkill;
+        isESkill = FSM.isESkill;
+        isTSkill = FSM.isTSkill;
 
+        return true;
+    }
     public override void OnCache()
     {
         CachePool.Instance.Cache<ControllerComponent>(this);

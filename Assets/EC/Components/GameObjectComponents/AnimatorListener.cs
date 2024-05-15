@@ -48,7 +48,6 @@ public class AnimatorListener : MonoBehaviour
         // 如果当前动画播放时间超过了动画长度，说明动画已经播放完毕
         if (stateInfo.normalizedTime >= 1.0f && stateInfo.IsName("Destroy"))
         {
-            Debug.Log("销毁");
             return true;
         }
         return false;

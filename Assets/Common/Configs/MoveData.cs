@@ -21,6 +21,7 @@ public sealed partial class MoveData : Luban.BeanBase
         { var __json0 = _buf["moveType"]; if(!__json0.IsArray) { throw new SerializationException(); } MoveType = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  MoveType.Add(__v0); }   }
         { var __json0 = _buf["Speed"]; if(!__json0.IsArray) { throw new SerializationException(); } Speed = new System.Collections.Generic.List<float>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { float __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Speed.Add(__v0); }   }
         { var __json0 = _buf["radis"]; if(!__json0.IsArray) { throw new SerializationException(); } Radis = new System.Collections.Generic.List<float>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { float __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Radis.Add(__v0); }   }
+        { var __json0 = _buf["canForceMove"]; if(!__json0.IsArray) { throw new SerializationException(); } CanForceMove = new System.Collections.Generic.List<bool>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { bool __v0;  { if(!__e0.IsBoolean) { throw new SerializationException(); }  __v0 = __e0; }  CanForceMove.Add(__v0); }   }
     }
 
     public static MoveData DeserializeMoveData(JSONNode _buf)
@@ -38,12 +39,14 @@ public sealed partial class MoveData : Luban.BeanBase
     /// 移动监测半径
     /// </summary>
     public readonly System.Collections.Generic.List<float> Radis;
+    public readonly System.Collections.Generic.List<bool> CanForceMove;
    
     public const int __ID__ = -40258757;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
+        
         
         
         
@@ -57,6 +60,7 @@ public sealed partial class MoveData : Luban.BeanBase
         + "moveType:" + Luban.StringUtil.CollectionToString(MoveType) + ","
         + "Speed:" + Luban.StringUtil.CollectionToString(Speed) + ","
         + "radis:" + Luban.StringUtil.CollectionToString(Radis) + ","
+        + "canForceMove:" + Luban.StringUtil.CollectionToString(CanForceMove) + ","
         + "}";
     }
 }

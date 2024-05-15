@@ -22,12 +22,14 @@
     "componentName": [
       "AnimatorComponent",
       "CharacterComponent",
-      "SpawnComponent"
+      "SpawnComponent",
+      "FSMComponent"
     ],
     "componentdataid": [
       1,
       1102,
-      2
+      2,
+      1001
     ]
   },
   {
@@ -35,12 +37,14 @@
     "componentName": [
       "AnimatorComponent",
       "CharacterComponent",
-      "SpawnComponent"
+      "SpawnComponent",
+      "FSMComponent"
     ],
     "componentdataid": [
       1,
       1102,
-      3
+      3,
+      1001
     ]
   },
   {
@@ -48,12 +52,14 @@
     "componentName": [
       "AnimatorComponent",
       "CharacterComponent",
-      "SpawnComponent"
+      "SpawnComponent",
+      "FSMComponent"
     ],
     "componentdataid": [
       1,
       1102,
-      4
+      4,
+      1001
     ]
   }
 ]
