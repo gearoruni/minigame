@@ -17,7 +17,9 @@ public class Preloader : MonoSingleton<Preloader>
         for (int i = 0; i < filedir.Length; i++)
         {
             name = Regex.Match(filedir[i], @"([^\\]*)\.prefab$").Groups[1].Value;
+
             if (name == "") continue;
+
             var go = AssetDatabase.LoadAssetAtPath<GameObject>(filedir[i]);
             preloadItem.Add(name, go);
         }
