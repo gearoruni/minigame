@@ -1,24 +1,53 @@
 [
   {
     "id": 1001,
-    "name": "SOLDIER:76",
+    "name": "艾莉亚",
+    "hp": 225,
+    "speed": 5,
     "level": [
       1,
       2
     ],
     "WeaponId": [
-      2001,
-      2002
-    ]
+      20011,
+      20012
+    ],
+    "skillID": 1001,
+    "range": 5,
+    "canForceMove": true
   },
   {
     "id": 1002,
-    "name": "Genji",
+    "name": "理智小姐",
+    "hp": 200,
+    "speed": 5,
     "level": [
-      1
+      1,
+      2
     ],
     "WeaponId": [
-      2003
-    ]
+      20021,
+      20022
+    ],
+    "skillID": 1002,
+    "range": 5,
+    "canForceMove": true
+  },
+  {
+    "id": 1102,
+    "name": "艾莉亚",
+    "hp": 225,
+    "speed": 5,
+    "level": [
+      1,
+      2
+    ],
+    "WeaponId": [
+      20011,
+      20012
+    ],
+    "skillID": 1001,
+    "range": 5,
+    "canForceMove": false
   }
 ]

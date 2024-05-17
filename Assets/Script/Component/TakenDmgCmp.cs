@@ -24,6 +24,23 @@ public class TakenDmgCmp : MonoBehaviour
         return hp;
     }
 
+    //private void OnCollisionEnter2D(Collider2D collision)
+    //{
+    //    HurtCmp atker = collision.gameObject.GetComponent<HurtCmp>();
+
+    //    if (atker != null)
+    //    {
+    //        int dmg = atker.dmg;
+    //        string atkerTag = atker.tag;
+    //        if (atkerTag != cmpTag)
+    //        {
+    //            hp = HurtAction.TakenDmg(dmg, hp);
+    //            Debug.Log(string.Format("造成 {0} 伤害，剩余血量 ：{1}", dmg, hp));
+    //            atker.InvokeCallback();
+    //        }
+    //    }
+    //}
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         HurtCmp atker = collision.gameObject.GetComponent<HurtCmp>();

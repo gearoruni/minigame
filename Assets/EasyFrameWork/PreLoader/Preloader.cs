@@ -17,19 +17,17 @@ public class Preloader : MonoSingleton<Preloader>
         for (int i = 0; i < filedir.Length; i++)
         {
             name = Regex.Match(filedir[i], @"([^\\]*)\.prefab$").Groups[1].Value;
-            Debug.Log(name);
-            if(name == "")continue;
+
+            if (name == "") continue;
+
             var go = AssetDatabase.LoadAssetAtPath<GameObject>(filedir[i]);
-            // prefab = GameObject.Instantiate(go);
-            // prefab.transform.SetParent(monoSingleton.transform);
-            // prefab.SetActive(false);
             preloadItem.Add(name, go);
         }
     }
 
     public GameObject GetGameObject(string name)
     {
-        if(preloadItem.TryGetValue(name, out  var gameObject))
+        if (preloadItem.TryGetValue(name, out var gameObject))
         {
             return gameObject;
         }

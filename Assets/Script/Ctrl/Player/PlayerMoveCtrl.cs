@@ -49,7 +49,7 @@ public class PlayerMoveCtrl: BaseModel
 
     public void OnUpdate()
     {
-        GameCore.Instance.GetManager<PlayerManager>().playerGo.transform.position = player.transform.position;
+        //GameCore.Instance.GetManager<PlayerManager>().playerGo.transform.position = player.transform.position;
     }
 
     public void Release()

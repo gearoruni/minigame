@@ -11,17 +11,19 @@ public class DestroyCmp : MonoBehaviour
     public float livingTime;
 
     private Timer timer;
+    private string tag;
     public void Init(bool cache, int id, float livingTime)
     {
         this.cache = cache;
         this.id = id;
         this.livingTime = livingTime;
+        tag = this.gameObject.tag;
     }
 
     public void CreateDelayDestroyTimer()
     {
         timer = null;
-        timer = GameCore.Instance.GetModel<TimerCtrl>().RegisterTimer(livingTime, 1, DestroySelf);
+        //timer = GameCore.Instance.GetModel<TimerCtrl>().RegisterTimer(livingTime, 1, DestroySelf);
     }
 
     public void DestroySelf()

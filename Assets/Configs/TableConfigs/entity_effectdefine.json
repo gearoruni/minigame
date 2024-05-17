@@ -1,0 +1,54 @@
+[
+  {
+    "id": 2001,
+    "effectname": [
+      "MoveEffect",
+      "HealthChangeEffect",
+      "DestroyEffect"
+    ],
+    "effectdefine": [
+      1,
+      70,
+      0
+    ]
+  },
+  {
+    "id": 2002,
+    "effectname": [
+      "MoveEffect",
+      "TrackEffect",
+      "CreateAoeAreaEffect",
+      "DestroyEffect"
+    ],
+    "effectdefine": [
+      2,
+      15,
+      2004,
+      0
+    ]
+  },
+  {
+    "id": 2003,
+    "effectname": [
+      "HealthChangeEffect",
+      "AOEEffect",
+      "DirChangeEffect"
+    ],
+    "effectdefine": [
+      50,
+      21011,
+      1
+    ]
+  },
+  {
+    "id": 2004,
+    "effectname": [
+      "HealthChangeEffect",
+      "AOEEffect"
+    ],
+    "effectdefine": [
+      150,
+      21012
+    ]
+  }
+]

@@ -18,6 +18,17 @@ public partial class Tables
     public Character.CharacterDefine CharacterDefine {get; }
     public Character.WeaponDefine WeaponDefine {get; }
     public Bullet.BulletDefine BulletDefine {get; }
+    public Entity.BaseDefine BaseDefine {get; }
+    public Entity.SpawnDefine SpawnDefine {get; }
+    public Entity.MoveDefine MoveDefine {get; }
+    public Entity.SkillDefine SkillDefine {get; }
+    public Entity.AnimationDefine AnimationDefine {get; }
+    public Entity.ComponentDefine ComponentDefine {get; }
+    public Entity.EffectDefine EffectDefine {get; }
+    public Effect.MoveEffectDefine MoveEffectDefine {get; }
+    public Effect.SpeedEffectDefine SpeedEffectDefine {get; }
+    public Entity.AreaDefine AreaDefine {get; }
+    public Effect.DirEffectDefine DirEffectDefine {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
@@ -25,6 +36,17 @@ public partial class Tables
         CharacterDefine = new Character.CharacterDefine(loader("character_characterdefine"));
         WeaponDefine = new Character.WeaponDefine(loader("character_weapondefine"));
         BulletDefine = new Bullet.BulletDefine(loader("bullet_bulletdefine"));
+        BaseDefine = new Entity.BaseDefine(loader("entity_basedefine"));
+        SpawnDefine = new Entity.SpawnDefine(loader("entity_spawndefine"));
+        MoveDefine = new Entity.MoveDefine(loader("entity_movedefine"));
+        SkillDefine = new Entity.SkillDefine(loader("entity_skilldefine"));
+        AnimationDefine = new Entity.AnimationDefine(loader("entity_animationdefine"));
+        ComponentDefine = new Entity.ComponentDefine(loader("entity_componentdefine"));
+        EffectDefine = new Entity.EffectDefine(loader("entity_effectdefine"));
+        MoveEffectDefine = new Effect.MoveEffectDefine(loader("effect_moveeffectdefine"));
+        SpeedEffectDefine = new Effect.SpeedEffectDefine(loader("effect_speedeffectdefine"));
+        AreaDefine = new Entity.AreaDefine(loader("entity_areadefine"));
+        DirEffectDefine = new Effect.DirEffectDefine(loader("effect_direffectdefine"));
         ResolveRef();
     }
     
@@ -34,6 +56,17 @@ public partial class Tables
         CharacterDefine.ResolveRef(this);
         WeaponDefine.ResolveRef(this);
         BulletDefine.ResolveRef(this);
+        BaseDefine.ResolveRef(this);
+        SpawnDefine.ResolveRef(this);
+        MoveDefine.ResolveRef(this);
+        SkillDefine.ResolveRef(this);
+        AnimationDefine.ResolveRef(this);
+        ComponentDefine.ResolveRef(this);
+        EffectDefine.ResolveRef(this);
+        MoveEffectDefine.ResolveRef(this);
+        SpeedEffectDefine.ResolveRef(this);
+        AreaDefine.ResolveRef(this);
+        DirEffectDefine.ResolveRef(this);
     }
 }
 

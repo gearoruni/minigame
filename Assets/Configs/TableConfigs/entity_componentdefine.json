@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent"
+    ],
+    "componentdataid": [
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": 3,
+    "componentName": [],
+    "componentdataid": []
+  },
+  {
+    "id": 2,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      1,
+      1102,
+      2,
+      1001
+    ]
+  },
+  {
+    "id": 6,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      1,
+      1102,
+      3,
+      1001
+    ]
+  },
+  {
+    "id": 7,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      1,
+      1102,
+      4,
+      1001
+    ]
+  }
+]

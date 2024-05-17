@@ -1,0 +1,197 @@
+[
+  {
+    "entityId": 1,
+    "name": "player",
+    "componentName": [
+      "TransformComponent",
+      "StateComponent",
+      "TagComponent",
+      "MoveComponent",
+      "GoComponent",
+      "SpawnComponent",
+      "InputComponent",
+      "CharacterComponent",
+      "WeaponComponent",
+      "SkillComponent",
+      "HitComponent",
+      "CollisionComponent",
+      "DestroyComponent",
+      "AnimatorComponent",
+      "ControllerComponent",
+      "CharacterDataComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "parentEntityId": 0
+  },
+  {
+    "entityId": 2,
+    "name": "weapon",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "TagComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      4
+    ],
+    "parentEntityId": 1
+  },
+  {
+    "entityId": 3,
+    "name": "bullet",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "TagComponent",
+      "MoveComponent",
+      "CollisionComponent",
+      "EffectComponent",
+      "BulletComponent",
+      "DestroyComponent",
+      "StateComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parentEntityId": 0
+  },
+  {
+    "entityId": 4,
+    "name": "Monster",
+    "componentName": [
+      "TransformComponent",
+      "StateComponent",
+      "TagComponent",
+      "MoveComponent",
+      "GoComponent",
+      "SpawnComponent",
+      "CharacterComponent",
+      "WeaponComponent",
+      "SkillComponent",
+      "HitComponent",
+      "CollisionComponent",
+      "DestroyComponent",
+      "AnimatorComponent",
+      "ControllerComponent",
+      "FSMComponent",
+      "CharacterDataComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      2,
+      1002,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parentEntityId": 0
+  },
+  {
+    "entityId": 5,
+    "name": "area",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "TagComponent",
+      "MoveComponent",
+      "EffectComponent",
+      "BulletComponent",
+      "DestroyComponent",
+      "StateComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parentEntityId": 0
+  },
+  {
+    "entityId": 6,
+    "name": "areateet",
+    "componentName": [
+      "EffectComponent",
+      "TagComponent",
+      "GoComponent",
+      "DestroyComponent",
+      "TransformComponent",
+      "StateComponent"
+    ],
+    "componentDefine": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parentEntityId": 0
+  },
+  {
+    "entityId": 7,
+    "name": "area",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "TagComponent",
+      "MoveComponent",
+      "EffectComponent",
+      "BulletComponent",
+      "DestroyComponent",
+      "StateComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parentEntityId": 0
+  }
+]

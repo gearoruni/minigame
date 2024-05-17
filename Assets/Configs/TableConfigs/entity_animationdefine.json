@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "animationName": "CharacterAnim"
+  },
+  {
+    "id": 2,
+    "animationName": "Bullet1Anim"
+  },
+  {
+    "id": 3,
+    "animationName": "Bullet2Anim"
+  },
+  {
+    "id": 4,
+    "animationName": "Bullet3Anim"
+  }
+]

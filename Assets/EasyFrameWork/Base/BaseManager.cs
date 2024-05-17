@@ -8,4 +8,6 @@ public interface BaseManager
     bool Init();
     UniTask<bool> InitAysnc();
     void Release();
+    
+
 }
