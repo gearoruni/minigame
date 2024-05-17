@@ -8,7 +8,7 @@
     ],
     "effectdefine": [
       1,
-      1,
+      70,
       0
     ]
   },
@@ -22,7 +22,7 @@
     ],
     "effectdefine": [
       2,
-      30,
+      15,
       2004,
       0
     ]
@@ -35,7 +35,7 @@
       "DirChangeEffect"
     ],
     "effectdefine": [
-      1,
+      50,
       21011,
       1
     ]
@@ -47,7 +47,7 @@
       "AOEEffect"
     ],
     "effectdefine": [
-      120,
+      150,
       21012
     ]
   }

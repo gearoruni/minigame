@@ -1,0 +1,52 @@
+基础 ：
+EntityData : 决定最基础的组件表，可以看作是模板
+CharactorComponentData： 创建实体时真正使用的数据
+                            AnimatorComponent ： 填入对应的AnimationData的 Id
+                            CharacterComponent：0为读玩家数据 ， 非玩家数据的情况 填入CharacterData 对应的 角色ID
+                            SpawnComponent ： 填入SpawnData表的对应id 会在指定的位置创建
+                            FSMComponent ： 填入状态机名称（非表对应）
+
+AnimationData：填id 和 想播的动画名称
+CharacterData:  决定一个指定Id的角色
+                参数：
+                    血量
+                    移动速度
+                    不同等级对应的WeaponData的id
+                    技能SkillData的对应id
+                    如果是AI填射程
+                    可以被敌对对象强制位移 ： canForceMove 为 True
+SpawnData ： 决定游戏对象的生成位置 单位 为 1 Unity 单位
+
+WeaponData：看注释填写 如果想打出均分弹幕，请写多行name/id之外的数据
+
+SkillData ：    除了对应的ID外参数：
+                技能类型 0 - 4 对应 左键，右键，Q,E,T 需要什么技能类型就填什么技能类型 小怪必须要有一个 0 类型的
+                cdtime 字面意思
+                effect_type 看注释 其实没有特别的影响好像
+                typeDefine 联动 WeaponData的id
+                prefab_id 子弹物体的名称
+                effect_id 联动 EffectData的id
+                animation_id  填入对应的AnimationData的 Id
+
+EffectData ：   指定ID 后设置子弹的效果
+                MoveEffect ： 填入 MoveEffect表的对应ID 想让这个技能可以移动，添加这个效果
+                HealthChangeEffect ： 填入伤害/负数为治疗量
+                DestroyEffect ： 如果子弹需要碰到物体后消失 添加这个
+                TrackEffect ： 填入 追踪半径 * 10 的数值
+                CreateAoeAreaEffect ： 如果希望子弹在击中后造成其他效果 添加这个 填入想要的其他效果ID
+                AOEEffect ： 填入AreaData的id 目前只支持 扇形/圆形
+                DirChangeEffect ： 强制位移性质的技能 填入DirChangeEffect的id
+                SpeedChangeEffect ： 影响速度的值 填入SpeedChangeEffect的id
+
+AreaData ： 为AOE提供参数
+            角度
+            AOE范围（半径）
+
+SpeedChangeEffect ： 看着注释填 好像暂时没法对自己附加速度
+
+MoveEffect ： 移动的速度  总体移动的时间/可以看作是存在时间
+
+DirChangeEffect ： 看着注释填
+
+
+

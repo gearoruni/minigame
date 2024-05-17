@@ -20,7 +20,6 @@ public class TrackEffect : EffectBase
         radius = define/10f;
         time = 0;
     }
-
     public override void Invoke(Entity entity)
     {
         this.entity = entity;

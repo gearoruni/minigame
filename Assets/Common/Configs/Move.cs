@@ -31,7 +31,7 @@ public sealed partial class Move : Luban.BeanBase
     /// id
     /// </summary>
     public readonly int Id;
-    public readonly int Speed;
+    public readonly float Speed;
     public readonly float Time;
    
     public const int __ID__ = 2404337;

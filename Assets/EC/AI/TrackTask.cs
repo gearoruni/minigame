@@ -140,13 +140,16 @@ public class TrackTask : Action
         {
             return TaskStatus.Failure;
         }
+        if(target != null)
+        {
+            transformC = (TransformComponent)target.Value.GetComponent("TransformComponent");
+            if(transformC == null || this.gameObject.transform == null)return TaskStatus.Failure;
+            Vector3 dir = transformC.position - this.gameObject.transform.position;
+            movepos.Value = (Vector2)dir;
 
-        transformC = (TransformComponent)target.Value.GetComponent("TransformComponent");
-        
-        Vector3 dir = transformC.position - this.transform.position;
-        movepos.Value = (Vector2)dir;
-
-        return TaskStatus.Success;
+            return TaskStatus.Success;
+        }
+        return TaskStatus.Failure;
     }
 
 }
