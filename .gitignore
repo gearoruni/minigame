@@ -23,3 +23,4 @@ sysinfo.txt
 /.vscode
 /Logs
 /UserSettings/Layouts/default-2022.dwlt
+/Logs/*.log
