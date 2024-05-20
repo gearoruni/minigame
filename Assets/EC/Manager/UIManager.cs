@@ -7,7 +7,7 @@ using UnityEngine;
 public class UIManager : Singleton<UIManager>
 {
     private int id = 0;
-    private const string UIPath = "Assets/UI";
+    private const string UIPath = "Assets/UI//.prefab";
     private Transform canvas;
     private Dictionary<int, GameObject> _idx2UI = new Dictionary<int, GameObject>();
     public override void Init()
@@ -17,13 +17,17 @@ public class UIManager : Singleton<UIManager>
 
     public int ShowUI(string name)
     {
-        var go = AssetDatabase.LoadAssetAtPath<GameObject>(UIPath + name);
+        var go = AssetDatabase.LoadAssetAtPath<GameObject>($"Assets/UI/{name}.prefab");
         if(go == null)
         {
             Debug.LogError($"º”‘ÿUI ß∞‹£¨name£∫{name}");
             return -1;
         }
+        go = GameObject.Instantiate(go);
+        /*var rect = go.GetComponent<RectTransform>();
+        rect.SetParent(canvas);*/
         go.transform.SetParent(canvas);
+        go.transform.localPosition = Vector3.zero;
         _idx2UI.Add(id, go);
         return id++;
     }

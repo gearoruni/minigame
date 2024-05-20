@@ -26,4 +26,9 @@ public class Initor : MonoBehaviour
         //玩家数据最后更新
         PlayerBaseData.Instance.Init();
     }
+
+    private void Start()
+    {
+        UIManager.Instance.ShowUI("BattleUI");
+    }
 }
