@@ -16,6 +16,15 @@ public class BulletComponent : Component
     {
         state = (StateComponent)entity.GetComponent("StateComponent");
     }
+
+    public override void DataInit()
+    {
+        int dataDefine;
+        if (entity.componentDatas.TryGetValue("BulletComponent", out dataDefine))
+        {
+            DataInit(dataDefine);
+        }
+    }
     public void DataInit(int dataDefine)
     {
         animationData = TableDataManager.Instance.tables.AnimationDefine.Get(dataDefine);

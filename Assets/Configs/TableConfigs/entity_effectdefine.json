@@ -50,5 +50,16 @@
       150,
       21012
     ]
+  },
+  {
+    "id": 2011,
+    "effectname": [
+      "HealthChangeEffect",
+      "DestroyEffect"
+    ],
+    "effectdefine": [
+      -50,
+      0
+    ]
   }
 ]
