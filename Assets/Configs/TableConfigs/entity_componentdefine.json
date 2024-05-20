@@ -61,5 +61,33 @@
       4,
       1001
     ]
+  },
+  {
+    "id": 8,
+    "componentName": [
+      "AnimatorComponent",
+      "SpawnComponent"
+    ],
+    "componentdataid": [
+      1,
+      4
+    ]
+  },
+  {
+    "id": 9,
+    "componentName": [
+      "SpawnComponent",
+      "EffectComponent",
+      "BulletComponent",
+      "GoComponent",
+      "TagComponent"
+    ],
+    "componentdataid": [
+      4,
+      2011,
+      2,
+      3001,
+      1
+    ]
   }
 ]
