@@ -41,8 +41,11 @@ public class EffectComponent : Component
         SetEffect(new AOEEffect(), "AOEEffect");
         SetEffect(new CreateAoeAreaEffect(), "CreateAoeAreaEffect",true);
         SetEffect(new DestroyEffect(), "DestroyEffect",true);
+
         SetEffect(new DirChangeEffect(), "DirChangeEffect", true);
         SetEffect(new DirChangeEffect(), "DirChangeEffect");
+
+        SetEffect(new CanDestroyTargetEffect(), "CanDestroyTargetEffect", true);
 
     }
     public void SetEffect(EffectBase effectBase,string effectName = "",bool isCollision = false)

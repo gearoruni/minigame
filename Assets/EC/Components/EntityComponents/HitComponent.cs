@@ -14,7 +14,7 @@ public class HitComponent : Component
     public AOEEffect AOEEffect;
 
     public DirChangeEffect dirChangeEffect;
-
+    public CanDestroyTargetEffect canDestroyTargetEffect;
     public override void Init()
     {
         characterData = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
@@ -37,6 +37,8 @@ public class HitComponent : Component
         healthChangeEffect = (HealthChangeEffect)effectComponent.GetEffect("HealthChangeEffect");
         speedChangeEffect = (SpeedChangeEffect)effectComponent.GetEffect("SpeedChangeEffect");
         dirChangeEffect = (DirChangeEffect)effectComponent.GetEffect("DirChangeEffect");
+        canDestroyTargetEffect = (CanDestroyTargetEffect)effectComponent.GetEffect("CanDestroyTargetEffect");
+
     }
     public override void OnCache()
     {

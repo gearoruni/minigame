@@ -18,13 +18,15 @@
       "MoveEffect",
       "TrackEffect",
       "CreateAoeAreaEffect",
-      "DestroyEffect"
+      "DestroyEffect",
+      "CanDestroyTargetEffect"
     ],
     "effectdefine": [
       2,
       15,
       2004,
-      0
+      0,
+      1001
     ]
   },
   {

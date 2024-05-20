@@ -14,7 +14,8 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     public Entity entity;
     public override void Init()
     {
-        Entity health = EntityManager.Instance.CreateEntity(8, 9);
+        //Entity health = EntityManager.Instance.CreateEntity(8, 9);
+        Entity health = EntityManager.Instance.CreateEntity(9, 10);
 
         characterLevelDir[1001] = 1;
         characterLevelDir[1002] = 1;
