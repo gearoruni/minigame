@@ -89,5 +89,22 @@
       3001,
       1
     ]
+  },
+  {
+    "id": 10,
+    "componentName": [
+      "GoComponent",
+      "SpawnComponent",
+      "TagComponent",
+      "DestroyComponent",
+      "BulletComponent"
+    ],
+    "componentdataid": [
+      1001,
+      4,
+      3,
+      1001,
+      1
+    ]
   }
 ]
