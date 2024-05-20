@@ -14,16 +14,23 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     public Entity entity;
     public override void Init()
     {
+        //Entity health = EntityManager.Instance.CreateEntity(8, 9);
+        Entity health = EntityManager.Instance.CreateEntity(9, 10);
+
         characterLevelDir[1001] = 1;
         characterLevelDir[1002] = 1;
 
-        entity = EntityManager.Instance.CreateEntity(1,1);
-        CameraManager.Instance.RegisterFollow(entity);
-        TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
+        
+        if (health.go != null)
+        {
+            entity = EntityManager.Instance.CreateEntity(1, 1);
+            CameraManager.Instance.RegisterFollow(entity);
+            TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
+        }
 
-        Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
+        //Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
 
-        eentity = EntityManager.Instance.CreateEntity(4, 6);
-        eentity = EntityManager.Instance.CreateEntity(4, 7);
+        //eentity = EntityManager.Instance.CreateEntity(4, 6);
+        //eentity = EntityManager.Instance.CreateEntity(4, 7);
     }
 }

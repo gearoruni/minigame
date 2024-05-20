@@ -23,18 +23,16 @@ public class GoComponent : Component
 
     public override void DataInit()
     {
+        int datadefine;
         if(character != null) {
-            CreateGameObject(character.configs.Id.ToString());
-            if (EntityManager.Instance.GEList.ContainsKey(go))
-            {
-                EntityManager.Instance.GEList[go] = entity;
-            }
-            else
-            {
-                EntityManager.Instance.GEList.Add(go, entity);
-            }
-            EntityManager.Instance.CharacterList.Add(entity);
+            datadefine = character.configs.Id;
+            CreateGameObject(datadefine.ToString());
         }
+        else if(entity.componentDatas.TryGetValue("GoComponent", out datadefine))
+        {
+            CreateGameObject(datadefine.ToString());
+        }
+
     }
     public void CreateGameObject(string name)
     {
@@ -67,11 +65,18 @@ public class GoComponent : Component
         {
             transform.position = spawnComponent.spawnPointPos;
         }
+        go.transform.position = transform.position;
+        go.transform.rotation = transform.rotation;
+
+        if (EntityManager.Instance.GEList.ContainsKey(go))
+        {
+            EntityManager.Instance.GEList[go] = entity;
+        }
         else
         {
-            go.transform.position = transform.position;
-            go.transform.rotation = transform.rotation;
+            EntityManager.Instance.GEList.Add(go, entity);
         }
+        EntityManager.Instance.CharacterList.Add(entity);
     }
 
     public void DestroyGameObject()

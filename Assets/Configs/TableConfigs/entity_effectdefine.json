@@ -18,13 +18,15 @@
       "MoveEffect",
       "TrackEffect",
       "CreateAoeAreaEffect",
-      "DestroyEffect"
+      "DestroyEffect",
+      "CanDestroyTargetEffect"
     ],
     "effectdefine": [
       2,
       15,
       2004,
-      0
+      0,
+      1001
     ]
   },
   {
@@ -49,6 +51,17 @@
     "effectdefine": [
       150,
       21012
+    ]
+  },
+  {
+    "id": 2011,
+    "effectname": [
+      "HealthChangeEffect",
+      "DestroyEffect"
+    ],
+    "effectdefine": [
+      -50,
+      0
     ]
   }
 ]

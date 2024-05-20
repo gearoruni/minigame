@@ -193,5 +193,59 @@
       0
     ],
     "parentEntityId": 0
+  },
+  {
+    "entityId": 8,
+    "name": "healthItem",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "SpawnComponent",
+      "CollisionComponent",
+      "EffectComponent",
+      "TagComponent",
+      "DestroyComponent",
+      "BulletComponent",
+      "StateComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "parentEntityId": 0
+  },
+  {
+    "entityId": 9,
+    "name": "canDestroyTerrin",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "SpawnComponent",
+      "CollisionComponent",
+      "TagComponent",
+      "DestroyComponent",
+      "StateComponent",
+      "HitComponent",
+      "BulletComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parentEntityId": 0
   }
 ]

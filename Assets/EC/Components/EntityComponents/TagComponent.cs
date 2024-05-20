@@ -22,12 +22,17 @@ public class TagComponent : Component
     }
     public override void DataInit()
     {
+        int datadefine;
         if (characterComponent != null)
         {
             tag = (Tag)(characterComponent.configs.Id / 1100);
             entity.Tag = tag;
         }
-
+        else if (entity.componentDatas.TryGetValue("TagComponent", out datadefine))
+        {
+            tag = (Tag)(datadefine);
+            entity.Tag = tag;
+        }
     }
     public override void Update()
     {

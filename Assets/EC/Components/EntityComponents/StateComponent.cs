@@ -30,6 +30,7 @@ public class StateComponent : Component
     public override void Update()
     {
         if (isDead)
+
         {
             state = State.DEATH;
             //test

@@ -9,10 +9,22 @@ public class DestroyComponent : Component
     public bool delayDestroy =false;
     public float livingTime;
 
+    public int condition = 0;
+    HitComponent hit;
     public override void Init()
     {
-        
+        hit = (HitComponent)entity.GetComponent("HitComponent");
     }
+
+    public override void DataInit()
+    {
+        int dataDefine;
+        if (entity.componentDatas.TryGetValue("DestroyComponent", out dataDefine))
+        {
+            condition = dataDefine;
+        }
+    }
+
     //public void SetNeedColliderDestroy()
     //{
     //    needColliderDestroy = true;
@@ -42,6 +54,16 @@ public class DestroyComponent : Component
             livingTime -= Time.deltaTime;
             if(livingTime<0)
             {
+                Destroy();
+            }
+        }
+        if(hit !=null && hit.canDestroyTargetEffect != null )
+        {
+            if(hit.canDestroyTargetEffect.condition == this.condition)
+            {
+                hit.canDestroyTargetEffect = null;
+                Debug.Log("±»´Ý»Ù");
+
                 Destroy();
             }
         }
