@@ -59,6 +59,7 @@ public class Assembler
         AddComponen<HitComponent>(entity, "HitComponent");
         AddComponen<AnimatorComponent>(entity, "AnimatorComponent");
         AddComponen<FSMComponent>(entity, "FSMComponent");
+        AddComponen<InteractiveComponent>(entity, "InteractiveComponent");
     }
 
     private void LateCreateComponents(Entity entity)

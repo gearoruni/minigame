@@ -28,8 +28,8 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
             TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
         }
 
-        Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
-
+        //Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
+        Entity eentity = EntityManager.Instance.CreateEntity(10, 11);
         //eentity = EntityManager.Instance.CreateEntity(4, 6);
         //eentity = EntityManager.Instance.CreateEntity(4, 7);
     }

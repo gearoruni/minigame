@@ -247,5 +247,28 @@
       0
     ],
     "parentEntityId": 0
+  },
+  {
+    "entityId": 10,
+    "name": "canInteractive",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "CollisionComponent",
+      "DestroyComponent",
+      "TagComponent",
+      "CharacterComponent",
+      "InteractiveComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parentEntityId": 0
   }
 ]

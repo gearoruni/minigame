@@ -41,7 +41,27 @@ public class CollisionListener : MonoBehaviour
             collisionComponent.OnBaseTriggerEnter2D?.Invoke(collisionEntity);
         }
     }
-    
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Entity collisionEntity;
+        bool hasEntity = CheckCollisionEntity(collision, out collisionEntity);
+        bool isListener = CheckListner(collision);
+        if (isListener) { return; }
+        //如果碰到建筑物了
+        if (!hasEntity)
+        {
+            collisionComponent.OnBaseTriggerExit2D?.Invoke(null);
+            return;
+        }
+        //否则自监听
+        TagComponent collisionTag = (TagComponent)collisionEntity.GetComponent("TagComponent");
+        if (collisionTag.tag != selfTag.tag)
+        {
+            collisionComponent.OnBaseTriggerExit2D?.Invoke(collisionEntity);
+        }
+    }
+
     private bool CheckCollisionEntity(Collider2D collision, out Entity entity)
     {
         entity = null;

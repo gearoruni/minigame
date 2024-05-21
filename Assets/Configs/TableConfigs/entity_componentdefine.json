@@ -106,5 +106,14 @@
       1001,
       1
     ]
+  },
+  {
+    "id": 11,
+    "componentName": [
+      "CharacterComponent"
+    ],
+    "componentdataid": [
+      1002
+    ]
   }
 ]

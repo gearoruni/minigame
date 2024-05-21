@@ -9,7 +9,7 @@
 
 using Luban;
 using SimpleJSON;
-using System.Diagnostics;
+
 
 namespace cfg.Entity
 {
@@ -29,7 +29,6 @@ public partial class BaseDefine
             { if(!_ele.IsObject) { throw new SerializationException(); }  _v = EntityConfigs.DeserializeEntityConfigs(_ele);  }
             _dataList.Add(_v);
             _dataMap.Add(_v.EntityId, _v);
-                UnityEngine.Debug.Log(_v);
         }
     }
 
