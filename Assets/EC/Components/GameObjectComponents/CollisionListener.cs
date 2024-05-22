@@ -41,7 +41,11 @@ public class CollisionListener : MonoBehaviour
             collisionComponent.OnBaseTriggerEnter2D?.Invoke(collisionEntity);
         }
     }
-    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        collisionComponent.OnBaseTriggerExit2D?.Invoke(null);
+    }
+
     private bool CheckCollisionEntity(Collider2D collision, out Entity entity)
     {
         entity = null;

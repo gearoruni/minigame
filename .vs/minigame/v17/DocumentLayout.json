@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "D:\\minigame\\minigame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\effects\\candestroytargeteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\interactioncomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\interactioncomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\hitcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\hitcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\ec\\effects\\candestroytargeteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\effects\\candestroytargeteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\effectcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\effectcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\script\\playerbasedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerbasedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\inputcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\inputcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\components\\gameobjectcomponents\\collisionlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\gameobjectcomponents\\collisionlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\collisioncomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\collisioncomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\ec\\base\\utils\\assembler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\base\\utils\\assembler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\ec\\manager\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\manager\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\destroycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\destroycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\hitcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\hitcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\script\\playerbasedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerbasedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\gocomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,37 +58,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InteractionComponent.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\InteractionComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\InteractionComponent.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\InteractionComponent.cs",
+              "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\InteractionComponent.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAywAoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T07:02:34.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CollisionComponent.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\CollisionComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\CollisionComponent.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\CollisionComponent.cs",
+              "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\CollisionComponent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T06:58:23.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CollisionListener.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\GameObjectComponents\\CollisionListener.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Components\\GameObjectComponents\\CollisionListener.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\GameObjectComponents\\CollisionListener.cs",
+              "RelativeToolTip": "Assets\\EC\\Components\\GameObjectComponents\\CollisionListener.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAywC0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T06:57:49.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Assembler.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Base\\Utils\\Assembler.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Base\\Utils\\Assembler.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Base\\Utils\\Assembler.cs",
+              "RelativeToolTip": "Assets\\EC\\Base\\Utils\\Assembler.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAkwD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T06:57:10.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EntityManager.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Manager\\EntityManager.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Manager\\EntityManager.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Manager\\EntityManager.cs",
+              "RelativeToolTip": "Assets\\EC\\Manager\\EntityManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T06:57:06.052Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "InputComponent.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\InputComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\InputComponent.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\InputComponent.cs",
+              "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\InputComponent.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA+wBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T06:52:38.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PlayerBaseData.cs",
               "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\Script\\PlayerBaseData.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerBaseData.cs",
               "ToolTip": "D:\\minigame\\minigame\\Assets\\Script\\PlayerBaseData.cs",
               "RelativeToolTip": "Assets\\Script\\PlayerBaseData.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAUwBoAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T05:32:35.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EffectComponent.cs",
-              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\EffectComponent.cs",
-              "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\EffectComponent.cs",
-              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\EffectComponent.cs",
-              "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\EffectComponent.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T05:28:53.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CanDestroyTargetEffect.cs",
               "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Effects\\CanDestroyTargetEffect.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Effects\\CanDestroyTargetEffect.cs",
@@ -81,46 +163,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "HitComponent.cs",
               "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\HitComponent.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\HitComponent.cs",
               "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\HitComponent.cs",
               "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\HitComponent.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBUAAAAFAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAC4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T05:23:23.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "GoComponent.cs",
               "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\GoComponent.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\GoComponent.cs",
               "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\GoComponent.cs",
               "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\GoComponent.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAUwCEAAAAJAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAkwCEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T05:22:32.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T05:22:32.268Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "DestroyComponent.cs",
               "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\DestroyComponent.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\DestroyComponent.cs",
               "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\DestroyComponent.cs",
               "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\DestroyComponent.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAuwEQAAAAJAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAUwEMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T05:22:03.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T05:22:03.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "HealthChangeEffect.cs",
               "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Effects\\HealthChangeEffect.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Effects\\HealthChangeEffect.cs",
@@ -128,8 +208,7 @@
               "RelativeToolTip": "Assets\\EC\\Effects\\HealthChangeEffect.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAiwCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T03:10:33.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T03:10:33.522Z"
             }
           ]
         }

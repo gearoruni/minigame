@@ -11,6 +11,8 @@ public class CollisionComponent : Component
     /// 主动回调 注意 传入参数可以为Null
     /// </summary>
     public Action<Entity> OnBaseTriggerEnter2D;
+    public Action<Entity> OnBaseTriggerExit2D;
+
 
     public void SetListener(CollisionListener listener)
     {

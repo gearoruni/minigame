@@ -116,6 +116,15 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interaction"",
+                    ""type"": ""Button"",
+                    ""id"": ""1a3bea94-c32d-4317-83f2-a47408c3b023"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -243,7 +252,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""edd5150c-16c0-4a82-96bc-8a5fc4926652"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -272,6 +281,17 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""action"": ""TSkill"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5fd4e43a-60ac-46a6-8ff8-368e65f8779c"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -290,6 +310,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         m_keyBoard_QSkill = m_keyBoard.FindAction("QSkill", throwIfNotFound: true);
         m_keyBoard_ESkill = m_keyBoard.FindAction("ESkill", throwIfNotFound: true);
         m_keyBoard_TSkill = m_keyBoard.FindAction("TSkill", throwIfNotFound: true);
+        m_keyBoard_Interaction = m_keyBoard.FindAction("Interaction", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -361,6 +382,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private readonly InputAction m_keyBoard_QSkill;
     private readonly InputAction m_keyBoard_ESkill;
     private readonly InputAction m_keyBoard_TSkill;
+    private readonly InputAction m_keyBoard_Interaction;
     public struct KeyBoardActions
     {
         private @PlayerInputAction m_Wrapper;
@@ -375,6 +397,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         public InputAction @QSkill => m_Wrapper.m_keyBoard_QSkill;
         public InputAction @ESkill => m_Wrapper.m_keyBoard_ESkill;
         public InputAction @TSkill => m_Wrapper.m_keyBoard_TSkill;
+        public InputAction @Interaction => m_Wrapper.m_keyBoard_Interaction;
         public InputActionMap Get() { return m_Wrapper.m_keyBoard; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -414,6 +437,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @TSkill.started += instance.OnTSkill;
             @TSkill.performed += instance.OnTSkill;
             @TSkill.canceled += instance.OnTSkill;
+            @Interaction.started += instance.OnInteraction;
+            @Interaction.performed += instance.OnInteraction;
+            @Interaction.canceled += instance.OnInteraction;
         }
 
         private void UnregisterCallbacks(IKeyBoardActions instance)
@@ -448,6 +474,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @TSkill.started -= instance.OnTSkill;
             @TSkill.performed -= instance.OnTSkill;
             @TSkill.canceled -= instance.OnTSkill;
+            @Interaction.started -= instance.OnInteraction;
+            @Interaction.performed -= instance.OnInteraction;
+            @Interaction.canceled -= instance.OnInteraction;
         }
 
         public void RemoveCallbacks(IKeyBoardActions instance)
@@ -477,5 +506,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         void OnQSkill(InputAction.CallbackContext context);
         void OnESkill(InputAction.CallbackContext context);
         void OnTSkill(InputAction.CallbackContext context);
+        void OnInteraction(InputAction.CallbackContext context);
     }
 }
