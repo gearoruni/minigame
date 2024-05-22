@@ -7,7 +7,9 @@ using UnityEngine;
 
 public class Preloader : MonoSingleton<Preloader>
 {
+    //private const string ASSET_PATH = "Assets/Res/Preload";
     private const string ASSET_PATH = "Assets/Res/Preload";
+
     private Dictionary<string, GameObject> preloadItem = new Dictionary<string, GameObject>();
 
     public void Init()

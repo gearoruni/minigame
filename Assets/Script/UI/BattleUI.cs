@@ -42,12 +42,15 @@ public class BattleUI : MonoBehaviour
         dialogueConfigs = TableDataManager.Instance.tables.MainTxt.Get(id);
         nameTxt.text = dialogueConfigs.角色名称;
         mainTxt.text = dialogueConfigs.文本内容;
+        EntityManager.Instance.SetEntityController(false);
     }
     private void NextTxt()
     {
         if (dialogueConfigs.下一个 == 0)
         {
             dialogUI.SetActive(false);
+            EntityManager.Instance.SetEntityController(true);
+
             return;
         }
         ShowTxt(dialogueConfigs.下一个);

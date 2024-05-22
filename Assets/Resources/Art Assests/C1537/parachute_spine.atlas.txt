@@ -1,0 +1,13 @@
+
+parachute_spine.png
+size: 436,425
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+parachute
+  rotate: false
+  xy: 2, 2
+  size: 432, 421
+  orig: 432, 421
+  offset: 0, 0
+  index: -1

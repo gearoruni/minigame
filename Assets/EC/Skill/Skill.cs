@@ -3,11 +3,8 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
-using UnityEditor.Build.Content;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public enum SkillType
 {
@@ -64,6 +61,7 @@ public class Skill
     #region 标准技能
     public void NoneFieldSkill(Entity entity)
     {
+        if (weaponConfigs == null || weaponConfigs.UpLimit == null) return;
         for (int i = 0; i < weaponConfigs.UpLimit.Count; i++)
         {
             int upv = weaponConfigs.UpLimit[i];

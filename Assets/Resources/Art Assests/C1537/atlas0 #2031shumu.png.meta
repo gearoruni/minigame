@@ -1,0 +1,1988 @@
+fileFormatVersion: 2
+guid: 865691cd142019545ba144481dc7e866
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 308
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1783
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba02ca0747402b14781a97805fb0706c
+      internalID: -67011251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1783
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb29a775f5f26264c982bc507dc5dd09
+      internalID: -966866126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1710
+        width: 142
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d6b6d38ecd450459c99d1e0ad40829
+      internalID: 1450376728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_3
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1780
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c05e1dc6b80144486a04841e778fa4
+      internalID: -1497676642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1564
+        width: 128
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c037d6f9083c74c94dda6e54edd496
+      internalID: -552462078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_5
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1643
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f35c6e8654ab7a41a0d4fd3b69d394d
+      internalID: 740895261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_6
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1568
+        width: 100
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14fab732b1ae154bb1d3fbeaa31e1d5
+      internalID: -1174048076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_7
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1675
+        width: 76
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb1dbcb655ad10489b0f82f80c0b952
+      internalID: -577494085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_8
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1623
+        width: 100
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f19cfe087f50cd46834bf03fe6a3df9
+      internalID: 1729201217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1624
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b48034198ac79147a4231fc4c1916d5
+      internalID: 2133879478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_10
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1576
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db879119a68b8b4ab2482549513df14
+      internalID: 124979364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_11
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1586
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e6d236e7657ee43ab21b928909feba
+      internalID: -1489210896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_12
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1624
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85eb3dc17d8ba1a48856dd68ffa3081e
+      internalID: 1144499856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_13
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1622
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d6ca49cc328254aa49765d81b32328
+      internalID: -84883935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_14
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1606
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf111793482855c44a48fc4a52ba807d
+      internalID: 1635149114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_15
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1608
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b71d2739138f8345b1d44716d9ae1fc
+      internalID: -183588493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_16
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1608
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f781af79a5715814eb28d682e9fd1ba3
+      internalID: -1367094351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1509
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236351eb17191ad488c5d9fc6a6885aa
+      internalID: -361780115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_18
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1408
+        width: 101
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05029fd51db49d43809ea6bdbde7c63
+      internalID: 891031200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_19
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1449
+        width: 101
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d088d6af790464fbfda6b7fb21b4d3
+      internalID: 363976781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_20
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1543
+        width: 100
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cf08bb3370ce145b4375781c33e7aa
+      internalID: 645541627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_21
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1554
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf2a2bf6e681a647bb0db810bc90ce5
+      internalID: 1727812659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_22
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1420
+        width: 249
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314749ecb56f51e4fae241c25ea3e7bb
+      internalID: 859662866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 152
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dabacbd80775a546a254d434809683b
+      internalID: -845083449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_24
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1442
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d2633e712de014ca6a187cbeca6868
+      internalID: -1191962220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_25
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1352
+        width: 129
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e2a1269d15efc4eb46fcb2b8242a32
+      internalID: -135879864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_26
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1451
+        width: 100
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c1928cc05723744b898fdcd38a1f49
+      internalID: 1854188328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_27
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1376
+        width: 194
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c5dc64cd3603846bc8bd1e82f59b6f
+      internalID: 615378841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_28
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1375
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b973edabe9c77dc4e9c56c2e2a20bf70
+      internalID: -574973035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_29
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1192
+        width: 135
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09c802c324b36b4897a9cbbe0bf9a2e
+      internalID: -264424938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_30
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1356
+        width: 98
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4f283162647084b988ddfb2f3e3fdd
+      internalID: -320795213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_31
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1348
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b94deef2d1d2641a18fbd8e767aab8
+      internalID: -1830399327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_32
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1337
+        width: 59
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab8589e45a9c2b45b13cc036c1ddaed
+      internalID: 1508913184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_33
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1052
+        width: 190
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2ed960856a6ba45959eedd8cf6749a
+      internalID: -606630246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_34
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1024
+        width: 72
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50412f954342d5f44b2cabcc8b7f24bf
+      internalID: 1232380089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_35
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1132
+        width: 152
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd40650b5b500a348988c4fff9479bc9
+      internalID: -185097055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_36
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1321
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63591ceeb4f75a448a457d6052d348e4
+      internalID: -1603437280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_37
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1339
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e291f6e2a87ba4143a03ae1f646a99ff
+      internalID: 46749573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_38
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1321
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7829f3c1a05f6a64192d2d3da946c44d
+      internalID: -163554554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_39
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1128
+        width: 136
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd861da766f6aa040801612cf931eaa4
+      internalID: 1681801826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_40
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1262
+        width: 87
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f646d40c9ac1f4ba9df5b51367e50d
+      internalID: -1198971800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_41
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1318
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc07905eab6707247a5bdc40b90575cf
+      internalID: -823976123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_42
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1252
+        width: 59
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5669ba9765b39c4596a806d3999a1f9
+      internalID: -219927442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_43
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1282
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3fd57a91b592847913eebb0aa398f5
+      internalID: 772728457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_44
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1285
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15234d2d4b02db479836b61f02aa538
+      internalID: 150491478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_45
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1278
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645f685bf72af2f4cb0bfc7aacb46b7a
+      internalID: 1488204359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_46
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1280
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d107a337fab954981198bea72443bc
+      internalID: 752795549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_47
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1292
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e9383729b0c194bb026974c05b489f
+      internalID: -632921820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_48
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1256
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6415826fb02924a9b13232670fe610
+      internalID: 501263751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_49
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1257
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfccf876597cfd4f8051b037f383fc6
+      internalID: -1070522933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_50
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1259
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c9daf2ca4602443b0d219212cf3586
+      internalID: -1874605153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_51
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 972
+        width: 154
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8421fc8c407f7948b42cd348dd600bb
+      internalID: 1215087371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_52
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1153
+        width: 87
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2024be22dde6a744bb62ccce133e7751
+      internalID: -202647151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_53
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1036
+        width: 136
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941555d4ff202724eb437b2d4ad51601
+      internalID: -1302581656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_54
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 912
+        width: 126
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da1890b597ec3f489276196a2417049
+      internalID: 768728453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_55
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 916
+        width: 135
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4a6f643a015874a96536da81bf075c
+      internalID: -1771575708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_56
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1044
+        width: 87
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f62f60576300e4690fd0c350e1b29d
+      internalID: -112509347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_57
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 836
+        width: 152
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dc14946a19c78459779a6213d75f37
+      internalID: 1921449365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_58
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 892
+        width: 76
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3c4d7822db1cc49aec3db6accf3b26
+      internalID: 513061146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_59
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 756
+        width: 141
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db6392a7b869e94393f2b8aa59d9611
+      internalID: -1317427054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_60
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 935
+        width: 87
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ab0d5d59a60ee47a462e2d030ae393
+      internalID: -194804015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_61
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 820
+        width: 128
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5564e827ff18349aed617eba5cc9e5
+      internalID: 1741402883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 692
+        width: 152
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b211005c1ca4814408cd5d5090dd54d4
+      internalID: -537116649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_63
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 832
+        width: 79
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c7e1dae4b50b54f8748782f4307448
+      internalID: 115974356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_64
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 700
+        width: 127
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e155ecbecfc58a6498292ac30eed2bac
+      internalID: 1112138015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_65
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 826
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1affdb0ea8137c2468e322c81fb32377
+      internalID: 1943006376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_66
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 372
+        width: 91
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0f04f2efacc944faf6c5478a614346
+      internalID: 1333405207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_67
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 540
+        width: 152
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf351feeb2e5ff48b3284aac7f90602
+      internalID: 1070419355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_68
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 717
+        width: 103
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3ec9f4228005d4bb07fefe41428cc3
+      internalID: -878411369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_69
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 383
+        width: 162
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bef4c54076ad384d889b5801c16c42e
+      internalID: 1122122133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_70
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 404
+        width: 161
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86c3a7c0a9a7734c990f5ffb24a8b08
+      internalID: 608053720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 161
+        height: 415
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed0cd3fc68227b49b9e3334dbf0b2e7
+      internalID: -1776433001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_72
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 480
+        width: 154
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc92230186118549808496c8a90b98a
+      internalID: -1336163380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_73
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 564
+        width: 117
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c24bccb956a7b48bad52c886f5b0d7
+      internalID: 764820739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_74
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 476
+        width: 61
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bf9b9646582914d94fcd2d3a18c28d
+      internalID: -1280708447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_75
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 265
+        width: 99
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf3e686092eb724592ea25365d199e2
+      internalID: 1815352087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_76
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 368
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502030db9d822b8448654558a6549a34
+      internalID: 818526950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_77
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 260
+        width: 161
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848e0ce27fbec4446af4fe0066c50987
+      internalID: -1294731369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_78
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 0
+        width: 255
+        height: 541
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba377efc1708f0478572b0bd867e51e
+      internalID: 343951769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_79
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 0
+        width: 202
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d4a0087245a064f83842fd6b12acd8
+      internalID: 1763488458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_80
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 294
+        width: 130
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4713cca87e614354a96ed812fe6436b7
+      internalID: -1633246090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 272
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f330e7ba8b14345a227a1586be3dfc
+      internalID: 1639313962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_82
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 0
+        width: 156
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2298a18b1c86709408d325ddf185d683
+      internalID: 638470060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas0 #2031shumu_83
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 133
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5279ecb9a5cdcbf4b89fde8c6c23d759
+      internalID: -1045098846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      atlas0 #2031shumu_0: -67011251
+      atlas0 #2031shumu_1: -966866126
+      atlas0 #2031shumu_10: 124979364
+      atlas0 #2031shumu_11: -1489210896
+      atlas0 #2031shumu_12: 1144499856
+      atlas0 #2031shumu_13: -84883935
+      atlas0 #2031shumu_14: 1635149114
+      atlas0 #2031shumu_15: -183588493
+      atlas0 #2031shumu_16: -1367094351
+      atlas0 #2031shumu_17: -361780115
+      atlas0 #2031shumu_18: 891031200
+      atlas0 #2031shumu_19: 363976781
+      atlas0 #2031shumu_2: 1450376728
+      atlas0 #2031shumu_20: 645541627
+      atlas0 #2031shumu_21: 1727812659
+      atlas0 #2031shumu_22: 859662866
+      atlas0 #2031shumu_23: -845083449
+      atlas0 #2031shumu_24: -1191962220
+      atlas0 #2031shumu_25: -135879864
+      atlas0 #2031shumu_26: 1854188328
+      atlas0 #2031shumu_27: 615378841
+      atlas0 #2031shumu_28: -574973035
+      atlas0 #2031shumu_29: -264424938
+      atlas0 #2031shumu_3: -1497676642
+      atlas0 #2031shumu_30: -320795213
+      atlas0 #2031shumu_31: -1830399327
+      atlas0 #2031shumu_32: 1508913184
+      atlas0 #2031shumu_33: -606630246
+      atlas0 #2031shumu_34: 1232380089
+      atlas0 #2031shumu_35: -185097055
+      atlas0 #2031shumu_36: -1603437280
+      atlas0 #2031shumu_37: 46749573
+      atlas0 #2031shumu_38: -163554554
+      atlas0 #2031shumu_39: 1681801826
+      atlas0 #2031shumu_4: -552462078
+      atlas0 #2031shumu_40: -1198971800
+      atlas0 #2031shumu_41: -823976123
+      atlas0 #2031shumu_42: -219927442
+      atlas0 #2031shumu_43: 772728457
+      atlas0 #2031shumu_44: 150491478
+      atlas0 #2031shumu_45: 1488204359
+      atlas0 #2031shumu_46: 752795549
+      atlas0 #2031shumu_47: -632921820
+      atlas0 #2031shumu_48: 501263751
+      atlas0 #2031shumu_49: -1070522933
+      atlas0 #2031shumu_5: 740895261
+      atlas0 #2031shumu_50: -1874605153
+      atlas0 #2031shumu_51: 1215087371
+      atlas0 #2031shumu_52: -202647151
+      atlas0 #2031shumu_53: -1302581656
+      atlas0 #2031shumu_54: 768728453
+      atlas0 #2031shumu_55: -1771575708
+      atlas0 #2031shumu_56: -112509347
+      atlas0 #2031shumu_57: 1921449365
+      atlas0 #2031shumu_58: 513061146
+      atlas0 #2031shumu_59: -1317427054
+      atlas0 #2031shumu_6: -1174048076
+      atlas0 #2031shumu_60: -194804015
+      atlas0 #2031shumu_61: 1741402883
+      atlas0 #2031shumu_62: -537116649
+      atlas0 #2031shumu_63: 115974356
+      atlas0 #2031shumu_64: 1112138015
+      atlas0 #2031shumu_65: 1943006376
+      atlas0 #2031shumu_66: 1333405207
+      atlas0 #2031shumu_67: 1070419355
+      atlas0 #2031shumu_68: -878411369
+      atlas0 #2031shumu_69: 1122122133
+      atlas0 #2031shumu_7: -577494085
+      atlas0 #2031shumu_70: 608053720
+      atlas0 #2031shumu_71: -1776433001
+      atlas0 #2031shumu_72: -1336163380
+      atlas0 #2031shumu_73: 764820739
+      atlas0 #2031shumu_74: -1280708447
+      atlas0 #2031shumu_75: 1815352087
+      atlas0 #2031shumu_76: 818526950
+      atlas0 #2031shumu_77: -1294731369
+      atlas0 #2031shumu_78: 343951769
+      atlas0 #2031shumu_79: 1763488458
+      atlas0 #2031shumu_8: 1729201217
+      atlas0 #2031shumu_80: -1633246090
+      atlas0 #2031shumu_81: 1639313962
+      atlas0 #2031shumu_82: 638470060
+      atlas0 #2031shumu_83: -1045098846
+      atlas0 #2031shumu_9: 2133879478
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

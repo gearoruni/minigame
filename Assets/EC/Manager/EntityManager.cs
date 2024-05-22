@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UI;
 using UnityEngine;
 
 public class EntityManager : Singleton<EntityManager>
@@ -135,5 +134,17 @@ public class EntityManager : Singleton<EntityManager>
     public Entity GetEntityFromInstanceId(int entityInstanceId)
     {
         return entities[entityInstanceId];
+    }
+
+    public void SetEntityController(bool isactive)
+    {
+        foreach(var  entity in entities.Values)
+        {
+            ControllerComponent controller = (ControllerComponent)entity.GetComponent("ControllerComponent");
+            if(controller != null)
+            {
+                controller.isActive = isactive;
+            }
+        }
     }
 }

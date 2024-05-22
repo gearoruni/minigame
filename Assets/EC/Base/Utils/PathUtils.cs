@@ -19,10 +19,17 @@ public static class PathUtils
     public static readonly string prefabPath = "Assets/Prefabs/";
     //prefab路径
     public static readonly string animePath = "Assets/Anime/";
-    //子弹配置路径
-    public static readonly string bulletConfigPath = "Assets/Configs/BulletConfigs/";
     //AI配置路径
     public static readonly string aiConfigPath = "Assets/Res/Preload/AI/";
+    //子弹配置路径
+    public static readonly string bulletConfigPath = "Assets/Configs/BulletConfigs/";
+
+    //prefab路径
+    public static readonly string resPrefabPath = "Assets/Prefabs/";
+    //prefab路径
+    public static readonly string resAnimePath = "Anime/";
+    //AI配置路径
+    public static readonly string resAiConfigPath = "AI/";
     /// <summary>
     /// 原本文件夹路径获得Unity标准文件路径
     /// </summary>
@@ -112,6 +119,18 @@ public static class PathUtils
     public static string GetAIController(string name)
     {
         string path = aiConfigPath + name + ".asset";
+        return path;
+    }
+
+    public static string GetResAnimationController(string name)
+    {
+        string path = resAnimePath + name ;
+        return path;
+    }
+
+    public static string GetResAIController(string name)
+    {
+        string path = resAiConfigPath + name ;
         return path;
     }
 }

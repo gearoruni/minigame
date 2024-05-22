@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem.Interactions;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class InputComponent : Component
 {

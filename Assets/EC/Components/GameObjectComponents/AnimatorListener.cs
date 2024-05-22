@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class AnimatorListener : MonoBehaviour
@@ -11,9 +9,8 @@ public class AnimatorListener : MonoBehaviour
     public float y;
 
     Animator animator;
-    
-    AnimatorController controller;
 
+    RuntimeAnimatorController runcontroller;
     public bool isEnd;
     public string nowPlayAnim;
     public void Init(string animationName,Entity entity)
@@ -24,9 +21,10 @@ public class AnimatorListener : MonoBehaviour
         {
             animator = this.AddComponent<Animator>();
         }
-        controller = AssetDatabase.LoadAssetAtPath<AnimatorController>(PathUtils.GetAnimationController(animationName));
 
-        animator.runtimeAnimatorController = controller;
+        runcontroller = Resources.Load<RuntimeAnimatorController>(PathUtils.GetResAnimationController(animationName));
+        animator.runtimeAnimatorController = runcontroller;
+
     }
 
     public void SetParam(float x, float y)

@@ -17,7 +17,7 @@ public class ControllerComponent : Component{
     public bool isTSkill;
     public bool isHold = false;
 
-
+    public bool isActive = true;
     public override void Init()
     {
         Input = (InputComponent)entity.GetComponent("InputComponent");
@@ -25,6 +25,7 @@ public class ControllerComponent : Component{
     }
     public override void Update()
     {
+        if (!isActive) return;
         if (CheckInput()) return;
         if (CheckFSM()) return;
     }
