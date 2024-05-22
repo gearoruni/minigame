@@ -992,9 +992,10 @@ MonoBehaviour:
   - {fileID: 2712320310721437049}
   - {fileID: 3650617287065263429}
   - {fileID: 0}
-  dialogUI: {fileID: 0}
-  nameTxt: {fileID: 0}
-  mainTxt: {fileID: 0}
+  dialogUI: {fileID: 2867804995081531397}
+  nameTxt: {fileID: 5952243474798719138}
+  mainTxt: {fileID: 42791242612223907}
+  next: {fileID: 4257962474995148043}
 --- !u!1 &5894449860372345337
 GameObject:
   m_ObjectHideFlags: 0

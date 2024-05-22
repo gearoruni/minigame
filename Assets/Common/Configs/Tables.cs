@@ -29,6 +29,7 @@ public partial class Tables
     public Effect.SpeedEffectDefine SpeedEffectDefine {get; }
     public Entity.AreaDefine AreaDefine {get; }
     public Effect.DirEffectDefine DirEffectDefine {get; }
+    public Txt.MainTxt MainTxt {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
@@ -47,6 +48,7 @@ public partial class Tables
         SpeedEffectDefine = new Effect.SpeedEffectDefine(loader("effect_speedeffectdefine"));
         AreaDefine = new Entity.AreaDefine(loader("entity_areadefine"));
         DirEffectDefine = new Effect.DirEffectDefine(loader("effect_direffectdefine"));
+        MainTxt = new Txt.MainTxt(loader("txt_maintxt"));
         ResolveRef();
     }
     
@@ -67,6 +69,7 @@ public partial class Tables
         SpeedEffectDefine.ResolveRef(this);
         AreaDefine.ResolveRef(this);
         DirEffectDefine.ResolveRef(this);
+        MainTxt.ResolveRef(this);
     }
 }
 
