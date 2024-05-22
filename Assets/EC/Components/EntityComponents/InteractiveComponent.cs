@@ -12,7 +12,8 @@ public class InteractiveComponent : Component
         collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
         collisionComponent.OnBaseTriggerEnter2D += ChangeState;
         collisionComponent.OnBaseTriggerExit2D += Exit;
-        interactiveGO = GameObject.Instantiate(Preloader.Instance.GetGameObject("1002"));
+        interactiveGO = GameObject.Instantiate(Preloader.Instance.GetGameObject("9999"));
+        interactiveGO.SetActive(false);
     }
 
     public override void OnCache()
@@ -24,7 +25,9 @@ public class InteractiveComponent : Component
 
     private void ChangeState(Entity entity)
     {
+        if (entity == null || entity.Tag != Tag.Player) return;
         isInteracting = true;
+        
         interactiveGO.SetActive(true);
         interactiveGO.transform.position = this.entity.go.transform.position + new Vector3(0, 0.5f, 0); 
     }

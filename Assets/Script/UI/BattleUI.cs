@@ -7,10 +7,15 @@ public class BattleUI : MonoBehaviour
 {
     private SkillComponent skillCmp;
     public List<Image> maskList;
+    public GameObject dialogUI;
+    public Text nameTxt;
+    public Text mainTxt;
+    public Button next;
     private void Awake()
     {
         var player = EntityManager.Instance.GetEntityFromEntityId(1);
         skillCmp = (SkillComponent)player.GetComponent("SkillComponent");
+        next.onClick.AddListener(NextTxt);
     }
 
     // Update is called once per frame
@@ -23,5 +28,10 @@ public class BattleUI : MonoBehaviour
             float cd = 1 - skillCmp.nowCdtime[skill.idx] / skill.cd;
             img.fillAmount = cd;
         }
+    }
+
+    private void NextTxt()
+    {
+
     }
 }

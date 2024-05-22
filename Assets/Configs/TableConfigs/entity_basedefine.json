@@ -258,7 +258,9 @@
       "DestroyComponent",
       "TagComponent",
       "CharacterComponent",
-      "InteractiveComponent"
+      "InteractiveComponent",
+      "TagComponent",
+      "SpawnComponent"
     ],
     "componentDefine": [
       0,
@@ -267,7 +269,9 @@
       0,
       0,
       0,
-      0
+      0,
+      0,
+      2
     ],
     "parentEntityId": 0
   }
