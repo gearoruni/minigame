@@ -14,6 +14,7 @@ public class Initor : MonoBehaviour
         CachePool.Instance.Init();
         SpawnManager.Instance.Init();
         EffectManager.Instance.Init();
+        UIManager.Instance.Init();
 
         //基础生命周期统一
         BehaviourCtrl.Instance.Init();
@@ -24,5 +25,10 @@ public class Initor : MonoBehaviour
 
         //玩家数据最后更新
         PlayerBaseData.Instance.Init();
+    }
+
+    private void Start()
+    {
+        UIManager.Instance.ShowUI("BattleUI");
     }
 }

@@ -15,6 +15,8 @@ public class HitComponent : Component
 
     public DirChangeEffect dirChangeEffect;
     public CanDestroyTargetEffect canDestroyTargetEffect;
+
+    private Material material;
     public override void Init()
     {
         characterData = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
@@ -39,9 +41,27 @@ public class HitComponent : Component
         dirChangeEffect = (DirChangeEffect)effectComponent.GetEffect("DirChangeEffect");
         canDestroyTargetEffect = (CanDestroyTargetEffect)effectComponent.GetEffect("CanDestroyTargetEffect");
 
+        //иак╦
+        //GameObject go = entity.go;
+        //material = go.GetComponent<SpriteRenderer>().material;
+        if(material == null)
+        {
+            material = this.entity.go.GetComponent<SpriteRenderer>().material;
+            material = new Material(material);
+            this.entity.go.GetComponent<SpriteRenderer>().material = material;
+            Debug.Log(this.entity.go);
+        }
+        material.SetFloat("_shanshuo", 1f);
+        //Debug.Log(material.GetFloat("_shanshuo"));
+        TimerManager.Instance.RegisterTimer(0.2f, 1, ChangeColor);
     }
     public override void OnCache()
     {
         CachePool.Instance.Cache<HitComponent>(this);
+    }
+
+    private void ChangeColor()
+    {
+        material.SetFloat("_shanshuo", 0f);
     }
 }

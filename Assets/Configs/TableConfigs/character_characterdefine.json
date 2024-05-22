@@ -49,5 +49,20 @@
     "skillID": 1001,
     "range": 5,
     "canForceMove": false
+  },
+  {
+    "id": 5500,
+    "name": "测试",
+    "hp": 100,
+    "speed": 0,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      0
+    ],
+    "skillID": 0,
+    "range": 0,
+    "canForceMove": false
   }
 ]

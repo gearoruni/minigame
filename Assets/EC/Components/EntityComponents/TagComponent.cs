@@ -9,6 +9,7 @@ public enum Tag
     Skill =2,
     Terrain = 3,
     Weapon = 4,
+    Interactive = 5
 }
 
 public class TagComponent : Component

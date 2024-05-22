@@ -13,7 +13,6 @@ public class CollisionComponent : Component
     public Action<Entity> OnBaseTriggerEnter2D;
     public Action<Entity> OnBaseTriggerExit2D;
 
-
     public void SetListener(CollisionListener listener)
     {
         this.listener = listener;
@@ -22,6 +21,7 @@ public class CollisionComponent : Component
     public override void OnCache()
     {
         OnBaseTriggerEnter2D = null;
+        OnBaseTriggerExit2D = null;
         listener = null;
         CachePool.Instance.Cache<CollisionComponent>(this);
     }
