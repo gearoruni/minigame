@@ -17,7 +17,8 @@ public class UIManager : Singleton<UIManager>
 
     public int ShowUI(string name)
     {
-        var go = AssetDatabase.LoadAssetAtPath<GameObject>($"Assets/UI/{name}.prefab");
+        var go = Resources.Load<GameObject>("UI/" + name);
+        //var go = AssetDatabase.LoadAssetAtPath<GameObject>($"Assets/UI/{name}.prefab");
         if(go == null)
         {
             Debug.LogError($"º”‘ÿUI ß∞‹£¨name£∫{name}");

@@ -16,27 +16,27 @@ public class FireAction
     /// <param name="transmitter">发射器</param>
     public static void Fire(List<FireDefine> fireDefines,GameObject transmitter)
     {
-        foreach(FireDefine fireDefine in fireDefines)
-        {
-            fireDefine.prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PathUtils.GetBulletPrefabFromID(fireDefine.bulletId));
+        //foreach(FireDefine fireDefine in fireDefines)
+        //{
+        //    fireDefine.prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PathUtils.GetBulletPrefabFromID(fireDefine.bulletId));
 
-            float timeBetweenBullets = fireDefine.timeBetweenBullets;
+        //    float timeBetweenBullets = fireDefine.timeBetweenBullets;
 
-            for (int i = 0; i < fireDefine.volleyCount; i++)
-            {
-                Vector3 baseDir = transmitter.transform.up;
-                // 随机生成一个角度
-                float randomAngle = Random.Range(fireDefine.downLimit, fireDefine.upLimit);
+        //    for (int i = 0; i < fireDefine.volleyCount; i++)
+        //    {
+        //        Vector3 baseDir = transmitter.transform.up;
+        //        // 随机生成一个角度
+        //        float randomAngle = Random.Range(fireDefine.downLimit, fireDefine.upLimit);
 
-                // 计算弹道的方向
-                Vector2 direction = Quaternion.Euler(0f, 0f, randomAngle) * transmitter.transform.up;
+        //        // 计算弹道的方向
+        //        Vector2 direction = Quaternion.Euler(0f, 0f, randomAngle) * transmitter.transform.up;
 
-                //GameCore.Instance.GetModel<TimerCtrl>().RegisterTimer(fireDefine.timeBetweenBullets, fireDefine.bulletsPerVolley, delegate()
-                //{
-                //    BaseFire(fireDefine, transmitter, direction);
-                //}, true);
-            }
-        }
+        //        //GameCore.Instance.GetModel<TimerCtrl>().RegisterTimer(fireDefine.timeBetweenBullets, fireDefine.bulletsPerVolley, delegate()
+        //        //{
+        //        //    BaseFire(fireDefine, transmitter, direction);
+        //        //}, true);
+        //    }
+        //}
     }
 
     /// <summary>

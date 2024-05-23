@@ -1,0 +1,20 @@
+[
+  {
+    "id": 21011,
+    "name": "gun1",
+    "fieldType": 2,
+    "define1": 2,
+    "define2": 30,
+    "alwaysActive": false,
+    "livingTime": 0
+  },
+  {
+    "id": 21012,
+    "name": "gun2",
+    "fieldType": 2,
+    "define1": 1.5,
+    "define2": 180,
+    "alwaysActive": false,
+    "livingTime": 0
+  }
+]

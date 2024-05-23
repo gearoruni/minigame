@@ -17,13 +17,13 @@ public class FireDefine
     public GameObject prefab;
     public FireDefine(int bulletId, int upLimit, int downLimit, int volleyCount,int bulletsPerVolley,float timeBetweenBullets)
     {
-        this.bulletId = bulletId;
-        this.upLimit = upLimit;
-        this.downLimit = downLimit;
-        this.volleyCount = volleyCount;
-        this.bulletsPerVolley = bulletsPerVolley;
-        this.timeBetweenBullets = timeBetweenBullets;
+        //this.bulletId = bulletId;
+        //this.upLimit = upLimit;
+        //this.downLimit = downLimit;
+        //this.volleyCount = volleyCount;
+        //this.bulletsPerVolley = bulletsPerVolley;
+        //this.timeBetweenBullets = timeBetweenBullets;
 
-        bulletData = AssetDatabase.LoadAssetAtPath<BulletData>(PathUtils.GetBulletConfigsFromId(bulletId));
+        //bulletData = AssetDatabase.LoadAssetAtPath<BulletData>(PathUtils.GetBulletConfigsFromId(bulletId));
     }
 }

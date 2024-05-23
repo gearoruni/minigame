@@ -6,7 +6,7 @@ public class GameStart : MonoBehaviour
 {
     public void Awake()
     {
-        Preloader.Instance.Init();
+
     }
 
     // Start is called before the first frame update

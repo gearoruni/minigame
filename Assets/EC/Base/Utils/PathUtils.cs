@@ -17,7 +17,7 @@ public static class PathUtils
 
     //prefab路径
     public static readonly string prefabPath = "Assets/Prefabs/";
-    //prefab路径
+
     public static readonly string animePath = "Assets/Anime/";
     //AI配置路径
     public static readonly string aiConfigPath = "Assets/Res/Preload/AI/";
@@ -25,8 +25,8 @@ public static class PathUtils
     public static readonly string bulletConfigPath = "Assets/Configs/BulletConfigs/";
 
     //prefab路径
-    public static readonly string resPrefabPath = "Assets/Prefabs/";
-    //prefab路径
+    public static readonly string resPrefabPath = Application.dataPath + "/Prefabs/";
+
     public static readonly string resAnimePath = "Anime/";
     //AI配置路径
     public static readonly string resAiConfigPath = "AI/";
@@ -57,7 +57,11 @@ public static class PathUtils
         if (string.IsNullOrEmpty(path)) return string.Empty;
         return path.Trim().Substring(path.IndexOf("Assets"));
     }
-
+    public static string GetResPreloadPath(string path)
+    {
+        if (string.IsNullOrEmpty(path)) return string.Empty;
+        return path.Trim().Substring(path.IndexOf("Preload"));
+    }
     public static string GetLuaPath(string path)
     {
         path = GetStanderdPath((string)path);

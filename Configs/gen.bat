@@ -8,6 +8,6 @@ dotnet %LUBAN_DLL% ^
     -d json  ^
     --conf %CONF_ROOT%\luban.conf ^
     -x outputCodeDir=..\Assets\Common\Configs ^
-    -x outputDataDir=..\Assets\Configs\TableConfigs
+    -x outputDataDir=..\Assets\Resources\Configs\TableConfigs 
 
 pause

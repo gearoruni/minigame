@@ -38,6 +38,9 @@ public class AnimatorListener : MonoBehaviour
         animator.Play(animationName);
         nowPlayAnim = animationName;
     }
+
+
+
     public bool CheckDestroyAnime()
     {
         // 检测当前动画状态信息
