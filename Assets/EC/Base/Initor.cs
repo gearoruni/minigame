@@ -6,6 +6,8 @@ public class Initor : MonoBehaviour
 {
     private void Awake()
     {
+        Preloader.Instance.Init();
+
         //系统相关管理器
         EventManager.Instance.Init();
         ObjectPoolManager.Instance.Init();

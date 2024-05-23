@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem.Interactions;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class InputComponent : Component
 {
@@ -18,6 +16,7 @@ public class InputComponent : Component
     public bool isQSkill => inputActions.keyBoard.QSkill.WasPressedThisFrame();
     public bool isESkill => inputActions.keyBoard.ESkill.WasPressedThisFrame();
     public bool isTSkill => inputActions.keyBoard.TSkill.WasPressedThisFrame();
+    public bool interaction => inputActions.keyBoard.Interaction.WasPressedThisFrame();
 
     public bool isHold = false;
 

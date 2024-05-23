@@ -14,7 +14,8 @@ public class TableDataManager : Singleton<TableDataManager>
     }
     private JSONNode LoadTable(string table_name)
     {
-        var textAsset = AssetDatabase.LoadAssetAtPath<TextAsset>($"Assets/Configs/TableConfigs/{table_name}.json");
+        string path = "Configs/TableConfigs/" + table_name;
+        TextAsset textAsset = Resources.Load<TextAsset>(path);
         return JSON.Parse(textAsset.text);
     }
 }

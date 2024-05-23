@@ -2,9 +2,7 @@ using cfg;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
-using UnityEditor.Profiling.Memory.Experimental;
 using UnityEngine;
-using UnityEngine.Rendering.VirtualTexturing;
 
 public class GoComponent : Component
 {

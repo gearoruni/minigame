@@ -38,9 +38,12 @@ public class FSMComponent : Component
         int dataDefine;
         if (entity.componentDatas.TryGetValue("FSMComponent", out dataDefine))
         {
+            bt.ExternalBehavior = Resources.Load<ExternalBehaviorTree>(PathUtils.GetResAIController(dataDefine.ToString()));
+
+#if UNITY_EDITOR
             bt.ExternalBehavior = AssetDatabase.LoadAssetAtPath<ExternalBehaviorTree>(PathUtils.GetAIController(dataDefine.ToString()));
+#endif
             bt.StartWhenEnabled = true;
-            //bt.RestartWhenComplete = true;
         }
         if (transform!=null)
         {

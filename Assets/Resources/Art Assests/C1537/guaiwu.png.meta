@@ -1,0 +1,7796 @@
+fileFormatVersion: 2
+guid: c3ac5707088d8944f9a9c4eb546f93f9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 308
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: guaiwu_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1992
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee57d52c4613e064b992f2d90320c163
+      internalID: 805499309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_1
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1751
+        width: 153
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f015dcb67ac7504caacec1c3c249a3b
+      internalID: -1536474034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_2
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1888
+        width: 143
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26e96974f7a03746ac8f6674871c6aa
+      internalID: -2062311369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_3
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1909
+        width: 121
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8d481bdcbb9934388aef8197de62d6
+      internalID: -737959411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_4
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1909
+        width: 136
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec4af495d5d7704e81e8c3c568203e7
+      internalID: -1788986923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_5
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1951
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f2b5bac96d4474ab03f122f24dcca3
+      internalID: -555126145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1884
+        width: 149
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9306b564fce7248b3600066029a0e6
+      internalID: 541819033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_7
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1914
+        width: 135
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2df4467e4a6d64d8cdca035c549865
+      internalID: 105819755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_8
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1914
+        width: 27
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf54bd5dbb18b6344bda1d606e7688c2
+      internalID: -494279194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_9
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1914
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c728b4a227c4e4e4da0de9becce0f655
+      internalID: 1969922883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_10
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1850
+        width: 32
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869b4ec432ac00548a3b4d9c27ed5f80
+      internalID: -1272502679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_11
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1899
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efc8618fe49e2848accc31a87b1e773
+      internalID: -25940630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_12
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1836
+        width: 32
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefcaeb04b4bf324fbcc4e58cf2076dc
+      internalID: 857310295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_13
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1875
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e62646613c8fb44aaca7777d0d0f38
+      internalID: 116446824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_14
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1915
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bd2b02eb13f3547a638ae03f560a56
+      internalID: -1194586513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1752
+        width: 288
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d9b0c15f23a6e46a3df663a4a7041e
+      internalID: -1177894512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1360
+        width: 287
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6c50ebd1f614d459023cc11a3fe667
+      internalID: -531036180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_17
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1630
+        width: 147
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a580d27587dec44790c71eca7f14f47
+      internalID: 1842559635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_18
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1773
+        width: 122
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1946e18d67040284e8f4d37cdb17d3c9
+      internalID: -93486576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_19
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1771
+        width: 122
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f2ae8aeca18114889a3ce8aca01754
+      internalID: -353521421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_20
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1850
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b09b0890fd7d74bb0f2916cc507ff5
+      internalID: -425126103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_21
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1832
+        width: 33
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ede7b7a3fcb924cb0390ea37e8238f
+      internalID: 1000068506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_22
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1873
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e341b9ed509aec45a739e3637686842
+      internalID: -700122470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_23
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1834
+        width: 19
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3924d79dfc704409ddf7969c7b0e6f
+      internalID: 1413010096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_24
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1808
+        width: 17
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e40918d7ff6194daf830e3329caafd
+      internalID: -1230756475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_25
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1843
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47002a25c9d9e5e4f8edeb4de0ec4a56
+      internalID: 1075752485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_26
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 1884
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d6f9f6eb19059499bc6b45e7fc498c
+      internalID: -1494559246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_27
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1809
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d399193fe1dfcdf49890c62758bfc3d7
+      internalID: -736186321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_28
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1824
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afe4dc6a13d1b6489b68ae755f07545
+      internalID: 1796475191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_29
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1809
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e373cfdfb5376428ed1ab18b8decd8
+      internalID: -1696424987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_30
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 1843
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e15addf6686a348bf49b142b477b36
+      internalID: -266673558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_31
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1773
+        width: 106
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdec10a066555e41a487b5b55d5468f
+      internalID: 607263350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_32
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1751
+        width: 37
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6ca29370088d34dafbff63154e9341
+      internalID: 2115868833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_33
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1771
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498cdfe32580a5b449dd81224b6591d7
+      internalID: 1508039030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_34
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1757
+        width: 29
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f6a3519c02c934ab1b53d315da52ff
+      internalID: 273886839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_35
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 1802
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abafc9e00b540741864492efdde573d
+      internalID: 2113854371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_36
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1799
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f0c63ddfc0a144a94fa3742abb023f
+      internalID: -128189401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_37
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1775
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a43f9b5165ec447aa1df2bf37f6bac
+      internalID: 79846170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_38
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1637
+        width: 122
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a6b2041d9c216418fc5cd4566f1b03
+      internalID: 1806076385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_39
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1704
+        width: 154
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6082dcdcd461331469582aaa880fd33e
+      internalID: -1518719627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_40
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 1755
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c04073b30ece0f44b4cfb5692214ab0
+      internalID: -451485158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_41
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1667
+        width: 29
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e9a7f052aad4148ace022b840539ac
+      internalID: -1178537192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_42
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1759
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee76c89b22df234c9d55bd926f8c1be
+      internalID: 164428507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_43
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1746
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb67ddb5e2ff444991add31a67d34f6
+      internalID: -524880841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_44
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1757
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e116729447c4bd4a9ba6c8a8a58c0de
+      internalID: 1780724912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_45
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1757
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bd849622073c348b4ccb56963f76c4
+      internalID: -1224978522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_46
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1748
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a516777d0b95a94681907d9d56965ca
+      internalID: 696438895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_47
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 1726
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4555e82560cb94f9c9350d014fde1a
+      internalID: 321263575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_48
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 1755
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e70bfe0724bf0488a5e687a0184c74
+      internalID: -600801581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1626
+        width: 288
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbcff7223e732c488ecdfc9d9a2f275
+      internalID: -1605941579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_50
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1674
+        width: 105
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2087769f3a4cdea45ba2daa1fdfb6641
+      internalID: -538860337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_51
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1674
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fc925fc89c83242a1328730715da31
+      internalID: -339557689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_52
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1667
+        width: 35
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dfee4902ce00140a98db360c754b4f
+      internalID: -820963781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_53
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1686
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c140ab6dbc25df040a4dd53515c3da56
+      internalID: -399098802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_54
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1689
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c19ba20871eec4f82b4935ccfe2a7c
+      internalID: -385524918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_55
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1689
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ad7037cad798c4eb2f8b6032a032a3
+      internalID: -1915060325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_56
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 1711
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694293baff331fb439f34607a3ef9303
+      internalID: 1962691036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_57
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1711
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be1bab0268a0044183dba5fb493528a
+      internalID: 1909768537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_58
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1717
+        width: 62
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d843734e792d6f6438436094cf8bd0d9
+      internalID: -299647203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_59
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1726
+        width: 65
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5280c98b9f2eef41abfb7d1fe266f5d
+      internalID: -1831205717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_60
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1623
+        width: 134
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653fb756ba0722345af40693046b600d
+      internalID: -812995580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_61
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1593
+        width: 45
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d07e08e24df89b43888dd2f7160f629
+      internalID: 558133556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_62
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1601
+        width: 43
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4c6b2bf51e5cb4ca5efd498b1681db
+      internalID: 959376745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_63
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1620
+        width: 39
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863d102c02c04cf4fbe4b23c55c9343c
+      internalID: 881701470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_64
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1616
+        width: 32
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1811967170497418c7cc703200d5c5
+      internalID: 939454197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_65
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 1616
+        width: 31
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da35d52b062de644b9f7e4fb42935ba
+      internalID: 1248959653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_66
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 1677
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34330f36eda9b764d83103676975a053
+      internalID: 1785171294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_67
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 1627
+        width: 17
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb42acbf06391d74b8c4d6059f26e272
+      internalID: -565833791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_68
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1355
+        width: 168
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2414ebae6be5fd4d82de4fee83e9536
+      internalID: 1661629518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_69
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1500
+        width: 126
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6640ea582ae6841b671f9d1f2c93c9
+      internalID: -418562455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_70
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1612
+        width: 139
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2898d59aa6a8a840b511f45e273dca0
+      internalID: 1207118355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_71
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1593
+        width: 111
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca295da675630d40bdf70d6469d32c6
+      internalID: 1358519378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_72
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1627
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f331d793bbe3a6945bd92aa4b933fe79
+      internalID: -1268194782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_73
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 1619
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbe5cba6e139324b99d369cea346fbf
+      internalID: 1205578289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_74
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1619
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366467e7e239474468269a887fc52f3d
+      internalID: -1543973120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1499
+        width: 288
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82425a7b4abb5b94db308c611068fc6a
+      internalID: 250997644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_76
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 1493
+        width: 140
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc6b1ab31cf3ba418ebbffb33132b29
+      internalID: -945578435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_77
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1552
+        width: 166
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17ec6a7b2078c946907faa5a29badc8
+      internalID: -444951456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_78
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1532
+        width: 151
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5817beb2e744c4a82f59cf614c3023
+      internalID: -672094836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_79
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1506
+        width: 42
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088e668faf0bd6349aa1da14889b87ea
+      internalID: -109728553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_80
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1535
+        width: 37
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc5d42056122664eb0a5a36f2216542
+      internalID: 712578529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_81
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1533
+        width: 36
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8205cc052008d44392d247fdcbbd381
+      internalID: -952118736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_82
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1534
+        width: 33
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd5b244642d3c04b8e68800734d5b57
+      internalID: -275982838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_83
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 1551
+        width: 33
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678fda8e821d07a43828210b5c82aecd
+      internalID: 799282428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_84
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1569
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9e0cb3d653d1c47a6e3fe92d31e586
+      internalID: -594533960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_85
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 1558
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8864c1e5374e24cb7c534ac04d40ab
+      internalID: 930524663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_86
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1474
+        width: 126
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf90a48cbd6e3146ab2871ab0a0d9fb
+      internalID: 792890980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_87
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1471
+        width: 151
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bd04e4844c2b04e8a657ec0ce6d257
+      internalID: 1882536757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_88
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 1443
+        width: 42
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9a94f08663f5543991a28bbee435b4
+      internalID: -1832126420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_89
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1443
+        width: 43
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1faedf69bc718e241b21798071f30cdc
+      internalID: 195113364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_90
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 1453
+        width: 39
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99adc583bac65f4784ccbc9d8c5d590
+      internalID: 1151525683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_91
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1462
+        width: 33
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3657289cacb57134f9d1c1ee3fc63257
+      internalID: 661855885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_92
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1507
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f1d60e374d3a142aaaa0850c39b339
+      internalID: -1337701238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_93
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 1516
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e260e70e4e908b40817e484433eb9b1
+      internalID: -1276045837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_94
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1522
+        width: 42
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8dd36cbd4e09a4db11480f4d244c22
+      internalID: 2086084377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1372
+        width: 288
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d087c94b9bb26c429f6585b6a8962fa
+      internalID: 669660400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_96
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1240
+        width: 145
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b10253b94afd184d864fed86c902e05
+      internalID: 337853838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_97
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1430
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2be10ab3795294ea5ded4478ad50e5
+      internalID: 1363478307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_98
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1424
+        width: 27
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101ae8c04b69fc34fbd9d68d1addf901
+      internalID: 1954563763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_99
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 1473
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cebae53b5950e74eb7ef4c6fb9edd02
+      internalID: 1187011334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_100
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1478
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7a2ccad028fb445bc7a51eecf1bb41
+      internalID: 355249181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_101
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 1478
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4082b8b75e008d448312104cd1b9dde
+      internalID: 1130521555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_102
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1407
+        width: 155
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4af9e90056b6db4a95574b20f8922b3
+      internalID: -998739783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_103
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1390
+        width: 112
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304f98057f6d14044a24e9bfb4109ecf
+      internalID: 1660286575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_104
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1358
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21130568af91e44fa5e58c7a9c22490
+      internalID: 1033271934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_105
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1379
+        width: 45
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b728c613a990c3249b0deaff4b73f7ca
+      internalID: 1894296396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_106
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 1375
+        width: 68
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e07121a0cf135a46a731b32a61f0b1e
+      internalID: -876230071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_107
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 1372
+        width: 40
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d979a3f2dc4f197428788774d98e6d24
+      internalID: 983666675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_108
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 1373
+        width: 33
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fddff127a6d3645b38866436ab078d
+      internalID: 1468220168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_109
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 1428
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daba150ed3f00a34c85606bf617021a0
+      internalID: 1664625758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_110
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1428
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bce6014f43e6c4f9640a5e813fca93
+      internalID: 863005009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_111
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1322
+        width: 147
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969f440674645fd438904e9698267ec2
+      internalID: 1628599772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_112
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1377
+        width: 57
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03292690821bae74a902dfee394167f5
+      internalID: 1146431465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_113
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1377
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc37761628d5b44ea3bf051086a269b
+      internalID: 1711745583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_114
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 1387
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e7f43f94108334db12225d95c6b7b3
+      internalID: -726223076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1244
+        width: 288
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bab4fa518a49c24cbe07159854875ae
+      internalID: -1520804767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_116
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1235
+        width: 290
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81db3d2f6c7f664aaf3f76813822ad2
+      internalID: 1522969971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_117
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1319
+        width: 151
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e40c903630c0b148b27782917884ae6
+      internalID: 1387389190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_118
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1301
+        width: 151
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f7988124bb5214993998c453497b5a
+      internalID: 1095578586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_119
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1301
+        width: 115
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e4f91dc2566a847999f0beeaead9bb
+      internalID: 1817582011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_120
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1328
+        width: 93
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a392c2e0f127f1e4a896c24cc138152c
+      internalID: -1263727173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_121
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 1291
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52e5e0d1eaba20449080aa9b69d832b
+      internalID: -278589752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_122
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1274
+        width: 24
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435635ac36a86f74da37f2df9e555bb1
+      internalID: 138184279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_123
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 1343
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5305cd85bd8ab44ba3f2b96c42d3f83
+      internalID: 407019911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_124
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1326
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba7e531611863249888e397c78b0d03
+      internalID: -823579960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_125
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1114
+        width: 145
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1dd6b25e27383f48a9d10dad21160e8
+      internalID: -998049177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_126
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1246
+        width: 161
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa9cdc2d83295f459f8fe0776712dc6
+      internalID: 473487410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_127
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1240
+        width: 135
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ff70105d8b84c4b9578b48242cfabd
+      internalID: 1175553164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_128
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1234
+        width: 42
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bf81cd31ca9f243b6f84efc2c04aeb
+      internalID: 1083695240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_129
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1296
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c43cce08e8e594e89b0d789a44a20a
+      internalID: 987458673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_130
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1288
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc04877fb7a78847974866ccbc46947
+      internalID: -1166650044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_131
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1288
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfeb147c722c824b9c4f018b2e36371
+      internalID: -1983538845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_132
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 1222
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8757c2144d82fa498319727a886a5cd
+      internalID: -342033888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_133
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1222
+        width: 118
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7e12b926bff5b4eacbdc6c0dd31b85
+      internalID: 541831810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_134
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1170
+        width: 38
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e935815aecf02448a9403350fc7893
+      internalID: -2126511433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_135
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1206
+        width: 36
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da50c5c0dce7f894a8608161cf5150fd
+      internalID: 323163354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_136
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 1186
+        width: 33
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29537c4df8b6cb46b68f32a5fb2fcd2
+      internalID: -2015646689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_137
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1247
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: decd1b1d2541d5f4db8c34a8babd722b
+      internalID: -1433296623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_138
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1245
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70241138e9ff4534a813c99fba62a899
+      internalID: 124465188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_139
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1213
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7461a284d581d144d8443a617e070beb
+      internalID: 1308383296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1116
+        width: 288
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f414e3cebe3df04a9230291aa5b1873
+      internalID: -1382754773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_141
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1108
+        width: 290
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61823e76e4aab54aa471782afb39262
+      internalID: -1579222916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_142
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1114
+        width: 142
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe08fd3a52ecfa429f84c29bbe073fe
+      internalID: 281470177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_143
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1107
+        width: 132
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e049adc1fb44a949bdf1e1afb9e0388
+      internalID: -1245423306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_144
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1159
+        width: 134
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd4e76ac20dab546b767bae2f6d700d
+      internalID: -2021151784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_145
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 1159
+        width: 167
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5d21c9fb26e8c499d54786e59ab401
+      internalID: -1017649816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_146
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1170
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0eded6e69cc184f8192ab9fd9d1055
+      internalID: 1593839808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_147
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1170
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b537a61ad838c546ad2001b32231b8f
+      internalID: 1659145756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_148
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1159
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643edc78ed694974d84e7050d696b658
+      internalID: -1410273004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_149
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1198
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d0af58d7682d34e876a2e11d6105c8
+      internalID: 246409026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_150
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1191
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93593fb2b14b45458f60d1ee1fbe09d
+      internalID: 1722639234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_151
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 1169
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3036ec450c2bab54f8817d9aaa1de40a
+      internalID: -106271474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_152
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1083
+        width: 164
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7eee413d11ef641a5c36528b04474a
+      internalID: -184464275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_153
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1082
+        width: 115
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bc08f14a2a7b448874c81a37e58caa
+      internalID: 589901015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_154
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1098
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfa986005a802f4a8cd6c2f0905d1cd
+      internalID: -1216526962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_155
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1105
+        width: 32
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c78e1ca9cbabad448d8fc06ad6b86bc
+      internalID: 739248370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_156
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1081
+        width: 29
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe4b5d04a4c6944fb0de00a219a9dfd
+      internalID: -1127110594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_157
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1145
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409c205ee609c5d45a87a3802b0a1c21
+      internalID: -620425223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_158
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1140
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ac26a646c2a7549940528ff89b1ac1
+      internalID: -183560464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_159
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 1123
+        width: 53
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58eae30496583c46a2cd7bd272fcc7e
+      internalID: -209865452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 288
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eb8c3ca23cfce4b8fe03079e2ab9ab
+      internalID: 1271598230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_161
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 848
+        width: 303
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a255079d101804c95cd4583716ee10
+      internalID: 1996796175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_162
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 860
+        width: 290
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fd240b29b30a74d82215d42efe90a3
+      internalID: -807711253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_163
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1082
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bd07798ec1f0a4ca6c25e4d4155654
+      internalID: 1350889930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_164
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1082
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c47b39f93e12334e976c9636834aebf
+      internalID: 572918270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_165
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1082
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f18635b55cc2f46988a4fed04ea8ee
+      internalID: 1605505612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_166
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1028
+        width: 44
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45b4f11a4fc7f24687398bb9515dc50
+      internalID: 1505225947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_167
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1005
+        width: 48
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d7dd45be8208642b9bd60dc28c444f
+      internalID: 1235456734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_168
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1005
+        width: 43
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d1f566260f6e8429f17657af025d7b
+      internalID: 172989473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_169
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1005
+        width: 30
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f420d5e80d30f45963bd72aa53035d
+      internalID: 1823675106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_170
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1066
+        width: 29
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7832be122bd64ef4f8a44f13c1b57aa6
+      internalID: 752089358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_171
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1076
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c66b0c6c24149347ad389463b2c9095
+      internalID: -17869189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_172
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 1076
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0bea788552b9d43a827f351235e06d
+      internalID: 1764422980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_173
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1088
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cac96219ed6ab4aa4e49345833ea53
+      internalID: -1824407730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_174
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 939
+        width: 130
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03677689d6a7cb9448e79edd97c2beaa
+      internalID: -1514945120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_175
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1008
+        width: 155
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb7f03c8721d1a4c922757e6764cd05
+      internalID: 424925306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_176
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 984
+        width: 29
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b425429f4311aa4999193d9a77a41a2
+      internalID: -1725432786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_177
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 991
+        width: 39
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0a1aed1e092bd4b9f590eb707adfdd
+      internalID: 1970602727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_178
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1005
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbbb25a7e98c6b4283d2660606a7ce1
+      internalID: -145958836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_179
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 1020
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b068a658368f3e54fa6847c5d7c000ad
+      internalID: 787912522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_180
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 1024
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9420e8e72144234b8d8a511d1524318
+      internalID: 446694516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_181
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1046
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc2c438d8e9bdc46b290289ca5f956f
+      internalID: -1389651679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_182
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 1046
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae428f8685c4cb44aa78f6c47c83770
+      internalID: -2094126806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_183
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 946
+        width: 69
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec126c0ff7af9d4abd2210a3aa3f861
+      internalID: 535016473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_184
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 951
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2baaa5e713502984ca1843a6a159ec5f
+      internalID: -148501715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_185
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 974
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabc9b30bf5e94241a294010883ab8f4
+      internalID: 494647004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_186
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 1006
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e61adff1d3a7c4e912b194ea915e18
+      internalID: 1511153240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_187
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 285
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733b4252b5ace6d4aacc21b892af75cf
+      internalID: -1346763493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_188
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 932
+        width: 147
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd905d00e7eb632428994b2467f37171
+      internalID: 1932331518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_189
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 932
+        width: 152
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a414f94adf97048a7aff7107d83df1
+      internalID: -1804341812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_190
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 985
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a587498ab9d62f347a9ebae97878ec8d
+      internalID: -606443859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_191
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 899
+        width: 42
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fe9a0760a3e654fb3c0983c5da6cea
+      internalID: 271510906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_192
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 952
+        width: 62
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348522320c5c57545917e5e55e5927b6
+      internalID: -1339592205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_193
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 960
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dffaae1856f0e43bfb87131325b0e9
+      internalID: -1048605329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_194
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 852
+        width: 157
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e599881efd8b8245ad6443bc2b300f8
+      internalID: 1075076535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_195
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 819
+        width: 150
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122461a1820d4474e880a5d78f248b42
+      internalID: 1061838971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_196
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 848
+        width: 153
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460c24b7bdc85064eb23c6a478ca9ee2
+      internalID: 1940424606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_197
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 848
+        width: 142
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c4fa5a3bcb94a4e8676a935cce4f89
+      internalID: 376763695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_198
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 918
+        width: 79
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cb9d6daf75ffd4ba0e741b576adea2
+      internalID: 1201879487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_199
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 858
+        width: 49
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f11bdb07fdfbc4d8dc8bc067721cfb
+      internalID: 1151470129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_200
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 899
+        width: 49
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898add9222d58c64e9a50fc4ef6cf9b7
+      internalID: -789365470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_201
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 872
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e298aafd42e5e954aab0403cab5c10bf
+      internalID: 159056986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_202
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 872
+        width: 35
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6eaa4f8906d8d44a41e138ec95b4b6
+      internalID: -803434162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_203
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 912
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a66b6021910d647843435cc6f3e86f
+      internalID: 608506276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_204
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 912
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae16864e15f7394dad43b65d82b6fc2
+      internalID: 1146848160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_205
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 828
+        width: 112
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2212fc06248972c4cbf58fb929ef9699
+      internalID: -1059973306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_206
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 839
+        width: 112
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b352eba1541314a8ea95eb7ce34f22
+      internalID: 829204843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_207
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 858
+        width: 129
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64de6acf81f52f24e9fa5ae72ea90231
+      internalID: 1259338722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_208
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 801
+        width: 70
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a14d261920aa68478ec257885e5fb85
+      internalID: -883896686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_209
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 824
+        width: 31
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a87fc52305f9b4588785129772aff8
+      internalID: -1905027907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_210
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 863
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1d05335e6b6be4bb86c54324a739ad
+      internalID: 1787048203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_211
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 844
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe251227457e23846ba05b5169d8e772
+      internalID: 1518421135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_212
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 682
+        width: 140
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d28b00c66085c4eb5db5c146126d97
+      internalID: -549518756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_213
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 711
+        width: 465
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3da2ef0d0fd774994120b88cb2f137
+      internalID: 1311472866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_214
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 722
+        width: 142
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ccc247f7d2618041afadd71e5e05cd5
+      internalID: -1598045476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_215
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 687
+        width: 145
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8ffd7de3a0e5340a67306549526d15
+      internalID: -1515846055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_216
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 764
+        width: 150
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54628fb7b5b72c6448d4ddd6474d49dc
+      internalID: -384082326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_217
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 764
+        width: 151
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dd8be7d98bcd848911653bdf623b82
+      internalID: -1498380267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_218
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 758
+        width: 152
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38d684bf77b28d43904c87f0839db2e
+      internalID: -274263438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_219
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 747
+        width: 136
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b3490a842f4314d9e2436ecc08aab6
+      internalID: 167252624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_220
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 781
+        width: 73
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33eede72f4699414fa692e819fbd71c8
+      internalID: -1449862766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_221
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 728
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e40bbadd574b042b34bf72842f1681
+      internalID: 1258798635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_222
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 745
+        width: 39
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d5d785f22022b4db55e1f7b636c2f1
+      internalID: -206835062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_223
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 794
+        width: 29
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32c705ab8f19fa428f106159a681cf3
+      internalID: 135561938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_224
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 794
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a5459b8aecb8444a985e70cef28fd1
+      internalID: 1158785991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_225
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 696
+        width: 71
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4485c1f247573db48a19985346951b0b
+      internalID: -926429972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_226
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 710
+        width: 52
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23ad071081f9b84198ca1c42697e9cb
+      internalID: 1825070235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_227
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 745
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b452b69474840d24b827e4f5832c963a
+      internalID: -613897921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_228
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 773
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a12182ced84b994ca65b924d4ff1ae4
+      internalID: 750777458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_229
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 575
+        width: 137
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8c427e2fed9f649a6cbf6760cc1a9b
+      internalID: -609683666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_230
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 678
+        width: 152
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578cc8ac5c4207040bcbc8442e9d04db
+      internalID: 1006943334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_231
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 697
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eda3dbc1bbca9a40b3ad481a12d8162
+      internalID: 1485836922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_232
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 697
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe812a4e157e034ba64674185b02780
+      internalID: -361297841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_233
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 697
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe94d649ba59b5a42ac914e124e63d28
+      internalID: -702556928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_234
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 677
+        width: 140
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40548c30701327b468f0619ec8fc3c43
+      internalID: 1143813457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_235
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 707
+        width: 53
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e5fc5fc9026a5429f9611f901ab5ff
+      internalID: -107513229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_236
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 707
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f6db2ab570220469a7cfaa9567f6c4
+      internalID: -708435421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_237
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 653
+        width: 42
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f617006282ccf414d8e991e5eb872406
+      internalID: 1202502948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_238
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 660
+        width: 32
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bbeb71f3abb5b48b811daafd2957be
+      internalID: -1708455689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_239
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 724
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4edb0361f90ad4faa0ab9ea5d8cd9c
+      internalID: -206778064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_240
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 703
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb852ade77a90546bd3a786393d500d
+      internalID: 787169977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_241
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 400
+        width: 270
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b32db6bb3cdbce4a9a35568e81365f2
+      internalID: 1671023223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_242
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 644
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106bc105f9b1fea459a185dc58645a12
+      internalID: -563743882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_243
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 660
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede4f942ba4576741b45cb57b26c4936
+      internalID: 1688642035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_244
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 703
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3822801610f41648ab4128d350bf7a5
+      internalID: 45579871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_245
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 676
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31474bf71e567664b8e5f89fe91892da
+      internalID: 333568783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_246
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 541
+        width: 141
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d599085a9b75ea248a04c22655cef40f
+      internalID: 1952789085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_247
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 407
+        width: 286
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8c7cea2a0c60c4cbb6b0f5984bc134
+      internalID: -1709470272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_248
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 610
+        width: 131
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaccb094540ed324793317f7dc48b934
+      internalID: 849622129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_249
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 630
+        width: 120
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7c29fe7da7c554789f3424e862cee7
+      internalID: -665025390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_250
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 623
+        width: 69
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bfecb74e00646449adf1442fbb7c82
+      internalID: -502378690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_251
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 659
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f06ddd3855f1c44fab3254d4a6bce58
+      internalID: 1127387015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_252
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 541
+        width: 133
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2163e34b8edf414c9a63032b687dcc3
+      internalID: 1911980719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_253
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 531
+        width: 134
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9df0e62993254e45a8ab6c0be6c3e26
+      internalID: 1098728848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_254
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 610
+        width: 170
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8a9b07f4ba4ef45ae07e00a6a02b8f
+      internalID: -985562280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_255
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 550
+        width: 123
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b228d857a93d0b94fa8f738324c7bef9
+      internalID: 459047492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_256
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 557
+        width: 60
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45edb2c866ffaf45a99b411f87cbaf1
+      internalID: -1189334137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_257
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 546
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92655e6e66663ec41b206021a301b7e5
+      internalID: -899850476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_258
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 551
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291e560b5a83a1b4fba5be81e9d5618d
+      internalID: -1199563758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_259
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 571
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0ba58ef1441e8479650a8f892bd223
+      internalID: -1917276599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_260
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 571
+        width: 36
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c7834370d1e7e47b5870a990fe6fa7
+      internalID: -1613965307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_261
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 577
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9955ac2b4e795e24bb73737c5d37f76a
+      internalID: -529500981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_262
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 595
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50934b13fe7264244948eb944e2a055b
+      internalID: -1186614210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_263
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 525
+        width: 136
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ab0fe97a23537458e812fce8772be6
+      internalID: -716755114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_264
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 560
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2175d39fcbd0245b531068f4f168b2
+      internalID: -1572812707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_265
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 588
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f4ee15c77b27c45bde18b02dc80d40
+      internalID: -847631477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_266
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 287
+        width: 149
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253f572ba57204f44a8c9b2a12bc9c32
+      internalID: 523571749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_267
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 280
+        width: 145
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6137ca4392ac440950296afe9cd303
+      internalID: 268515408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_268
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 472
+        width: 120
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db05104dc67f6704799d641368bb24c1
+      internalID: 343636264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_269
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 474
+        width: 77
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf383e3e2d24d7e419603f318dd26593
+      internalID: -686120077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_270
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 477
+        width: 42
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8d40422e9665242aa0c5f224fe8f74
+      internalID: -1600051730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_271
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 503
+        width: 26
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76e6eda314f33d42a80b51915148923
+      internalID: -357494126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_272
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 546
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c3442b599558a4eaa19325c91efe58
+      internalID: -198684052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_273
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 428
+        width: 187
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a053c1d800c2cdf4582c19e0b0da36b6
+      internalID: 529212952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_274
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 493
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d1c7b32c9aacf439226019c6eb8411
+      internalID: 1167343688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_275
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 404
+        width: 31
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f534ef4b44efc24e846d933049bda63
+      internalID: -225528503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_276
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 479
+        width: 70
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288f51aeccf797444ad7dad595c50cfd
+      internalID: -896541205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_277
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 479
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae9607992011db41abab60a3a2c49c8
+      internalID: -1955811265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_278
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 450
+        width: 161
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb739dd9f1ce0f45818418f069d1ee3
+      internalID: -1340380998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_279
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 472
+        width: 126
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381707af8923d5f4fb154a9d2d87a49a
+      internalID: -1647357746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_280
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 478
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9da537521b1074291099041bd26e10
+      internalID: -133852944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_281
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 473
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848cd1680587b8e45ad6e3610807da52
+      internalID: -1252383719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_282
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 438
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8110de2a09609db458d7e96095106b5f
+      internalID: 580314224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_283
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 484
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d1e58f19b03f845903f2b7ecc8841c
+      internalID: -117793794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_284
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 236
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20493e32003f0804291df999cf5e317e
+      internalID: -1515649220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_285
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 404
+        width: 42
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80db8ab1c76cb5248b9228c8ccd0a9ed
+      internalID: -1335989440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_286
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 340
+        width: 140
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756f715f1ba6f63448d001af2877f85f
+      internalID: -967431780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_287
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 0
+        width: 374
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b794ff163fb07f4a93eeb75db1772b9
+      internalID: 1559274220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_288
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 391
+        width: 142
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbb8b211bbc9984dac24971c4792fdb
+      internalID: -632040935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_289
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 406
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10233a3280ed3ed429f780bbcf948ba2
+      internalID: -15733045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_290
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 406
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bac63fc5e0f074fac208c540b47da2
+      internalID: -1842392615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_291
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 398
+        width: 127
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e42615dcb5baeb4e89aacf392c937f6
+      internalID: 322415891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_292
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 399
+        width: 109
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6c041bef04f1245b6fb6bcd0609a18
+      internalID: 362233288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_293
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 351
+        width: 33
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fd00db376acaf45b0aaf369e9ab338
+      internalID: -3330665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_294
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 408
+        width: 30
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195c48c1d82e3264583c3650356b3c01
+      internalID: -105156286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_295
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 293
+        width: 210
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b21ea79ce3653d4e9eaadfa8109b061
+      internalID: -1418399382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_296
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 275
+        width: 140
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fa2e3feae031d4a85e49300e082878
+      internalID: 2098107150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_297
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 310
+        width: 151
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808a2e1f0df977f43bdb5eda9114aae4
+      internalID: -369751946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_298
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 327
+        width: 131
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5786d271d2bc0a141bcac8b601455935
+      internalID: -801580823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_299
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 327
+        width: 144
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589a339b65ed6c24eb88e41578e870c1
+      internalID: -991933930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_300
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 347
+        width: 88
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61c488a125bbc8488e342ba47db9503
+      internalID: 968978519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_301
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 275
+        width: 30
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7b1202cddc4e941b985ed11f8699fd
+      internalID: -379668731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_302
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 351
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9864776e31c48741b0d7320040ba17e
+      internalID: 1192189077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_303
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 355
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1380c5a4b5aabce4cac74f69cd578c73
+      internalID: -1695814906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_304
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 172
+        width: 127
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed1b1f2d9d8ddc47b4ff270eceea5e5
+      internalID: 1841711598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_305
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 206
+        width: 156
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2067be63b2bbc4847810871cdc1d47d3
+      internalID: 815962367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_306
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 258
+        width: 154
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922a603f5eb15f4499618cd3e6604de4
+      internalID: 165329659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_307
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 270
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e5ad51196043449a86666c07e0608a
+      internalID: 1899680323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_308
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 248
+        width: 41
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31390cc3915eed48aaca5fb0271bf66
+      internalID: 501172575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_309
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 247
+        width: 33
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50db2cb5b91903b4791b0a17cbbd7348
+      internalID: 325793661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_310
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 275
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a969d4d68686f94cac95aa19ca97da9
+      internalID: -2118881694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_311
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 268
+        width: 32
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13f2e335433d9046ab4aee33e2a952d
+      internalID: 945298122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_312
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 300
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42026947c1d24ef409e053d67941f434
+      internalID: 469557199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_313
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 172
+        width: 138
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be96470594ee4b46819ac81a3ea359a
+      internalID: 1901881665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_314
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 136
+        width: 129
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08030b5073cd19a488bdcf79eec563c8
+      internalID: 1607338249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_315
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 107
+        width: 416
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab90f1b92ddc4fe4387eed7d1f5bfbcc
+      internalID: 759435830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_316
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 171
+        width: 49
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdf84630903b2e42bcee0439b6a7191
+      internalID: -857011786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_317
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 182
+        width: 38
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c764a49bedab2764bad3c62ea72fd571
+      internalID: 1474959415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_318
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 184
+        width: 40
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69c5da88e1a32949b3cfbff2dda58d9
+      internalID: 1552489035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_319
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 253
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d513e543bc6648e41a79dd2c836e1c81
+      internalID: 340741975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_320
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 183
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e925705814c5a34a842b4a9d44dbd9f
+      internalID: 1323594482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_321
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 124
+        width: 164
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bb13352136a00419f93104e973120d
+      internalID: 254992717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_322
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 177
+        width: 132
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd371a3b6feaa654e8ae6165afc05168
+      internalID: -1526534189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_323
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 167
+        width: 73
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a614ceecd896f44e855dde05fae051f
+      internalID: -1165430424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_324
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 179
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea47b18d7b1251f4ea3b5af0e61e226a
+      internalID: -819012087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_325
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 178
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ea48bcd5c4145419690dc63713ce28
+      internalID: -1695852423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_326
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 184
+        width: 29
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b61afd737d321c42abdd4927662f117
+      internalID: 1248356264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_327
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 180
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef23e6f3c95686478a7db238db000ba
+      internalID: 900273968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_328
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4fb13b41dfdce4fab627d11c026c99
+      internalID: 1743095316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_329
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 149
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463358788d8c62048894ff4cf3b39f47
+      internalID: -954337029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_330
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 0
+        width: 140
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24957b4285c9d642a66c51e44085491
+      internalID: 694736490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_331
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 0
+        width: 145
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd995be48a2ef094a9b917dd5cf79386
+      internalID: 1012037470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_332
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 0
+        width: 129
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20823ef1ba2e973419bec781b0763557
+      internalID: -1693454601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_333
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 0
+        width: 141
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d8eee54ecf8ac4f85c7fe000b9cca3
+      internalID: -1208106011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_334
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 96
+        width: 138
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938506c4248967d42a79dbfc4b7ab13a
+      internalID: -1035993039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_335
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 96
+        width: 146
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9214cfcafc9ef474498bb3f4b0d600cb
+      internalID: -26648507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_336
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 86
+        width: 56
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b78a2924b33e34199ce5d40f842614
+      internalID: -2093254911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_337
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 83
+        width: 49
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35752c6b1dade51479fd1f2e4112d208
+      internalID: 72430577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_338
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 83
+        width: 38
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29f765276b5d0047a905d01e9ab00fe
+      internalID: -758668276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_339
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 95
+        width: 36
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4962d3f892858468e5e0f8c5bfd6f8
+      internalID: -1241592918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_340
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 95
+        width: 33
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9171fe25631499d44a82cd077ebb61a0
+      internalID: -890656336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_341
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 78
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a741fce84455147aca61d3e495e60a
+      internalID: -284761468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_342
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 1
+        width: 147
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c00b7fc348db24ebadc43f88bb97e1
+      internalID: 769681156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_343
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 132
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbe959a2e343d64a8e7921456e8148f
+      internalID: 1873305731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_344
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2
+        width: 126
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c71170a54d67341be741e1b1660a86
+      internalID: 726751365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_345
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 0
+        width: 136
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522296fbed3ce3245acea8632f7f8d44
+      internalID: -1946666132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_346
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 2
+        width: 38
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3086a5218d5cdab409a77b854e376dd9
+      internalID: 405992291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guaiwu_347
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 2
+        width: 38
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b24f706edb82c4d9e269b4e921b397
+      internalID: 1523795466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      guaiwu_0: 805499309
+      guaiwu_1: -1536474034
+      guaiwu_10: -1272502679
+      guaiwu_100: 355249181
+      guaiwu_101: 1130521555
+      guaiwu_102: -998739783
+      guaiwu_103: 1660286575
+      guaiwu_104: 1033271934
+      guaiwu_105: 1894296396
+      guaiwu_106: -876230071
+      guaiwu_107: 983666675
+      guaiwu_108: 1468220168
+      guaiwu_109: 1664625758
+      guaiwu_11: -25940630
+      guaiwu_110: 863005009
+      guaiwu_111: 1628599772
+      guaiwu_112: 1146431465
+      guaiwu_113: 1711745583
+      guaiwu_114: -726223076
+      guaiwu_115: -1520804767
+      guaiwu_116: 1522969971
+      guaiwu_117: 1387389190
+      guaiwu_118: 1095578586
+      guaiwu_119: 1817582011
+      guaiwu_12: 857310295
+      guaiwu_120: -1263727173
+      guaiwu_121: -278589752
+      guaiwu_122: 138184279
+      guaiwu_123: 407019911
+      guaiwu_124: -823579960
+      guaiwu_125: -998049177
+      guaiwu_126: 473487410
+      guaiwu_127: 1175553164
+      guaiwu_128: 1083695240
+      guaiwu_129: 987458673
+      guaiwu_13: 116446824
+      guaiwu_130: -1166650044
+      guaiwu_131: -1983538845
+      guaiwu_132: -342033888
+      guaiwu_133: 541831810
+      guaiwu_134: -2126511433
+      guaiwu_135: 323163354
+      guaiwu_136: -2015646689
+      guaiwu_137: -1433296623
+      guaiwu_138: 124465188
+      guaiwu_139: 1308383296
+      guaiwu_14: -1194586513
+      guaiwu_140: -1382754773
+      guaiwu_141: -1579222916
+      guaiwu_142: 281470177
+      guaiwu_143: -1245423306
+      guaiwu_144: -2021151784
+      guaiwu_145: -1017649816
+      guaiwu_146: 1593839808
+      guaiwu_147: 1659145756
+      guaiwu_148: -1410273004
+      guaiwu_149: 246409026
+      guaiwu_15: -1177894512
+      guaiwu_150: 1722639234
+      guaiwu_151: -106271474
+      guaiwu_152: -184464275
+      guaiwu_153: 589901015
+      guaiwu_154: -1216526962
+      guaiwu_155: 739248370
+      guaiwu_156: -1127110594
+      guaiwu_157: -620425223
+      guaiwu_158: -183560464
+      guaiwu_159: -209865452
+      guaiwu_16: -531036180
+      guaiwu_160: 1271598230
+      guaiwu_161: 1996796175
+      guaiwu_162: -807711253
+      guaiwu_163: 1350889930
+      guaiwu_164: 572918270
+      guaiwu_165: 1605505612
+      guaiwu_166: 1505225947
+      guaiwu_167: 1235456734
+      guaiwu_168: 172989473
+      guaiwu_169: 1823675106
+      guaiwu_17: 1842559635
+      guaiwu_170: 752089358
+      guaiwu_171: -17869189
+      guaiwu_172: 1764422980
+      guaiwu_173: -1824407730
+      guaiwu_174: -1514945120
+      guaiwu_175: 424925306
+      guaiwu_176: -1725432786
+      guaiwu_177: 1970602727
+      guaiwu_178: -145958836
+      guaiwu_179: 787912522
+      guaiwu_18: -93486576
+      guaiwu_180: 446694516
+      guaiwu_181: -1389651679
+      guaiwu_182: -2094126806
+      guaiwu_183: 535016473
+      guaiwu_184: -148501715
+      guaiwu_185: 494647004
+      guaiwu_186: 1511153240
+      guaiwu_187: -1346763493
+      guaiwu_188: 1932331518
+      guaiwu_189: -1804341812
+      guaiwu_19: -353521421
+      guaiwu_190: -606443859
+      guaiwu_191: 271510906
+      guaiwu_192: -1339592205
+      guaiwu_193: -1048605329
+      guaiwu_194: 1075076535
+      guaiwu_195: 1061838971
+      guaiwu_196: 1940424606
+      guaiwu_197: 376763695
+      guaiwu_198: 1201879487
+      guaiwu_199: 1151470129
+      guaiwu_2: -2062311369
+      guaiwu_20: -425126103
+      guaiwu_200: -789365470
+      guaiwu_201: 159056986
+      guaiwu_202: -803434162
+      guaiwu_203: 608506276
+      guaiwu_204: 1146848160
+      guaiwu_205: -1059973306
+      guaiwu_206: 829204843
+      guaiwu_207: 1259338722
+      guaiwu_208: -883896686
+      guaiwu_209: -1905027907
+      guaiwu_21: 1000068506
+      guaiwu_210: 1787048203
+      guaiwu_211: 1518421135
+      guaiwu_212: -549518756
+      guaiwu_213: 1311472866
+      guaiwu_214: -1598045476
+      guaiwu_215: -1515846055
+      guaiwu_216: -384082326
+      guaiwu_217: -1498380267
+      guaiwu_218: -274263438
+      guaiwu_219: 167252624
+      guaiwu_22: -700122470
+      guaiwu_220: -1449862766
+      guaiwu_221: 1258798635
+      guaiwu_222: -206835062
+      guaiwu_223: 135561938
+      guaiwu_224: 1158785991
+      guaiwu_225: -926429972
+      guaiwu_226: 1825070235
+      guaiwu_227: -613897921
+      guaiwu_228: 750777458
+      guaiwu_229: -609683666
+      guaiwu_23: 1413010096
+      guaiwu_230: 1006943334
+      guaiwu_231: 1485836922
+      guaiwu_232: -361297841
+      guaiwu_233: -702556928
+      guaiwu_234: 1143813457
+      guaiwu_235: -107513229
+      guaiwu_236: -708435421
+      guaiwu_237: 1202502948
+      guaiwu_238: -1708455689
+      guaiwu_239: -206778064
+      guaiwu_24: -1230756475
+      guaiwu_240: 787169977
+      guaiwu_241: 1671023223
+      guaiwu_242: -563743882
+      guaiwu_243: 1688642035
+      guaiwu_244: 45579871
+      guaiwu_245: 333568783
+      guaiwu_246: 1952789085
+      guaiwu_247: -1709470272
+      guaiwu_248: 849622129
+      guaiwu_249: -665025390
+      guaiwu_25: 1075752485
+      guaiwu_250: -502378690
+      guaiwu_251: 1127387015
+      guaiwu_252: 1911980719
+      guaiwu_253: 1098728848
+      guaiwu_254: -985562280
+      guaiwu_255: 459047492
+      guaiwu_256: -1189334137
+      guaiwu_257: -899850476
+      guaiwu_258: -1199563758
+      guaiwu_259: -1917276599
+      guaiwu_26: -1494559246
+      guaiwu_260: -1613965307
+      guaiwu_261: -529500981
+      guaiwu_262: -1186614210
+      guaiwu_263: -716755114
+      guaiwu_264: -1572812707
+      guaiwu_265: -847631477
+      guaiwu_266: 523571749
+      guaiwu_267: 268515408
+      guaiwu_268: 343636264
+      guaiwu_269: -686120077
+      guaiwu_27: -736186321
+      guaiwu_270: -1600051730
+      guaiwu_271: -357494126
+      guaiwu_272: -198684052
+      guaiwu_273: 529212952
+      guaiwu_274: 1167343688
+      guaiwu_275: -225528503
+      guaiwu_276: -896541205
+      guaiwu_277: -1955811265
+      guaiwu_278: -1340380998
+      guaiwu_279: -1647357746
+      guaiwu_28: 1796475191
+      guaiwu_280: -133852944
+      guaiwu_281: -1252383719
+      guaiwu_282: 580314224
+      guaiwu_283: -117793794
+      guaiwu_284: -1515649220
+      guaiwu_285: -1335989440
+      guaiwu_286: -967431780
+      guaiwu_287: 1559274220
+      guaiwu_288: -632040935
+      guaiwu_289: -15733045
+      guaiwu_29: -1696424987
+      guaiwu_290: -1842392615
+      guaiwu_291: 322415891
+      guaiwu_292: 362233288
+      guaiwu_293: -3330665
+      guaiwu_294: -105156286
+      guaiwu_295: -1418399382
+      guaiwu_296: 2098107150
+      guaiwu_297: -369751946
+      guaiwu_298: -801580823
+      guaiwu_299: -991933930
+      guaiwu_3: -737959411
+      guaiwu_30: -266673558
+      guaiwu_300: 968978519
+      guaiwu_301: -379668731
+      guaiwu_302: 1192189077
+      guaiwu_303: -1695814906
+      guaiwu_304: 1841711598
+      guaiwu_305: 815962367
+      guaiwu_306: 165329659
+      guaiwu_307: 1899680323
+      guaiwu_308: 501172575
+      guaiwu_309: 325793661
+      guaiwu_31: 607263350
+      guaiwu_310: -2118881694
+      guaiwu_311: 945298122
+      guaiwu_312: 469557199
+      guaiwu_313: 1901881665
+      guaiwu_314: 1607338249
+      guaiwu_315: 759435830
+      guaiwu_316: -857011786
+      guaiwu_317: 1474959415
+      guaiwu_318: 1552489035
+      guaiwu_319: 340741975
+      guaiwu_32: 2115868833
+      guaiwu_320: 1323594482
+      guaiwu_321: 254992717
+      guaiwu_322: -1526534189
+      guaiwu_323: -1165430424
+      guaiwu_324: -819012087
+      guaiwu_325: -1695852423
+      guaiwu_326: 1248356264
+      guaiwu_327: 900273968
+      guaiwu_328: 1743095316
+      guaiwu_329: -954337029
+      guaiwu_33: 1508039030
+      guaiwu_330: 694736490
+      guaiwu_331: 1012037470
+      guaiwu_332: -1693454601
+      guaiwu_333: -1208106011
+      guaiwu_334: -1035993039
+      guaiwu_335: -26648507
+      guaiwu_336: -2093254911
+      guaiwu_337: 72430577
+      guaiwu_338: -758668276
+      guaiwu_339: -1241592918
+      guaiwu_34: 273886839
+      guaiwu_340: -890656336
+      guaiwu_341: -284761468
+      guaiwu_342: 769681156
+      guaiwu_343: 1873305731
+      guaiwu_344: 726751365
+      guaiwu_345: -1946666132
+      guaiwu_346: 405992291
+      guaiwu_347: 1523795466
+      guaiwu_35: 2113854371
+      guaiwu_36: -128189401
+      guaiwu_37: 79846170
+      guaiwu_38: 1806076385
+      guaiwu_39: -1518719627
+      guaiwu_4: -1788986923
+      guaiwu_40: -451485158
+      guaiwu_41: -1178537192
+      guaiwu_42: 164428507
+      guaiwu_43: -524880841
+      guaiwu_44: 1780724912
+      guaiwu_45: -1224978522
+      guaiwu_46: 696438895
+      guaiwu_47: 321263575
+      guaiwu_48: -600801581
+      guaiwu_49: -1605941579
+      guaiwu_5: -555126145
+      guaiwu_50: -538860337
+      guaiwu_51: -339557689
+      guaiwu_52: -820963781
+      guaiwu_53: -399098802
+      guaiwu_54: -385524918
+      guaiwu_55: -1915060325
+      guaiwu_56: 1962691036
+      guaiwu_57: 1909768537
+      guaiwu_58: -299647203
+      guaiwu_59: -1831205717
+      guaiwu_6: 541819033
+      guaiwu_60: -812995580
+      guaiwu_61: 558133556
+      guaiwu_62: 959376745
+      guaiwu_63: 881701470
+      guaiwu_64: 939454197
+      guaiwu_65: 1248959653
+      guaiwu_66: 1785171294
+      guaiwu_67: -565833791
+      guaiwu_68: 1661629518
+      guaiwu_69: -418562455
+      guaiwu_7: 105819755
+      guaiwu_70: 1207118355
+      guaiwu_71: 1358519378
+      guaiwu_72: -1268194782
+      guaiwu_73: 1205578289
+      guaiwu_74: -1543973120
+      guaiwu_75: 250997644
+      guaiwu_76: -945578435
+      guaiwu_77: -444951456
+      guaiwu_78: -672094836
+      guaiwu_79: -109728553
+      guaiwu_8: -494279194
+      guaiwu_80: 712578529
+      guaiwu_81: -952118736
+      guaiwu_82: -275982838
+      guaiwu_83: 799282428
+      guaiwu_84: -594533960
+      guaiwu_85: 930524663
+      guaiwu_86: 792890980
+      guaiwu_87: 1882536757
+      guaiwu_88: -1832126420
+      guaiwu_89: 195113364
+      guaiwu_9: 1969922883
+      guaiwu_90: 1151525683
+      guaiwu_91: 661855885
+      guaiwu_92: -1337701238
+      guaiwu_93: -1276045837
+      guaiwu_94: 2086084377
+      guaiwu_95: 669660400
+      guaiwu_96: 337853838
+      guaiwu_97: 1363478307
+      guaiwu_98: 1954563763
+      guaiwu_99: 1187011334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -31,14 +31,12 @@ public class CharacterComponent : Component
         {
             configs = TableDataManager.Instance.tables.CharacterDefine.DataMap[dataDefine == 0 ? PlayerBaseData.Instance.nowSelectedCharacter:dataDefine];
         }
-
+        if (configs == null) return;
         for (int i = 0; i < configs.Level.Count; i++)
         {
             weaponDir.Add(configs.Level[i], configs.WeaponId[i]);
         }
         range = configs.Range;
-        //characterDataComponent.SetHealth(configs.Hp); 
-        //goComponent.CreateGameObject(configs.Id.ToString());
     }
 
     public override void OnCache()

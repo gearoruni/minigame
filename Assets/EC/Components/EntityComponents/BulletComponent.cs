@@ -27,6 +27,7 @@ public class BulletComponent : Component
     }
     public void DataInit(int dataDefine)
     {
+        if (dataDefine == 0) return;
         animationData = TableDataManager.Instance.tables.AnimationDefine.Get(dataDefine);
         if (entity.go == null) return;
         //Ìí¼Ó¶¯»­
