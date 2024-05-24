@@ -18,6 +18,7 @@ public class BattleUI : MonoBehaviour
         var player = EntityManager.Instance.GetEntityFromEntityId(1);
         skillCmp = (SkillComponent)player.GetComponent("SkillComponent");
         next.onClick.AddListener(NextTxt);
+        SoundManager.Instance.PlayBGM("³¡¾°1-3 ²ÝµØÇøÓò");
     }
 
     private void Start()

@@ -17,6 +17,7 @@ public class Initor : MonoBehaviour
         SpawnManager.Instance.Init();
         EffectManager.Instance.Init();
         UIManager.Instance.Init();
+        SoundManager.Instance.Init();
 
         //基础生命周期统一
         BehaviourCtrl.Instance.Init();
