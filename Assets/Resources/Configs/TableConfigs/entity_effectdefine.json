@@ -78,5 +78,16 @@
       21013,
       4
     ]
+  },
+  {
+    "id": 2007,
+    "effectname": [
+      "HealthChangeEffect",
+      "AOEEffect"
+    ],
+    "effectdefine": [
+      1,
+      21014
+    ]
   }
 ]

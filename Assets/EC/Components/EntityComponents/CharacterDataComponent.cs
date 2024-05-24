@@ -33,7 +33,7 @@ public class CharacterDataComponent : Component
     public override void Update()
     {
         if (hit.healthChangeEffect != null){
-            if (hit.healthChangeEffect.CanSetAtk(entity.instanceId))
+            if (hit.healthChangeEffect.CanSetAtk(entity))
             {
                 ChangeHp(hit.healthChangeEffect.effectData);
             }

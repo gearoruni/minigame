@@ -58,7 +58,7 @@ public class FSMComponent : Component
 
         movepos = ((SharedVector2)bt.GetVariable("movepos")).Value;
         facepos = ((SharedVector2)bt.GetVariable("facepos")).Value;
-        Debug.Log(movepos);
+        //Debug.Log(movepos);
         isFire = ((SharedBool)bt.GetVariable("isFire")).Value;
         isReload = ((SharedBool)bt.GetVariable("isReload")).Value;
         isRightSkill = ((SharedBool)bt.GetVariable("isRightSkill")).Value;

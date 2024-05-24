@@ -25,5 +25,14 @@
     "define2": 30,
     "alwaysActive": true,
     "livingTime": 0
+  },
+  {
+    "id": 21014,
+    "name": "aoe原地",
+    "fieldType": 2,
+    "define1": 2,
+    "define2": 180,
+    "alwaysActive": true,
+    "livingTime": 0
   }
 ]
