@@ -140,6 +140,7 @@ public class EntityManager : Singleton<EntityManager>
     {
         foreach(var  entity in entities.Values)
         {
+            if (entity == null) continue;
             ControllerComponent controller = (ControllerComponent)entity.GetComponent("ControllerComponent");
             if(controller != null)
             {
