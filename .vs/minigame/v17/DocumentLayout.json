@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\minigame\\minigame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\characterdatacomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\characterdatacomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\effects\\aoeeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\effects\\aoeeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\effects\\healthchangeeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\effects\\healthchangeeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\effects\\aoeeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\effects\\aoeeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\tagcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\tagcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\characterdatacomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\characterdatacomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\minigame\\minigame\\assets\\ec\\skill\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\skill\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\minigame\\minigame\\assets\\ec\\components\\entitycomponents\\weaponcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\weaponcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +34,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "WeaponComponent.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\WeaponComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\WeaponComponent.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\WeaponComponent.cs",
+              "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\WeaponComponent.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAuwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T07:45:21.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Skill\\Skill.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Skill\\Skill.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Skill\\Skill.cs",
+              "RelativeToolTip": "Assets\\EC\\Skill\\Skill.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAuwC8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T08:40:59.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TagComponent.cs",
+              "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\TagComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\TagComponent.cs",
+              "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\TagComponent.cs",
+              "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\TagComponent.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAkwCcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T07:03:16.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CharacterDataComponent.cs",
               "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\CharacterDataComponent.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\CharacterDataComponent.cs",
               "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Components\\EntityComponents\\CharacterDataComponent.cs",
               "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\CharacterDataComponent.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAIAywCIAAAAsAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAIAywCMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T06:56:57.75Z",
               "EditorCaption": ""
@@ -45,14 +96,14 @@
               "RelativeDocumentMoniker": "Assets\\EC\\Effects\\HealthChangeEffect.cs",
               "ToolTip": "D:\\minigame\\minigame\\Assets\\EC\\Effects\\HealthChangeEffect.cs",
               "RelativeToolTip": "Assets\\EC\\Effects\\HealthChangeEffect.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAdAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAUwBUAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T06:46:17.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AOEEffect.cs",
               "DocumentMoniker": "D:\\minigame\\minigame\\Assets\\EC\\Effects\\AOEEffect.cs",
               "RelativeDocumentMoniker": "Assets\\EC\\Effects\\AOEEffect.cs",
