@@ -31,6 +31,6 @@ public class Initor : MonoBehaviour
 
     private void Start()
     {
-        UIManager.Instance.ShowUI("BattleUI");
+        UIManager.Instance.ShowUI("MainUI");
     }
 }
