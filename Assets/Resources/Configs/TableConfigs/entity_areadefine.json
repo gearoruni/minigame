@@ -16,5 +16,14 @@
     "define2": 180,
     "alwaysActive": false,
     "livingTime": 0
+  },
+  {
+    "id": 21013,
+    "name": "gun2",
+    "fieldType": 2,
+    "define1": 2,
+    "define2": 30,
+    "alwaysActive": true,
+    "livingTime": 0
   }
 ]

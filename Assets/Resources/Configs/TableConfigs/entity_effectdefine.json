@@ -63,5 +63,20 @@
       1,
       0
     ]
+  },
+  {
+    "id": 2006,
+    "effectname": [
+      "HealthChangeEffect",
+      "DirChangeEffect",
+      "AOEEffect",
+      "MoveEffect"
+    ],
+    "effectdefine": [
+      10,
+      2,
+      21013,
+      4
+    ]
   }
 ]

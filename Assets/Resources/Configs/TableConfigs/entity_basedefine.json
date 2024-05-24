@@ -180,7 +180,8 @@
       "EffectComponent",
       "BulletComponent",
       "DestroyComponent",
-      "StateComponent"
+      "StateComponent",
+      "CollisionComponent"
     ],
     "componentDefine": [
       0,
@@ -190,7 +191,8 @@
       0,
       0,
       0,
-      0
+      0,
+      1
     ],
     "parentEntityId": 0
   }

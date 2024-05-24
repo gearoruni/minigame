@@ -1,4 +1,5 @@
 using cfg;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,7 +23,13 @@ public class AnimatorComponent : Component
     public StateComponent state;
 
     public string lastAnime;
+    public const string firebefore = "_atk_f";
+    public const string fire = "_atk";
+    public const string fireafter = "_atk_a";
 
+    public bool isAtk = false;
+    public int skillidx = -1;
+    Action useSkill;
     public override void Init()
     {
         transform = (TransformComponent)entity.GetComponent("TransformComponent");
@@ -55,7 +62,41 @@ public class AnimatorComponent : Component
     public override void Update()
     {
         if (animationData == null) return;
-
+        if(isAtk) 
+        {
+            if (lastAnime == "Idle"|| lastAnime == "Move")
+            {
+                lastAnime = skillidx.ToString() + firebefore;
+                PlayerAnime(lastAnime);
+            }
+            else if(lastAnime == skillidx.ToString() + firebefore)
+            {
+                if(listener.CheckAnime(lastAnime))
+                {
+                    useSkill?.Invoke();
+                    lastAnime = skillidx.ToString() + fire;
+                    PlayerAnime(lastAnime);
+                }
+            }
+            else if (lastAnime == skillidx.ToString() + fire)
+            {
+                if (listener.CheckAnime(lastAnime))
+                {
+                    lastAnime = skillidx.ToString() + fireafter;
+                    PlayerAnime(lastAnime);
+                }
+            }
+            else
+            {
+                if (listener.CheckAnime(lastAnime))
+                {
+                    lastAnime = "Idle";
+                    PlayerAnime(lastAnime);
+                    isAtk = false;
+                }
+            }
+            return; 
+        }
         if(state != null)
         {
             switch(state.state)
@@ -81,7 +122,10 @@ public class AnimatorComponent : Component
             listener.SetParam(transform.faceDir.x, transform.faceDir.y);
         }
     }
-
+    public void SetSkill(Action action)
+    {
+        useSkill = action;
+    }
     public void BindAnimator(AnimatorListener listener)
     {
         this.listener = listener;

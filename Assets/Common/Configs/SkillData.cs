@@ -25,6 +25,9 @@ public sealed partial class SkillData : Luban.BeanBase
         { var __json0 = _buf["prefab_id"]; if(!__json0.IsArray) { throw new SerializationException(); } PrefabId = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  PrefabId.Add(__v0); }   }
         { var __json0 = _buf["effect_id"]; if(!__json0.IsArray) { throw new SerializationException(); } EffectId = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  EffectId.Add(__v0); }   }
         { var __json0 = _buf["animation_id"]; if(!__json0.IsArray) { throw new SerializationException(); } AnimationId = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  AnimationId.Add(__v0); }   }
+        { var __json0 = _buf["Windup"]; if(!__json0.IsArray) { throw new SerializationException(); } Windup = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Windup.Add(__v0); }   }
+        { var __json0 = _buf["Atking"]; if(!__json0.IsArray) { throw new SerializationException(); } Atking = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Atking.Add(__v0); }   }
+        { var __json0 = _buf["Winddown"]; if(!__json0.IsArray) { throw new SerializationException(); } Winddown = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Winddown.Add(__v0); }   }
     }
 
     public static SkillData DeserializeSkillData(JSONNode _buf)
@@ -54,13 +57,22 @@ public sealed partial class SkillData : Luban.BeanBase
     /// </summary>
     public readonly System.Collections.Generic.List<int> PrefabId;
     public readonly System.Collections.Generic.List<int> EffectId;
+    /// <summary>
+    /// 0为无子弹动画
+    /// </summary>
     public readonly System.Collections.Generic.List<int> AnimationId;
+    public readonly System.Collections.Generic.List<int> Windup;
+    public readonly System.Collections.Generic.List<int> Atking;
+    public readonly System.Collections.Generic.List<int> Winddown;
    
     public const int __ID__ = -300302981;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
+        
+        
+        
         
         
         
@@ -82,6 +94,9 @@ public sealed partial class SkillData : Luban.BeanBase
         + "prefabId:" + Luban.StringUtil.CollectionToString(PrefabId) + ","
         + "effectId:" + Luban.StringUtil.CollectionToString(EffectId) + ","
         + "animationId:" + Luban.StringUtil.CollectionToString(AnimationId) + ","
+        + "Windup:" + Luban.StringUtil.CollectionToString(Windup) + ","
+        + "Atking:" + Luban.StringUtil.CollectionToString(Atking) + ","
+        + "Winddown:" + Luban.StringUtil.CollectionToString(Winddown) + ","
         + "}";
     }
 }
