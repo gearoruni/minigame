@@ -8,7 +8,11 @@ public enum State
 {
     IDLE,
     MOVE,
+
+    BEFOREFIRE,
     FIRE,
+    AFTERFIRE,
+
     DESTROY,
     WAITDESTROY,
     DEATH,
@@ -16,6 +20,7 @@ public enum State
 
 public class StateComponent : Component
 {
+
     public bool isVaild = false;
 
     //public int health = 0;
@@ -25,8 +30,9 @@ public class StateComponent : Component
     public override void Init()
     {
         state = State.IDLE;
-        isVaild = false;    
+        isVaild = false;
     }
+
     public override void Update()
     {
         if (isDead)

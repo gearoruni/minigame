@@ -39,7 +39,17 @@ public class AnimatorListener : MonoBehaviour
         nowPlayAnim = animationName;
     }
 
+    public bool CheckAnime(string animeName)
+    {
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
 
+        // 如果当前动画播放时间超过了动画长度，说明动画已经播放完毕
+        if (stateInfo.normalizedTime >= 1.0f && stateInfo.IsName(animeName))
+        {
+            return true;
+        }
+        return false;
+    }
 
     public bool CheckDestroyAnime()
     {

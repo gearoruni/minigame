@@ -11,7 +11,6 @@ public class BulletComponent : Component
     public AnimationData animationData;
     public AnimatorListener listener;
     public StateComponent state;
-
     public override void Init()
     {
         state = (StateComponent)entity.GetComponent("StateComponent");
@@ -19,15 +18,14 @@ public class BulletComponent : Component
 
     public override void DataInit()
     {
-        int dataDefine;
-        if (entity.componentDatas.TryGetValue("BulletComponent", out dataDefine))
+        int datadefine;
+        if (entity.componentDatas.TryGetValue("BulletComponent", out datadefine))
         {
-            DataInit(dataDefine);
+            DataInit(datadefine);
         }
     }
     public void DataInit(int dataDefine)
     {
-        if (dataDefine == 0) return;
         animationData = TableDataManager.Instance.tables.AnimationDefine.Get(dataDefine);
         if (entity.go == null) return;
         //Ìí¼Ó¶¯»­
@@ -47,8 +45,7 @@ public class BulletComponent : Component
 
     public override void Update()
     {
-
-        if(state.state == State.DESTROY)
+        if (state.state == State.DESTROY)
         {
             listener.SetStateAnime("Destroy");
             state.state = State.WAITDESTROY;    

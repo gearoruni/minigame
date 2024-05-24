@@ -1,5 +1,6 @@
 using cfg;
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,16 +11,21 @@ public class SkillComponent : Component
     public CharacterComponent character;
     public WeaponComponent weapon;
     public ControllerComponent controller;
+    public AnimatorComponent anime;
 
     public int skillId;
     public Dictionary<SkillType, Skill> data;
 
     public List<float> nowCdtime = new List<float>();
+
+    public bool[,] skillAnim = new bool[5,3];
+
     public override void Init()
     {
         character = (CharacterComponent)entity.GetComponent("CharacterComponent");
         weapon = (WeaponComponent)entity.GetComponent("WeaponComponent");
         controller = (ControllerComponent)entity.GetComponent("ControllerComponent");
+        anime = (AnimatorComponent)entity.GetComponent("AnimatorComponent");
     }
 
     public override void DataInit()
@@ -48,6 +54,11 @@ public class SkillComponent : Component
                 data[baseData.Type] = baseData;
 
                 nowCdtime.Add(baseData.cd);
+                int idx = (int)baseData.Type;
+                skillAnim[idx,0] = config.Windup[i] == 1;
+                skillAnim[idx,1] = config.Atking[i] == 1;
+                skillAnim[idx,2] = config.Winddown[i] == 1;
+
             }
 
         }
@@ -111,8 +122,27 @@ public class SkillComponent : Component
         }
         if (controller.isHold || controller.isFire)
         {
-            UseSkill(SkillType.NORMAL);
+            if (PlayAnimation(SkillType.NORMAL))
+            {
+                anime.isAtk = true;
+                anime.skillidx = 0;
+                anime.SetSkill(() =>
+                {
+                    UseSkill(SkillType.NORMAL);
+                });
+            }
+            else
+            {
+                UseSkill(SkillType.NORMAL);
+            }
         }
+    }
+
+    public bool PlayAnimation(SkillType type)
+    {
+        int idx = (int)type;
+        if (skillAnim[idx,0] == true || skillAnim[idx,1] == true || skillAnim[idx,2] == true) return true;
+        return false;
     }
 
     public override void OnCache()
