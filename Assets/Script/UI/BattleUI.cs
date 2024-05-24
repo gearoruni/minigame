@@ -12,6 +12,8 @@ public class BattleUI : MonoBehaviour
     public Text nameTxt;
     public Text mainTxt;
     public Button next;
+    public Image leftperson;
+    public Image rightperson;
     private void Awake()
     {
        
@@ -43,6 +45,22 @@ public class BattleUI : MonoBehaviour
         dialogueConfigs = TableDataManager.Instance.tables.MainTxt.Get(id);
         nameTxt.text = dialogueConfigs.角色名称;
         mainTxt.text = dialogueConfigs.文本内容;
+        //是主角
+        if(dialogueConfigs.立绘id == 8001)
+        {
+            leftperson.color = Color.white;
+            rightperson.color = new Color(125, 125, 125);
+        }
+        else
+        {
+            if(rightperson.sprite == null)
+            {
+                rightperson.sprite = Resources.Load<Sprite>($"{dialogueConfigs.立绘id}");
+                rightperson.gameObject.SetActive(true);
+            }
+            rightperson.color = Color.white;
+            leftperson.color = new Color(125, 125, 125);
+        }
         EntityManager.Instance.SetEntityController(false);
     }
     private void NextTxt()
@@ -51,7 +69,8 @@ public class BattleUI : MonoBehaviour
         {
             dialogUI.SetActive(false);
             EntityManager.Instance.SetEntityController(true);
-
+            Resources.UnloadAsset(rightperson.sprite);
+            rightperson.gameObject.SetActive(false);
             return;
         }
         ShowTxt(dialogueConfigs.下一个);
