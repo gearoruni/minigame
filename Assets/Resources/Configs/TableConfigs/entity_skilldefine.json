@@ -117,5 +117,38 @@
     "Winddown": [
       1
     ]
+  },
+  {
+    "id": 1005,
+    "skill_type": [
+      0
+    ],
+    "cd_time": [
+      0.1
+    ],
+    "effect_type": [
+      2
+    ],
+    "typeDefine": [
+      20011
+    ],
+    "prefab_id": [
+      3004
+    ],
+    "effect_id": [
+      2007
+    ],
+    "animation_id": [
+      0
+    ],
+    "Windup": [
+      1
+    ],
+    "Atking": [
+      1
+    ],
+    "Winddown": [
+      1
+    ]
   }
 ]

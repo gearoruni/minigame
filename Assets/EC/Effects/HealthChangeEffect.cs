@@ -14,10 +14,13 @@ public class HealthChangeEffect : EffectBase
     public override void Init(int define, Entity entity)
     {
         this.effectData = define;
+        this.entity = entity;
     }
 
-    public bool CanSetAtk(int instanceId)
+    public bool CanSetAtk(Entity entity)
     {
+        if(entity.Tag == this.entity.Tag ) { return false; }
+        int instanceId = entity.instanceId;
         int singledmgCnt; 
         if (target.TryGetValue(instanceId,out singledmgCnt))
         {

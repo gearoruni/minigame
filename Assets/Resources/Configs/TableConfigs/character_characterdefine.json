@@ -54,7 +54,7 @@
     "id": 1103,
     "name": "紫色史莱姆",
     "hp": 200,
-    "speed": 0,
+    "speed": 1,
     "level": [
       1
     ],
@@ -78,6 +78,21 @@
     ],
     "skillID": 1003,
     "range": 7,
+    "canForceMove": true
+  },
+  {
+    "id": 1106,
+    "name": "愤怒史莱姆test",
+    "hp": 200,
+    "speed": 3,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1005,
+    "range": 3,
     "canForceMove": true
   }
 ]
