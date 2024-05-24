@@ -37,7 +37,7 @@ public class TagComponent : Component
     }
     public override void Update()
     {
-
+        entity.Tag = this.tag;
     }
 
     public override void OnCache()
