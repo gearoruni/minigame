@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BattleUI : MonoBehaviour
 {
     private SkillComponent skillCmp;
+    private CharacterDataComponent characterData;
     private cfg.DialogueConfigs dialogueConfigs;
     public List<Image> maskList;
     public GameObject dialogUI;
@@ -14,10 +15,12 @@ public class BattleUI : MonoBehaviour
     public Button next;
     public Image leftperson;
     public Image rightperson;
+    public Image health;
     private void Awake()
     {
        
         var player = EntityManager.Instance.GetEntityFromEntityId(1);
+        characterData = (CharacterDataComponent)player.GetComponent("CharacterDataComponent");
         skillCmp = (SkillComponent)player.GetComponent("SkillComponent");
         next.onClick.AddListener(NextTxt);
         SoundManager.Instance.PlayBGM("³¡¾°1-3 ²ÝµØÇøÓò");
@@ -38,6 +41,8 @@ public class BattleUI : MonoBehaviour
             float cd = 1 - skillCmp.nowCdtime[skill.idx] / skill.cd;
             img.fillAmount = cd;
         }
+
+        health.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;
     }
     public void ShowTxt(int id)
     {
