@@ -29,7 +29,10 @@ public class InteractionComponent : Component
 
     public override void Update()
     {
-        
+        if(canInteraction && Input.GetKeyDown(KeyCode.F))
+        {
+
+        }
     }
 
     public void DisAble(Entity entity)

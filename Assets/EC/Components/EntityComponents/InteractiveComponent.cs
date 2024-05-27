@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class InteractiveComponent : Component
 {
+    /// <summary>
+    /// 从0开始列举交互功能
+    /// </summary>
+    public enum NumToCallBack
+    {
+
+    }
+
     private bool isInteracting;
     private CollisionComponent collisionComponent;
     private GameObject interactiveGO;
+    private NumToCallBack param;
     public override void Init()
     {
         collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
@@ -15,7 +24,13 @@ public class InteractiveComponent : Component
         interactiveGO = GameObject.Instantiate(Preloader.Instance.GetGameObject("9999"));
         interactiveGO.SetActive(false);
     }
-
+    public override void DataInit()
+    {
+        if(entity.componentDatas.TryGetValue("InteractiveComponent", out int val))
+        {
+            param = (NumToCallBack)val;
+        }
+    }
     public override void OnCache()
     {
         base.OnCache();
@@ -36,5 +51,14 @@ public class InteractiveComponent : Component
     {
         isInteracting = false;
         interactiveGO.SetActive(false);
+    }
+
+    public void OnClick()
+    {
+        switch(param)
+        {
+            default:
+                break;
+        }
     }
 }
