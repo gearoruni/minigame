@@ -123,13 +123,14 @@ public class EntityManager : Singleton<EntityManager>
 
     }
 
-    public Entity GetEntityFromEntityId(int entityId)
+    public List<Entity> GetEntityFromEntityId(int entityId)
     {
+        List<Entity> result = new List<Entity>();
         foreach(Entity entityInstance in entities.Values)
         {
-            if(entityInstance.entityId == entityId) { return entityInstance; }
+            if(entityInstance.entityId == entityId) { result.Add(entityInstance); }
         }
-        return null;
+        return result;
     }
     public Entity GetEntityFromInstanceId(int entityInstanceId)
     {

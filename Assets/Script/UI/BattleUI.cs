@@ -16,14 +16,24 @@ public class BattleUI : MonoBehaviour
     public Image leftperson;
     public Image rightperson;
     public Image health;
+
+    public RectTransform montserRoot;
+    public GameObject MonsterHpTemplate;
+
+    public static BattleUI Instance;
     private void Awake()
     {
-       
-        var player = EntityManager.Instance.GetEntityFromEntityId(1);
+        Instance = this;
+        var player = EntityManager.Instance.GetEntityFromEntityId(1)[0];
         characterData = (CharacterDataComponent)player.GetComponent("CharacterDataComponent");
         skillCmp = (SkillComponent)player.GetComponent("SkillComponent");
         next.onClick.AddListener(NextTxt);
         SoundManager.Instance.PlayBGM("场景1-3 草地区域");
+        var monsterList = EntityManager.Instance.GetEntityFromEntityId(4);
+        foreach(var monster in monsterList)
+        {
+            ChangeMonsterHp(monster.instanceId, true);
+        }
     }
 
     private void Start()
@@ -43,7 +53,14 @@ public class BattleUI : MonoBehaviour
         }
 
         health.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;
+        UpdateMonsterHp();
     }
+
+    private void OnDestroy()
+    {
+        Instance = null;
+    }
+
     public void ShowTxt(int id)
     {
         dialogUI.SetActive(true);
@@ -79,5 +96,55 @@ public class BattleUI : MonoBehaviour
             return;
         }
         ShowTxt(dialogueConfigs.下一个);
+    }
+
+
+    private Stack<Image> SleepItem = new Stack<Image>();
+    private Dictionary<int, Image> activeItem = new Dictionary<int, Image>();
+    public void ChangeMonsterHp(int id,bool open)
+    {
+        if(open)
+        {
+            if(!SleepItem.TryPop(out Image image))
+            {
+                var go = GameObject.Instantiate(MonsterHpTemplate, montserRoot);
+                image = go.GetComponentsInChildren<Image>()[1];
+                image.fillMethod = Image.FillMethod.Horizontal;
+            }
+            activeItem.Add(id, image);
+            image.transform.parent.gameObject.SetActive(true);
+        }
+        else
+        {
+            if(activeItem.TryGetValue(id, out var image))
+            {
+                image.transform.parent.gameObject.SetActive(false);
+                SleepItem.Push(image);
+                activeItem.Remove(id);
+            }
+        }
+    }
+
+    private void UpdateMonsterHp()
+    {
+        Entity entity;
+        CharacterDataComponent characterData;
+        Transform trs;
+        Vector3 screenPos;
+        foreach(var pairAndImage in activeItem)
+        {
+            entity = EntityManager.Instance.GetEntityFromInstanceId(pairAndImage.Key);
+            if (entity == null) continue;
+
+            characterData = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
+            trs = entity.go.transform;
+
+            pairAndImage.Value.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;
+            screenPos = RectTransformUtility.WorldToScreenPoint(Camera.main, trs.position);
+            if(RectTransformUtility.ScreenPointToLocalPointInRectangle(montserRoot, screenPos, null, out Vector2 localPoint))
+            {
+                pairAndImage.Value.transform.parent.localPosition = localPoint;
+            }
+        }
     }
 }
