@@ -29,9 +29,14 @@ public class CharacterComponent : Component
         int dataDefine;
         if (entity.componentDatas.TryGetValue("CharacterComponent", out dataDefine))
         {
-            configs = TableDataManager.Instance.tables.CharacterDefine.DataMap[dataDefine == 0 ? PlayerBaseData.Instance.nowSelectedCharacter:dataDefine];
+            //configs = TableDataManager.Instance.tables.CharacterDefine.DataMap[dataDefine == 0 ? PlayerBaseData.Instance.nowSelectedCharacter:dataDefine];
+            TableDataManager.Instance.tables.CharacterDefine.DataMap.TryGetValue(dataDefine == 0 ? PlayerBaseData.Instance.nowSelectedCharacter : dataDefine, out configs);
         }
-        if (configs == null) return;
+        if (configs == null)
+        {
+            Debug.LogError($"≈‰÷√±Ì≥ˆ¥Ì¡À£¨dataDefine£∫{dataDefine}");
+            return;
+        }
         for (int i = 0; i < configs.Level.Count; i++)
         {
             weaponDir.Add(configs.Level[i], configs.WeaponId[i]);
