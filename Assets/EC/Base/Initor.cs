@@ -16,7 +16,6 @@ public class Initor : MonoBehaviour
         CachePool.Instance.Init();
         SpawnManager.Instance.Init();
         EffectManager.Instance.Init();
-        UIManager.Instance.Init();
         SoundManager.Instance.Init();
 
         //基础生命周期统一
@@ -28,6 +27,7 @@ public class Initor : MonoBehaviour
 
         //玩家数据最后更新
         PlayerBaseData.Instance.Init();
+        UIManager.Instance.Init();
     }
 
     private void Start()

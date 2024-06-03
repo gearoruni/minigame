@@ -49,7 +49,8 @@ public class SkillComponent : Component
                                                 config.TypeDefine[i],
                                                 config.PrefabId[i],
                                                 config.EffectId[i],
-                                                config.AnimationId[i]);
+                                                config.AnimationId[i],
+                                                config.Lock[i]);
 
                 data[baseData.Type] = baseData;
 
@@ -90,6 +91,7 @@ public class SkillComponent : Component
     public bool CheckCanUseSkill(SkillType skillType)
     {
         Skill skillBaseData = data[skillType];
+        if (skillBaseData.isLock) return false;
         if (skillBaseData.cd <= nowCdtime[skillBaseData.idx]) return true;
         return false;
     }

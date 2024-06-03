@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class BattleUI : MonoBehaviour
     private CharacterDataComponent characterData;
     private cfg.DialogueConfigs dialogueConfigs;
     public List<Image> maskList;
+    public List<Image> lockList;
     public GameObject dialogUI;
     public Text nameTxt;
     public Text mainTxt;
@@ -21,6 +23,7 @@ public class BattleUI : MonoBehaviour
     public GameObject MonsterHpTemplate;
 
     public static BattleUI Instance;
+    private Action callBack = null;
     private void Awake()
     {
         Instance = this;
@@ -47,6 +50,7 @@ public class BattleUI : MonoBehaviour
         foreach(var skill in skillCmp.data.Values)
         {
             Image img = maskList[(int)skill.Type];
+            lockList[(int)skill.Type].gameObject.SetActive(skill.isLock);
             if (img == null) continue;
             float cd = 1 - skillCmp.nowCdtime[skill.idx] / skill.cd;
             img.fillAmount = cd;
@@ -61,8 +65,9 @@ public class BattleUI : MonoBehaviour
         Instance = null;
     }
 
-    public void ShowTxt(int id)
+    public void ShowTxt(int id, Action callback = null)
     {
+        callBack = callBack == null ? callback : callBack;
         dialogUI.SetActive(true);
         dialogueConfigs = TableDataManager.Instance.tables.MainTxt.Get(id);
         nameTxt.text = dialogueConfigs.角色名称;
@@ -71,17 +76,19 @@ public class BattleUI : MonoBehaviour
         if(dialogueConfigs.立绘id == 8001)
         {
             leftperson.color = Color.white;
-            rightperson.color = new Color(125, 125, 125);
+            rightperson.color = new Color(0.5f, 0.5f, 0.5f);
         }
         else
         {
-            if(rightperson.sprite == null)
+            if(rightperson.sprite != null)
             {
-                rightperson.sprite = Resources.Load<Sprite>($"{dialogueConfigs.立绘id}");
-                rightperson.gameObject.SetActive(true);
+                Resources.UnloadAsset(rightperson.sprite);
             }
+            rightperson.sprite = Resources.Load<Sprite>($"UI/立绘/{dialogueConfigs.立绘id}");
+            rightperson.SetNativeSize();
+            rightperson.gameObject.SetActive(true);
             rightperson.color = Color.white;
-            leftperson.color = new Color(125, 125, 125);
+            leftperson.color = new Color(0.5f, 0.5f, 0.5f);
         }
         EntityManager.Instance.SetEntityController(false);
     }
@@ -93,6 +100,7 @@ public class BattleUI : MonoBehaviour
             EntityManager.Instance.SetEntityController(true);
             Resources.UnloadAsset(rightperson.sprite);
             rightperson.gameObject.SetActive(false);
+            callBack?.Invoke();
             return;
         }
         ShowTxt(dialogueConfigs.下一个);

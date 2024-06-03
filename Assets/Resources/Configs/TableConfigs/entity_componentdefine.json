@@ -356,5 +356,35 @@
       33,
       1001
     ]
+  },
+  {
+    "id": 34,
+    "componentName": [
+      "CharacterComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "InteractiveComponent"
+    ],
+    "componentdataid": [
+      5500,
+      5,
+      2,
+      0
+    ]
+  },
+  {
+    "id": 35,
+    "componentName": [
+      "CharacterComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "InteractiveComponent"
+    ],
+    "componentdataid": [
+      5500,
+      5,
+      2,
+      1
+    ]
   }
 ]
