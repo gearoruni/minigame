@@ -25,7 +25,8 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         GameObject.Instantiate(Preloader.Instance.GetGameObject("Map"));
 
         Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
-        eentity = EntityManager.Instance.CreateEntity(4, 3);
+        eentity = EntityManager.Instance.CreateEntity(8, 35);
+        //eentity = EntityManager.Instance.CreateEntity(4, 3);
         eentity = EntityManager.Instance.CreateEntity(4, 4);
         eentity = EntityManager.Instance.CreateEntity(4, 7);//³¡¾°3-×ÏÊ·À³Ä·1
         eentity = EntityManager.Instance.CreateEntity(4, 8);//³¡¾°3-×ÏÊ·À³Ä·2

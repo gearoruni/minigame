@@ -92,5 +92,20 @@
     "skillID": 1203,
     "range": 5,
     "canForceMove": true
+  },
+  {
+    "id": 5500,
+    "name": "石像",
+    "hp": 99999,
+    "speed": 0,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      0
+    ],
+    "skillID": 0,
+    "range": 0,
+    "canForceMove": false
   }
 ]

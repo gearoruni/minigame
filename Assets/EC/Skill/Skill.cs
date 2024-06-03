@@ -36,11 +36,12 @@ public class Skill
     public string prefabName;
     public int effectId;
     public int animationId;
+    public bool isLock;
     WeaponComponent weaponComponent;
 
-    public Skill(int idx, int type, float cd, int fieldType, int typeDefine, int prefabName, int effectId,int animationId)
+    public Skill(int idx, int type, float cd, int fieldType, int typeDefine, int prefabName, int effectId,int animationId, bool isLock)
     {
-        
+        this.isLock = isLock;
         this.idx = idx;
         this.Type = (SkillType)type;
         this.cd = cd;

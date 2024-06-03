@@ -50,6 +50,11 @@
       0,
       0,
       0
+    ],
+    "Lock": [
+      false,
+      true,
+      true
     ]
   },
   {
@@ -83,6 +88,9 @@
     ],
     "Winddown": [
       0
+    ],
+    "Lock": [
+      false
     ]
   },
   {
@@ -116,6 +124,9 @@
     ],
     "Winddown": [
       1
+    ],
+    "Lock": [
+      false
     ]
   },
   {
@@ -149,6 +160,9 @@
     ],
     "Winddown": [
       1
+    ],
+    "Lock": [
+      false
     ]
   }
 ]
