@@ -17,7 +17,8 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     {
         characterLevelDir[1001] = 1;
         characterLevelDir[1002] = 1;
-
+        selectedCharacterList.Add(1001);
+        selectedCharacterList.Add(1002);
         entity = EntityManager.Instance.CreateEntity(1,1);
         CameraManager.Instance.RegisterFollow(entity);
         TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
@@ -50,6 +51,15 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         //eentity = EntityManager.Instance.CreateEntity(4, 30);//³¡¾°6-»ðÁé
         //eentity = EntityManager.Instance.CreateEntity(4, 31);//³¡¾°6-»ðÁé
         //eentity = EntityManager.Instance.CreateEntity(4, 33);//³¡¾°6-»ðÁé
+    }
+
+    public void ChangePlayer(int idx)
+    {
+        nowSelectedCharacter = selectedCharacterList[idx];
+        foreach(var cmp in entity.components)
+        {
+            cmp.DataInit();
+        }
     }
 }
 

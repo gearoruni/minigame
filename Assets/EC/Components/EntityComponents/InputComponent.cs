@@ -63,6 +63,15 @@ public class InputComponent : Component
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = -Camera.main.transform.position.z;
         facepos = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        if(Input.GetKeyUp(KeyCode.Alpha1))
+        {
+            PlayerBaseData.Instance.ChangePlayer(0);
+        }
+        else if(Input.GetKeyUp(KeyCode.Alpha2))
+        {
+            PlayerBaseData.Instance.ChangePlayer(1);
+        }
     }
 
     public override void OnCache()

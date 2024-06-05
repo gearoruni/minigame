@@ -7,8 +7,8 @@
       "SpawnComponent"
     ],
     "componentdataid": [
-      1,
-      1001,
+      -1,
+      0,
       1
     ]
   },
@@ -395,8 +395,8 @@
       "SpawnComponent"
     ],
     "componentdataid": [
-      10,
-      1002,
+      -1,
+      0,
       1
     ]
   }
