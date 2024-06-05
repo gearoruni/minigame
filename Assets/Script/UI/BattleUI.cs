@@ -101,6 +101,7 @@ public class BattleUI : MonoBehaviour
             Resources.UnloadAsset(rightperson.sprite);
             rightperson.gameObject.SetActive(false);
             callBack?.Invoke();
+            callBack = null;
             return;
         }
         ShowTxt(dialogueConfigs.обр╩╦Ж);

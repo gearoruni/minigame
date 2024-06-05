@@ -1,4 +1,3 @@
-Preload/Map
 Preload/Listner/CircleSkillFieldListener
 Preload/Listner/CollisionListener
 Preload/Listner/RectSkillFieldListener

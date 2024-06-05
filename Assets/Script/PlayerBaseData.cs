@@ -22,10 +22,12 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         CameraManager.Instance.RegisterFollow(entity);
         TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
         //使用4号模版 创建一个component 数据 为 2的值
-        GameObject.Instantiate(Preloader.Instance.GetGameObject("Map"));
+        //GameObject.Instantiate(Preloader.Instance.GetGameObject("Map"));
 
         Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
         eentity = EntityManager.Instance.CreateEntity(8, 35);
+        eentity = EntityManager.Instance.CreateEntity(8, 34);
+
         //eentity = EntityManager.Instance.CreateEntity(4, 3);
         //eentity = EntityManager.Instance.CreateEntity(4, 4);
         //eentity = EntityManager.Instance.CreateEntity(4, 7);//场景3-紫史莱姆1
