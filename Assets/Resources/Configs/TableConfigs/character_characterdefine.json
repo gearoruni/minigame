@@ -2,8 +2,8 @@
   {
     "id": 1001,
     "name": "艾莉亚",
-    "hp": 1000,
-    "speed": 5,
+    "hp": 225,
+    "speed": 10,
     "level": [
       1,
       2
@@ -35,62 +35,64 @@
   },
   {
     "id": 1102,
-    "name": "愤怒之花",
-    "hp": 2000,
+    "name": "艾莉亚",
+    "hp": 225,
+    "speed": 5,
+    "level": [
+      1,
+      2
+    ],
+    "WeaponId": [
+      20011,
+      20012
+    ],
+    "skillID": 1001,
+    "range": 5,
+    "canForceMove": false
+  },
+  {
+    "id": 1103,
+    "name": "紫色史莱姆",
+    "hp": 200,
+    "speed": 1,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1004,
+    "range": 7,
+    "canForceMove": true
+  },
+  {
+    "id": 1105,
+    "name": "愤怒史莱姆",
+    "hp": 200,
     "speed": 5,
     "level": [
       1
     ],
     "WeaponId": [
-      21021
-    ],
-    "skillID": 1102,
-    "range": 8,
-    "canForceMove": false
-  },
-  {
-    "id": 1201,
-    "name": "紫色史莱姆",
-    "hp": 150,
-    "speed": 0,
-    "level": [
-      1
-    ],
-    "WeaponId": [
       29999
     ],
-    "skillID": 1001,
-    "range": 5,
+    "skillID": 1003,
+    "range": 7,
     "canForceMove": true
   },
   {
-    "id": 1202,
-    "name": "愤怒史莱姆",
+    "id": 1106,
+    "name": "愤怒史莱姆test",
     "hp": 200,
-    "speed": 0,
+    "speed": 3,
     "level": [
       1
     ],
     "WeaponId": [
       29999
     ],
-    "skillID": 1202,
-    "range": 5,
-    "canForceMove": true
-  },
-  {
-    "id": 1203,
-    "name": "火灵",
-    "hp": 200,
-    "speed": 0,
-    "level": [
-      1
-    ],
-    "WeaponId": [
-      29999
-    ],
-    "skillID": 1203,
-    "range": 5,
+    "skillID": 1005,
+    "range": 3,
     "canForceMove": true
   },
   {

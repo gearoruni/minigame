@@ -58,6 +58,21 @@
     ]
   },
   {
+    "id": 5,
+    "componentName": [
+      "CharacterComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "InteractiveComponent"
+    ],
+    "componentdataid": [
+      5500,
+      5,
+      5,
+      0
+    ]
+  },
+  {
     "id": 7,
     "componentName": [
       "AnimatorComponent",
@@ -205,6 +220,21 @@
       1105,
       16,
       1001
+    ]
+  },
+  {
+    "id": 19,
+    "componentName": [
+      "CharacterComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "InteractiveComponent"
+    ],
+    "componentdataid": [
+      5500,
+      5,
+      19,
+      1
     ]
   },
   {
@@ -359,21 +389,6 @@
   },
   {
     "id": 34,
-    "componentName": [
-      "CharacterComponent",
-      "TagComponent",
-      "SpawnComponent",
-      "InteractiveComponent"
-    ],
-    "componentdataid": [
-      5500,
-      5,
-      2,
-      0
-    ]
-  },
-  {
-    "id": 35,
     "componentName": [
       "CharacterComponent",
       "TagComponent",

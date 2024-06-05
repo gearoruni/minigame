@@ -22,32 +22,34 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         CameraManager.Instance.RegisterFollow(entity);
         TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
         //Ê¹ÓÃ4ºÅÄ£°æ ´´½¨Ò»¸öcomponent Êı¾İ Îª 2µÄÖµ
-        GameObject.Instantiate(Preloader.Instance.GetGameObject("Map"));
+        //GameObject.Instantiate(Preloader.Instance.GetGameObject("Map"));
 
         Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
-        eentity = EntityManager.Instance.CreateEntity(8, 35);
+
         //eentity = EntityManager.Instance.CreateEntity(4, 3);
-        eentity = EntityManager.Instance.CreateEntity(4, 4);
+        //eentity = EntityManager.Instance.CreateEntity(4, 4);
+        eentity = EntityManager.Instance.CreateEntity(8, 5);
         eentity = EntityManager.Instance.CreateEntity(4, 7);//³¡¾°3-×ÏÊ·À³Ä·1
         eentity = EntityManager.Instance.CreateEntity(4, 8);//³¡¾°3-×ÏÊ·À³Ä·2
         eentity = EntityManager.Instance.CreateEntity(4, 9);//³¡¾°3-×ÏÊ·À³Ä·3
-        eentity = EntityManager.Instance.CreateEntity(4, 10);//³¡¾°3-×ÏÊ·À³Ä·4
-        eentity = EntityManager.Instance.CreateEntity(4, 11);//³¡¾°3-×ÏÊ·À³Ä·5
-        eentity = EntityManager.Instance.CreateEntity(4, 12);//³¡¾°3-×ÏÊ·À³Ä·6
-        eentity = EntityManager.Instance.CreateEntity(4, 13);//³¡¾°3-·ßÅ­Ê·À³Ä·1
-        eentity = EntityManager.Instance.CreateEntity(4, 14);//³¡¾°3-·ßÅ­Ê·À³Ä·2
-        eentity = EntityManager.Instance.CreateEntity(4, 15);//³¡¾°3-·ßÅ­Ê·À³Ä·3
-        eentity = EntityManager.Instance.CreateEntity(4, 16);//³¡¾°3-·ßÅ­Ê·À³Ä·4
-        eentity = EntityManager.Instance.CreateEntity(4, 20);//³¡¾°4-»ğÁé
-        eentity = EntityManager.Instance.CreateEntity(4, 22);//³¡¾°5-»ğÁé
-        eentity = EntityManager.Instance.CreateEntity(4, 23);//³¡¾°5-·ßÅ­Ê·À³Ä·1
-        eentity = EntityManager.Instance.CreateEntity(4, 24);//³¡¾°5-·ßÅ­Ê·À³Ä·2
-        eentity = EntityManager.Instance.CreateEntity(4, 25);//³¡¾°5-·ßÅ­Ê·À³Ä·3
-        eentity = EntityManager.Instance.CreateEntity(4, 26);//³¡¾°5-·ßÅ­Ê·À³Ä·4
-        eentity = EntityManager.Instance.CreateEntity(4, 29);//³¡¾°6-»ğÁé
-        eentity = EntityManager.Instance.CreateEntity(4, 30);//³¡¾°6-»ğÁé
-        eentity = EntityManager.Instance.CreateEntity(4, 31);//³¡¾°6-»ğÁé
-        eentity = EntityManager.Instance.CreateEntity(4, 33);//³¡¾°6-»ğÁé
+        //eentity = EntityManager.Instance.CreateEntity(4, 10);//³¡¾°3-×ÏÊ·À³Ä·4
+        //eentity = EntityManager.Instance.CreateEntity(4, 11);//³¡¾°3-×ÏÊ·À³Ä·5
+        //eentity = EntityManager.Instance.CreateEntity(4, 12);//³¡¾°3-×ÏÊ·À³Ä·6
+        //eentity = EntityManager.Instance.CreateEntity(4, 13);//³¡¾°3-·ßÅ­Ê·À³Ä·1
+        //eentity = EntityManager.Instance.CreateEntity(4, 14);//³¡¾°3-·ßÅ­Ê·À³Ä·2
+        //eentity = EntityManager.Instance.CreateEntity(4, 15);//³¡¾°3-·ßÅ­Ê·À³Ä·3
+        //eentity = EntityManager.Instance.CreateEntity(4, 16);//³¡¾°3-·ßÅ­Ê·À³Ä·4
+          eentity = EntityManager.Instance.CreateEntity(8, 19);
+        //eentity = EntityManager.Instance.CreateEntity(4, 20);//³¡¾°4-»ğÁé
+        //eentity = EntityManager.Instance.CreateEntity(4, 22);//³¡¾°5-»ğÁé
+        //eentity = EntityManager.Instance.CreateEntity(4, 23);//³¡¾°5-·ßÅ­Ê·À³Ä·1
+        //eentity = EntityManager.Instance.CreateEntity(4, 24);//³¡¾°5-·ßÅ­Ê·À³Ä·2
+        //eentity = EntityManager.Instance.CreateEntity(4, 25);//³¡¾°5-·ßÅ­Ê·À³Ä·3
+        //eentity = EntityManager.Instance.CreateEntity(4, 26);//³¡¾°5-·ßÅ­Ê·À³Ä·4
+        //eentity = EntityManager.Instance.CreateEntity(4, 29);//³¡¾°6-»ğÁé
+        //eentity = EntityManager.Instance.CreateEntity(4, 30);//³¡¾°6-»ğÁé
+        //eentity = EntityManager.Instance.CreateEntity(4, 31);//³¡¾°6-»ğÁé
+        //eentity = EntityManager.Instance.CreateEntity(4, 33);//³¡¾°6-»ğÁé
     }
 }
 
