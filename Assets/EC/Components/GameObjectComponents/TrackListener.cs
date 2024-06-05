@@ -42,7 +42,7 @@ public class TrackListener : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        if (effect.selTransform == null) return;
+        if (effect == null || effect.selTransform == null) return;
         Gizmos.DrawSphere(effect.selTransform.position, effect.radius);
     }
 }
