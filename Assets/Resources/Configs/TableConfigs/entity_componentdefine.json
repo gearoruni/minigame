@@ -8,7 +8,7 @@
     ],
     "componentdataid": [
       1,
-      0,
+      1001,
       1
     ]
   },
@@ -384,6 +384,19 @@
       5500,
       5,
       2,
+      1
+    ]
+  },
+  {
+    "id": 36,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent"
+    ],
+    "componentdataid": [
+      10,
+      1002,
       1
     ]
   }

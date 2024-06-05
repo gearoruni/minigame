@@ -38,5 +38,9 @@
   {
     "id": 9,
     "animationName": "BOSS1move"
+  },
+  {
+    "id": 10,
+    "animationName": "LiZhiAnim"
   }
 ]
