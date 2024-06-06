@@ -36,6 +36,11 @@ public class WeaponComponent : Component
     public override void DataInit()
     {
         weaponId = character.weaponDir[character.level];
+        if (weapon != null)
+        {
+            GameObject.Destroy(weapon.go);
+            weapon = null;
+        }
         //´´½¨weapon entity
         weapon = EntityManager.Instance.ParentCreateEntity(entity, 2, 0);
 

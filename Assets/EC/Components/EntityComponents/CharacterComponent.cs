@@ -37,6 +37,7 @@ public class CharacterComponent : Component
             Debug.LogError($"≈‰÷√±Ì≥ˆ¥Ì¡À£¨dataDefine£∫{dataDefine}");
             return;
         }
+        weaponDir.Clear();
         for (int i = 0; i < configs.Level.Count; i++)
         {
             weaponDir.Add(configs.Level[i], configs.WeaponId[i]);

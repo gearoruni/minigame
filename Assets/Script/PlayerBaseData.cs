@@ -17,15 +17,16 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     {
         characterLevelDir[1001] = 1;
         characterLevelDir[1002] = 1;
-
+        selectedCharacterList.Add(1001);
+        selectedCharacterList.Add(1002);
         entity = EntityManager.Instance.CreateEntity(1,1);
         CameraManager.Instance.RegisterFollow(entity);
         TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
-        //使用4号模版 创建一个component 数据 为 2的值
+        //使用4号模版 创建一个component 数据为2的值
         //GameObject.Instantiate(Preloader.Instance.GetGameObject("Map"));
 
         Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
-
+        //eentity = EntityManager.Instance.CreateEntity(8, 34);
         //eentity = EntityManager.Instance.CreateEntity(4, 3);
         //eentity = EntityManager.Instance.CreateEntity(4, 4);
         eentity = EntityManager.Instance.CreateEntity(8, 5);
@@ -50,6 +51,15 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         //eentity = EntityManager.Instance.CreateEntity(4, 30);//场景6-火灵
         //eentity = EntityManager.Instance.CreateEntity(4, 31);//场景6-火灵
         //eentity = EntityManager.Instance.CreateEntity(4, 33);//场景6-火灵
+    }
+
+    public void ChangePlayer(int idx)
+    {
+        nowSelectedCharacter = selectedCharacterList[idx];
+        foreach(var cmp in entity.components)
+        {
+            cmp.DataInit();
+        }
     }
 }
 

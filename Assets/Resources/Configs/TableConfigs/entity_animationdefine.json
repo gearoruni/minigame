@@ -4,7 +4,7 @@
     "animationName": "Empty"
   },
   {
-    "id": 1,
+    "id": 1001,
     "animationName": "CharacterAnim"
   },
   {
@@ -38,5 +38,9 @@
   {
     "id": 9,
     "animationName": "BOSS1move"
+  },
+  {
+    "id": 1002,
+    "animationName": "LiZhiAnim"
   }
 ]
