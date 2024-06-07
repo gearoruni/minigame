@@ -20,6 +20,7 @@ public class SkillComponent : Component
 
     public bool[,] skillAnim = new bool[5,3];
 
+    public Action continueCallBack = null;
     public override void Init()
     {
         character = (CharacterComponent)entity.GetComponent("CharacterComponent");
@@ -67,7 +68,7 @@ public class SkillComponent : Component
 
     public void UseSkill(SkillType skillType)
     {
-        Skill baseData = data[skillType];
+        if(!data.TryGetValue(skillType, out var baseData))return;
 
         if (baseData == null) { return; }
 
@@ -86,13 +87,14 @@ public class SkillComponent : Component
         {
             nowCdtime[i] += Time.deltaTime;
         }
+        continueCallBack?.Invoke();
     }
 
     public bool CheckCanUseSkill(SkillType skillType)
     {
         Skill skillBaseData = data[skillType];
         if (skillBaseData.isLock) return false;
-        if (skillBaseData.cd <= nowCdtime[skillBaseData.idx]) return true;
+        if (skillBaseData.cd <= nowCdtime[skillBaseData.idx] && continueCallBack==null) return true;
         return false;
     }
     public void SetSkillCD(SkillType skillType)
@@ -104,22 +106,22 @@ public class SkillComponent : Component
     {
         if (controller.isRightSkill)
         {
-            UseSkill(SkillType.RIGHTATK);
+            PlayAnimBySkillType(SkillType.RIGHTATK);
             return;
         }
         if (controller.isQSkill)
         {
-            UseSkill(SkillType.QSKILL);
+            PlayAnimBySkillType(SkillType.QSKILL);
             return;
         }
         if (controller.isESkill)
         {
-            UseSkill(SkillType.ESKILL);
+            PlayAnimBySkillType(SkillType.ESKILL);
             return;
         }
         if (controller.isTSkill)
         {
-            UseSkill(SkillType.TSKILL);
+            PlayAnimBySkillType(SkillType.TSKILL);
             return;
         }
         if (controller.isHold || controller.isFire)
@@ -150,5 +152,22 @@ public class SkillComponent : Component
     public override void OnCache()
     {
         CachePool.Instance.Cache<SkillComponent>(this);
+    }
+
+    private void PlayAnimBySkillType(SkillType skillType)
+    {
+        if (PlayAnimation(skillType))
+            {
+                anime.isAtk = true;
+                anime.skillidx = 0;
+                anime.SetSkill(() =>
+                {
+                    UseSkill(skillType);
+                });
+            }
+            else
+            {
+                UseSkill(skillType);
+            }
     }
 }

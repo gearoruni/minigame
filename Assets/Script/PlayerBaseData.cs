@@ -9,7 +9,8 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
 {
     public int nowSelectedCharacter = 1001;
     public List<int> selectedCharacterList = new List<int>();
-    
+    public bool changeCD=false;
+    private Timer timer;
     public Dictionary<int,int>characterLevelDir = new Dictionary<int,int>();
 
     public Entity entity;
@@ -25,7 +26,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         //使用4号模版 创建一个component 数据为2的值
         //GameObject.Instantiate(Preloader.Instance.GetGameObject("Map"));
 
-        Entity eentity = EntityManager.Instance.CreateEntity(4, 2);
+        Entity eentity = EntityManager.Instance.CreateEntity(4, 13);
         //eentity = EntityManager.Instance.CreateEntity(8, 34);
         //eentity = EntityManager.Instance.CreateEntity(4, 3);
         //eentity = EntityManager.Instance.CreateEntity(4, 4);
@@ -55,11 +56,19 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
 
     public void ChangePlayer(int idx)
     {
+        if(changeCD)return;
+        if(timer != null)TimerManager.Instance.RemoveTimer(timer);
+        timer = TimerManager.Instance.RegisterTimer(0.5f,1,ChangePlayerCD);
         nowSelectedCharacter = selectedCharacterList[idx];
         foreach(var cmp in entity.components)
         {
             cmp.DataInit();
         }
+        changeCD = true;
+    }
+    private void ChangePlayerCD()
+    {
+        changeCD = false;
     }
 }
 

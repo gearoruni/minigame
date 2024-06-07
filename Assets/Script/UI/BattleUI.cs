@@ -11,6 +11,9 @@ public class BattleUI : MonoBehaviour
     private cfg.DialogueConfigs dialogueConfigs;
     public List<Image> maskList;
     public List<Image> lockList;
+
+    public List<Image> characterSkill;
+    public List<Image> lizhiSkill;
     public GameObject dialogUI;
     public Text nameTxt;
     public Text mainTxt;
@@ -24,6 +27,7 @@ public class BattleUI : MonoBehaviour
 
     public static BattleUI Instance;
     private Action callBack = null;
+    private int nowPlayer = 1001;
     private void Awake()
     {
         Instance = this;
@@ -50,14 +54,26 @@ public class BattleUI : MonoBehaviour
         foreach(var skill in skillCmp.data.Values)
         {
             Image img = maskList[(int)skill.Type];
+            if(img == null)continue;
             lockList[(int)skill.Type].gameObject.SetActive(skill.isLock);
-            if (img == null) continue;
             float cd = 1 - skillCmp.nowCdtime[skill.idx] / skill.cd;
             img.fillAmount = cd;
         }
 
         health.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;
         UpdateMonsterHp();
+        if(nowPlayer != PlayerBaseData.Instance.nowSelectedCharacter)
+        {
+            nowPlayer = PlayerBaseData.Instance.nowSelectedCharacter;
+            foreach(var img in characterSkill)
+            {
+                img.gameObject.SetActive(!img.gameObject.activeSelf);
+            }
+            foreach(var img in lizhiSkill)
+            {
+                img.gameObject.SetActive(!img.gameObject.activeSelf);
+            }
+        }
     }
 
     private void OnDestroy()

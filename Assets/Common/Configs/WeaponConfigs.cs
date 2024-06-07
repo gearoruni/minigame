@@ -24,6 +24,7 @@ public sealed partial class WeaponConfigs : Luban.BeanBase
         { var __json0 = _buf["volleyCount"]; if(!__json0.IsArray) { throw new SerializationException(); } VolleyCount = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  VolleyCount.Add(__v0); }   }
         { var __json0 = _buf["bulletsPerVolley"]; if(!__json0.IsArray) { throw new SerializationException(); } BulletsPerVolley = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  BulletsPerVolley.Add(__v0); }   }
         { var __json0 = _buf["timeBetweenBullets"]; if(!__json0.IsArray) { throw new SerializationException(); } TimeBetweenBullets = new System.Collections.Generic.List<float>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { float __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  TimeBetweenBullets.Add(__v0); }   }
+        { var __json0 = _buf["specialSkill"]; if(!__json0.IsArray) { throw new SerializationException(); } SpecialSkill = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  SpecialSkill.Add(__v0); }   }
     }
 
     public static WeaponConfigs DeserializeWeaponConfigs(JSONNode _buf)
@@ -59,12 +60,17 @@ public sealed partial class WeaponConfigs : Luban.BeanBase
     /// 连发间发射间隔
     /// </summary>
     public readonly System.Collections.Generic.List<float> TimeBetweenBullets;
+    /// <summary>
+    /// 特殊能力
+    /// </summary>
+    public readonly System.Collections.Generic.List<int> SpecialSkill;
    
     public const int __ID__ = -356674667;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
+        
         
         
         
@@ -84,6 +90,7 @@ public sealed partial class WeaponConfigs : Luban.BeanBase
         + "volleyCount:" + Luban.StringUtil.CollectionToString(VolleyCount) + ","
         + "bulletsPerVolley:" + Luban.StringUtil.CollectionToString(BulletsPerVolley) + ","
         + "timeBetweenBullets:" + Luban.StringUtil.CollectionToString(TimeBetweenBullets) + ","
+        + "specialSkill:" + Luban.StringUtil.CollectionToString(SpecialSkill) + ","
         + "}";
     }
 }

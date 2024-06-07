@@ -3,6 +3,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -37,6 +38,7 @@ public class Skill
     public int effectId;
     public int animationId;
     public bool isLock;
+    public Timer timer;
     WeaponComponent weaponComponent;
 
     public Skill(int idx, int type, float cd, int fieldType, int typeDefine, int prefabName, int effectId,int animationId, bool isLock)
@@ -56,7 +58,23 @@ public class Skill
     public void UseSkill(Entity entity)
     {
         weaponComponent = (WeaponComponent)entity.GetComponent("WeaponComponent");
+        Animator animator;
         NoneFieldSkill(entity);
+        animator = weaponComponent.weapon.go.GetComponentInChildren<Animator>();
+        Debug.Log(animator);
+        switch(weaponConfigs.SpecialSkill[0])
+        {
+            case 1:
+                tanfan(entity);
+                animator?.Play("attack1");
+                timer = TimerManager.Instance.RegisterTimer(2,2,()=>{
+                    SkillComponent cmp = (SkillComponent)entity.GetComponent("SkillComponent");
+                    cmp.continueCallBack = null;
+                    TimerManager.Instance.RemoveTimer(timer);
+                    animator?.Play("idle");
+                    });
+            break;
+        }
     }
 
     #region 标准技能
@@ -70,13 +88,12 @@ public class Skill
             int volleyCnt = weaponConfigs.VolleyCount[i];
             int bulletsPerVolley = weaponConfigs.BulletsPerVolley[i];
             float timeBetweenBullets = weaponConfigs.TimeBetweenBullets[i];
-
             for (int j = 0; j < volleyCnt; j++)
             {
                 if (weaponComponent != null)
                 {
                     Vector2 baseDir = weaponComponent.GetWeaponFace();
-                    float randomAngle = UnityEngine.Random.Range(downv, upv);
+                    float randomAngle = (upv - downv) / volleyCnt * j + downv;
                     Vector2 direction = Quaternion.Euler(0f, 0f, randomAngle) * baseDir;
                     TimerManager.Instance.RegisterTimer(timeBetweenBullets, bulletsPerVolley, delegate () {
                         BaseFire(entity, weaponComponent.GetWeaponTopPos(), direction);
@@ -120,6 +137,34 @@ public class Skill
         ////设置子弹效果
         EffectComponent effectComponent = (EffectComponent)bulletEntity.GetComponent("EffectComponent");
         effectComponent.DataInit(effectId);
+    }
+    #endregion
+
+    #region 特殊技能
+    public void tanfan(Entity entity)
+    {
+        var cmp = (SkillComponent)entity.GetComponent("SkillComponent");
+        if(cmp == null)return;
+        Vector2 baseDir = weaponComponent.GetWeaponFace();
+        int upv = weaponConfigs.UpLimit[0];
+        int downv = weaponConfigs.DownLimit[0];
+        cmp.continueCallBack = () => {
+            
+        foreach(var e in EntityManager.Instance.entities.Values)
+        {
+            if(e == null)continue;
+            if(e.entityId == 3 && e.Tag != Tag.Player)
+            {
+                Vector2 v = e.go.transform.position - entity.go.transform.position;
+                if(v.magnitude <= 10 && math.abs(Vector2.Angle(v,weaponComponent.GetWeaponFace())) < 30f)
+                {
+                    e.Tag = Tag.Player;
+                    MoveComponent mcmp=  (MoveComponent)e.GetComponent("MoveComponent");
+                    mcmp.input = weaponComponent.GetWeaponFace();
+                }
+            }
+        }
+        };
     }
     #endregion
 }
