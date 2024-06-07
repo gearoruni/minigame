@@ -108,5 +108,27 @@
     "specialSkill": [
       1
     ]
+  },
+  {
+    "id": 20016,
+    "name": "理智之花冲刺",
+    "upLimit": [
+      0
+    ],
+    "downLimit": [
+      0
+    ],
+    "volleyCount": [
+      0
+    ],
+    "bulletsPerVolley": [
+      0
+    ],
+    "timeBetweenBullets": [
+      0
+    ],
+    "specialSkill": [
+      2
+    ]
   }
 ]

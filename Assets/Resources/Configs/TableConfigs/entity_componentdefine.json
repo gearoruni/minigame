@@ -22,7 +22,7 @@
     ],
     "componentdataid": [
       5,
-      1103,
+      1101,
       2,
       1001
     ]
@@ -37,7 +37,7 @@
     ],
     "componentdataid": [
       5,
-      1103,
+      1101,
       3,
       1001
     ]
@@ -52,7 +52,7 @@
     ],
     "componentdataid": [
       5,
-      1103,
+      1101,
       4,
       1001
     ]
@@ -82,7 +82,7 @@
     ],
     "componentdataid": [
       5,
-      1103,
+      1101,
       7,
       1001
     ]
@@ -97,7 +97,7 @@
     ],
     "componentdataid": [
       5,
-      1103,
+      1101,
       8,
       1001
     ]
@@ -112,7 +112,7 @@
     ],
     "componentdataid": [
       5,
-      1103,
+      1101,
       9,
       1001
     ]
@@ -127,7 +127,7 @@
     ],
     "componentdataid": [
       5,
-      1103,
+      1101,
       10,
       1001
     ]
@@ -142,7 +142,7 @@
     ],
     "componentdataid": [
       5,
-      1103,
+      1101,
       11,
       1001
     ]
@@ -157,7 +157,7 @@
     ],
     "componentdataid": [
       5,
-      1103,
+      1101,
       12,
       1001
     ]
@@ -172,7 +172,7 @@
     ],
     "componentdataid": [
       6,
-      1105,
+      1102,
       13,
       1001
     ]
@@ -187,7 +187,7 @@
     ],
     "componentdataid": [
       6,
-      1105,
+      1102,
       14,
       1001
     ]
@@ -202,7 +202,7 @@
     ],
     "componentdataid": [
       6,
-      1105,
+      1102,
       15,
       1001
     ]
@@ -217,7 +217,7 @@
     ],
     "componentdataid": [
       6,
-      1105,
+      1102,
       16,
       1001
     ]
@@ -247,7 +247,7 @@
     ],
     "componentdataid": [
       8,
-      1105,
+      1103,
       20,
       1001
     ]
@@ -262,7 +262,7 @@
     ],
     "componentdataid": [
       8,
-      1105,
+      1103,
       22,
       1001
     ]
@@ -277,7 +277,7 @@
     ],
     "componentdataid": [
       6,
-      1105,
+      1102,
       23,
       1001
     ]
@@ -292,7 +292,7 @@
     ],
     "componentdataid": [
       6,
-      1105,
+      1102,
       24,
       1001
     ]
@@ -307,7 +307,7 @@
     ],
     "componentdataid": [
       6,
-      1105,
+      1102,
       25,
       1001
     ]
@@ -322,7 +322,7 @@
     ],
     "componentdataid": [
       6,
-      1105,
+      1102,
       26,
       1001
     ]
@@ -337,7 +337,7 @@
     ],
     "componentdataid": [
       8,
-      1105,
+      1103,
       29,
       1001
     ]
@@ -352,7 +352,7 @@
     ],
     "componentdataid": [
       8,
-      1105,
+      1103,
       30,
       1001
     ]
@@ -367,9 +367,24 @@
     ],
     "componentdataid": [
       8,
-      1105,
+      1103,
       31,
       1001
+    ]
+  },
+  {
+    "id": 32,
+    "componentName": [
+      "CharacterComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "InteractiveComponent"
+    ],
+    "componentdataid": [
+      5500,
+      5,
+      32,
+      1
     ]
   },
   {
@@ -382,24 +397,9 @@
     ],
     "componentdataid": [
       9,
-      1105,
+      1201,
       33,
       1001
-    ]
-  },
-  {
-    "id": 34,
-    "componentName": [
-      "CharacterComponent",
-      "TagComponent",
-      "SpawnComponent",
-      "InteractiveComponent"
-    ],
-    "componentdataid": [
-      5500,
-      5,
-      2,
-      1
     ]
   },
   {
@@ -413,6 +413,128 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": 40,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      6,
+      1102,
+      40,
+      1001
+    ]
+  },
+  {
+    "id": 41,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      6,
+      1102,
+      41,
+      1001
+    ]
+  },
+  {
+    "id": 42,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      5,
+      1101,
+      42,
+      1001
+    ]
+  },
+  {
+    "id": 43,
+    "componentName": [
+      "CharacterComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "InteractiveComponent"
+    ],
+    "componentdataid": [
+      5500,
+      5,
+      43,
+      1
+    ]
+  },
+  {
+    "id": 50,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      5,
+      1101,
+      50,
+      1001
+    ]
+  },
+  {
+    "id": 51,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      5,
+      1101,
+      51,
+      1001
+    ]
+  },
+  {
+    "id": 52,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      5,
+      1101,
+      52,
+      1001
+    ]
+  },
+  {
+    "id": 53,
+    "componentName": [
+      "SpawnComponent",
+      "TrapDelay",
+      "TrapAtk",
+      "CharacterComponent",
+      "TagComponent"
+    ],
+    "componentdataid": [
+      2,
+      1,
+      30,
+      6600,
+      6
     ]
   }
 ]

@@ -41,9 +41,12 @@ public sealed partial class SkillData : Luban.BeanBase
     /// </summary>
     public readonly int Id;
     /// <summary>
-    /// 技能类型
+    /// 技能类型<br/>0左|1右|2Shift|3E
     /// </summary>
     public readonly System.Collections.Generic.List<int> SkillType;
+    /// <summary>
+    /// 冷却时间
+    /// </summary>
     public readonly System.Collections.Generic.List<float> CdTime;
     /// <summary>
     /// 1 = 发射系<br/>2 = 范围系

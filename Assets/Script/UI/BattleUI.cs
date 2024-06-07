@@ -22,6 +22,8 @@ public class BattleUI : MonoBehaviour
     public Image rightperson;
     public Image health;
 
+    public Transform zhujuechange,lizhichange;
+
     public RectTransform montserRoot;
     public GameObject MonsterHpTemplate;
 
@@ -57,7 +59,7 @@ public class BattleUI : MonoBehaviour
             if(img == null)continue;
             lockList[(int)skill.Type].gameObject.SetActive(skill.isLock);
             float cd = 1 - skillCmp.nowCdtime[skill.idx] / skill.cd;
-            img.fillAmount = cd;
+            img.fillAmount = skill.isLock == true ? 1:cd;
         }
 
         health.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;
@@ -73,6 +75,11 @@ public class BattleUI : MonoBehaviour
             {
                 img.gameObject.SetActive(!img.gameObject.activeSelf);
             }
+            float x = nowPlayer == 1001 ? 0.7f:0.5f;
+            zhujuechange.localScale = new Vector3(x,x,x);
+            
+            x = nowPlayer == 1002 ? 0.7f:0.5f;
+            lizhichange.localScale = new Vector3(x,x,x);
         }
     }
 

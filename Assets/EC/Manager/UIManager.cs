@@ -25,10 +25,13 @@ public class UIManager : Singleton<UIManager>
             return -1;
         }
         go = GameObject.Instantiate(go);
+        go.transform.SetParent(canvas, false);
         /*var rect = go.GetComponent<RectTransform>();
         rect.SetParent(canvas);*/
-        go.transform.SetParent(canvas);
-        go.transform.localPosition = Vector3.zero;
+        // var rect = go.GetComponent<RectTransform>();
+        // rect.SetParent(canvas);
+        
+        // go.transform.localPosition = Vector3.zero;
         _idx2UI.Add(id, go);
         return id++;
     }

@@ -218,5 +218,28 @@
       0
     ],
     "parentEntityId": 0
+  },
+  {
+    "entityId": 9,
+    "name": "trap",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "TrapComponent",
+      "CharacterComponent",
+      "CollisionComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      6,
+      0,
+      0,
+      6600,
+      0
+    ],
+    "parentEntityId": 0
   }
 ]

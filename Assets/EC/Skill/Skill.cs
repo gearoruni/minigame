@@ -74,6 +74,14 @@ public class Skill
                     animator?.Play("idle");
                     });
             break;
+            case 2:
+                Chongci(entity);
+                 timer = TimerManager.Instance.RegisterTimer(0.35f,1,()=>{
+                    SkillComponent cmp = (SkillComponent)entity.GetComponent("SkillComponent");
+                    cmp.continueCallBack = null;
+                    TimerManager.Instance.RemoveTimer(timer);
+                    });
+            break;
         }
     }
 
@@ -95,9 +103,10 @@ public class Skill
                     Vector2 baseDir = weaponComponent.GetWeaponFace();
                     float randomAngle = (upv - downv) / volleyCnt * j + downv;
                     Vector2 direction = Quaternion.Euler(0f, 0f, randomAngle) * baseDir;
-                    TimerManager.Instance.RegisterTimer(timeBetweenBullets, bulletsPerVolley, delegate () {
-                        BaseFire(entity, weaponComponent.GetWeaponTopPos(), direction);
-                    }, true);
+                    BaseFire(entity, weaponComponent.GetWeaponTopPos(), direction);
+                    // TimerManager.Instance.RegisterTimer(timeBetweenBullets, bulletsPerVolley, delegate () {
+                        
+                    // }, true);
                 }
             }
         }
@@ -165,6 +174,14 @@ public class Skill
             }
         }
         };
+    }
+    public void Chongci(Entity entity)
+    {
+        var cmp = (SkillComponent)entity.GetComponent("SkillComponent");
+        var movecmp = (MoveComponent)entity.GetComponent("MoveComponent");
+        movecmp.SetForceMove(0.35f, 20f, weaponComponent.GetWeaponFace());
+        if(cmp == null)return;
+        cmp.continueCallBack = ()=>{};
     }
     #endregion
 }

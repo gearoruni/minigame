@@ -56,10 +56,10 @@ public class InputComponent : Component
     }
     public override void Update()
     {
-        //ÒÆ¶¯·½Ïò
+        //ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½
         movepos = keyboardMoveAxes;
 
-        //·¢Éä·½Ïò
+        //ï¿½ï¿½ï¿½ä·½ï¿½ï¿½
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = -Camera.main.transform.position.z;
         facepos = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -71,6 +71,11 @@ public class InputComponent : Component
         else if(Input.GetKeyUp(KeyCode.Alpha2))
         {
             PlayerBaseData.Instance.ChangePlayer(1);
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("é€€å‡ºæ¸¸æˆ");
         }
     }
 

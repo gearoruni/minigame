@@ -46,7 +46,7 @@ public class GoComponent : Component
         //创建物体
         go = ObjectPool.Instance.GetObjectFromPool(name);
         if(go == null) { 
-            Debug.LogError("无对应物体!");return; 
+            Debug.LogError($"无对应物体!id:{name}");return; 
         }
 
         entity.go = go;

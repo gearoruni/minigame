@@ -7,9 +7,9 @@
       3
     ],
     "cd_time": [
-      0.5,
-      0.1,
-      0.1
+      0.4,
+      5,
+      3
     ],
     "effect_type": [
       1,
@@ -61,8 +61,8 @@
     "id": 1002,
     "skill_type": [
       0,
-      3,
       2,
+      3,
       1
     ],
     "cd_time": [
@@ -73,13 +73,13 @@
     ],
     "effect_type": [
       1,
-      1,
+      2,
       2,
       1
     ],
     "typeDefine": [
       20011,
-      20013,
+      20016,
       20015,
       20014
     ],
@@ -96,26 +96,26 @@
       2001
     ],
     "animation_id": [
-      2,
-      3,
+      10,
       0,
-      2
+      0,
+      10
     ],
     "Windup": [
       0,
-      0,
+      1,
       0,
       0
     ],
     "Atking": [
       0,
-      0,
+      1,
       0,
       0
     ],
     "Winddown": [
       0,
-      0,
+      1,
       0,
       0
     ],
@@ -127,12 +127,12 @@
     ]
   },
   {
-    "id": 1003,
+    "id": 1101,
     "skill_type": [
       0
     ],
     "cd_time": [
-      0.7
+      0.4
     ],
     "effect_type": [
       1
@@ -144,7 +144,7 @@
       3001
     ],
     "effect_id": [
-      2005
+      1101
     ],
     "animation_id": [
       7
@@ -163,12 +163,48 @@
     ]
   },
   {
-    "id": 1004,
+    "id": 1102,
     "skill_type": [
       0
     ],
     "cd_time": [
-      1.5
+      0.8
+    ],
+    "effect_type": [
+      1
+    ],
+    "typeDefine": [
+      20011
+    ],
+    "prefab_id": [
+      3004
+    ],
+    "effect_id": [
+      1102
+    ],
+    "animation_id": [
+      7
+    ],
+    "Windup": [
+      0
+    ],
+    "Atking": [
+      0
+    ],
+    "Winddown": [
+      0
+    ],
+    "Lock": [
+      false
+    ]
+  },
+  {
+    "id": 1103,
+    "skill_type": [
+      0
+    ],
+    "cd_time": [
+      0.5
     ],
     "effect_type": [
       2
@@ -180,10 +216,10 @@
       3004
     ],
     "effect_id": [
-      2006
+      2007
     ],
     "animation_id": [
-      0
+      7
     ],
     "Windup": [
       1
@@ -199,15 +235,15 @@
     ]
   },
   {
-    "id": 1005,
+    "id": 1201,
     "skill_type": [
       0
     ],
     "cd_time": [
-      0.1
+      0.8
     ],
     "effect_type": [
-      2
+      1
     ],
     "typeDefine": [
       20011
@@ -216,7 +252,7 @@
       3004
     ],
     "effect_id": [
-      2007
+      2006
     ],
     "animation_id": [
       0

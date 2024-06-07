@@ -93,7 +93,14 @@ public class SkillComponent : Component
     public bool CheckCanUseSkill(SkillType skillType)
     {
         Skill skillBaseData = data[skillType];
-        if (skillBaseData.isLock) return false;
+        if (skillBaseData.isLock)
+        {
+            BattleUI.Instance.maskList[(int)skillType].color = Color.red;
+            TimerManager.Instance.RegisterTimer(0.1f,1,()=>{
+                BattleUI.Instance.maskList[(int)skillType].color = new Color(0,0,0,178f/255f);
+            });
+            return false;
+        }
         if (skillBaseData.cd <= nowCdtime[skillBaseData.idx] && continueCallBack==null) return true;
         return false;
     }

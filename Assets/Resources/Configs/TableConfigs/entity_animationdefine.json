@@ -42,5 +42,13 @@
   {
     "id": 1002,
     "animationName": "LiZhiAnim"
+  },
+  {
+    "id": 10,
+    "animationName": "LiZhiHuoQiu"
+  },
+  {
+    "id": 11,
+    "animationName": "LiZhiShift"
   }
 ]
