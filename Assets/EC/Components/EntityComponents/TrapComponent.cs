@@ -7,6 +7,7 @@ public class TrapComponent : Component
     public CollisionListener collisionListener;
     public CollisionComponent collisionComponent;
     public List<Entity> entities = new List<Entity>();
+    public bool continueOpen;
     public int atk;
     public int delay;
     public override void Init()
@@ -14,7 +15,8 @@ public class TrapComponent : Component
         // collisionListener = entity.go.GetComponentInChildren<CollisionListener>();
         // collisionListener.Init(entity);
         collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
-        collisionComponent.OnBaseTriggerEnter2D += OnClickTrap;
+        collisionComponent.OnBaseTriggerEnter2D += EnterTrap;
+        collisionComponent.OnBaseTriggerExit2D += ExitTrap;
         Debug.Log("enter");
     }
     public override void DataInit()
@@ -32,18 +34,35 @@ public class TrapComponent : Component
         CachePool.Instance.Cache<TransformComponent>(this);
     }
 
-    private void OnClickTrap(Entity entity)
+    private void EnterTrap(Entity entity)
     {
         entities.Add(entity);
         Debug.Log("进入陷阱");
-        if(entity.Tag != Tag.Player)return;
-        TimerManager.Instance.RegisterTimer(delay,1,()=>{
-            foreach(var entity in entities)
+        if (entity.Tag != Tag.Player) return;
+        continueOpen = true;
+        OnClickTrap();
+    }
+    private void ExitTrap(Entity entity)
+    {
+        if(entities.Contains(entity))
+            entities.Remove(entity);
+        if(entity.Tag == Tag.Player)
+        {
+            continueOpen = false;
+        }
+    }
+    private void OnClickTrap()
+    {
+        TimerManager.Instance.RegisterTimer(delay, 1, () =>
+        {
+
+            foreach (var entity in entities)
             {
                 var cmp = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
-                cmp.nowHp-=atk;
+                cmp.nowHp -= atk;
             }
             Debug.Log("陷阱启动");
+            if (continueOpen) OnClickTrap();
         });
     }
 }
