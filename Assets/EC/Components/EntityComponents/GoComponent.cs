@@ -40,7 +40,9 @@ public class GoComponent : Component
         if (go != null)
         {
             EntityManager.Instance.GEList.Remove(go);
-            GameObject.Destroy(go);
+            //GameObject.Destroy(go);
+
+            ObjectPool.Instance.ReturnObjectToPool(goName, go);
             go = null;
         }
         //创建物体

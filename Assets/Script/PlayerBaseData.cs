@@ -5,6 +5,13 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UIElements.Experimental;
 
+public class CharacterDataCache
+{
+    public int id;
+    public int hp;
+    public bool ELock, ShiftLock;
+    public bool dead;
+}
 public class PlayerBaseData : Singleton<PlayerBaseData>
 {
     public int nowSelectedCharacter = 1001;
@@ -13,7 +20,11 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     private Timer timer;
     public Dictionary<int,int>characterLevelDir = new Dictionary<int,int>();
     public Dictionary<int, Dictionary<string,float>> playerDataCache = new Dictionary<int, Dictionary<string, float>>();
+    public Dictionary<int, CharacterDataCache> playerDatas = new Dictionary<int, CharacterDataCache>();
     public Entity entity;
+
+    private CharacterDataComponent characterDataComponent;
+    private SkillComponent skillComponent;
     public override void Init()
     {
         characterLevelDir[1001] = 1;
@@ -25,6 +36,8 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         entity = EntityManager.Instance.CreateEntity(1,1);
         CameraManager.Instance.RegisterFollow(entity);
         TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
+        characterDataComponent = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
+        skillComponent = (SkillComponent)entity.GetComponent("SkillComponent");
         //GameObject.Instantiate(Preloader.Instance.GetGameObject("Map"));
 
         Entity eentity = EntityManager.Instance.CreateEntity(4, 13);
@@ -32,7 +45,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         //eentity = EntityManager.Instance.CreateEntity(8, 34);
         //eentity = EntityManager.Instance.CreateEntity(4, 3);
         //eentity = EntityManager.Instance.CreateEntity(4, 4);
-        // eentity = EntityManager.Instance.CreateEntity(8, 5);
+        eentity = EntityManager.Instance.CreateEntity(8, 5);
         // eentity = EntityManager.Instance.CreateEntity(4, 7);//
         // eentity = EntityManager.Instance.CreateEntity(4, 8);//
         // eentity = EntityManager.Instance.CreateEntity(4, 9);//
@@ -61,29 +74,31 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     public void ChangePlayer(int idx)
     {
         if(changeCD)return;
+        if (playerDatas.TryGetValue(selectedCharacterList[idx], out var data) && data.dead) return;
         if(timer != null)TimerManager.Instance.RemoveTimer(timer);
         timer = TimerManager.Instance.RegisterTimer(0.5f,1,ChangePlayerCD);
-        float hp=0,e=-1,shift=-1;
-        playerDataCache[nowSelectedCharacter]["hp"] = ((CharacterDataComponent)entity.GetComponent("CharacterDataComponent")).nowHp;
-        playerDataCache[nowSelectedCharacter]["e"] = ((SkillComponent)entity.GetComponent("SkillComponent")).data[SkillType.ESKILL].isLock == true ? 1 : 0;
-        playerDataCache[nowSelectedCharacter]["shift"] = ((SkillComponent)entity.GetComponent("SkillComponent")).data[SkillType.QSKILL].isLock == true ? 1 : 0;
-        
+        if(!playerDatas.TryGetValue(nowSelectedCharacter,out data))
+        {
+            data = new CharacterDataCache();
+            playerDatas.Add(nowSelectedCharacter, data);
+            data.id = nowSelectedCharacter;
+        }
+        data.hp = characterDataComponent.nowHp;
+        data.ELock = skillComponent.data[SkillType.ESKILL].isLock;
+        data.ShiftLock = skillComponent.data[SkillType.QSKILL].isLock;
+        data.dead = data.hp<=0;
+
+
         nowSelectedCharacter = selectedCharacterList[idx];
-        
-        playerDataCache[nowSelectedCharacter].TryGetValue("hp",out hp);
-        playerDataCache[nowSelectedCharacter].TryGetValue("e",out e);
-        playerDataCache[nowSelectedCharacter].TryGetValue("shift",out shift);
-        // e = playerDataCache["e"];
-        // shift = playerDataCache["shift"];
         foreach(var cmp in entity.components)
         {
             cmp.DataInit();
         }
         changeCD = true;
-        if(hp==0f)return;
-        ((CharacterDataComponent)entity.GetComponent("CharacterDataComponent")).nowHp = (int)hp;
-        ((SkillComponent)entity.GetComponent("SkillComponent")).data[SkillType.ESKILL].isLock = e==1?true:false;
-        ((SkillComponent)entity.GetComponent("SkillComponent")).data[SkillType.QSKILL].isLock = shift == 1?true:false;
+        if (!playerDatas.TryGetValue(nowSelectedCharacter, out data)) return;
+        characterDataComponent.nowHp = data.hp;
+        skillComponent.data[SkillType.ESKILL].isLock = data.ELock;
+        skillComponent.data[SkillType.QSKILL].isLock = data.ShiftLock;
     }
     private void ChangePlayerCD()
     {
