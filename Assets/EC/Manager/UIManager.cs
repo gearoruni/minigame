@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
 public class UIManager : Singleton<UIManager>
 {
-    private int id = 0;
+    public int id = 0;
     private const string UIPath = "Assets/UI//.prefab";
     private Transform canvas;
     private Dictionary<int, GameObject> _idx2UI = new Dictionary<int, GameObject>();
@@ -42,6 +43,20 @@ public class UIManager : Singleton<UIManager>
         {
             GameObject.Destroy(UI);
             _idx2UI.Remove(id);
+        }
+    }
+    public void CloseUI<T>()where T:class
+    {
+        string name = typeof(T).Name;
+        //name = Regex.Match(name, @"(.*UI)").Value;
+        Debug.Log(name);
+        foreach (var ui in _idx2UI)
+        {
+            if(name == Regex.Match(ui.Value.name, @"(.*UI)").Value)
+            {
+                CloseUI(ui.Key);
+                break;
+            }
         }
     }
 }

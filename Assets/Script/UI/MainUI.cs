@@ -16,7 +16,7 @@ public class MainUI : MonoBehaviour
     }
     private void OnStart()
     {
-        UIManager.Instance.CloseUI(0);
+        UIManager.Instance.CloseUI<MainUI>(); ;
         UIManager.Instance.ShowUI("BattleUI");
     }
     private void OnExit()

@@ -74,8 +74,23 @@ public class InputComponent : Component
         }
         else if(Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
-            Debug.Log("退出游戏");
+
+            //Application.Quit();
+            /*PlayerBaseData.Instance.Clear();
+            GoComponent gocmp;
+            foreach(var entity in EntityManager.Instance.entities)
+            {
+                if (entity.Value == null) continue;
+                gocmp = (GoComponent)entity.Value.GetComponent("GoComponent");
+                ObjectPool.Instance.ReturnObjectToPool(gocmp.name, gocmp.go);
+            }
+            //EntityManager.Instance.RemoveAllEntity();
+            //PlayerBaseData.Instance.Init();
+            UIManager.Instance.CloseUI(UIManager.Instance.id - 1);
+            UIManager.Instance.ShowUI("MainUI");
+            Debug.Log("退出游戏");*/
+            UIManager.Instance.ShowUI("ESCUI");
+            EntityManager.Instance.isStop = true;
         }
     }
 

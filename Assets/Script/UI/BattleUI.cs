@@ -90,6 +90,7 @@ public class BattleUI : MonoBehaviour
 
     public void ShowTxt(int id, Action callback = null)
     {
+        EntityManager.Instance.isStop = true;
         callBack = callBack == null ? callback : callBack;
         dialogUI.SetActive(true);
         dialogueConfigs = TableDataManager.Instance.tables.MainTxt.Get(id);
@@ -125,6 +126,8 @@ public class BattleUI : MonoBehaviour
             rightperson.gameObject.SetActive(false);
             callBack?.Invoke();
             callBack = null;
+
+            EntityManager.Instance.isStop = false;
             return;
         }
         ShowTxt(dialogueConfigs.обр╩╦Ж);

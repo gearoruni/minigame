@@ -31,8 +31,8 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         characterLevelDir[1002] = 1;
         selectedCharacterList.Add(1001);
         selectedCharacterList.Add(1002);
-        playerDataCache.Add(1001,new Dictionary<string, float>());
-        playerDataCache.Add(1002,new Dictionary<string, float>());
+        playerDataCache.TryAdd(1001,new Dictionary<string, float>());
+        playerDataCache.TryAdd(1002,new Dictionary<string, float>());
         entity = EntityManager.Instance.CreateEntity(1,1);
         CameraManager.Instance.RegisterFollow(entity);
         TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
@@ -103,6 +103,13 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     private void ChangePlayerCD()
     {
         changeCD = false;
+    }
+    public void Clear()
+    {
+        selectedCharacterList.Clear();
+        characterLevelDir.Clear();
+        playerDataCache.Clear();
+        playerDatas.Clear();
     }
 }
 
