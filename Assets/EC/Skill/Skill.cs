@@ -61,7 +61,7 @@ public class Skill
         Animator animator;
         NoneFieldSkill(entity);
         animator = weaponComponent.weapon.go.GetComponentInChildren<Animator>();
-        Debug.Log(animator);
+        //Debug.Log(animator);
         switch(weaponConfigs.SpecialSkill[0])
         {
             case 1:
@@ -70,7 +70,7 @@ public class Skill
                 timer = TimerManager.Instance.RegisterTimer(2,2,()=>{
                     SkillComponent cmp = (SkillComponent)entity.GetComponent("SkillComponent");
                     cmp.continueCallBack = null;
-                    TimerManager.Instance.RemoveTimer(timer);
+                    // TimerManager.Instance.RemoveTimer(timer);
                     animator?.Play("idle");
                     });
             break;
@@ -79,7 +79,7 @@ public class Skill
                  timer = TimerManager.Instance.RegisterTimer(0.35f,1,()=>{
                     SkillComponent cmp = (SkillComponent)entity.GetComponent("SkillComponent");
                     cmp.continueCallBack = null;
-                    TimerManager.Instance.RemoveTimer(timer);
+                    //TimerManager.Instance.RemoveTimer(timer);
                     });
             break;
         }
@@ -162,12 +162,12 @@ public class Skill
         foreach(var e in EntityManager.Instance.entities.Values)
         {
             if(e == null)continue;
-            if(e.entityId == 3 && e.Tag != Tag.Player)
+            if(e.entityId == 3 && e.Tag != entity.Tag)
             {
                 Vector2 v = e.go.transform.position - entity.go.transform.position;
                 if(v.magnitude <= 10 && math.abs(Vector2.Angle(v,weaponComponent.GetWeaponFace())) < 30f)
                 {
-                    e.Tag = Tag.Player;
+                    e.Tag = entity.Tag;
                     MoveComponent mcmp=  (MoveComponent)e.GetComponent("MoveComponent");
                     mcmp.input = weaponComponent.GetWeaponFace();
                 }

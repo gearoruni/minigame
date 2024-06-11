@@ -65,7 +65,6 @@ public class FSMComponent : Component
         isQSkill = ((SharedBool)bt.GetVariable("isQSkill")).Value;
         isESkill = ((SharedBool)bt.GetVariable("isESkill")).Value;
         isTSkill = ((SharedBool)bt.GetVariable("isTSkill")).Value;
-
     }
     public override void OnCache()
     {

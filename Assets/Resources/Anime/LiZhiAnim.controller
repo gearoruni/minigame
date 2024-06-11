@@ -111,7 +111,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 0_atk
+  m_Name: 2_atk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -398,7 +398,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 0_atk_a
+  m_Name: 2_atk_a
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -424,7 +424,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 0_atk_f
+  m_Name: 2_atk_f
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

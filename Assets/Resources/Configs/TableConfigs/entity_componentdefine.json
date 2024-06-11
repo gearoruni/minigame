@@ -60,15 +60,17 @@
   {
     "id": 5,
     "componentName": [
+      "AnimatorComponent",
       "CharacterComponent",
-      "TagComponent",
       "SpawnComponent",
+      "FSMComponent",
       "InteractiveComponent"
     ],
     "componentdataid": [
-      5500,
       5,
-      5,
+      1101,
+      4,
+      1001,
       0
     ]
   },
@@ -399,7 +401,7 @@
       9,
       1201,
       33,
-      1001
+      1002
     ]
   },
   {

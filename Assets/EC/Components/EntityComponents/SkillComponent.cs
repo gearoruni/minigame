@@ -72,7 +72,7 @@ public class SkillComponent : Component
 
         if (baseData == null) { return; }
 
-        if(!CheckCanUseSkill(skillType))return;
+        //if(!CheckCanUseSkill(skillType))return;
 
         baseData.UseSkill(entity);
 
@@ -111,32 +111,34 @@ public class SkillComponent : Component
     }
     public void CheckSkill()
     {
-        if (controller.isRightSkill)
+        if (controller.isRightSkill && CheckCanUseSkill(SkillType.RIGHTATK))
         {
             PlayAnimBySkillType(SkillType.RIGHTATK);
             return;
         }
-        if (controller.isQSkill)
+        if (controller.isQSkill && CheckCanUseSkill(SkillType.QSKILL))
         {
             PlayAnimBySkillType(SkillType.QSKILL);
+            Debug.Log("enter");
             return;
         }
-        if (controller.isESkill)
+        if (controller.isESkill && CheckCanUseSkill(SkillType.ESKILL))
         {
             PlayAnimBySkillType(SkillType.ESKILL);
+            Debug.Log("enter");
             return;
         }
-        if (controller.isTSkill)
+        if (controller.isTSkill && CheckCanUseSkill(SkillType.TSKILL))
         {
             PlayAnimBySkillType(SkillType.TSKILL);
             return;
         }
-        if (controller.isHold || controller.isFire)
+        if ((controller.isHold || controller.isFire) && CheckCanUseSkill(SkillType.NORMAL))
         {
             if (PlayAnimation(SkillType.NORMAL))
             {
                 anime.isAtk = true;
-                anime.skillidx = 0;
+                anime.skillidx = (int)SkillType.NORMAL;
                 anime.SetSkill(() =>
                 {
                     UseSkill(SkillType.NORMAL);
@@ -166,7 +168,7 @@ public class SkillComponent : Component
         if (PlayAnimation(skillType))
             {
                 anime.isAtk = true;
-                anime.skillidx = 0;
+                anime.skillidx = (int)skillType;
                 anime.SetSkill(() =>
                 {
                     UseSkill(skillType);

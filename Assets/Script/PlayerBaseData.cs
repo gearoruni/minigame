@@ -40,8 +40,8 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         skillComponent = (SkillComponent)entity.GetComponent("SkillComponent");
         //GameObject.Instantiate(Preloader.Instance.GetGameObject("Map"));
 
-        Entity eentity = EntityManager.Instance.CreateEntity(4, 13);
-        eentity = EntityManager.Instance.CreateEntity(9, 53);
+        // Entity eentity = EntityManager.Instance.CreateEntity(4, 13);
+       var eentity = EntityManager.Instance.CreateEntity(9, 53);
         //eentity = EntityManager.Instance.CreateEntity(8, 34);
         //eentity = EntityManager.Instance.CreateEntity(4, 3);
         //eentity = EntityManager.Instance.CreateEntity(4, 4);
@@ -66,7 +66,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         // eentity = EntityManager.Instance.CreateEntity(4, 29);//
         // eentity = EntityManager.Instance.CreateEntity(4, 30);//
         // eentity = EntityManager.Instance.CreateEntity(4, 31);//
-        // eentity = EntityManager.Instance.CreateEntity(4, 33);//
+        eentity = EntityManager.Instance.CreateEntity(4, 33);//
         // eentity = EntityManager.Instance.CreateEntity(8, 32);
         // eentity = EntityManager.Instance.CreateEntity(8, 43);
     }

@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class AtkTask : Action
 {
-    public SharedBool isFire;
+    public SharedBool isFire;//,isTanfan,isChongzhuang;
     public SharedEntity target;
     public SharedVector2 facepos;
     public SharedVector2 movepos;
@@ -25,8 +25,18 @@ public class AtkTask : Action
         {
             return TaskStatus.Failure;
         }
+        // foreach(var entity in EntityManager.Instance.entities.Values)
+		// {
+		// 	if(entity == null)continue;
+		// 	if(entity.entityId==3 && entity.Tag == Tag.Player)
+		// 	{
+		// 		isTanfan.Value = true;
+		// 		break;
+		// 	}
+		// }
         facepos.Value = transform.position;
         isFire.Value = true;
+		// isChongzhuang.Value = true;
         movepos.Value = Vector2.zero;
         return TaskStatus.Success;
     }
