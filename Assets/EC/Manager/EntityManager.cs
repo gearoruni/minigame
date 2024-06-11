@@ -13,7 +13,8 @@ public class EntityManager : Singleton<EntityManager>
     private Assembler assembler = new Assembler();
 
     private Queue<int> addQueue = new Queue<int>();
-    private Queue<int> removeQueue = new Queue<int>();  
+    private Queue<int> removeQueue = new Queue<int>();
+    public bool isStop;
     public override void Init()
     {
         BehaviourCtrl.Instance.OnUpdate += UpdateEntity;
@@ -87,8 +88,22 @@ public class EntityManager : Singleton<EntityManager>
 
         entity.OnCache();
     }
+    public void RemoveAllEntity()
+    {
+        foreach(var entity in entities.Values)
+        {
+            
+            if (entity == null) continue;
+
+            entity.OnCache();
+        }
+
+        CharacterList.Clear();
+        entities.Clear();
+    }
     public void UpdateEntity()
     {
+        if (isStop) return;
         Entity entity;
         for (int i = 0;i<entityInstances.Count;i++)
         {
@@ -123,13 +138,14 @@ public class EntityManager : Singleton<EntityManager>
 
     }
 
-    public Entity GetEntityFromEntityId(int entityId)
+    public List<Entity> GetEntityFromEntityId(int entityId)
     {
+        List<Entity> result = new List<Entity>();
         foreach(Entity entityInstance in entities.Values)
         {
-            if(entityInstance.entityId == entityId) { return entityInstance; }
+            if(entityInstance.entityId == entityId) { result.Add(entityInstance); }
         }
-        return null;
+        return result;
     }
     public Entity GetEntityFromInstanceId(int entityInstanceId)
     {

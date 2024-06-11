@@ -20,6 +20,7 @@ public class SkillComponent : Component
 
     public bool[,] skillAnim = new bool[5,3];
 
+    public Action continueCallBack = null;
     public override void Init()
     {
         character = (CharacterComponent)entity.GetComponent("CharacterComponent");
@@ -49,7 +50,8 @@ public class SkillComponent : Component
                                                 config.TypeDefine[i],
                                                 config.PrefabId[i],
                                                 config.EffectId[i],
-                                                config.AnimationId[i]);
+                                                config.AnimationId[i],
+                                                config.Lock[i]);
 
                 data[baseData.Type] = baseData;
 
@@ -66,11 +68,11 @@ public class SkillComponent : Component
 
     public void UseSkill(SkillType skillType)
     {
-        Skill baseData = data[skillType];
+        if(!data.TryGetValue(skillType, out var baseData))return;
 
         if (baseData == null) { return; }
 
-        if(!CheckCanUseSkill(skillType))return;
+        //if(!CheckCanUseSkill(skillType))return;
 
         baseData.UseSkill(entity);
 
@@ -85,12 +87,21 @@ public class SkillComponent : Component
         {
             nowCdtime[i] += Time.deltaTime;
         }
+        continueCallBack?.Invoke();
     }
 
     public bool CheckCanUseSkill(SkillType skillType)
     {
         Skill skillBaseData = data[skillType];
-        if (skillBaseData.cd <= nowCdtime[skillBaseData.idx]) return true;
+        if (skillBaseData.isLock)
+        {
+            BattleUI.Instance.maskList[(int)skillType].color = Color.red;
+            TimerManager.Instance.RegisterTimer(0.1f,1,()=>{
+                BattleUI.Instance.maskList[(int)skillType].color = new Color(0,0,0,178f/255f);
+            });
+            return false;
+        }
+        if (skillBaseData.cd <= nowCdtime[skillBaseData.idx] && continueCallBack==null) return true;
         return false;
     }
     public void SetSkillCD(SkillType skillType)
@@ -100,32 +111,34 @@ public class SkillComponent : Component
     }
     public void CheckSkill()
     {
-        if (controller.isRightSkill)
+        if (controller.isRightSkill && CheckCanUseSkill(SkillType.RIGHTATK))
         {
-            UseSkill(SkillType.RIGHTATK);
+            PlayAnimBySkillType(SkillType.RIGHTATK);
             return;
         }
-        if (controller.isQSkill)
+        if (controller.isQSkill && CheckCanUseSkill(SkillType.QSKILL))
         {
-            UseSkill(SkillType.QSKILL);
+            PlayAnimBySkillType(SkillType.QSKILL);
+            Debug.Log("enter");
             return;
         }
-        if (controller.isESkill)
+        if (controller.isESkill && CheckCanUseSkill(SkillType.ESKILL))
         {
-            UseSkill(SkillType.ESKILL);
+            PlayAnimBySkillType(SkillType.ESKILL);
+            Debug.Log("enter");
             return;
         }
-        if (controller.isTSkill)
+        if (controller.isTSkill && CheckCanUseSkill(SkillType.TSKILL))
         {
-            UseSkill(SkillType.TSKILL);
+            PlayAnimBySkillType(SkillType.TSKILL);
             return;
         }
-        if (controller.isHold || controller.isFire)
+        if ((controller.isHold || controller.isFire) && CheckCanUseSkill(SkillType.NORMAL))
         {
             if (PlayAnimation(SkillType.NORMAL))
             {
                 anime.isAtk = true;
-                anime.skillidx = 0;
+                anime.skillidx = (int)SkillType.NORMAL;
                 anime.SetSkill(() =>
                 {
                     UseSkill(SkillType.NORMAL);
@@ -148,5 +161,22 @@ public class SkillComponent : Component
     public override void OnCache()
     {
         CachePool.Instance.Cache<SkillComponent>(this);
+    }
+
+    private void PlayAnimBySkillType(SkillType skillType)
+    {
+        if (PlayAnimation(skillType))
+            {
+                anime.isAtk = true;
+                anime.skillidx = (int)skillType;
+                anime.SetSkill(() =>
+                {
+                    UseSkill(skillType);
+                });
+            }
+            else
+            {
+                UseSkill(skillType);
+            }
     }
 }

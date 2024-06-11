@@ -28,6 +28,7 @@ public sealed partial class SkillData : Luban.BeanBase
         { var __json0 = _buf["Windup"]; if(!__json0.IsArray) { throw new SerializationException(); } Windup = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Windup.Add(__v0); }   }
         { var __json0 = _buf["Atking"]; if(!__json0.IsArray) { throw new SerializationException(); } Atking = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Atking.Add(__v0); }   }
         { var __json0 = _buf["Winddown"]; if(!__json0.IsArray) { throw new SerializationException(); } Winddown = new System.Collections.Generic.List<int>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { int __v0;  { if(!__e0.IsNumber) { throw new SerializationException(); }  __v0 = __e0; }  Winddown.Add(__v0); }   }
+        { var __json0 = _buf["Lock"]; if(!__json0.IsArray) { throw new SerializationException(); } Lock = new System.Collections.Generic.List<bool>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { bool __v0;  { if(!__e0.IsBoolean) { throw new SerializationException(); }  __v0 = __e0; }  Lock.Add(__v0); }   }
     }
 
     public static SkillData DeserializeSkillData(JSONNode _buf)
@@ -40,9 +41,12 @@ public sealed partial class SkillData : Luban.BeanBase
     /// </summary>
     public readonly int Id;
     /// <summary>
-    /// 技能类型
+    /// 技能类型<br/>0左|1右|2Shift|3E
     /// </summary>
     public readonly System.Collections.Generic.List<int> SkillType;
+    /// <summary>
+    /// 冷却时间
+    /// </summary>
     public readonly System.Collections.Generic.List<float> CdTime;
     /// <summary>
     /// 1 = 发射系<br/>2 = 范围系
@@ -64,12 +68,17 @@ public sealed partial class SkillData : Luban.BeanBase
     public readonly System.Collections.Generic.List<int> Windup;
     public readonly System.Collections.Generic.List<int> Atking;
     public readonly System.Collections.Generic.List<int> Winddown;
+    /// <summary>
+    /// 是否锁定
+    /// </summary>
+    public readonly System.Collections.Generic.List<bool> Lock;
    
     public const int __ID__ = -300302981;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
+        
         
         
         
@@ -97,6 +106,7 @@ public sealed partial class SkillData : Luban.BeanBase
         + "Windup:" + Luban.StringUtil.CollectionToString(Windup) + ","
         + "Atking:" + Luban.StringUtil.CollectionToString(Atking) + ","
         + "Winddown:" + Luban.StringUtil.CollectionToString(Winddown) + ","
+        + "Lock:" + Luban.StringUtil.CollectionToString(Lock) + ","
         + "}";
     }
 }

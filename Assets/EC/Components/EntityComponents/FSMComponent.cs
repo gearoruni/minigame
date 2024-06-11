@@ -41,7 +41,7 @@ public class FSMComponent : Component
             bt.ExternalBehavior = Resources.Load<ExternalBehaviorTree>(PathUtils.GetResAIController(dataDefine.ToString()));
 
 #if UNITY_EDITOR
-            bt.ExternalBehavior = AssetDatabase.LoadAssetAtPath<ExternalBehaviorTree>(PathUtils.GetAIController(dataDefine.ToString()));
+            //bt.ExternalBehavior = AssetDatabase.LoadAssetAtPath<ExternalBehaviorTree>(PathUtils.GetAIController(dataDefine.ToString()));
 #endif
             bt.StartWhenEnabled = true;
         }
@@ -65,7 +65,6 @@ public class FSMComponent : Component
         isQSkill = ((SharedBool)bt.GetVariable("isQSkill")).Value;
         isESkill = ((SharedBool)bt.GetVariable("isESkill")).Value;
         isTSkill = ((SharedBool)bt.GetVariable("isTSkill")).Value;
-
     }
     public override void OnCache()
     {

@@ -4,7 +4,7 @@
     "animationName": "Empty"
   },
   {
-    "id": 1,
+    "id": 1001,
     "animationName": "CharacterAnim"
   },
   {
@@ -37,6 +37,18 @@
   },
   {
     "id": 9,
-    "animationName": "BOSS1move"
+    "animationName": "BOSS1Anim"
+  },
+  {
+    "id": 1002,
+    "animationName": "LiZhiAnim"
+  },
+  {
+    "id": 10,
+    "animationName": "LiZhiHuoQiu"
+  },
+  {
+    "id": 11,
+    "animationName": "LiZhiShift"
   }
 ]

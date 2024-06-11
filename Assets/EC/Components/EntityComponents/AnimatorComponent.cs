@@ -41,6 +41,7 @@ public class AnimatorComponent : Component
         int dataDefine;
         if(entity.componentDatas.TryGetValue("AnimatorComponent",out dataDefine))
         {
+            if (dataDefine == -1) dataDefine = PlayerBaseData.Instance.nowSelectedCharacter;
             animationData = TableDataManager.Instance.tables.AnimationDefine.Get(dataDefine);
         }
 

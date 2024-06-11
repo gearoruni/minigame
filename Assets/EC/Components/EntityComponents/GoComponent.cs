@@ -11,6 +11,7 @@ public class GoComponent : Component
     public GameObject go;
     public string goName;
     public Entity parentEntity;
+    private bool InitFinish;
 
     public override void Init()
     {
@@ -30,16 +31,24 @@ public class GoComponent : Component
         {
             CreateGameObject(datadefine.ToString());
         }
-
+        InitFinish = true;
     }
     public void CreateGameObject(string name)
     {
 
         goName = name;
+        if (go != null)
+        {
+            EntityManager.Instance.GEList.Remove(go);
+            //GameObject.Destroy(go);
+
+            ObjectPool.Instance.ReturnObjectToPool(goName, go);
+            go = null;
+        }
         //创建物体
         go = ObjectPool.Instance.GetObjectFromPool(name);
         if(go == null) { 
-            Debug.LogError("无对应物体!");return; 
+            Debug.LogError($"无对应物体!id:{name}");return; 
         }
 
         entity.go = go;
@@ -61,7 +70,7 @@ public class GoComponent : Component
 
         //指定生成位置的情况
         SpawnComponent spawnComponent = (SpawnComponent)entity.GetComponent("SpawnComponent");
-        if (spawnComponent != null)
+        if (spawnComponent != null && !InitFinish)
         {
             transform.position = spawnComponent.spawnPointPos;
         }

@@ -40,6 +40,7 @@ public class DestroyComponent : Component
     public void Destroy()
     {
         EntityManager.Instance.RemoveEntity(entity.instanceId);
+        if (BattleUI.Instance != null) BattleUI.Instance.ChangeMonsterHp(entity.instanceId, false);
     }
     public void ChangeState()
     {

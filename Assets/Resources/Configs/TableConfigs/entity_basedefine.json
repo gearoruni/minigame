@@ -195,5 +195,51 @@
       1
     ],
     "parentEntityId": 0
+  },
+  {
+    "entityId": 8,
+    "name": "interaction",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "InteractiveComponent",
+      "CharacterComponent",
+      "CollisionComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      5,
+      2,
+      0,
+      5500,
+      0
+    ],
+    "parentEntityId": 0
+  },
+  {
+    "entityId": 9,
+    "name": "trap",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "TrapComponent",
+      "CharacterComponent",
+      "CollisionComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      6,
+      0,
+      0,
+      6600,
+      0
+    ],
+    "parentEntityId": 0
   }
 ]

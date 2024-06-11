@@ -8,7 +8,7 @@
     ],
     "effectdefine": [
       1,
-      10,
+      50,
       0
     ]
   },
@@ -88,6 +88,32 @@
     "effectdefine": [
       1,
       21014
+    ]
+  },
+  {
+    "id": 1101,
+    "effectname": [
+      "MoveEffect",
+      "HealthChangeEffect",
+      "DestroyEffect"
+    ],
+    "effectdefine": [
+      1,
+      20,
+      0
+    ]
+  },
+  {
+    "id": 1102,
+    "effectname": [
+      "MoveEffect",
+      "HealthChangeEffect",
+      "DestroyEffect"
+    ],
+    "effectdefine": [
+      1,
+      20,
+      0
     ]
   }
 ]

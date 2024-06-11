@@ -1,8 +1,8 @@
 [
   {
     "id": 1001,
-    "name": "艾莉亚",
-    "hp": 225,
+    "name": "艾莉亚(主角)",
+    "hp": 2123,
     "speed": 5,
     "level": [
       1,
@@ -18,9 +18,9 @@
   },
   {
     "id": 1002,
-    "name": "理智小姐",
+    "name": "理智小姐(角色2)",
     "hp": 200,
-    "speed": 5,
+    "speed": 6,
     "level": [
       1,
       2
@@ -34,56 +34,69 @@
     "canForceMove": true
   },
   {
-    "id": 1102,
-    "name": "艾莉亚",
-    "hp": 225,
+    "id": 1101,
+    "name": "紫色史莱姆(触碰掉血)",
+    "hp": 150,
     "speed": 5,
-    "level": [
-      1,
-      2
-    ],
-    "WeaponId": [
-      20011,
-      20012
-    ],
-    "skillID": 1001,
-    "range": 5,
-    "canForceMove": false
-  },
-  {
-    "id": 1103,
-    "name": "紫色史莱姆",
-    "hp": 200,
-    "speed": 1,
     "level": [
       1
     ],
     "WeaponId": [
       29999
     ],
-    "skillID": 1004,
+    "skillID": 1101,
+    "range": 5,
+    "canForceMove": true
+  },
+  {
+    "id": 1102,
+    "name": "愤怒史莱姆(远程火弹)",
+    "hp": 150,
+    "speed": 5,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1102,
+    "range": 7,
+    "canForceMove": true
+  },
+  {
+    "id": 1103,
+    "name": "火灵(火焰冲刺怪)",
+    "hp": 200,
+    "speed": 6,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1103,
+    "range": 7,
+    "canForceMove": true
+  },
+  {
+    "id": 1104,
+    "name": "悲伤史莱姆(本质与愤怒相同",
+    "hp": 200,
+    "speed": 5,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1104,
     "range": 7,
     "canForceMove": true
   },
   {
     "id": 1105,
-    "name": "愤怒史莱姆",
-    "hp": 200,
-    "speed": 5,
-    "level": [
-      1
-    ],
-    "WeaponId": [
-      29999
-    ],
-    "skillID": 1003,
-    "range": 7,
-    "canForceMove": true
-  },
-  {
-    "id": 1106,
-    "name": "愤怒史莱姆test",
-    "hp": 200,
+    "name": "悲伤水灵(蓄力大水泡)",
+    "hp": 250,
     "speed": 3,
     "level": [
       1
@@ -91,8 +104,128 @@
     "WeaponId": [
       29999
     ],
-    "skillID": 1005,
-    "range": 3,
+    "skillID": 1105,
+    "range": 8,
     "canForceMove": true
+  },
+  {
+    "id": 1106,
+    "name": "大软泥怪(会召小怪)",
+    "hp": 500,
+    "speed": 0,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1106,
+    "range": 7,
+    "canForceMove": true
+  },
+  {
+    "id": 1107,
+    "name": "小软泥怪(高速少血)",
+    "hp": 150,
+    "speed": 7,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1107,
+    "range": 5,
+    "canForceMove": true
+  },
+  {
+    "id": 1201,
+    "name": "愤怒之花(第1关BOSS)",
+    "hp": 2000,
+    "speed": 6,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29998
+    ],
+    "skillID": 1201,
+    "range": 8,
+    "canForceMove": false
+  },
+  {
+    "id": 1202,
+    "name": "悲伤之花(第1关BOSS)",
+    "hp": 2600,
+    "speed": 5,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1202,
+    "range": 8,
+    "canForceMove": false
+  },
+  {
+    "id": 1203,
+    "name": "崩溃之心(第3关BOSS)",
+    "hp": 9999,
+    "speed": 5,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1203,
+    "range": 8,
+    "canForceMove": false
+  },
+  {
+    "id": 5500,
+    "name": "爱心石像(存档复活)",
+    "hp": 99999,
+    "speed": 0,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      0
+    ],
+    "skillID": 0,
+    "range": 0,
+    "canForceMove": false
+  },
+  {
+    "id": 1003,
+    "name": "快乐之花(角色3)",
+    "hp": 300,
+    "speed": 5,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      20031
+    ],
+    "skillID": 1003,
+    "range": 5,
+    "canForceMove": true
+  },
+  {
+    "id": 6600,
+    "name": "通用陷阱",
+    "hp": 999999,
+    "speed": 0,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      0
+    ],
+    "skillID": 0,
+    "range": 0,
+    "canForceMove": false
   }
 ]

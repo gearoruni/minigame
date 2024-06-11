@@ -56,13 +56,42 @@ public class InputComponent : Component
     }
     public override void Update()
     {
-        //“∆∂Ø∑ΩœÚ
+        //ÔøΩ∆∂ÔøΩÔøΩÔøΩÔøΩÔøΩ
         movepos = keyboardMoveAxes;
 
-        //∑¢…‰∑ΩœÚ
+        //ÔøΩÔøΩÔøΩ‰∑ΩÔøΩÔøΩ
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = -Camera.main.transform.position.z;
         facepos = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        if(Input.GetKeyUp(KeyCode.Alpha1))
+        {
+            PlayerBaseData.Instance.ChangePlayer(0);
+        }
+        else if(Input.GetKeyUp(KeyCode.Alpha2))
+        {
+            PlayerBaseData.Instance.ChangePlayer(1);
+        }
+        else if(Input.GetKeyDown(KeyCode.Escape))
+        {
+
+            //Application.Quit();
+            /*PlayerBaseData.Instance.Clear();
+            GoComponent gocmp;
+            foreach(var entity in EntityManager.Instance.entities)
+            {
+                if (entity.Value == null) continue;
+                gocmp = (GoComponent)entity.Value.GetComponent("GoComponent");
+                ObjectPool.Instance.ReturnObjectToPool(gocmp.name, gocmp.go);
+            }
+            //EntityManager.Instance.RemoveAllEntity();
+            //PlayerBaseData.Instance.Init();
+            UIManager.Instance.CloseUI(UIManager.Instance.id - 1);
+            UIManager.Instance.ShowUI("MainUI");
+            Debug.Log("ÈÄÄÂá∫Ê∏∏Êàè");*/
+            UIManager.Instance.ShowUI("ESCUI");
+            EntityManager.Instance.isStop = true;
+        }
     }
 
     public override void OnCache()

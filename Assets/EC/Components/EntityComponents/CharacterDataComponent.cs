@@ -58,6 +58,16 @@ public class CharacterDataComponent : Component
         this.nowHp -= offset;
         if (nowHp <= 0)
         {
+            if (entity.Tag == Tag.Player)
+            {
+                PlayerBaseData s = PlayerBaseData.Instance;
+                if(s.playerDatas.TryGetValue(s.nowSelectedCharacter, out var characterDataCache))
+                {
+                    characterDataCache.dead = true;
+                }
+                s.ChangePlayer((s.nowSelectedCharacter - 1001) == 0 ? 1 : 0);
+                return;
+            }
             state.isDead = true;
         }
     }

@@ -16,6 +16,9 @@
     ],
     "timeBetweenBullets": [
       0
+    ],
+    "specialSkill": [
+      0
     ]
   },
   {
@@ -34,6 +37,9 @@
       1
     ],
     "timeBetweenBullets": [
+      0
+    ],
+    "specialSkill": [
       0
     ]
   },
@@ -54,6 +60,75 @@
     ],
     "timeBetweenBullets": [
       0
+    ],
+    "specialSkill": [
+      0
+    ]
+  },
+  {
+    "id": 20014,
+    "name": "理智之花多弹道",
+    "upLimit": [
+      30
+    ],
+    "downLimit": [
+      -30
+    ],
+    "volleyCount": [
+      3
+    ],
+    "bulletsPerVolley": [
+      1
+    ],
+    "timeBetweenBullets": [
+      0
+    ],
+    "specialSkill": [
+      0
+    ]
+  },
+  {
+    "id": 20015,
+    "name": "理智之花弹反",
+    "upLimit": [
+      30
+    ],
+    "downLimit": [
+      -30
+    ],
+    "volleyCount": [
+      0
+    ],
+    "bulletsPerVolley": [
+      0
+    ],
+    "timeBetweenBullets": [
+      0
+    ],
+    "specialSkill": [
+      1
+    ]
+  },
+  {
+    "id": 20016,
+    "name": "理智之花冲刺",
+    "upLimit": [
+      0
+    ],
+    "downLimit": [
+      0
+    ],
+    "volleyCount": [
+      0
+    ],
+    "bulletsPerVolley": [
+      0
+    ],
+    "timeBetweenBullets": [
+      0
+    ],
+    "specialSkill": [
+      2
     ]
   }
 ]

@@ -60,6 +60,7 @@ public class Assembler
         AddComponen<AnimatorComponent>(entity, "AnimatorComponent");
         AddComponen<FSMComponent>(entity, "FSMComponent");
         AddComponen<InteractiveComponent>(entity, "InteractiveComponent");
+        AddComponen<TrapComponent>(entity,"TrapComponent");
     }
 
     private void LateCreateComponents(Entity entity)
