@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\minigame\\minigame\\",
@@ -182,4 +183,129 @@
       ]
     }
   ]
+=======
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\administrator\\documents\\wxwork\\1688857990563430\\cache\\file\\2024-05\\minigame0519\\minigame\\assets\\script\\playerbasedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerbasedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\administrator\\documents\\wxwork\\1688857990563430\\cache\\file\\2024-05\\minigame0519\\minigame\\assets\\ec\\manager\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\manager\\entitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|d:\\administrator\\documents\\wxwork\\1688857990563430\\cache\\file\\2024-05\\minigame0519\\minigame\\assets\\easyframework\\objectpool\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\easyframework\\objectpool\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\assets\\ec\\components\\entitycomponents\\charactercomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\charactercomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\assets\\ec\\components\\entitycomponents\\gocomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\gocomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\assets\\ec\\components\\entitycomponents\\fsmcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F94E66D-0073-06B6-1765-F37AFFF31CA8}|Assembly-CSharp.csproj|solutionrelative:assets\\ec\\components\\entitycomponents\\fsmcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EntityManager.cs",
+              "DocumentMoniker": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EC\\Manager\\EntityManager.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Manager\\EntityManager.cs",
+              "ToolTip": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EC\\Manager\\EntityManager.cs",
+              "RelativeToolTip": "Assets\\EC\\Manager\\EntityManager.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAASwIIAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T09:23:06.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ObjectPool.cs",
+              "DocumentMoniker": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EasyFrameWork\\ObjectPool\\ObjectPool.cs",
+              "RelativeDocumentMoniker": "Assets\\EasyFrameWork\\ObjectPool\\ObjectPool.cs",
+              "ToolTip": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EasyFrameWork\\ObjectPool\\ObjectPool.cs",
+              "RelativeToolTip": "Assets\\EasyFrameWork\\ObjectPool\\ObjectPool.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAASwFQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T09:13:50.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CharacterComponent.cs",
+              "DocumentMoniker": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EC\\Components\\EntityComponents\\CharacterComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\CharacterComponent.cs",
+              "ToolTip": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EC\\Components\\EntityComponents\\CharacterComponent.cs",
+              "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\CharacterComponent.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAIwCAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T05:17:11.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerBaseData.cs",
+              "DocumentMoniker": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\Script\\PlayerBaseData.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayerBaseData.cs",
+              "ToolTip": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\Script\\PlayerBaseData.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayerBaseData.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAUwCcAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:32:29.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GoComponent.cs",
+              "DocumentMoniker": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EC\\Components\\EntityComponents\\GoComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\GoComponent.cs",
+              "ToolTip": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EC\\Components\\EntityComponents\\GoComponent.cs",
+              "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\GoComponent.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAqwCkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:27:49.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FSMComponent.cs",
+              "DocumentMoniker": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EC\\Components\\EntityComponents\\FSMComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\EC\\Components\\EntityComponents\\FSMComponent.cs",
+              "ToolTip": "D:\\Administrator\\Documents\\WXWork\\1688857990563430\\Cache\\File\\2024-05\\minigame0519\\minigame\\Assets\\EC\\Components\\EntityComponents\\FSMComponent.cs",
+              "RelativeToolTip": "Assets\\EC\\Components\\EntityComponents\\FSMComponent.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAowCMAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T09:24:26.297Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+>>>>>>> 9dcbe0ca48e8427ce4393102580054e3555d0213
 }
