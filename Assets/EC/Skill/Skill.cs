@@ -69,7 +69,8 @@ public class Skill
                 animator?.Play("attack1");
                 timer = TimerManager.Instance.RegisterTimer(2,2,()=>{
                     SkillComponent cmp = (SkillComponent)entity.GetComponent("SkillComponent");
-                    cmp.continueCallBack = null;
+                    if(cmp != null)
+                        cmp.continueCallBack = null;
                     // TimerManager.Instance.RemoveTimer(timer);
                     animator?.Play("idle");
                     });
@@ -78,7 +79,8 @@ public class Skill
                 Chongci(entity);
                  timer = TimerManager.Instance.RegisterTimer(0.35f,1,()=>{
                     SkillComponent cmp = (SkillComponent)entity.GetComponent("SkillComponent");
-                    cmp.continueCallBack = null;
+                     if (cmp != null)
+                         cmp.continueCallBack = null;
                     //TimerManager.Instance.RemoveTimer(timer);
                     });
             break;
