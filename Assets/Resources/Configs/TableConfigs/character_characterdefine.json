@@ -2,7 +2,7 @@
   {
     "id": 1001,
     "name": "艾莉亚(主角)",
-    "hp": 21230,
+    "hp": 2123,
     "speed": 12,
     "level": [
       1,
@@ -19,7 +19,7 @@
   {
     "id": 1002,
     "name": "理智小姐(角色2)",
-    "hp": 20000,
+    "hp": 200,
     "speed": 6,
     "level": [
       1,
@@ -102,7 +102,7 @@
       1
     ],
     "WeaponId": [
-      29996
+      29999
     ],
     "skillID": 1105,
     "range": 8,
@@ -147,7 +147,7 @@
       1
     ],
     "WeaponId": [
-      29998
+      29999
     ],
     "skillID": 1201,
     "range": 8,
@@ -242,5 +242,20 @@
     "skillID": 0,
     "range": 0,
     "canForceMove": false
+  },
+  {
+    "id": 2468,
+    "name": "定向陷阱怪物",
+    "hp": 999999,
+    "speed": 0,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      29999
+    ],
+    "skillID": 1104,
+    "range": 7,
+    "canForceMove": true
   }
 ]

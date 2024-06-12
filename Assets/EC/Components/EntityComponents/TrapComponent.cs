@@ -45,6 +45,7 @@ public class TrapComponent : Component
     }
     private void ExitTrap(Entity entity)
     {
+        if(entity == null)return;
         if(entities.Contains(entity))
             entities.Remove(entity);
         if(entity.Tag == Tag.Player)

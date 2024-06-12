@@ -74,66 +74,68 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
             
     //          eentity = EntityManager.Instance.CreateEntity(9, i);
     //     }
-    Entity eentity = EntityManager.Instance.CreateEntity(4, 2);//SpawnDataID£º2 ×ÏÉ«Ê·À³Ä·
-        // for (int a = 3; a <= 14; a++)//ÆäÓàµÄ¸÷µØÇø×ÏÉ«Ê·À³Ä·,CharacterComponentDara/SpawnDataID£º3~14
-        // {//CharacterComponentDaraIDÓëSpawnDataIDÏàµÈ
-        //     eentity = EntityManager.Instance.CreateEntity(4, a);
-        // }
-        // for (int b = 15; b <= 24; b++)//¸÷µØÇøÐ¡ÈíÄà¹Ö,CharacterComponentDara/SpawnDataID£º15~24.
-        // {//ºÍ×ÏÉ«Ê·À³Ä·Ò»Ñù²»»á¹¥»÷£¬½öÓÐ´¥ÅöµôÑª
-        //     eentity = EntityManager.Instance.CreateEntity(4, b);
-        // }
-        // for (int b = 25; b <= 38; b++)//·ßÅ­Ê·À³Ä·£¬ID£º25~34
-        // {
-        //     eentity = EntityManager.Instance.CreateEntity(4, b);
-        // }
-        // for (int b = 35; b <= 44; b++)//±¯ÉËÊ·À³Ä·£¬ID£º35~44£¬ÍÂË®ÇòµÄ·ßÅ­Ê·À³Ä·(»»Æ¤)
-        // {
-        //     eentity = EntityManager.Instance.CreateEntity(4, b);
-        // }
-        // for (int b = 45; b <= 49; b++)//»ðÁé(³å´Ì¹Ö)£¬ID£º45~49
-        // {
-        //     eentity = EntityManager.Instance.CreateEntity(4, b);
-        // }
-        // for (int b = 50; b <= 54; b++)//±¯ÉËË®Áé(ÐîÁ¦Ë®ÅÝ¹Ö)£¬ID£º50~54
-        // {
-        //     eentity = EntityManager.Instance.CreateEntity(4, b);
-        // }
-        // for (int b = 55; b <= 63; b++)//´óÈíÄà¹Ö(»áÕÙÐ¡¹ÖµÄ),ID£º55~63
-        // {
-        //     eentity = EntityManager.Instance.CreateEntity(4, b);
-        // }
-        // eentity = EntityManager.Instance.CreateEntity(4, 64);//³¡¾°1-8 BOSS·ßÅ­Ö®»¨
-        eentity = EntityManager.Instance.CreateEntity(4, 65);//³¡¾°2-9 BOSS±¯ÉËÖ®»¨
-        //for (int b = 66; b <= 76; b++)//ºáÊ¯¶Ñ(ÓÃÖ÷½Ç±¬ÁÑµ¯¿É»÷Ëé) ID£º66~76
+    
+        Entity eentity = EntityManager.Instance.CreateEntity(4, 2);//SpawnDataIDï¼š2 ç´«è‰²å²èŽ±å§†
+        for (int a = 3; a <= 14; a++)//å…¶ä½™çš„å„åœ°åŒºç´«è‰²å²èŽ±å§†,CharacterComponentDara/SpawnDataIDï¼š3~14
+        {//CharacterComponentDaraIDä¸ŽSpawnDataIDç›¸ç­‰
+            eentity = EntityManager.Instance.CreateEntity(4, a);
+        }
+        for (int b = 15; b <= 24; b++)//å„åœ°åŒºå°è½¯æ³¥æ€ª,CharacterComponentDara/SpawnDataIDï¼š15~24.
+        {//å’Œç´«è‰²å²èŽ±å§†ä¸€æ ·ä¸ä¼šæ”»å‡»ï¼Œä»…æœ‰è§¦ç¢°æŽ‰è¡€
+            eentity = EntityManager.Instance.CreateEntity(4, b);
+        }
+        for (int b = 25; b <= 34; b++)//æ„¤æ€’å²èŽ±å§†ï¼ŒIDï¼š25~34
+        {
+            eentity = EntityManager.Instance.CreateEntity(4, b);
+        }
+        for (int b = 35; b <= 44; b++)//æ‚²ä¼¤å²èŽ±å§†ï¼ŒIDï¼š35~44ï¼Œåæ°´çƒçš„æ„¤æ€’å²èŽ±å§†(æ¢çš®)
+        {
+            eentity = EntityManager.Instance.CreateEntity(4, b);
+        }
+        for (int b = 45; b <= 49; b++)//ç«çµ(å†²åˆºæ€ª)ï¼ŒIDï¼š45~49
+        {
+            eentity = EntityManager.Instance.CreateEntity(4, b);
+        }
+        for (int b = 50; b <= 54; b++)//æ‚²ä¼¤æ°´çµ(è“„åŠ›æ°´æ³¡æ€ª)ï¼ŒIDï¼š50~54
+        {
+            eentity = EntityManager.Instance.CreateEntity(4, b);
+        }
+        for (int b = 55; b <= 63; b++)//å¤§è½¯æ³¥æ€ª(ä¼šå¬å°æ€ªçš„),IDï¼š55~63
+        {
+            eentity = EntityManager.Instance.CreateEntity(4, b);
+        }
+        eentity = EntityManager.Instance.CreateEntity(4, 64);//åœºæ™¯1-8 BOSSæ„¤æ€’ä¹‹èŠ±
+        eentity = EntityManager.Instance.CreateEntity(4, 65);//åœºæ™¯2-9 BOSSæ‚²ä¼¤ä¹‹èŠ±
+
+        //for (int b = 66; b <= 76; b++)//æ¨ªçŸ³å †(ç”¨ä¸»è§’çˆ†è£‚å¼¹å¯å‡»ç¢Ž) IDï¼š66~76
         //{
-        //    eentity = EntityManager.Instance.CreateEntity(999, b);//µÚ1¸ö²ÎÊýÌî¶àÉÙÎÒ²»È·¶¨
+        //    eentity = EntityManager.Instance.CreateEntity(999, b);//ç¬¬1ä¸ªå‚æ•°å¡«å¤šå°‘æˆ‘ä¸ç¡®å®š
         //}
-        //for (int b = 77; b <= 80; b++)//ÊúÊ¯¶Ñ(ÓÃÖ÷½Ç±¬ÁÑµ¯¿É»÷Ëé) ID£º77~80
+        //for (int b = 77; b <= 80; b++)//ç«–çŸ³å †(ç”¨ä¸»è§’çˆ†è£‚å¼¹å¯å‡»ç¢Ž) IDï¼š77~80
         //{
-        //    eentity = EntityManager.Instance.CreateEntity(999, b);//µÚ1¸ö²ÎÊýÌî¶àÉÙÎÒ²»È·¶¨
+        //    eentity = EntityManager.Instance.CreateEntity(999, b);//ç¬¬1ä¸ªå‚æ•°å¡«å¤šå°‘æˆ‘ä¸ç¡®å®š
         //}
-        //for (int b = 81; b <= 91; b++)//»ØÑªÄ¢¹½ ID£º81~91
+        //for (int b = 81; b <= 91; b++)//å›žè¡€è˜‘è‡ IDï¼š81~91
         //{
-        //    eentity = EntityManager.Instance.CreateEntity(999, b);//µÚ1¸ö²ÎÊýÌî¶àÉÙÎÒ²»È·¶¨
+        //    eentity = EntityManager.Instance.CreateEntity(999, b);//ç¬¬1ä¸ªå‚æ•°å¡«å¤šå°‘æˆ‘ä¸ç¡®å®š
         //}
-        //for (int b = 92; b <= 94; b++)//¿ªÃÅÔ¿³×
+        //for (int b = 92; b <= 94; b++)//å¼€é—¨é’¥åŒ™
         //{
-        //    eentity = EntityManager.Instance.CreateEntity(999, b);//µÚ1¸ö²ÎÊýÌî¶àÉÙÎÒ²»È·¶¨
+        //    eentity = EntityManager.Instance.CreateEntity(999, b);//ç¬¬1ä¸ªå‚æ•°å¡«å¤šå°‘æˆ‘ä¸ç¡®å®š
         //}
-        //eentity = EntityManager.Instance.CreateEntity(999, 95);//³¡¾°1-6 ·ßÅ­µñËÜ  ÊÇBOSSÕ½Ç°µÄµñËÜÊ¯Ïñ
-        //eentity = EntityManager.Instance.CreateEntity(999, 96);//³¡¾°2-8 ±¯ÉËµñËÜ  Á½¸öµñËÜÊÇÓÐÅö×²Ìå£¬¿ÉÄÜÐèÒª½»»¥£¬¿É°´°®ÐÄÊ¯ÏñÈ¥×ö
-        for (int b = 97; b <= 102; b++)//°®ÐÄÊ¯Ïñ
+        //eentity = EntityManager.Instance.CreateEntity(999, 95);//åœºæ™¯1-6 æ„¤æ€’é›•å¡‘  æ˜¯BOSSæˆ˜å‰çš„é›•å¡‘çŸ³åƒ
+        //eentity = EntityManager.Instance.CreateEntity(999, 96);//åœºæ™¯2-8 æ‚²ä¼¤é›•å¡‘  ä¸¤ä¸ªé›•å¡‘æ˜¯æœ‰ç¢°æ’žä½“ï¼Œå¯èƒ½éœ€è¦äº¤äº’ï¼Œå¯æŒ‰çˆ±å¿ƒçŸ³åƒåŽ»åš
+        for (int b = 97; b <= 102; b++)//çˆ±å¿ƒçŸ³åƒ
         {
             eentity = EntityManager.Instance.CreateEntity(8, b);
         }
-        // for (int b = 103; b <= 139; b++)//¼â´ÌÏÝÚå
-        // {
-        //     eentity = EntityManager.Instance.CreateEntity(9, b);
-        // }
-        //for (int b = 140; b <= 149; b++)//¶¨ÏòÏÝÚå
+        for (int b = 103; b <= 139; b++)//å°–åˆºé™·é˜±
+        {
+            eentity = EntityManager.Instance.CreateEntity(9, b);
+        }
+        //for (int b = 140; b <= 149; b++)//å®šå‘é™·é˜±
         //{
-        //    eentity = EntityManager.Instance.CreateEntity(999, b);//µÚ1¸ö²ÎÊýÌî¶àÉÙÎÒ²»È·¶¨
+        //    eentity = EntityManager.Instance.CreateEntity(999, b);//ç¬¬1ä¸ªå‚æ•°å¡«å¤šå°‘æˆ‘ä¸ç¡®å®š
         //}
     }
 
