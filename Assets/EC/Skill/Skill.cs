@@ -232,7 +232,7 @@ public class Skill
         for(int i = 0;i<4;i++)
         {
             
-                entity1 = EntityManager.Instance.CreateEntity(4, 140);
+                entity1 = EntityManager.Instance.CreateEntity(4, 150);
         //     if(PhysicsRay.GetWall(pos,dirs[i],out var result))
         //     {
                 

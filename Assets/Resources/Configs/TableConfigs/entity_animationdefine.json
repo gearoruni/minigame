@@ -162,5 +162,21 @@
   {
     "id": 39,
     "animationName": "大水泡飞行"
+  },
+  {
+    "id": 40,
+    "animationName": "定向陷阱朝上攻击"
+  },
+  {
+    "id": 41,
+    "animationName": "定向陷阱朝下攻击"
+  },
+  {
+    "id": 42,
+    "animationName": "定向陷阱朝左攻击"
+  },
+  {
+    "id": 43,
+    "animationName": "定向陷阱朝右攻击"
   }
 ]
