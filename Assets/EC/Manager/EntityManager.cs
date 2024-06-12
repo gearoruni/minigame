@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 
 public class EntityManager : Singleton<EntityManager>
@@ -8,6 +9,8 @@ public class EntityManager : Singleton<EntityManager>
     public List<int> entityInstances = new List<int>();
     public Dictionary<int,Entity> entities = new Dictionary<int,Entity>();
     public Dictionary<GameObject, Entity> GEList = new Dictionary<GameObject, Entity>();
+    public Dictionary<int,List<Entity>> monsters = new Dictionary<int, List<Entity> >();
+    public Dictionary<int,List<Entity>> activeMonsters = new Dictionary<int, List<Entity>>();
     public List<Entity> CharacterList = new List<Entity>();
 
     private Assembler assembler = new Assembler();
@@ -26,7 +29,8 @@ public class EntityManager : Singleton<EntityManager>
         Entity entity = assembler.CreateEntity(instanceId++, entityId);
 
         this.entities.Add(entity.instanceId, entity);
-
+        //是怪物
+        AddMonsterByBindBox(entity);
         assembler.LateCreate(entity);
 
         addQueue.Enqueue(entity.instanceId);
@@ -44,12 +48,24 @@ public class EntityManager : Singleton<EntityManager>
 
         Entity entity = assembler.CreateEntity(instanceId++, entityId,cmpId);
 
+        //是怪物
+        AddMonsterByBindBox(entity);
         this.entities.Add(entity.instanceId, entity);
 
         assembler.LateCreate(entity);
 
         addQueue.Enqueue(entity.instanceId);
 
+        return entity;
+    }
+
+    
+    public Entity CreateEntity(int entityId, int cmpId, bool isZhaohuan)
+    {
+        Entity entity = assembler.CreateEntity(instanceId++, entityId,cmpId);
+        
+        assembler.LateCreate(entity);
+        AddMonsterByBindBox(entity);
         return entity;
     }
     /// <summary>
@@ -83,6 +99,19 @@ public class EntityManager : Singleton<EntityManager>
     {
         Entity entity = entities[instanceId];
         if (entity == null) return;
+        Debug.Log(CameraManager.Instance.confiner.m_BoundingShape2D.name);
+        if(activeMonsters.TryGetValue(int.Parse(CameraManager.Instance.confiner.m_BoundingShape2D.name), out var monster))
+        {
+            if(monster.Contains(entity))
+            {
+                monster.Remove(entity);
+                if(monster.Count == 0)
+                {
+                    activeMonsters.Remove(int.Parse(CameraManager.Instance.confiner.m_BoundingShape2D.name));
+                    CameraManager.Instance.CloseFengsuo();
+                }
+            }
+        }
         CharacterList.Remove(entity);
         this.entities[instanceId] = null;
 
@@ -97,7 +126,8 @@ public class EntityManager : Singleton<EntityManager>
 
             entity.OnCache();
         }
-
+        activeMonsters.Clear();
+        monsters.Clear();
         CharacterList.Clear();
         entities.Clear();
     }
@@ -163,5 +193,52 @@ public class EntityManager : Singleton<EntityManager>
                 controller.isActive = isactive;
             }
         }
+    }
+
+    public void AddMonsterByBindBox(Entity entity)
+    {
+        if(entity.entityId != 4)return;
+        var cmp = (SpawnComponent)entity.GetComponent("SpawnComponent");
+        var collider = CameraManager.Instance.confiner.m_BoundingShape2D;
+        var boxidx = collider==null ? 1 : int.Parse(collider.name);
+        if(cmp.BindBoxIdx == boxidx)
+        {
+            if(!activeMonsters.TryGetValue(cmp.BindBoxIdx, out var entities))
+            {
+                entities = new List<Entity>();
+                activeMonsters.Add(cmp.BindBoxIdx, entities);
+            }
+            entities.Add(entity);
+        }
+        else
+        {
+            if(!monsters.TryGetValue(cmp.BindBoxIdx, out var entities))
+            {
+                entities = new List<Entity>();
+                monsters.Add(cmp.BindBoxIdx, entities);
+            }
+            entity.go.SetActive(false);
+            entities.Add(entity);
+        }
+    }
+
+    public void AwakeMonsterByBindBox(int idx)
+    {
+        if(!monsters.TryGetValue(idx, out var entities))return;
+        activeMonsters.Add(idx, entities);
+        foreach(var entity in entities)
+        {
+            entity.go.SetActive(true);
+        }
+        monsters.Remove(idx);
+        CameraManager.Instance.AwakeFengsuo();
+    }
+
+    public void AwakeZhaohuan(Entity entity)
+    {
+        Debug.Log(entity.instanceId);
+        this.entities.Add(entity.instanceId, entity);
+
+        addQueue.Enqueue(entity.instanceId);
     }
 }

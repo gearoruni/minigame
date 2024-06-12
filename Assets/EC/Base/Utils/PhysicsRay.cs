@@ -87,4 +87,23 @@ public class PhysicsRay : MonoBehaviour
         return hit.collider;
 
     }
+
+    public static bool GetWall(Vector3 position, Vector3 dir,out Vector3 result)
+    {
+        float distance;
+        int times= 0 ;
+        result = Vector3.zero;
+        while(times<3)
+        {
+            distance = Random.Range(1, 6);
+            RaycastHit2D hit = Physics2D.Raycast(position, dir,distance, LayerMask.GetMask("Wall"));
+            if(hit.collider==null)
+            {
+                result = position + dir * distance;
+                return true;
+            }
+            times++;
+        }
+        return false;
+    }
 }

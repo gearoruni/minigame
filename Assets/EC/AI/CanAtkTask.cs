@@ -25,6 +25,7 @@ public class CanAtkTask : Conditional
     public override void OnStart()
     {
         CharacterComponent character = (CharacterComponent)entity.Value.GetComponent("CharacterComponent");
+        if(character == null)return;
         distance = character.range;
         radius.Value = distance;
     }

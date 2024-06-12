@@ -21,6 +21,7 @@ public sealed partial class SpawnData : Luban.BeanBase
         { if(!_buf["x"].IsNumber) { throw new SerializationException(); }  X = _buf["x"]; }
         { if(!_buf["y"].IsNumber) { throw new SerializationException(); }  Y = _buf["y"]; }
         { if(!_buf["z"].IsNumber) { throw new SerializationException(); }  Z = _buf["z"]; }
+        { if(!_buf["changjing"].IsNumber) { throw new SerializationException(); }  Changjing = _buf["changjing"]; }
     }
 
     public static SpawnData DeserializeSpawnData(JSONNode _buf)
@@ -32,12 +33,14 @@ public sealed partial class SpawnData : Luban.BeanBase
     public readonly float X;
     public readonly float Y;
     public readonly float Z;
+    public readonly int Changjing;
    
     public const int __ID__ = 1630486949;
     public override int GetTypeId() => __ID__;
 
     public  void ResolveRef(Tables tables)
     {
+        
         
         
         
@@ -51,6 +54,7 @@ public sealed partial class SpawnData : Luban.BeanBase
         + "x:" + X + ","
         + "y:" + Y + ","
         + "z:" + Z + ","
+        + "changjing:" + Changjing + ","
         + "}";
     }
 }

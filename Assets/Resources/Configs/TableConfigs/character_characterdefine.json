@@ -2,8 +2,8 @@
   {
     "id": 1001,
     "name": "艾莉亚(主角)",
-    "hp": 2123,
-    "speed": 5,
+    "hp": 21230,
+    "speed": 12,
     "level": [
       1,
       2
@@ -19,7 +19,7 @@
   {
     "id": 1002,
     "name": "理智小姐(角色2)",
-    "hp": 200,
+    "hp": 20000,
     "speed": 6,
     "level": [
       1,
@@ -102,7 +102,7 @@
       1
     ],
     "WeaponId": [
-      29999
+      29996
     ],
     "skillID": 1105,
     "range": 8,
@@ -119,7 +119,7 @@
     "WeaponId": [
       29999
     ],
-    "skillID": 1106,
+    "skillID": 1101,
     "range": 7,
     "canForceMove": true
   },
@@ -134,7 +134,7 @@
     "WeaponId": [
       29999
     ],
-    "skillID": 1107,
+    "skillID": 1101,
     "range": 5,
     "canForceMove": true
   },
@@ -215,7 +215,22 @@
   },
   {
     "id": 6600,
-    "name": "通用陷阱",
+    "name": "草地/沙堆陷阱",
+    "hp": 999999,
+    "speed": 0,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      0
+    ],
+    "skillID": 0,
+    "range": 0,
+    "canForceMove": false
+  },
+  {
+    "id": 6601,
+    "name": "水地/礁石陷阱",
     "hp": 999999,
     "speed": 0,
     "level": [

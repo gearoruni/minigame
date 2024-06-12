@@ -54,7 +54,6 @@ public class SkillComponent : Component
                                                 config.Lock[i]);
 
                 data[baseData.Type] = baseData;
-
                 nowCdtime.Add(baseData.cd);
                 int idx = (int)baseData.Type;
                 skillAnim[idx,0] = config.Windup[i] == 1;

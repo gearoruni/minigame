@@ -7,6 +7,7 @@ using UnityEngine;
 
 enum AnimType
 {
+    Birth,
     Idle,
     Move,
     Hurt,
@@ -102,6 +103,10 @@ public class AnimatorComponent : Component
         {
             switch(state.state)
             {
+                case State.BIRTH:
+                    PlayerAnime("Birth");
+                    lastAnime = "Birth";
+                    break;
                 case State.IDLE:
                     PlayerAnime("Idle");
                     lastAnime = "Idle";

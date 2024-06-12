@@ -17,4 +17,8 @@ public class SpawnManager : Singleton<SpawnManager>
         float z = spawnDefine.Get(pointId).Z;
         return new Vector3(x, y, z);
     }
+    public int GetBindBoxIdx(int pointId)
+    {
+        return spawnDefine.Get(pointId).Changjing;
+    }
 }

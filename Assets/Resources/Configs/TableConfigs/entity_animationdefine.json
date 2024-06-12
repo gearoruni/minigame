@@ -8,6 +8,10 @@
     "animationName": "CharacterAnim"
   },
   {
+    "id": 1002,
+    "animationName": "LiZhiAnim"
+  },
+  {
     "id": 2,
     "animationName": "Bullet1Anim"
   },
@@ -37,18 +41,126 @@
   },
   {
     "id": 9,
-    "animationName": "BOSS1Anim"
-  },
-  {
-    "id": 1002,
-    "animationName": "LiZhiAnim"
+    "animationName": "BOSS1move"
   },
   {
     "id": 10,
-    "animationName": "LiZhiHuoQiu"
+    "animationName": "BOSS1skill3"
   },
   {
     "id": 11,
-    "animationName": "LiZhiShift"
+    "animationName": "BOSS1skill4"
+  },
+  {
+    "id": 12,
+    "animationName": "BOSS1skill5"
+  },
+  {
+    "id": 13,
+    "animationName": "LiZhiHuoQiu"
+  },
+  {
+    "id": 14,
+    "animationName": "LiZhiSkill E"
+  },
+  {
+    "id": 15,
+    "animationName": "LiZhiSkill Shift"
+  },
+  {
+    "id": 16,
+    "animationName": "小软泥怪"
+  },
+  {
+    "id": 17,
+    "animationName": "悲伤史莱姆"
+  },
+  {
+    "id": 18,
+    "animationName": "悲伤史莱姆水球"
+  },
+  {
+    "id": 19,
+    "animationName": "悲伤水灵"
+  },
+  {
+    "id": 20,
+    "animationName": "蓄力大水泡"
+  },
+  {
+    "id": 21,
+    "animationName": "大软泥怪待机"
+  },
+  {
+    "id": 22,
+    "animationName": "大软泥召唤动画"
+  },
+  {
+    "id": 23,
+    "animationName": "悲伤之花待机动画"
+  },
+  {
+    "id": 24,
+    "animationName": "悲伤之花水柱攻击"
+  },
+  {
+    "id": 25,
+    "animationName": "悲伤之花召唤攻击"
+  },
+  {
+    "id": 26,
+    "animationName": "悲伤之花蓄力水泡"
+  },
+  {
+    "id": 27,
+    "animationName": "悲伤之花治疗法阵"
+  },
+  {
+    "id": 28,
+    "animationName": "地刺-草地区域"
+  },
+  {
+    "id": 29,
+    "animationName": "地刺-海岛区域"
+  },
+  {
+    "id": 30,
+    "animationName": "洞穴区域石像激活动画"
+  },
+  {
+    "id": 31,
+    "animationName": "洞穴区域碎石动画"
+  },
+  {
+    "id": 32,
+    "animationName": "绿色区域石像激活动画"
+  },
+  {
+    "id": 33,
+    "animationName": "绿色区域碎石动画"
+  },
+  {
+    "id": 34,
+    "animationName": "蘑菇闪烁动画"
+  },
+  {
+    "id": 35,
+    "animationName": "钥匙闪烁动画"
+  },
+  {
+    "id": 36,
+    "animationName": "开门动画"
+  },
+  {
+    "id": 37,
+    "animationName": "BOSS1Bullet"
+  },
+  {
+    "id": 38,
+    "animationName": "小软泥怪2"
+  },
+  {
+    "id": 39,
+    "animationName": "大水泡飞行"
   }
 ]

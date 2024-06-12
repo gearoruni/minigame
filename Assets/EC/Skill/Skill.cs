@@ -61,7 +61,7 @@ public class Skill
         Animator animator;
         NoneFieldSkill(entity);
         animator = weaponComponent.weapon.go.GetComponentInChildren<Animator>();
-        //Debug.Log(animator);
+        Debug.Log(animator);
         switch(weaponConfigs.SpecialSkill[0])
         {
             case 1:
@@ -72,6 +72,10 @@ public class Skill
                     if(cmp != null)
                         cmp.continueCallBack = null;
                     // TimerManager.Instance.RemoveTimer(timer);
+                    //TODO:ºÏ≤‚œ˙ªŸ
+                    weaponComponent = (WeaponComponent)entity.GetComponent("WeaponComponent");
+                    if(weaponComponent == null)return;
+                    animator = weaponComponent.weapon.go.GetComponentInChildren<Animator>();
                     animator?.Play("idle");
                     });
             break;
@@ -80,10 +84,28 @@ public class Skill
                  timer = TimerManager.Instance.RegisterTimer(0.35f,1,()=>{
                     SkillComponent cmp = (SkillComponent)entity.GetComponent("SkillComponent");
                      if (cmp != null)
-                         cmp.continueCallBack = null;
+                        cmp.continueCallBack = null;
+                    weaponComponent = (WeaponComponent)entity.GetComponent("WeaponComponent");
+                    if(weaponComponent == null)return;
+                    animator = weaponComponent.weapon.go.GetComponentInChildren<Animator>();
+                    animator?.Play("idle");
                     //TimerManager.Instance.RemoveTimer(timer);
                     });
             break;
+            case 3:
+                animator?.Play("attack1");
+                timer = TimerManager.Instance.RegisterTimer(1,1,()=>{
+                    weaponComponent = (WeaponComponent)entity.GetComponent("WeaponComponent");
+                    if(weaponComponent == null)return;
+                    animator = weaponComponent.weapon.go.GetComponentInChildren<Animator>();
+                    animator?.Play("idle");
+                    xulishuiqiu(entity);
+                });
+            break;
+            case 4:
+                animator?.Play("attack1");
+                zhaohuan(entity);
+                break;
         }
     }
 
@@ -184,6 +206,50 @@ public class Skill
         movecmp.SetForceMove(0.35f, 20f, weaponComponent.GetWeaponFace());
         if(cmp == null)return;
         cmp.continueCallBack = ()=>{};
+    }
+
+    public void xulishuiqiu(Entity entity)
+    {
+        Vector2 direction =  weaponComponent.GetWeaponFace();
+        BaseFire(entity, weaponComponent.GetWeaponTopPos(), direction);
+    }
+
+    public void zhaohuan(Entity entity)
+    {
+        Vector3 pos = entity.go.transform.position;
+        List<Vector3> dirs = new List<Vector3>(){Vector3.up, Vector3.down, Vector3.left,Vector3.right};
+        int times = 0;
+        Entity entity1;
+        TransformComponent cmp;
+        CollisionComponent collCmp;
+        AnimatorComponent animator;
+        Debug.Log("’ŸªΩ");
+        for(int i = 0;i<4;i++)
+        {
+            
+                entity1 = EntityManager.Instance.CreateEntity(4, 140);
+        //     if(PhysicsRay.GetWall(pos,dirs[i],out var result))
+        //     {
+                
+        // Debug.Log("’ŸªΩ≥…π¶");
+        //         // cmp = (TransformComponent)entity1.GetComponent("TransformComponent");
+        //         // collCmp = (CollisionComponent)entity1.GetComponent("CollisionComponent");
+        //         // animator = (AnimatorComponent)entity1.GetComponent("AnimatorComponent");
+        //         // animator?.PlayerAnime("birth");
+        //         // collCmp.listener.gameObject.SetActive(false);
+        //         // if(cmp!=null)
+        //         // {
+        //         //     //     TimerManager.Instance.RegisterTimer(1,0,()=>{
+        //         //     //     // collCmp = (CollisionComponent)entity1.GetComponent("CollisionComponent");
+        //         //     //     // collCmp.listener.gameObject.SetActive(true);
+        //         //     //     // EntityManager.Instance.AwakeZhaohuan(entity1);
+        //         //     // });
+        //         //     // cmp.SetPostion(result.x,result.y);
+        //         //     times++;
+        //         //     if(times >= 3)break;
+        //         // }
+        //     }
+        }
     }
     #endregion
 }

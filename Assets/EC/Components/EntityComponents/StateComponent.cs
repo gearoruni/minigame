@@ -6,6 +6,7 @@ using UnityEngine;
 
 public enum State
 {
+    BIRTH,
     IDLE,
     MOVE,
 

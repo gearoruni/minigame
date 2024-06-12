@@ -29,18 +29,21 @@ public class AnimatorListener : MonoBehaviour
 
     public void SetParam(float x, float y)
     {
+        if(this.gameObject == null)return;
         animator.SetFloat("x", x);
         animator.SetFloat("y", y);
     }
 
     public void SetStateAnime(string animationName)
     {
+        if(this.gameObject == null)return;
         animator.Play(animationName);
         nowPlayAnim = animationName;
     }
 
     public bool CheckAnime(string animeName)
     {
+        if(this.gameObject == null)return false;
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
 
         // 如果当前动画播放时间超过了动画长度，说明动画已经播放完毕
@@ -53,6 +56,7 @@ public class AnimatorListener : MonoBehaviour
 
     public bool CheckDestroyAnime()
     {
+        if(this.gameObject == null)return false;
         // 检测当前动画状态信息
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
 
