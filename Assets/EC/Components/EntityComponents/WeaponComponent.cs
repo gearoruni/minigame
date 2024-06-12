@@ -38,7 +38,8 @@ public class WeaponComponent : Component
         weaponId = character.weaponDir[character.level];
         if (weapon != null)
         {
-            GameObject.Destroy(weapon.go);
+            // GameObject.Destroy(weapon.go);
+            ObjectPool.Instance.ReturnObjectToPool(WeaponGo.goName, WeaponGo.go);
             weapon = null;
         }
         //´´½¨weapon entity
