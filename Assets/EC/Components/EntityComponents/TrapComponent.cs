@@ -36,6 +36,7 @@ public class TrapComponent : Component
 
     private void EnterTrap(Entity entity)
     {
+        if(entity == null)return;
         entities.Add(entity);
         Debug.Log("进入陷阱");
         if (entity.Tag != Tag.Player) return;
@@ -59,6 +60,7 @@ public class TrapComponent : Component
             foreach (var entity in entities)
             {
                 var cmp = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
+                if(cmp == null)continue;
                 cmp.nowHp -= atk;
             }
             Debug.Log("陷阱启动");

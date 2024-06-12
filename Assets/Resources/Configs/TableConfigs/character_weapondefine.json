@@ -130,5 +130,49 @@
     "specialSkill": [
       2
     ]
+  },
+  {
+    "id": 20017,
+    "name": "蓄力水炮",
+    "upLimit": [
+      0
+    ],
+    "downLimit": [
+      0
+    ],
+    "volleyCount": [
+      0
+    ],
+    "bulletsPerVolley": [
+      0
+    ],
+    "timeBetweenBullets": [
+      0
+    ],
+    "specialSkill": [
+      3
+    ]
+  },
+  {
+    "id": 20018,
+    "name": "召唤",
+    "upLimit": [
+      0
+    ],
+    "downLimit": [
+      0
+    ],
+    "volleyCount": [
+      0
+    ],
+    "bulletsPerVolley": [
+      0
+    ],
+    "timeBetweenBullets": [
+      0
+    ],
+    "specialSkill": [
+      4
+    ]
   }
 ]
