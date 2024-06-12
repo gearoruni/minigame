@@ -12,7 +12,7 @@ public class ObjectPool : MonoSingleton<ObjectPool>
     //废弃
     // public void Init(int count)
     // {
-    //     // ����������еĶ���
+    //     // ����������еĶ���?
     //     for (int i = 0; i < count; i++)
     //     {
     //         GameObject obj = Instantiate(prefab, transform);
@@ -87,6 +87,7 @@ public class ObjectPool : MonoSingleton<ObjectPool>
     }
     public void ReturnObjectToPool(string name, GameObject obj)
     {
+        if(obj == null)return;
         obj.SetActive(false);
         if(!pools.TryGetValue(name, out var queue))
         {
