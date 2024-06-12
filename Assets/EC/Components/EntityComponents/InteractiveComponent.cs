@@ -12,6 +12,7 @@ public class InteractiveComponent : Component
     {
         greenIdolDialog = 0,//绿色区域神像
         caveIdolDialog = 1,//洞穴区域神像
+        huixue = 2,
     }
 
     private bool isInteracting;
@@ -70,6 +71,11 @@ public class InteractiveComponent : Component
                 break;
             case NumToCallBack.caveIdolDialog:
                 BattleUI.Instance?.ShowTxt(7016, OnClick1);
+                break;
+            case NumToCallBack.huixue:
+                var cmp = (CharacterDataComponent)PlayerBaseData.Instance.entity.GetComponent("CharacterDataComponent");
+                cmp.nowHp += 100;
+                EntityManager.Instance.RemoveEntity(entity.instanceId);
                 break;
             default:
                 break;

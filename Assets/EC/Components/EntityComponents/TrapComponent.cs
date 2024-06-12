@@ -61,7 +61,8 @@ public class TrapComponent : Component
             {
                 var cmp = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
                 if(cmp == null)continue;
-                cmp.nowHp -= atk;
+                // cmp.nowHp -= atk;
+                cmp.ChangeHp(atk);
             }
             Debug.Log("陷阱启动");
             if (continueOpen) OnClickTrap();
