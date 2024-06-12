@@ -60,6 +60,11 @@ public class Skill
         weaponComponent = (WeaponComponent)entity.GetComponent("WeaponComponent");
         Animator animator;
         NoneFieldSkill(entity);
+        if(weaponComponent.weapon.go == null)
+        {
+            Debug.Log("原本报错：武器 为 空");
+            return;
+        }
         animator = weaponComponent.weapon.go.GetComponentInChildren<Animator>();
         Debug.Log(animator);
         switch(weaponConfigs.SpecialSkill[0])

@@ -79,6 +79,6 @@ public class CharacterDataComponent : Component
             return;
         }
         SetHealthOffset(effectData);
-        Debug.Log("当前生命值：：" + entity.go.name + " [ " + effectData + " ]:[ " + this.nowHp + "]");
+        //Debug.Log("当前生命值：：" + entity.go.name + " [ " + effectData + " ]:[ " + this.nowHp + "]");
     }
 }

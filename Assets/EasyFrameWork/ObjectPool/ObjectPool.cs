@@ -64,6 +64,11 @@ public class ObjectPool : MonoSingleton<ObjectPool>
         }
 
         GameObject obj = queue.Dequeue();
+        if (obj == null)
+        {
+            Debug.Log("对象池里对象已销毁！");
+            return null;
+        }
         obj.SetActive(true);
         return obj;
     }
