@@ -11,9 +11,11 @@ public class DestroyComponent : Component
 
     public int condition = 0;
     HitComponent hit;
+    StateComponent state;
     public override void Init()
     {
         hit = (HitComponent)entity.GetComponent("HitComponent");
+        state = (StateComponent)entity.GetComponent("StateComponent");
     }
 
     public override void DataInit()
@@ -24,13 +26,6 @@ public class DestroyComponent : Component
             condition = dataDefine;
         }
     }
-
-    //public void SetNeedColliderDestroy()
-    //{
-    //    needColliderDestroy = true;
-    //    collision = (CollisionComponent)entity.GetComponent("CollisionComponent");
-    //    collision.OnBaseTriggerEnter2D += ChangeState;
-    //}
 
     public void SetDestroyTimer(float time)
     {
@@ -64,8 +59,8 @@ public class DestroyComponent : Component
             {
                 hit.canDestroyTargetEffect = null;
                 Debug.Log("±»´Ý»Ù");
-
-                Destroy();
+                ChangeState();
+                //Destroy();
             }
         }
     }

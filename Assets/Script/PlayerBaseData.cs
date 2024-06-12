@@ -107,6 +107,9 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         eentity = EntityManager.Instance.CreateEntity(4, 64);//场景1-8 BOSS愤怒之花
         eentity = EntityManager.Instance.CreateEntity(4, 65);//场景2-9 BOSS悲伤之花
 
+        eentity = EntityManager.Instance.CreateEntity(10, 153);
+
+
         //for (int b = 66; b <= 76; b++)//横石堆(用主角爆裂弹可击碎) ID：66~76
         //{
         //    eentity = EntityManager.Instance.CreateEntity(999, b);//第1个参数填多少我不确定

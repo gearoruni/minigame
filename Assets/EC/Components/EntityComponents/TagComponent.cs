@@ -36,6 +36,10 @@ public class TagComponent : Component
             entity.Tag = tag;
         }
     }
+    public void SetTag(Tag tag)
+    {
+        this.tag = tag;
+    }
     public override void Update()
     {
         entity.Tag = this.tag;

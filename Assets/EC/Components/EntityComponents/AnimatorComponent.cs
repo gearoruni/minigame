@@ -117,9 +117,20 @@ public class AnimatorComponent : Component
                     break;
                 case State.DEATH:
                     break;
+                case State.DESTROY:
+                    PlayerAnime("Destroy");
+                    state.state = State.WAITDESTROY;
+                    lastAnime = "Destroy";
+                    break;
+                case State.WAITDESTROY:
+                    break;
                 default:
                     PlayerAnime(lastAnime);
                     break;
+            }
+            if (listener.CheckDestroyAnime())
+            {
+                state.isDead = true;
             }
         }
 
