@@ -257,5 +257,20 @@
     "skillID": 1104,
     "range": 7,
     "canForceMove": true
+  },
+  {
+    "id": 5200,
+    "name": "障碍",
+    "hp": 99999,
+    "speed": 0,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      0
+    ],
+    "skillID": 0,
+    "range": 0,
+    "canForceMove": false
   }
 ]

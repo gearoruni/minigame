@@ -167,6 +167,10 @@ public class Skill
         //动画
         BulletComponent bulletComponent = (BulletComponent)bulletEntity.GetComponent("BulletComponent");
         bulletComponent.DataInit(animationId);
+
+        TagComponent tagComponent = (TagComponent)bulletEntity.GetComponent("TagComponent");
+        tagComponent.SetTag(entity.Tag);
+
         ////设置子弹效果
         EffectComponent effectComponent = (EffectComponent)bulletEntity.GetComponent("EffectComponent");
         effectComponent.DataInit(effectId);

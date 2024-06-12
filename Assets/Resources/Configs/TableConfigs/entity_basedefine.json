@@ -241,5 +241,34 @@
       0
     ],
     "parentEntityId": 0
+  },
+  {
+    "entityId": 10,
+    "name": "canDestroy",
+    "componentName": [
+      "TransformComponent",
+      "GoComponent",
+      "TagComponent",
+      "SpawnComponent",
+      "DestroyComponent",
+      "CharacterComponent",
+      "CollisionComponent",
+      "HitComponent",
+      "StateComponent",
+      "AnimatorComponent"
+    ],
+    "componentDefine": [
+      0,
+      0,
+      3,
+      2,
+      1001,
+      5200,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parentEntityId": 0
   }
 ]

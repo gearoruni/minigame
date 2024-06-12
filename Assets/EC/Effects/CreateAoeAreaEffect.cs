@@ -18,15 +18,19 @@ public class CreateAoeAreaEffect : EffectBase
     {
         if(areaEntity != null) { return; }
         areaEntity = EntityManager.Instance.CreateEntity(6, 3);
-
-        EffectComponent effectComponent = (EffectComponent)areaEntity.GetComponent("EffectComponent");
-        effectComponent.DataInit(define);
+        areaEntity.Tag = this.entity.Tag;
 
         TransformComponent transform = (TransformComponent)areaEntity.GetComponent("TransformComponent");
         transform.position = entity.go.transform.position;
 
         GoComponent go = (GoComponent)areaEntity.GetComponent("GoComponent");
         go.CreateGameObject("Temp");
+
+        TagComponent tagComponent = (TagComponent)areaEntity.GetComponent("TagComponent");
+        tagComponent.SetTag(areaEntity.Tag);
+
+        EffectComponent effectComponent = (EffectComponent)areaEntity.GetComponent("EffectComponent");
+        effectComponent.DataInit(define);
     }
 
     public override void OnCache()
