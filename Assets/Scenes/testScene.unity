@@ -540,7 +540,7 @@ Animator:
   m_GameObject: {fileID: 540911410}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4fb699337a97c524792249ab550901bb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 89a1723eef0334e409339c4ac8ec4585, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -597,10 +597,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 9.309091, y: 9.309091}
+  m_Size: {x: 4.995, y: 4.575}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &540911413
@@ -2108,6 +2108,30 @@ PrefabInstance:
     - target: {fileID: 1491599329946276361, guid: 4cf48297797d8e2448d96c57704c24cb, type: 3}
       propertyPath: m_Name
       value: Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 2402261761013706927, guid: 4cf48297797d8e2448d96c57704c24cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3561741733101421400, guid: 4cf48297797d8e2448d96c57704c24cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908939732899114749, guid: 4cf48297797d8e2448d96c57704c24cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6853421712898967043, guid: 4cf48297797d8e2448d96c57704c24cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078188365706151549, guid: 4cf48297797d8e2448d96c57704c24cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446122447695618769, guid: 4cf48297797d8e2448d96c57704c24cb, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -216,7 +216,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       15,
       1001
@@ -231,7 +231,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       16,
       1001
@@ -246,7 +246,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       17,
       1001
@@ -261,7 +261,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       18,
       1001
@@ -276,7 +276,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       19,
       1001
@@ -291,7 +291,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       20,
       1001
@@ -306,7 +306,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       21,
       1001
@@ -321,7 +321,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       22,
       1001
@@ -336,7 +336,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       23,
       1001
@@ -351,7 +351,7 @@
       "FSMComponent"
     ],
     "componentdataid": [
-      12,
+      16,
       1107,
       24,
       1001
@@ -2350,6 +2350,21 @@
       149,
       1001,
       2
+    ]
+  },
+  {
+    "id": 150,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      19,
+      1105,
+      65,
+      1001
     ]
   }
 ]

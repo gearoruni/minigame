@@ -39,7 +39,7 @@ public class InteractiveComponent : Component
                     door = GameObject.Find("Item/场景5铁门");
                     break;
                 case 3:
-                    door = GameObject.Find("Item/场景x铁门");
+                    door = GameObject.Find("Item/场景X铁门");
                     break;
             }
         }

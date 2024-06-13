@@ -76,7 +76,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     //     }
     
         Entity eentity = EntityManager.Instance.CreateEntity(4, 2);//SpawnDataID：2 紫色史莱姆
-        for (int a = 3; a <= 10; a++)//其余的各地区紫色史莱姆,CharacterComponentDara/SpawnDataID：3~14
+        for (int a = 3; a <= 4; a++)//其余的各地区紫色史莱姆,CharacterComponentDara/SpawnDataID：3~14
         {//CharacterComponentDaraID与SpawnDataID相等
             eentity = EntityManager.Instance.CreateEntity(4, a);
         }
