@@ -27,6 +27,8 @@ public class BattleUI : MonoBehaviour
     public RectTransform montserRoot;
     public GameObject MonsterHpTemplate;
 
+    public Image BossHp;
+
     public static BattleUI Instance;
     private Action callBack = null;
     private int nowPlayer = 1001;
@@ -181,6 +183,20 @@ public class BattleUI : MonoBehaviour
             if (entity == null) continue;
 
             characterData = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
+            var character = (CharacterComponent)entity.GetComponent("CharacterComponent");
+            int id = character.configs.Id;
+            string bindboxName = CameraManager.Instance.confiner.m_BoundingShape2D.name;
+            //boss血条特殊处理
+            if(id == 1201 || id == 1202)
+            {
+                pairAndImage.Value.transform.parent.gameObject.SetActive(false);
+                if(bindboxName == "8" || bindboxName == "17")
+                {
+                    BossHp.transform.parent.gameObject.SetActive(true);
+                    BossHp.fillAmount = (float)characterData.nowHp / (float)characterData.maxHp;
+                }
+                continue;
+            }
             trs = entity.go.transform;
 
             pairAndImage.Value.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;

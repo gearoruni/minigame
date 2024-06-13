@@ -54,6 +54,7 @@ public class WeaponComponent : Component
     public Vector2 GetWeaponFace()
     {
         // Debug.Log($"{weaponTransform.position},{weaponTransform.rotation},,{WeaponGo.go.transform.up},{WeaponGo.go.transform.rotation}");
+        if(WeaponGo.go == null)return Vector2.zero;
         return WeaponGo.go.transform.up;
     }
     public Vector2 GetWeaponPos()

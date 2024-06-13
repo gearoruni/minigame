@@ -10,7 +10,7 @@ public enum Tag
     Terrain = 3,
     Weapon = 4,
     Interactive = 5,
-    Trap = 6
+    Trap = 6,
 }
 
 public class TagComponent : Component
@@ -27,6 +27,7 @@ public class TagComponent : Component
         int datadefine;
         if (characterComponent != null)
         {
+            Debug.Log(characterComponent.configs.Id);
             tag = (Tag)(characterComponent.configs.Id / 1100);
             entity.Tag = tag;
         }

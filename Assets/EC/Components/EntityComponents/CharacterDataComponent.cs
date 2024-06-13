@@ -65,6 +65,8 @@ public class CharacterDataComponent : Component
                 {
                     characterDataCache.dead = true;
                 }
+                var animcmp = (AnimatorComponent)s.entity.GetComponent("AnimatorComponent");
+                // animcmp.state.state = State.DESTROY;
                 s.ChangePlayer((s.nowSelectedCharacter - 1001) == 0 ? 1 : 0);
                 return;
             }

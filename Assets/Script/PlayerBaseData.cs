@@ -110,10 +110,10 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         // eentity = EntityManager.Instance.CreateEntity(10, 153);
 
 
-        //for (int b = 66; b <= 76; b++)//横石堆(用主角爆裂弹可击碎) ID：66~76
-        //{
-        //    eentity = EntityManager.Instance.CreateEntity(999, b);//第1个参数填多少我不确定
-        //}
+        for (int b = 66; b <= 67; b++)//横石堆(用主角爆裂弹可击碎) ID：66~76
+        {
+           eentity = EntityManager.Instance.CreateEntity(10, b);//第1个参数填多少我不确定
+        }
         //for (int b = 77; b <= 80; b++)//竖石堆(用主角爆裂弹可击碎) ID：77~80
         //{
         //    eentity = EntityManager.Instance.CreateEntity(999, b);//第1个参数填多少我不确定

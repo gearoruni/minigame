@@ -973,6 +973,36 @@
     ]
   },
   {
+    "id": 66,
+    "componentName": [
+      "TagComponent",
+      "SpawnComponent",
+      "DestroyComponent",
+      "AnimatorComponent"
+    ],
+    "componentdataid": [
+      7,
+      66,
+      1001,
+      33
+    ]
+  },
+  {
+    "id": 67,
+    "componentName": [
+      "TagComponent",
+      "SpawnComponent",
+      "DestroyComponent",
+      "AnimatorComponent"
+    ],
+    "componentdataid": [
+      7,
+      67,
+      1001,
+      33
+    ]
+  },
+  {
     "id": 97,
     "componentName": [
       "CharacterComponent",
@@ -1897,26 +1927,26 @@
       "AnimatorComponent",
       "CharacterComponent",
       "FSMComponent",
-      "SpawnComponent"
+      "SpawnComponent",
+      "CharacterComponent"
     ],
     "componentdataid": [
       12,
       1107,
       1001,
-      65
+      65,
+      5200
     ]
   },
   {
     "id": 153,
     "componentName": [
-      "CharacterComponent",
       "TagComponent",
       "SpawnComponent",
       "DestroyComponent",
       "AnimatorComponent"
     ],
     "componentdataid": [
-      5200,
       5,
       2,
       1001,
