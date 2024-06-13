@@ -236,7 +236,8 @@ public class Skill
             {
                 
                 entity1 = EntityManager.Instance.CreateEntity(4, 150, true);
-                EntityManager.Instance.AwakeZhaohuan(entity1);
+                entity1 = EntityManager.Instance.CreateEntity(4, 150);
+                // EntityManager.Instance.AwakeZhaohuan(entity1);
                 
                 var gocmp = (GoComponent)entity1.GetComponent("GoComponent");
                 if(gocmp !=null && gocmp.go !=null)
