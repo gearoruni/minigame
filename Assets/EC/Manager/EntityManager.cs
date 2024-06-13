@@ -108,6 +108,10 @@ public class EntityManager : Singleton<EntityManager>
                 {
                     activeMonsters.Remove(int.Parse(CameraManager.Instance.confiner.m_BoundingShape2D.name));
                     CameraManager.Instance.CloseFengsuo();
+                    if(CameraManager.Instance.confiner!=null && CameraManager.Instance.confiner.m_BoundingShape2D.name == "8")
+                    {
+                        BattleUI.Instance.ShowTxt(7023, ()=>{PlayerBaseData.Instance.selectedCharacterList.Add(1002);});
+                    }
                 }
             }
         }

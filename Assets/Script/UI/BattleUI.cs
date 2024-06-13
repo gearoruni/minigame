@@ -30,6 +30,7 @@ public class BattleUI : MonoBehaviour
     public static BattleUI Instance;
     private Action callBack = null;
     private int nowPlayer = 1001;
+    private PlayerBaseData playerBaseData;
     private void Awake()
     {
         Instance = this;
@@ -64,9 +65,17 @@ public class BattleUI : MonoBehaviour
 
         health.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;
         UpdateMonsterHp();
-        if(nowPlayer != PlayerBaseData.Instance.nowSelectedCharacter)
+        playerBaseData = playerBaseData==null ? PlayerBaseData.Instance : playerBaseData;
+
+        if(playerBaseData.selectedCharacterList.Count <= 1)
         {
-            nowPlayer = PlayerBaseData.Instance.nowSelectedCharacter;
+            lizhichange.gameObject.SetActive(false);
+            return;
+        }
+        lizhichange.gameObject.SetActive(true);
+        if(nowPlayer != playerBaseData.nowSelectedCharacter)
+        {
+            nowPlayer = playerBaseData.nowSelectedCharacter;
             foreach(var img in characterSkill)
             {
                 img.gameObject.SetActive(!img.gameObject.activeSelf);

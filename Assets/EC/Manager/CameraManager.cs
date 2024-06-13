@@ -35,7 +35,11 @@ public class CameraManager : MonoSingleton<CameraManager>
             if (collider != null && (confiner.m_BoundingShape2D==null || confiner.m_BoundingShape2D != collider))
             {
                 confiner.m_BoundingShape2D = collider;
-                EntityManager.Instance.AwakeMonsterByBindBox(int.Parse(collider.name));
+                int idx = int.Parse(collider.name);
+                EntityManager.Instance.AwakeMonsterByBindBox(idx);
+                
+                //进入boss领地播剧情
+                if(idx == 8)TimerManager.Instance.RegisterTimer(1,1,()=>{BattleUI.Instance.ShowTxt(7020);});
             }
         }
     }

@@ -30,7 +30,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         characterLevelDir[1001] = 1;
         characterLevelDir[1002] = 1;
         selectedCharacterList.Add(1001);
-        selectedCharacterList.Add(1002);
+        // selectedCharacterList.Add(1002);
         playerDataCache.TryAdd(1001,new Dictionary<string, float>());
         playerDataCache.TryAdd(1002,new Dictionary<string, float>());
         entity = EntityManager.Instance.CreateEntity(1,1);
@@ -107,7 +107,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         eentity = EntityManager.Instance.CreateEntity(4, 64);//场景1-8 BOSS愤怒之花
         eentity = EntityManager.Instance.CreateEntity(4, 65);//场景2-9 BOSS悲伤之花
 
-        eentity = EntityManager.Instance.CreateEntity(10, 153);
+        // eentity = EntityManager.Instance.CreateEntity(10, 153);
 
 
         //for (int b = 66; b <= 76; b++)//横石堆(用主角爆裂弹可击碎) ID：66~76
@@ -144,7 +144,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
 
     public void ChangePlayer(int idx)
     {
-        if(changeCD)return;
+        if(changeCD || selectedCharacterList.Count <= idx)return;
         if (playerDatas.TryGetValue(selectedCharacterList[idx], out var data) && data.dead) return;
         if(timer != null)TimerManager.Instance.RemoveTimer(timer);
         timer = TimerManager.Instance.RegisterTimer(0.5f,1,ChangePlayerCD);
