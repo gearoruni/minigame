@@ -29,7 +29,7 @@ public class EntityManager : Singleton<EntityManager>
         Entity entity = assembler.CreateEntity(instanceId++, entityId);
 
         this.entities.Add(entity.instanceId, entity);
-        //ÊÇ¹ÖÎï
+        //ï¿½Ç¹ï¿½ï¿½ï¿½
         AddMonsterByBindBox(entity);
         assembler.LateCreate(entity);
 
@@ -38,17 +38,17 @@ public class EntityManager : Singleton<EntityManager>
         return entity;
     }
     /// <summary>
-    /// ´´½¨ÊµÌå
+    /// ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
     /// </summary>
-    /// <param name="entityId">ÊµÌåÄ£°åID</param>
-    /// <param name="cmpId">×é¼þÄ£°åID</param>
+    /// <param name="entityId">Êµï¿½ï¿½Ä£ï¿½ï¿½ID</param>
+    /// <param name="cmpId">ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ID</param>
     /// <returns></returns>
     public Entity CreateEntity(int entityId,int cmpId)
     {
 
         Entity entity = assembler.CreateEntity(instanceId++, entityId,cmpId);
 
-        //ÊÇ¹ÖÎï
+        //ï¿½Ç¹ï¿½ï¿½ï¿½
         AddMonsterByBindBox(entity);
         this.entities.Add(entity.instanceId, entity);
 
@@ -69,11 +69,11 @@ public class EntityManager : Singleton<EntityManager>
         return entity;
     }
     /// <summary>
-    /// ¸¸Entity´´½¨×ÓEntity
+    /// ï¿½ï¿½Entityï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Entity
     /// </summary>
-    /// <param name="parent">¸¸Entity</param>
-    /// <param name="entityId">Ä£°åid</param>
-    /// <param name="cmpId">cmpÄ£°åid</param>
+    /// <param name="parent">ï¿½ï¿½Entity</param>
+    /// <param name="entityId">Ä£ï¿½ï¿½id</param>
+    /// <param name="cmpId">cmpÄ£ï¿½ï¿½id</param>
     /// <returns></returns>
     public Entity ParentCreateEntity(Entity parent,int entityId, int cmpId,bool needUpdateFollow = true)
     {
@@ -99,7 +99,6 @@ public class EntityManager : Singleton<EntityManager>
     {
         Entity entity = entities[instanceId];
         if (entity == null) return;
-        Debug.Log(CameraManager.Instance.confiner.m_BoundingShape2D.name);
         if(activeMonsters.TryGetValue(int.Parse(CameraManager.Instance.confiner.m_BoundingShape2D.name), out var monster))
         {
             if(monster.Contains(entity))

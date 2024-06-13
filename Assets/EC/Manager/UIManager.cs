@@ -22,7 +22,7 @@ public class UIManager : Singleton<UIManager>
         //var go = AssetDatabase.LoadAssetAtPath<GameObject>($"Assets/UI/{name}.prefab");
         if(go == null)
         {
-            Debug.LogError($"¼ÓÔØUIÊ§°Ü£¬name£º{name}");
+            Debug.LogError($"ï¿½ï¿½ï¿½ï¿½UIÊ§ï¿½Ü£ï¿½nameï¿½ï¿½{name}");
             return -1;
         }
         go = GameObject.Instantiate(go);
@@ -49,7 +49,6 @@ public class UIManager : Singleton<UIManager>
     {
         string name = typeof(T).Name;
         //name = Regex.Match(name, @"(.*UI)").Value;
-        Debug.Log(name);
         foreach (var ui in _idx2UI)
         {
             if(name == Regex.Match(ui.Value.name, @"(.*UI)").Value)

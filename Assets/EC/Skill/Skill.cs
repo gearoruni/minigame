@@ -61,7 +61,6 @@ public class Skill
         Animator animator;
         NoneFieldSkill(entity);
         animator = weaponComponent.weapon.go.GetComponentInChildren<Animator>();
-        Debug.Log(animator);
         switch(weaponConfigs.SpecialSkill[0])
         {
             case 1:

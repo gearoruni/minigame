@@ -40,6 +40,7 @@ public class WeaponComponent : Component
         {
             // GameObject.Destroy(weapon.go);
             ObjectPool.Instance.ReturnObjectToPool(WeaponGo.goName, WeaponGo.go);
+            WeaponGo.go = null;
             weapon = null;
         }
         //´´½¨weapon entity
@@ -52,6 +53,7 @@ public class WeaponComponent : Component
     }
     public Vector2 GetWeaponFace()
     {
+        // Debug.Log($"{weaponTransform.position},{weaponTransform.rotation},,{WeaponGo.go.transform.up},{WeaponGo.go.transform.rotation}");
         return WeaponGo.go.transform.up;
     }
     public Vector2 GetWeaponPos()

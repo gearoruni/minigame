@@ -17,13 +17,11 @@ public class TrapComponent : Component
         collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
         collisionComponent.OnBaseTriggerEnter2D += EnterTrap;
         collisionComponent.OnBaseTriggerExit2D += ExitTrap;
-        Debug.Log("enter");
     }
     public override void DataInit()
     {
         entity.componentDatas.TryGetValue("TrapDelay",out delay);
         entity.componentDatas.TryGetValue("TrapAtk", out atk);
-        Debug.Log(delay);
     }
     public override void Update()
     {
