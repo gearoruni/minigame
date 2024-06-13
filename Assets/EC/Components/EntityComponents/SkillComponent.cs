@@ -72,7 +72,7 @@ public class SkillComponent : Component
         if (baseData == null) { return; }
 
         //if(!CheckCanUseSkill(skillType))return;
-
+        Debug.Log("fire");
         baseData.UseSkill(entity);
 
         SetSkillCD(skillType);
@@ -118,7 +118,6 @@ public class SkillComponent : Component
         if (controller.isQSkill && CheckCanUseSkill(SkillType.QSKILL))
         {
             PlayAnimBySkillType(SkillType.QSKILL);
-            Debug.Log("enter");
             return;
         }
         if (controller.isESkill && CheckCanUseSkill(SkillType.ESKILL))

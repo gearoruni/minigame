@@ -31,6 +31,8 @@ Preload/Test/3003
 Preload/Test/3004
 Preload/Test/5200
 Preload/Test/5500
+Preload/Test/5501
+Preload/Test/5502
 Preload/Test/6600
 Preload/Test/6601
 Preload/Test/9999

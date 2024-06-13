@@ -187,14 +187,12 @@ public class BattleUI : MonoBehaviour
             int id = character.configs.Id;
             string bindboxName = CameraManager.Instance.confiner.m_BoundingShape2D.name;
             //boss血条特殊处理
-            if(id == 1201 || id == 1202)
+            if(id == 1201 && bindboxName == "8" || id == 1202 && bindboxName == "17")
             {
+                
                 pairAndImage.Value.transform.parent.gameObject.SetActive(false);
-                if(bindboxName == "8" || bindboxName == "17")
-                {
-                    BossHp.transform.parent.gameObject.SetActive(true);
-                    BossHp.fillAmount = (float)characterData.nowHp / (float)characterData.maxHp;
-                }
+                BossHp.transform.parent.gameObject.SetActive(true);
+                BossHp.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;
                 continue;
             }
             trs = entity.go.transform;

@@ -63,7 +63,6 @@ public class EntityManager : Singleton<EntityManager>
     public Entity CreateEntity(int entityId, int cmpId, bool isZhaohuan)
     {
         Entity entity = assembler.CreateEntity(instanceId++, entityId,cmpId);
-        
         assembler.LateCreate(entity);
         AddMonsterByBindBox(entity);
         return entity;
@@ -104,6 +103,7 @@ public class EntityManager : Singleton<EntityManager>
             if(monster.Contains(entity))
             {
                 monster.Remove(entity);
+                //boss击杀后触发对话
                 if(monster.Count == 0)
                 {
                     activeMonsters.Remove(int.Parse(CameraManager.Instance.confiner.m_BoundingShape2D.name));
@@ -111,6 +111,7 @@ public class EntityManager : Singleton<EntityManager>
                     if(CameraManager.Instance.confiner!=null && CameraManager.Instance.confiner.m_BoundingShape2D.name == "8")
                     {
                         BattleUI.Instance.ShowTxt(7023, ()=>{PlayerBaseData.Instance.selectedCharacterList.Add(1002);});
+                        BattleUI.Instance.BossHp.transform.parent.gameObject.SetActive(false);
                     }
                 }
             }
@@ -239,7 +240,6 @@ public class EntityManager : Singleton<EntityManager>
 
     public void AwakeZhaohuan(Entity entity)
     {
-        Debug.Log(entity.instanceId);
         this.entities.Add(entity.instanceId, entity);
 
         addQueue.Enqueue(entity.instanceId);

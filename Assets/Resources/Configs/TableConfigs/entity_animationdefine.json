@@ -41,7 +41,7 @@
   },
   {
     "id": 9,
-    "animationName": "BOSS1move"
+    "animationName": "BOSS1Anim"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
   },
   {
     "id": 23,
-    "animationName": "悲伤之花待机动画"
+    "animationName": "悲伤之花动画"
   },
   {
     "id": 24,

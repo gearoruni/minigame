@@ -48,7 +48,7 @@ public class AnimatorComponent : Component
 
         if (entity.go == null) return;
 
-        //Ìí¼Ó¶¯»­
+        //ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½ï¿½
         if (entity.componentNameToIdx.ContainsKey("AnimatorComponent") && entity.go.GetComponent<AnimatorListener>() == null)
         {
             entity.go.AddComponent<AnimatorListener>();
@@ -73,6 +73,7 @@ public class AnimatorComponent : Component
             }
             else if(lastAnime == skillidx.ToString() + firebefore)
             {
+                Debug.Log($"firebefore,{lastAnime}");
                 if(listener.CheckAnime(lastAnime))
                 {
                     useSkill?.Invoke();
@@ -82,6 +83,8 @@ public class AnimatorComponent : Component
             }
             else if (lastAnime == skillidx.ToString() + fire)
             {
+                
+                Debug.Log("fire");
                 if (listener.CheckAnime(lastAnime))
                 {
                     lastAnime = skillidx.ToString() + fireafter;

@@ -13,12 +13,14 @@ public class InteractiveComponent : Component
         greenIdolDialog = 0,//绿色区域神像
         caveIdolDialog = 1,//洞穴区域神像
         huixue = 2,
+        key = 3,
     }
 
     private bool isInteracting;
     private CollisionComponent collisionComponent;
     private GameObject interactiveGO;
     private NumToCallBack param;
+    private GameObject door;
     public override void Init()
     {
         collisionComponent = (CollisionComponent)entity.GetComponent("CollisionComponent");
@@ -26,6 +28,21 @@ public class InteractiveComponent : Component
         collisionComponent.OnBaseTriggerExit2D += Exit;
         interactiveGO = GameObject.Instantiate(Preloader.Instance.GetGameObject("9999"));
         interactiveGO.SetActive(false);
+        if(entity.componentDatas.TryGetValue("keyname", out var datadefine))
+        {
+            switch(datadefine)
+            {
+                case 1:
+                    door = GameObject.Find("Item/场景3铁门");
+                    break;
+                case 2:
+                    door = GameObject.Find("Item/场景5铁门");
+                    break;
+                case 3:
+                    door = GameObject.Find("Item/场景x铁门");
+                    break;
+            }
+        }
     }
     public override void DataInit()
     {
@@ -75,6 +92,11 @@ public class InteractiveComponent : Component
             case NumToCallBack.huixue:
                 var cmp = (CharacterDataComponent)PlayerBaseData.Instance.entity.GetComponent("CharacterDataComponent");
                 cmp.nowHp += 100;
+                EntityManager.Instance.RemoveEntity(entity.instanceId);
+                break;
+            case NumToCallBack.key:
+                if(door == null)break;
+                door.SetActive(false);
                 EntityManager.Instance.RemoveEntity(entity.instanceId);
                 break;
             default:

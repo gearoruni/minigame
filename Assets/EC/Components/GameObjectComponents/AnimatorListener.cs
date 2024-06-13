@@ -45,9 +45,9 @@ public class AnimatorListener : MonoBehaviour
     {
         if(this.gameObject == null)return false;
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-
+        // Debug.Log($"{stateInfo.normalizedTime},{stateInfo.IsName(animeName)}");
         // 如果当前动画播放时间超过了动画长度，说明动画已经播放完毕
-        if (stateInfo.normalizedTime >= 1.0f && stateInfo.IsName(animeName))
+        if (stateInfo.normalizedTime >= 1.0f)
         {
             return true;
         }

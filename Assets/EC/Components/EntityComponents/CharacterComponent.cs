@@ -34,7 +34,7 @@ public class CharacterComponent : Component
         }
         if (configs == null)
         {
-            Debug.LogError($"配置表出错了，dataDefine：{dataDefine}");
+            Debug.LogError($"配置表出错了，dataDefine：{dataDefine},entity:{entity}");
             return;
         }
         weaponDir.Clear();

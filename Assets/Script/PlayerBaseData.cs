@@ -76,7 +76,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     //     }
     
         Entity eentity = EntityManager.Instance.CreateEntity(4, 2);//SpawnDataID：2 紫色史莱姆
-        for (int a = 3; a <= 14; a++)//其余的各地区紫色史莱姆,CharacterComponentDara/SpawnDataID：3~14
+        for (int a = 3; a <= 10; a++)//其余的各地区紫色史莱姆,CharacterComponentDara/SpawnDataID：3~14
         {//CharacterComponentDaraID与SpawnDataID相等
             eentity = EntityManager.Instance.CreateEntity(4, a);
         }
@@ -114,20 +114,20 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         {
            eentity = EntityManager.Instance.CreateEntity(10, b);//第1个参数填多少我不确定
         }
-        //for (int b = 77; b <= 80; b++)//竖石堆(用主角爆裂弹可击碎) ID：77~80
-        //{
+        // for (int b = 77; b <= 80; b++)//竖石堆(用主角爆裂弹可击碎) ID：77~80
+        // {
         //    eentity = EntityManager.Instance.CreateEntity(999, b);//第1个参数填多少我不确定
-        //}
-        //for (int b = 81; b <= 91; b++)//回血蘑菇 ID：81~91
-        //{
-        //    eentity = EntityManager.Instance.CreateEntity(999, b);//第1个参数填多少我不确定
-        //}
-        //for (int b = 92; b <= 94; b++)//开门钥匙
-        //{
-        //    eentity = EntityManager.Instance.CreateEntity(999, b);//第1个参数填多少我不确定
-        //}
-        //eentity = EntityManager.Instance.CreateEntity(999, 95);//场景1-6 愤怒雕塑  是BOSS战前的雕塑石像
-        //eentity = EntityManager.Instance.CreateEntity(999, 96);//场景2-8 悲伤雕塑  两个雕塑是有碰撞体，可能需要交互，可按爱心石像去做
+        // }
+        for (int b = 81; b <= 91; b++)//回血蘑菇 ID：81~91
+        {
+           eentity = EntityManager.Instance.CreateEntity(8, b);//第1个参数填多少我不确定
+        }
+        for (int b = 92; b <= 94; b++)//开门钥匙
+        {
+           eentity = EntityManager.Instance.CreateEntity(8, b);//第1个参数填多少我不确定
+        }
+        // // eentity = EntityManager.Instance.CreateEntity(999, 95);//场景1-6 愤怒雕塑  是BOSS战前的雕塑石像
+        // // eentity = EntityManager.Instance.CreateEntity(999, 96);//场景2-8 悲伤雕塑  两个雕塑是有碰撞体，可能需要交互，可按爱心石像去做
         for (int b = 97; b <= 102; b++)//爱心石像
         {
             eentity = EntityManager.Instance.CreateEntity(8, b);
@@ -136,10 +136,10 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         {
             eentity = EntityManager.Instance.CreateEntity(9, b);
         }
-        //for (int b = 140; b <= 149; b++)//定向陷阱
-        //{
-        //    eentity = EntityManager.Instance.CreateEntity(999, b);//第1个参数填多少我不确定
-        //}
+        // for (int b = 140; b <= 149; b++)//定向陷阱
+        // {
+        //    eentity = EntityManager.Instance.CreateEntity(4, b);//第1个参数填多少我不确定
+        // }
     }
 
     public void ChangePlayer(int idx)
