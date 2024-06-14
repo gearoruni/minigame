@@ -209,6 +209,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         ReBirth();
         CameraManager.Instance.CloseFengsuo();
         EntityManager.Instance.SleepMonster();
+        BattleUI.Instance.BossHp.transform.parent.gameObject.SetActive(false);
         var go = GameObject.Find($"Map/ReBirth/{LastSave}");
         var cmp = (TransformComponent)entity.GetComponent("TransformComponent");
         cmp.SetPostion(go.transform.position.x, go.transform.position.y);

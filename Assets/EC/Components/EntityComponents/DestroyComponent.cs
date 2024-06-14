@@ -58,7 +58,6 @@ public class DestroyComponent : Component
             if(hit.canDestroyTargetEffect.condition == this.condition)
             {
                 hit.canDestroyTargetEffect = null;
-                Debug.Log("���ݻ�");
                 ChangeState();
                 //Destroy();
             }
