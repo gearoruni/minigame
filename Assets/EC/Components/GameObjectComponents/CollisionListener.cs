@@ -28,7 +28,7 @@ public class CollisionListener : MonoBehaviour
         bool hasEntity = CheckCollisionEntity(collision, out collisionEntity);
         bool isListener = CheckListner(collision);
         if(isListener) { return; }
-        if(CheckTrap(collision)){
+        if(CheckTrapOrInteractive(collision)){
             return;
             };
         //如果碰到建筑物了
@@ -91,13 +91,13 @@ public class CollisionListener : MonoBehaviour
         return false;
     }
 
-    private bool CheckTrap(Collider2D collision)
+    private bool CheckTrapOrInteractive(Collider2D collision)
     {
         CollisionListener temp = collision.gameObject.GetComponent<CollisionListener>();
         if(temp == null)return false;
         
-        Debug.Log($"{entity.entityId},{temp.entity.Tag}");
-        if(entity.entityId == 3 && temp.entity.Tag == Tag.Trap)return true;
+        // Debug.Log($"{entity.entityId},{temp.entity.Tag}");
+        if(entity.entityId == 3 && (temp.entity.Tag == Tag.Trap || temp.entity.Tag == Tag.Interactive))return true;
         return false;
     }
 }
