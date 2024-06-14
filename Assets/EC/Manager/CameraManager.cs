@@ -62,4 +62,14 @@ public class CameraManager : MonoSingleton<CameraManager>
             go.SetActive(name == idx || name == idx-1);
         }
     }
+
+    public int GetBindBox()
+    {
+            Collider2D collider = PhysicsRay.GetBindBox(followTransform.position);
+            if(int.TryParse(collider.name,out int result))
+            {
+                return result;
+            }
+            return -1;
+    }
 }

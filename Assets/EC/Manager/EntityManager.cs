@@ -245,4 +245,18 @@ public class EntityManager : Singleton<EntityManager>
 
         addQueue.Enqueue(entity.instanceId);
     }
+
+    public void SleepMonster()
+    {
+        foreach(var monster in activeMonsters)
+        {
+            if(monsters.ContainsKey(monster.Key))monsters.Remove(monster.Key);
+            monsters.Add(monster.Key,monster.Value);
+            foreach(var entity in monster.Value)
+            {
+                entity.go.SetActive(false);
+            }
+        }
+        activeMonsters.Clear();
+    }
 }

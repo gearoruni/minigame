@@ -56,6 +56,8 @@ public class InteractiveComponent : Component
         base.OnCache();
         collisionComponent.OnBaseTriggerEnter2D -= ChangeState;
         collisionComponent.OnBaseTriggerExit2D -= Exit;
+        interactiveGO = null;
+        door = null;
     }
 
     private void ChangeState(Entity entity)
@@ -84,10 +86,14 @@ public class InteractiveComponent : Component
         switch(param)
         {
             case NumToCallBack.greenIdolDialog:
+                PlayerBaseData.Instance.ReBirth();
                 BattleUI.Instance?.ShowTxt(7008, OnClick0);
+                UpdateSave();
                 break;
             case NumToCallBack.caveIdolDialog:
+                PlayerBaseData.Instance.ReBirth();
                 BattleUI.Instance?.ShowTxt(7016, OnClick1);
+                UpdateSave();
                 break;
             case NumToCallBack.huixue:
                 var cmp = (CharacterDataComponent)PlayerBaseData.Instance.entity.GetComponent("CharacterDataComponent");
@@ -100,8 +106,8 @@ public class InteractiveComponent : Component
                 EntityManager.Instance.RemoveEntity(entity.instanceId);
                 break;
             default:
-                var datacmp = (CharacterDataComponent)PlayerBaseData.Instance.entity.GetComponent("CharacterDataComponent");
-                datacmp.nowHp = datacmp.maxHp;
+                PlayerBaseData.Instance.ReBirth();
+                UpdateSave();
                 break;
         }
     }
@@ -115,5 +121,14 @@ public class InteractiveComponent : Component
     {
         var cmp = (SkillComponent)PlayerBaseData.Instance.entity.GetComponent("SkillComponent");
         cmp.data[SkillType.QSKILL].isLock = false;
+    }
+
+    private void UpdateSave()
+    {
+        int idx = CameraManager.Instance.GetBindBox();
+        Debug.Log(idx);
+        var go = GameObject.Find($"Map/ReBirth/{idx}");
+        if(go ==null)return;
+        PlayerBaseData.Instance.LastSave = idx;
     }
 }

@@ -23,17 +23,19 @@ public class ESCUI : MonoBehaviour
     }
     private void OnBackMain()
     {
-        PlayerBaseData.Instance.Clear();
-        GoComponent gocmp;
-        foreach (var entity in EntityManager.Instance.entities)
-        {
-            if (entity.Value == null) continue;
-            gocmp = (GoComponent)entity.Value.GetComponent("GoComponent");
-            ObjectPool.Instance.ReturnObjectToPool(gocmp.name, gocmp.go);
-        }
-        UIManager.Instance.CloseUI<ESCUI>();
-        UIManager.Instance.CloseUI<BattleUI>();
-        UIManager.Instance.ShowUI("MainUI");
-        EntityManager.Instance.isStop = false;
+        // PlayerBaseData.Instance.Clear();
+        // GoComponent gocmp;
+        // foreach (var entity in EntityManager.Instance.entities)
+        // {
+        //     if (entity.Value == null) continue;
+        //     gocmp = (GoComponent)entity.Value.GetComponent("GoComponent");
+        //     ObjectPool.Instance.ReturnObjectToPool(gocmp.name, gocmp.go);
+        // }
+        // UIManager.Instance.CloseUI<ESCUI>();
+        // UIManager.Instance.CloseUI<BattleUI>();
+        // UIManager.Instance.ShowUI("MainUI");
+        // EntityManager.Instance.isStop = false;
+        PlayerBaseData.Instance.ReStartToKaimi();
+        OnContinueGame();
     }
 }

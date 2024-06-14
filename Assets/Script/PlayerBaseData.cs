@@ -8,6 +8,7 @@ using UnityEngine.UIElements.Experimental;
 public class CharacterDataCache
 {
     public int id;
+    public int maxHp;
     public int hp;
     public bool ELock, ShiftLock;
     public bool dead;
@@ -19,20 +20,23 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     public bool changeCD=false;
     private Timer timer;
     public Dictionary<int,int>characterLevelDir = new Dictionary<int,int>();
-    public Dictionary<int, Dictionary<string,float>> playerDataCache = new Dictionary<int, Dictionary<string, float>>();
+    // public Dictionary<int, Dictionary<string,float>> playerDataCache = new Dictionary<int, Dictionary<string, float>>();
     public Dictionary<int, CharacterDataCache> playerDatas = new Dictionary<int, CharacterDataCache>();
     public Entity entity;
 
     private CharacterDataComponent characterDataComponent;
     private SkillComponent skillComponent;
+
+    public int LastSave;
     public override void Init()
     {
+        
         characterLevelDir[1001] = 1;
         characterLevelDir[1002] = 1;
         selectedCharacterList.Add(1001);
         // selectedCharacterList.Add(1002);
-        playerDataCache.TryAdd(1001,new Dictionary<string, float>());
-        playerDataCache.TryAdd(1002,new Dictionary<string, float>());
+        // playerDataCache.TryAdd(1001,new Dictionary<string, float>());
+        // playerDataCache.TryAdd(1002,new Dictionary<string, float>());
         entity = EntityManager.Instance.CreateEntity(1,1);
         CameraManager.Instance.RegisterFollow(entity);
         TagComponent tagComponent1 = (TagComponent)entity.GetComponent("TagComponent");
@@ -149,6 +153,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
 
     public void ChangePlayer(int idx)
     {
+        if(CheckReBirth()){ReStartToKaimi();return;}
         if(changeCD || selectedCharacterList.Count <= idx)return;
         if (playerDatas.TryGetValue(selectedCharacterList[idx], out var data) && data.dead) return;
         if(timer != null)TimerManager.Instance.RemoveTimer(timer);
@@ -160,6 +165,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
             data.id = nowSelectedCharacter;
         }
         data.hp = characterDataComponent.nowHp;
+        data.maxHp = characterDataComponent.maxHp;
         data.ELock = skillComponent.data[SkillType.ESKILL].isLock;
         data.ShiftLock = skillComponent.data[SkillType.QSKILL].isLock;
         data.dead = data.hp<=0;
@@ -184,8 +190,45 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
     {
         selectedCharacterList.Clear();
         characterLevelDir.Clear();
-        playerDataCache.Clear();
+        // playerDataCache.Clear();
         playerDatas.Clear();
+    }
+
+    public void ReBirth()
+    {
+        foreach(var characterData in playerDatas.Values)
+        {
+            characterData.hp = characterData.maxHp;
+            characterData.dead = false;
+        }
+        characterDataComponent.nowHp = characterDataComponent.maxHp;
+    }
+
+    public void ReStartToKaimi()
+    {
+        ReBirth();
+        CameraManager.Instance.CloseFengsuo();
+        EntityManager.Instance.SleepMonster();
+        var go = GameObject.Find($"Map/ReBirth/{LastSave}");
+        var cmp = (TransformComponent)entity.GetComponent("TransformComponent");
+        cmp.SetPostion(go.transform.position.x, go.transform.position.y);
+    }
+
+    public bool CheckReBirth()
+    {
+        int count= selectedCharacterList.Count;;
+        bool rebirth = true;
+        foreach(var playerData in playerDatas)
+        {
+            if(playerData.Value.dead == false)
+            {
+                rebirth = false;
+            }
+            count--;
+        }
+        if(characterDataComponent.nowHp > 0)rebirth = false;
+        if(count>1)rebirth = false;
+        return rebirth;
     }
 }
 
