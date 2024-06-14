@@ -194,7 +194,7 @@ public class Skill
             if(e.entityId == 3 && e.Tag != entity.Tag)
             {
                 Vector2 v = e.go.transform.position - entity.go.transform.position;
-                if(v.magnitude <= 10 && math.abs(Vector2.Angle(v,weaponComponent.GetWeaponFace())) < 30f)
+                if(v.magnitude <= 7 && math.abs(Vector2.Angle(v,weaponComponent.GetWeaponFace())) < 30f)
                 {
                     var tagcmp = (TagComponent)e.GetComponent("TagComponent");
                     if(tagcmp != null)

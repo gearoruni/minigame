@@ -168,7 +168,7 @@
       0
     ],
     "cd_time": [
-      0.8
+      1
     ],
     "effect_type": [
       1
@@ -240,7 +240,7 @@
       0
     ],
     "cd_time": [
-      0.4
+      1
     ],
     "effect_type": [
       1
@@ -252,10 +252,10 @@
       3001
     ],
     "effect_id": [
-      1101
+      1102
     ],
     "animation_id": [
-      7
+      18
     ],
     "Windup": [
       0
@@ -278,9 +278,9 @@
       3
     ],
     "cd_time": [
-      0.8,
-      5,
-      5
+      0.3,
+      6,
+      6
     ],
     "effect_type": [
       1,
@@ -303,7 +303,7 @@
       2003
     ],
     "animation_id": [
-      7,
+      44,
       0,
       0
     ],
@@ -379,13 +379,49 @@
       20017
     ],
     "prefab_id": [
+      3005
+    ],
+    "effect_id": [
+      1103
+    ],
+    "animation_id": [
+      39
+    ],
+    "Windup": [
+      0
+    ],
+    "Atking": [
+      0
+    ],
+    "Winddown": [
+      0
+    ],
+    "Lock": [
+      false
+    ]
+  },
+  {
+    "id": 1106,
+    "skill_type": [
+      0
+    ],
+    "cd_time": [
+      5
+    ],
+    "effect_type": [
+      1
+    ],
+    "typeDefine": [
+      20018
+    ],
+    "prefab_id": [
       3001
     ],
     "effect_id": [
       1101
     ],
     "animation_id": [
-      39
+      0
     ],
     "Windup": [
       0

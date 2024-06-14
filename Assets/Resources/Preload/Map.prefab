@@ -3104,7 +3104,7 @@ SpriteRenderer:
   m_Size: {x: 102.649506, y: 49.37}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2673538722765650054
@@ -3301,8 +3301,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5675928315928516360}
   - {fileID: 2495102656795866664}
+  - {fileID: 5675928315928516360}
   - {fileID: 3915464693506697990}
   - {fileID: 2277626634300312517}
   - {fileID: 315410532059785250}

@@ -178,5 +178,9 @@
   {
     "id": 43,
     "animationName": "定向陷阱朝右攻击"
+  },
+  {
+    "id": 44,
+    "animationName": "bosshuoqiu"
   }
 ]

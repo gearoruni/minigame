@@ -117,5 +117,18 @@
       20,
       0
     ]
+  },
+  {
+    "id": 1103,
+    "effectname": [
+      "MoveEffect",
+      "HealthChangeEffect",
+      "DestroyEffect"
+    ],
+    "effectdefine": [
+      1,
+      150,
+      0
+    ]
   }
 ]

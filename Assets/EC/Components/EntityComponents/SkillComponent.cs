@@ -91,7 +91,11 @@ public class SkillComponent : Component
 
     public bool CheckCanUseSkill(SkillType skillType)
     {
-        Skill skillBaseData = data[skillType];
+        Skill skillBaseData;
+        if(!data.TryGetValue(skillType,out skillBaseData))
+        {
+            return false;
+        }
         if (skillBaseData.isLock)
         {
             BattleUI.Instance.maskList[(int)skillType].color = Color.red;
