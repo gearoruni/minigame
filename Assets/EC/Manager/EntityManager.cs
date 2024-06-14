@@ -254,13 +254,17 @@ public class EntityManager : Singleton<EntityManager>
 
     public void SleepMonster()
     {
+        CharacterDataComponent character;
         foreach(var monster in activeMonsters)
         {
             if(monsters.ContainsKey(monster.Key))monsters.Remove(monster.Key);
             monsters.Add(monster.Key,monster.Value);
             foreach(var entity in monster.Value)
             {
+                character = (CharacterDataComponent)entity.GetComponent("CharacterDataComponent");
+                character.nowHp = character.maxHp;
                 entity.go.SetActive(false);
+                
                 BattleUI.Instance.ChangeHp(entity.instanceId, false);
             }
         }
