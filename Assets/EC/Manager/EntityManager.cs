@@ -239,6 +239,7 @@ public class EntityManager : Singleton<EntityManager>
         foreach(var entity in entities)
         {
             entity.go.SetActive(true);
+            BattleUI.Instance.ChangeHp(entity.instanceId, true);
         }
         monsters.Remove(idx);
         CameraManager.Instance.AwakeFengsuo();
@@ -260,6 +261,7 @@ public class EntityManager : Singleton<EntityManager>
             foreach(var entity in monster.Value)
             {
                 entity.go.SetActive(false);
+                BattleUI.Instance.ChangeHp(entity.instanceId, false);
             }
         }
         activeMonsters.Clear();

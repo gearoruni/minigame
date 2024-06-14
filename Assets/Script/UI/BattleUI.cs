@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,6 +36,7 @@ public class BattleUI : MonoBehaviour
     private PlayerBaseData playerBaseData;
     public GameObject txtBG;
     public Text tongyongTxt;
+    public Dictionary<int,List<Entity>> activeMonsters;
     private void Awake()
     {
         Instance = this;
@@ -242,5 +244,13 @@ public class BattleUI : MonoBehaviour
         txtBG.SetActive(true);
         tongyongTxt.text = message;
         TimerManager.Instance.RegisterTimer(1.5f,1,()=>{txtBG.SetActive(false);});
+    }
+
+    public void ChangeHp(int instanceId, bool open)
+    {
+        if(activeItem.TryGetValue(instanceId,out var image))
+        {
+            image.transform.parent.gameObject.SetActive(open);
+        }
     }
 }
