@@ -77,6 +77,7 @@ public class InteractiveComponent : Component
 
     private void Exit(Entity entity)
     {
+        if (entity == null || entity != PlayerBaseData.Instance.entity) return;
         isInteracting = false;
         interactiveGO.SetActive(false);
     }
