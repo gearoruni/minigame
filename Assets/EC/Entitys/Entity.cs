@@ -107,6 +107,7 @@ public class Entity : PoolBaseClass
         for(int i = 0; i < childIds.Count; i++)
         {
             Entity entity = EntityManager.Instance.GetEntityFromInstanceId(childIds[i]);
+            if(entity==null)continue;
             EntityManager.Instance.RemoveEntity(entity.instanceId);
         }
         childIds.Clear();

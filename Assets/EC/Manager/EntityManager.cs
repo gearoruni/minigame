@@ -178,13 +178,18 @@ public class EntityManager : Singleton<EntityManager>
         List<Entity> result = new List<Entity>();
         foreach(Entity entityInstance in entities.Values)
         {
+            if(entityInstance == null)continue;
             if(entityInstance.entityId == entityId) { result.Add(entityInstance); }
         }
         return result;
     }
     public Entity GetEntityFromInstanceId(int entityInstanceId)
     {
-        return entities[entityInstanceId];
+        if(entities.TryGetValue(entityInstanceId,out var entity))
+        {
+            return entity;
+        }
+        return null;
     }
 
     public void SetEntityController(bool isactive)

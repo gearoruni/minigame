@@ -38,9 +38,14 @@ public class BattleUI : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        var player = EntityManager.Instance.GetEntityFromEntityId(1)[0];
-        characterData = (CharacterDataComponent)player.GetComponent("CharacterDataComponent");
-        skillCmp = (SkillComponent)player.GetComponent("SkillComponent");
+        var entitys = EntityManager.Instance.GetEntityFromEntityId(1);
+        if(entitys.Count != 0)
+        {
+            var player = entitys[0];
+            characterData = (CharacterDataComponent)player.GetComponent("CharacterDataComponent");
+            skillCmp = (SkillComponent)player.GetComponent("SkillComponent");
+        }
+        
         next.onClick.AddListener(NextTxt);
         SoundManager.Instance.PlayBGM("³¡¾°1-3 ²ÝµØÇøÓò");
         var monsterList = EntityManager.Instance.GetEntityFromEntityId(4);
@@ -58,6 +63,17 @@ public class BattleUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(skillCmp==null || characterData == null)
+        {
+            var entitys = EntityManager.Instance.GetEntityFromEntityId(1);
+            if(entitys.Count != 0)
+             {   
+                var player = entitys[0];
+                characterData = (CharacterDataComponent)player.GetComponent("CharacterDataComponent");
+                skillCmp = (SkillComponent)player.GetComponent("SkillComponent");
+            }
+        }
+        if(skillCmp==null || characterData == null)return;
         foreach(var skill in skillCmp.data.Values)
         {
             Image img = maskList[(int)skill.Type];
@@ -170,7 +186,9 @@ public class BattleUI : MonoBehaviour
                 SleepItem.Push(image);
                 activeItem.Remove(id);
                 
-                var entity = EntityManager.Instance.GetEntityFromInstanceId(id);var character = (CharacterComponent)entity.GetComponent("CharacterComponent");
+                var entity = EntityManager.Instance.GetEntityFromInstanceId(id);
+                if(entity == null)return;
+                var character = (CharacterComponent)entity.GetComponent("CharacterComponent");
                 int insid = character.configs.Id;
                 if(insid == 1201 || insid == 1202)
                 {
