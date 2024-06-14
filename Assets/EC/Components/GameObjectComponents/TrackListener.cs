@@ -28,7 +28,7 @@ public class TrackListener : MonoBehaviour
         if (collisionListener != null)
         {
             Entity temp = collisionListener.entity;
-            if (temp.Tag == entity.Tag || temp.go.layer == entity.go.layer || temp.Tag == Tag.Trap)
+            if (temp.Tag == entity.Tag || temp.go.layer == entity.go.layer || temp.Tag == Tag.Trap || temp.Tag == Tag.Interactive)
             {
                 return;
             }
