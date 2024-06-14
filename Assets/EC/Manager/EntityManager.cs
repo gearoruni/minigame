@@ -111,7 +111,7 @@ public class EntityManager : Singleton<EntityManager>
                     if(CameraManager.Instance.confiner!=null && CameraManager.Instance.confiner.m_BoundingShape2D.name == "8")
                     {
                         BattleUI.Instance.ShowTxt(7023, ()=>{PlayerBaseData.Instance.selectedCharacterList.Add(1002);});
-                        BattleUI.Instance.BossHp.transform.parent.gameObject.SetActive(false);
+                        // BattleUI.Instance.BossHp.transform.parent.gameObject.SetActive(false);
                         GameObject.Find("Item/lingshi").SetActive(false);
                     }
                 }

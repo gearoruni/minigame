@@ -169,6 +169,13 @@ public class BattleUI : MonoBehaviour
                 image.transform.parent.gameObject.SetActive(false);
                 SleepItem.Push(image);
                 activeItem.Remove(id);
+                
+                var entity = EntityManager.Instance.GetEntityFromInstanceId(id);var character = (CharacterComponent)entity.GetComponent("CharacterComponent");
+                int insid = character.configs.Id;
+                if(insid == 1201 || insid == 1202)
+                {
+                    BossHp.transform.parent.gameObject.SetActive(false);
+                }
             }
         }
     }
@@ -197,6 +204,10 @@ public class BattleUI : MonoBehaviour
                 BossHp.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;
                 continue;
             }
+            // else
+            // {
+            //     BossHp.transform.parent.gameObject.SetActive(false);
+            // }
             trs = entity.go.transform;
 
             pairAndImage.Value.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;

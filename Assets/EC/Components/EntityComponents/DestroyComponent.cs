@@ -34,8 +34,8 @@ public class DestroyComponent : Component
     }
     public void Destroy()
     {
-        EntityManager.Instance.RemoveEntity(entity.instanceId);
         if (BattleUI.Instance != null) BattleUI.Instance.ChangeMonsterHp(entity.instanceId, false);
+        EntityManager.Instance.RemoveEntity(entity.instanceId);
     }
     public void ChangeState()
     {
@@ -58,7 +58,7 @@ public class DestroyComponent : Component
             if(hit.canDestroyTargetEffect.condition == this.condition)
             {
                 hit.canDestroyTargetEffect = null;
-                Debug.Log("±»´Ý»Ù");
+                Debug.Log("ï¿½ï¿½ï¿½Ý»ï¿½");
                 ChangeState();
                 //Destroy();
             }
