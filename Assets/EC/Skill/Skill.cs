@@ -196,7 +196,11 @@ public class Skill
                 Vector2 v = e.go.transform.position - entity.go.transform.position;
                 if(v.magnitude <= 10 && math.abs(Vector2.Angle(v,weaponComponent.GetWeaponFace())) < 30f)
                 {
-                    e.Tag = entity.Tag;
+                    var tagcmp = (TagComponent)e.GetComponent("TagComponent");
+                    if(tagcmp != null)
+                    {
+                        tagcmp.tag = entity.Tag;
+                    }
                     MoveComponent mcmp=  (MoveComponent)e.GetComponent("MoveComponent");
                     mcmp.input = weaponComponent.GetWeaponFace();
                 }
@@ -241,6 +245,7 @@ public class Skill
                 
                 var gocmp = (GoComponent)entity1.GetComponent("GoComponent");
                 if(gocmp !=null && gocmp.go !=null)
+
                 {
                     gocmp.go.transform.rotation = Quaternion.Euler(0, 0, 0);
                 }
