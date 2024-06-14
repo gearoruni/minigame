@@ -2383,5 +2383,20 @@
       6602,
       6
     ]
+  },
+  {
+    "id": 152,
+    "componentName": [
+      "AnimatorComponent",
+      "CharacterComponent",
+      "SpawnComponent",
+      "FSMComponent"
+    ],
+    "componentdataid": [
+      16,
+      1107,
+      55,
+      1001
+    ]
   }
 ]

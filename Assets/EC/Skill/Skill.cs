@@ -254,38 +254,37 @@ public class Skill
         TransformComponent cmp;
         CollisionComponent collCmp;
         AnimatorComponent animator;
-        Debug.Log("’ŸªΩ");
-        for(int i = 0;i<4;i++)
+        int bosidx = CameraManager.Instance.GetBindBox();
+        for(int i = 0;i<1;i++)
         {
             
             if(PhysicsRay.GetWall(pos,dirs[i],out var result))
             {
-                
-                entity1 = EntityManager.Instance.CreateEntity(4, 150, true);
-                entity1 = EntityManager.Instance.CreateEntity(4, 150);
+                int idx = bosidx == 17 ?150:152;
+                // entity1 = EntityManager.Instance.CreateEntity(4, 150, true);
+                entity1 = EntityManager.Instance.CreateEntity(4, idx);
                 // EntityManager.Instance.AwakeZhaohuan(entity1);
-                
-                var gocmp = (GoComponent)entity1.GetComponent("GoComponent");
-                if(gocmp !=null && gocmp.go !=null)
-
-                {
-                    gocmp.go.transform.rotation = Quaternion.Euler(0, 0, 0);
-                }
-                // cmp = (TransformComponent)entity1.GetComponent("TransformComponent");
+                cmp = (TransformComponent)entity1.GetComponent("TransformComponent");
                 // collCmp = (CollisionComponent)entity1.GetComponent("CollisionComponent");
                 // animator = (AnimatorComponent)entity1.GetComponent("AnimatorComponent");
                 // animator?.PlayerAnime("birth");
                 // // collCmp?.listener?.gameObject?.SetActive(false);
-                // if(cmp!=null)
+                if(cmp!=null)
+                {
+                    //     TimerManager.Instance.RegisterTimer(1,0,()=>{
+                    //     collCmp = (CollisionComponent)entity1.GetComponent("CollisionComponent");
+                    //     collCmp.listener.gameObject.SetActive(true);
+                    //     EntityManager.Instance.AwakeZhaohuan(entity1);
+                    // });
+                    cmp.SetPostion(result.x+1,result.y+1);
+                    // cmp.SetRotationLookAt()
+                    // times++;
+                    // if(times >= 3)break;
+                }
+                // var gocmp = (GoComponent)entity1.GetComponent("GoComponent");
+                // if(gocmp !=null && gocmp.go !=null)
                 // {
-                //         TimerManager.Instance.RegisterTimer(1,0,()=>{
-                //         collCmp = (CollisionComponent)entity1.GetComponent("CollisionComponent");
-                //         collCmp.listener.gameObject.SetActive(true);
-                //         EntityManager.Instance.AwakeZhaohuan(entity1);
-                //     });
-                //     cmp.SetPostion(result.x,result.y);
-                //     times++;
-                //     if(times >= 3)break;
+                //     gocmp.go.transform.rotation = Quaternion.Euler(0, 0, 0);
                 // }
             }
         }
