@@ -33,6 +33,8 @@ public class BattleUI : MonoBehaviour
     private Action callBack = null;
     private int nowPlayer = 1001;
     private PlayerBaseData playerBaseData;
+    public GameObject txtBG;
+    public Text tongyongTxt;
     private void Awake()
     {
         Instance = this;
@@ -204,5 +206,12 @@ public class BattleUI : MonoBehaviour
                 pairAndImage.Value.transform.parent.localPosition = localPoint;
             }
         }
+    }
+
+    public void ShowPiaozi(string message)
+    {
+        txtBG.SetActive(true);
+        tongyongTxt.text = message;
+        TimerManager.Instance.RegisterTimer(1.5f,1,()=>{txtBG.SetActive(false);});
     }
 }

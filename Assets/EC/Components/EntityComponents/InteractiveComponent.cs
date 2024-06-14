@@ -107,6 +107,7 @@ public class InteractiveComponent : Component
                 break;
             default:
                 PlayerBaseData.Instance.ReBirth();
+                BattleUI.Instance.ShowPiaozi("»Ö¸´Íê±Ï~ciallo~");
                 UpdateSave();
                 break;
         }
@@ -116,11 +117,14 @@ public class InteractiveComponent : Component
     {
         var cmp = (SkillComponent)PlayerBaseData.Instance.entity.GetComponent("SkillComponent");
         cmp.data[SkillType.ESKILL].isLock = false;
+        
+        BattleUI.Instance.ShowPiaozi("½âËø»¨Èï±¬µ¯");
     }
     private void OnClick1()
     {
         var cmp = (SkillComponent)PlayerBaseData.Instance.entity.GetComponent("SkillComponent");
         cmp.data[SkillType.QSKILL].isLock = false;
+        BattleUI.Instance.ShowPiaozi("½âËøæß×Ó·ÉÐõ");
     }
 
     private void UpdateSave()
