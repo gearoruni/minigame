@@ -73,7 +73,6 @@ public class AnimatorComponent : Component
             }
             else if(lastAnime == skillidx.ToString() + firebefore)
             {
-                Debug.Log($"firebefore,{lastAnime}");
                 if(listener.CheckAnime(lastAnime))
                 {
                     useSkill?.Invoke();
@@ -84,7 +83,6 @@ public class AnimatorComponent : Component
             else if (lastAnime == skillidx.ToString() + fire)
             {
                 
-                Debug.Log("fire");
                 if (listener.CheckAnime(lastAnime))
                 {
                     lastAnime = skillidx.ToString() + fireafter;

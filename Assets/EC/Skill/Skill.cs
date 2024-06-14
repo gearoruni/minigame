@@ -214,7 +214,29 @@ public class Skill
         var movecmp = (MoveComponent)entity.GetComponent("MoveComponent");
         movecmp.SetForceMove(0.35f, 20f, weaponComponent.GetWeaponFace());
         if(cmp == null)return;
-        cmp.continueCallBack = ()=>{};
+        List<Entity> hasDamage = new List<Entity>();
+        cmp.continueCallBack = ()=>{
+            foreach(var entitys in EntityManager.Instance.entities.Values)
+            {
+                if(entitys == null)continue;
+                if(hasDamage.Contains(entitys))continue;
+                if((entitys.Tag == Tag.Player || entitys.Tag == Tag.Enemy) && entitys != entity)
+                {
+                    float dis =  Vector3.Distance(entity.go.transform.position,entitys.go.transform.position);
+                if(dis <= 1f)
+                {
+                    var cmp = (CharacterDataComponent)entitys.GetComponent("CharacterDataComponent");
+                    var enemyMoveCmp = (MoveComponent)entitys.GetComponent("MoveComponent");
+                    if(cmp ==null || enemyMoveCmp == null)continue;
+                    cmp.ChangeHp(100);
+                    hasDamage.Add(entitys);
+                    enemyMoveCmp.SetForceMove(0.35f, 20f, (entitys.go.transform.position - entity.go.transform.position).normalized);
+                    
+                }
+                }
+                
+            }
+        };
     }
 
     public void xulishuiqiu(Entity entity)
