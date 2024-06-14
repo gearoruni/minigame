@@ -98,7 +98,7 @@ public class InteractiveComponent : Component
                 break;
             case NumToCallBack.huixue:
                 var cmp = (CharacterDataComponent)PlayerBaseData.Instance.entity.GetComponent("CharacterDataComponent");
-                cmp.nowHp += 200;
+                cmp.nowHp = cmp.nowHp + 200 >= cmp.maxHp ? cmp.maxHp : cmp.nowHp + 200;
                 EntityManager.Instance.RemoveEntity(entity.instanceId);
                 break;
             case NumToCallBack.key:
