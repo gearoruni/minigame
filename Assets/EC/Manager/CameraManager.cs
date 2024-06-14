@@ -39,7 +39,7 @@ public class CameraManager : MonoSingleton<CameraManager>
                 EntityManager.Instance.AwakeMonsterByBindBox(idx);
                 
                 //进入boss领地播剧情
-                if(idx == 8)TimerManager.Instance.RegisterTimer(1,1,()=>{BattleUI.Instance.ShowTxt(7020);});
+                if(idx == 8)TimerManager.Instance.RegisterTimer(0.5f,1,()=>{BattleUI.Instance.ShowTxt(7020);});
             }
         }
     }

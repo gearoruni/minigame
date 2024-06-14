@@ -80,6 +80,10 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         {//CharacterComponentDaraID与SpawnDataID相等
             eentity = EntityManager.Instance.CreateEntity(4, a);
         }
+        for (int a = 8; a <= 10; a++)//其余的各地区紫色史莱姆,CharacterComponentDara/SpawnDataID：3~14
+        {//CharacterComponentDaraID与SpawnDataID相等
+            eentity = EntityManager.Instance.CreateEntity(4, a);
+        }
         for (int b = 15; b <= 24; b++)//各地区小软泥怪,CharacterComponentDara/SpawnDataID：15~24.
         {//和紫色史莱姆一样不会攻击，仅有触碰掉血
             eentity = EntityManager.Instance.CreateEntity(4, b);
@@ -110,7 +114,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         // eentity = EntityManager.Instance.CreateEntity(10, 153);
 
 
-        for (int b = 66; b <= 67; b++)//横石堆(用主角爆裂弹可击碎) ID：66~76
+        for (int b = 66; b <= 76; b++)//横石堆(用主角爆裂弹可击碎) ID：66~76
         {
            eentity = EntityManager.Instance.CreateEntity(10, b);//第1个参数填多少我不确定
         }
@@ -136,6 +140,7 @@ public class PlayerBaseData : Singleton<PlayerBaseData>
         {
             eentity = EntityManager.Instance.CreateEntity(9, b);
         }
+        eentity = EntityManager.Instance.CreateEntity(9, 151);
         // for (int b = 140; b <= 149; b++)//定向陷阱
         // {
         //    eentity = EntityManager.Instance.CreateEntity(4, b);//第1个参数填多少我不确定

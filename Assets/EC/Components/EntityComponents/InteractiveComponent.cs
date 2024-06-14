@@ -64,7 +64,7 @@ public class InteractiveComponent : Component
         isInteracting = true;
         
         interactiveGO.SetActive(true);
-        interactiveGO.transform.position = this.entity.go.transform.position + new Vector3(0, 0.5f, 0); 
+        interactiveGO.transform.position = this.entity.go.transform.position + new Vector3(0, 1.5f, 0); 
     }
 
     public override void Update()
@@ -91,7 +91,7 @@ public class InteractiveComponent : Component
                 break;
             case NumToCallBack.huixue:
                 var cmp = (CharacterDataComponent)PlayerBaseData.Instance.entity.GetComponent("CharacterDataComponent");
-                cmp.nowHp += 100;
+                cmp.nowHp += 200;
                 EntityManager.Instance.RemoveEntity(entity.instanceId);
                 break;
             case NumToCallBack.key:
@@ -100,6 +100,8 @@ public class InteractiveComponent : Component
                 EntityManager.Instance.RemoveEntity(entity.instanceId);
                 break;
             default:
+                var datacmp = (CharacterDataComponent)PlayerBaseData.Instance.entity.GetComponent("CharacterDataComponent");
+                datacmp.nowHp = datacmp.maxHp;
                 break;
         }
     }

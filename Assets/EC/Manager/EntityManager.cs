@@ -112,6 +112,7 @@ public class EntityManager : Singleton<EntityManager>
                     {
                         BattleUI.Instance.ShowTxt(7023, ()=>{PlayerBaseData.Instance.selectedCharacterList.Add(1002);});
                         BattleUI.Instance.BossHp.transform.parent.gameObject.SetActive(false);
+                        GameObject.Find("Item/lingshi").SetActive(false);
                     }
                 }
             }

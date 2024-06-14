@@ -3,7 +3,7 @@
     "id": 1001,
     "name": "艾莉亚(主角)",
     "hp": 1000,
-    "speed": 12,
+    "speed": 5,
     "level": [
       1,
       2
@@ -230,6 +230,21 @@
   },
   {
     "id": 6601,
+    "name": "水地/礁石陷阱",
+    "hp": 999999,
+    "speed": 0,
+    "level": [
+      1
+    ],
+    "WeaponId": [
+      0
+    ],
+    "skillID": 0,
+    "range": 0,
+    "canForceMove": false
+  },
+  {
+    "id": 6602,
     "name": "水地/礁石陷阱",
     "hp": 999999,
     "speed": 0,

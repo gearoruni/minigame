@@ -198,7 +198,7 @@ public class BattleUI : MonoBehaviour
             trs = entity.go.transform;
 
             pairAndImage.Value.fillAmount = characterData.nowHp * 1.0f / characterData.maxHp;
-            screenPos = RectTransformUtility.WorldToScreenPoint(Camera.main, trs.position);
+            screenPos = RectTransformUtility.WorldToScreenPoint(Camera.main, trs.position + new Vector3(0,0.5f,0));
             if(RectTransformUtility.ScreenPointToLocalPointInRectangle(montserRoot, screenPos, null, out Vector2 localPoint))
             {
                 pairAndImage.Value.transform.parent.localPosition = localPoint;
