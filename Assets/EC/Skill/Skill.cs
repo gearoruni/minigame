@@ -262,7 +262,7 @@ public class Skill
             {
                 int idx = bosidx == 17 ?150:152;
                 // entity1 = EntityManager.Instance.CreateEntity(4, 150, true);
-                entity1 = EntityManager.Instance.CreateEntity(4, idx);
+                entity1 = EntityManager.Instance.CreateEntity(4, idx, true);
                 // EntityManager.Instance.AwakeZhaohuan(entity1);
                 cmp = (TransformComponent)entity1.GetComponent("TransformComponent");
                 // collCmp = (CollisionComponent)entity1.GetComponent("CollisionComponent");
@@ -277,6 +277,7 @@ public class Skill
                     //     EntityManager.Instance.AwakeZhaohuan(entity1);
                     // });
                     cmp.SetPostion(result.x+1,result.y+1);
+                    cmp.rotation = Quaternion.identity;
                     // cmp.SetRotationLookAt()
                     // times++;
                     // if(times >= 3)break;

@@ -68,6 +68,7 @@ public class CharacterDataComponent : Component
                 var animcmp = (AnimatorComponent)s.entity.GetComponent("AnimatorComponent");
                 // animcmp.state.state = State.DESTROY;
                 s.ChangePlayer((s.nowSelectedCharacter - 1001) == 0 ? 1 : 0);
+                BattleUI.Instance.ShowPiaozi($"角色已死亡，请前往石像复活");
                 return;
             }
             state.isDead = true;

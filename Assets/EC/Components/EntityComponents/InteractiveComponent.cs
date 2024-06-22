@@ -100,11 +100,13 @@ public class InteractiveComponent : Component
                 var cmp = (CharacterDataComponent)PlayerBaseData.Instance.entity.GetComponent("CharacterDataComponent");
                 cmp.nowHp = cmp.nowHp + 200 >= cmp.maxHp ? cmp.maxHp : cmp.nowHp + 200;
                 EntityManager.Instance.RemoveEntity(entity.instanceId);
+                BattleUI.Instance?.ShowPiaozi("½ÇÉ«»Ö¸´200Ñª");
                 break;
             case NumToCallBack.key:
                 if(door == null)break;
                 door.SetActive(false);
                 EntityManager.Instance.RemoveEntity(entity.instanceId);
+                BattleUI.Instance?.ShowPiaozi("»ñµÃÔ¿³×");
                 break;
             default:
                 PlayerBaseData.Instance.ReBirth();

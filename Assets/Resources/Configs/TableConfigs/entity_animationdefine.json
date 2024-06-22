@@ -182,5 +182,9 @@
   {
     "id": 44,
     "animationName": "bosshuoqiu"
+  },
+  {
+    "id": 48,
+    "animationName": "竖碎石动画"
   }
 ]

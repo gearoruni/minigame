@@ -63,8 +63,13 @@ public class EntityManager : Singleton<EntityManager>
     public Entity CreateEntity(int entityId, int cmpId, bool isZhaohuan)
     {
         Entity entity = assembler.CreateEntity(instanceId++, entityId,cmpId);
+
+        this.entities.Add(entity.instanceId, entity);
+
         assembler.LateCreate(entity);
-        AddMonsterByBindBox(entity);
+
+        addQueue.Enqueue(entity.instanceId);
+
         return entity;
     }
     /// <summary>
@@ -113,6 +118,12 @@ public class EntityManager : Singleton<EntityManager>
                         BattleUI.Instance.ShowTxt(7023, ()=>{PlayerBaseData.Instance.selectedCharacterList.Add(1002);});
                         // BattleUI.Instance.BossHp.transform.parent.gameObject.SetActive(false);
                         GameObject.Find("Item/lingshi").SetActive(false);
+                    }
+                    else if(CameraManager.Instance.confiner!=null && CameraManager.Instance.confiner.m_BoundingShape2D.name == "17")
+                    {
+                        BattleUI.Instance.ShowTxt(7056,()=>{BattleUI.Instance.ShowPiaozi("อจนุมห");});
+                        // BattleUI.Instance.BossHp.transform.parent.gameObject.SetActive(false);
+                        // GameObject.Find("Item/lingshi").SetActive(false);
                     }
                 }
             }
